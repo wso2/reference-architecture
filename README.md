@@ -33,6 +33,5 @@ The rest of the this paper is structured as follows:
 
 ## Section 1: Abstractions
 
-[myimage]: /media/ra-component.png "if you need a title, it's here"
-
-abc 
+![This is the alt-attribute for my image](/media/ra-component.png "An optional title")
+ 
