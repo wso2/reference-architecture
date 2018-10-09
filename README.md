@@ -46,4 +46,4 @@ The rest of the this paper is structured as follows:
 |![Component](/media/ra-data-service.png )|Legacy and data services|Databases, Existing systems, Registries and repositories, User stores, Business processes|
 |![Component](/media/ra-microservice.png )|Microservices and serverless components|Core business logic, Aggregation and service composition, Transformation|
 |![Component](/media/ra-gateway.png)|Gateways and brokers|Exposed APIs, events, and streams, Policy enforcement points, Message brokers, Identity brokers and identity gateways, Sidecars and bridges|
-||||
+|![SaaS EPR](media/ra-saas-epr.png)|External Endpoint|Access using APIs, events,  and streams, Cloud systems and SaaS|
