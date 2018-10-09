@@ -51,8 +51,20 @@ The rest of the this paper is structured as follows:
 
 ## Section 2: Cell - The Units of an Enterprise Architecture
 
+![cell definition](/media/ra-cell-definition.png)
+
 A cell is a collection of components, grouped from design and implementation into deployment. A cell is independently deployable, manageable, and observable.
 Components inside the cell can communicate with each other using supported transports for intra-cell communication. External communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols.
 A cell can have 1:n components grouped. Components inside the cells are reusable and can instantiate in multiple cells. The cell should document its offers. The capabilities of a cell must be network accessible endpoints. In addition, if the cell needs access to external dependencies, then these must also be exposed as network endpoints through a cell-gateway. These endpoints can expose APIs, events, or streams. Any interfaces that the microservices or serverless components offer that are not made available by the control point should be inaccessible from outside the cell. Every component within the cell should be versioned. The cell should have a name and a version identifier. The versions should change when the cell’s requirements and/or offers change.
 
-![cell definition](media/ra-cell-definition.png)
+## Deep-dive into Cells
+
+![cell definition](/media/ra-cell-details.png)
+
+In this example, **Cell-1** contains two microservices and a function operating with a microbroker and a microgateway to fulfill the functionality. The function is communicating with a few external services running outside the cell, and one microservice communicates with a cluster of external databases. The cell contains local storage, which is required by the microbroker. The functionality of a microservice in this cell has been extended by bringing a sidecar.
+
+**Cell-2** contains a cluster of relational databases exposed via a Java Database Connectivity (JDBC) endpoint. 
+
+Components in **Cell-3** are running in a hypervisor-based virtualized environment with a few RESTful services, an application server runtime, and a business process. Cell-3 exposes its capabilities through an endpoint implemented via a traditional enterprise service bus (ESB) or an API gateway.
+
+The concept of a cell moves away from centralized a enterprise architecture to a decentralized architecture. The segmented approach allows each cell to be independent and iterate individually.
