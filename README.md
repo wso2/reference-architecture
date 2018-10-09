@@ -32,3 +32,7 @@ The rest of the this paper is structured as follows:
 + **Section 6**: Examines the overall picture by describing the agile business from the business architecture point of view.
 
 ## Section 1: Abstractions
+
+[myimage]: /media/ra-component.png "if you need a title, it's here"
+
+abc 
