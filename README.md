@@ -34,8 +34,8 @@ The rest of the this paper is structured as follows:
 ## Section 1: Abstractions
 
  
-|          |            | 
+|    Type      |        Description    | 
 |----------------- |-------------|
-| Person | A user is a human interacting with the system. Users can be external customers of the organization, internal employees, or partners.|
+| ![Person](/media/ra-person.png ) | A user is a human interacting with the system. Users can be external customers of the organization, internal employees, or partners.|
 | ![Component](/media/ra-component.png ) | A component is the atomic unit of this reference architecture. A component represents a process or business logic running in a container, serverless environment, or an existing runtime. This can then be categorized into many subtypes based on the functional capabilities. A component is designed based on a specific scope, which can be independently run and reused at the runtime. Runtime requirements and the behavior of the component vary based on the component type and the functional capabilities. The user may decide to build and run the code as a service, function, or microservice, or choose to reuse an existing legacy service based on the architectural need.|
 |||
