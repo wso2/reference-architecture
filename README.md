@@ -1,10 +1,10 @@
-# Reference Architecture for Agility
+# Reference Architecture for Agility: Cell-based
 
 **_Original Authors_**
 + Asanka Abeysinghe, Vice President - Architecture, CTO Office | asankaa@wso2.com
 + Paul Fremantle, CTO and Co-Founder | paul@wso2.com
 
-> *This document describes a reference architecture for modern agile digital enterprises. This reference architecture offers a logical architecture based on a disaggregated cloud-based model that can be instantiated to create an effective and agile approach for digital enterprises, deployed in private, public or hybrid cloud environments. In this paper we present the architecture, the approach to applying this architecture, and existing approaches that fit into this architecture. The architecture defined in this paper can be mapped to current architectures as well as used to define new architectures. It is designed to help move from the “as-is” towards the “to-be”.*
+> *This document describes a reference architecture for modern agile digital  enterprises. This reference architecture offers a logical architecture based on a disaggregated cloud-based model that can be instantiated to create an effective and agile approach for digital enterprises, deployed in private, public or hybrid cloud environments. In this paper we present the architecture, the approach to applying this architecture, and existing approaches that fit into this architecture. The architecture defined in this paper can be mapped to current architectures as well as used to define new architectures. It is designed to help move from the “as-is” towards the “to-be”.*
 
 ## Introduction
 
@@ -111,3 +111,15 @@ Internal cells can mainly fall into one of three categories:
 
 A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable APIs, events, and streams. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
+
+### Mapping Agile Enterprise to the Real-world: Order Management System, reference implementation
+
+![epr types](/media/ra-cell-rw-l0.png)
+
+The diagram above represents a real-world example using the cell-based architecture. For reference purposes, we have only captured a portion of the entire architecture. This architecture follows the fundamentals of cell-based architecture and is divided into multiple cells. Each cell contains different components for building the expected functionality.
+We identified three main categories of users in this order management system: customers, partners, and employees. The end-user application cells contain an order management application, which can be consumed by the users.
+The employee cell represents the functionality needed by the employees associated with the system. It exposes an API through the microgateway component residing at the edge of the cell. Employee data is stored in the human resources (HR) system and local user stores, hence the employee cell connects with those cells through the endpoints provided. Some of the activities executed by the employees need to be stored in a log for computing compensation as well as an audit log. Therefore, the employee cell connects to a cell that contains a cluster of relational databases via a data access endpoint. Employees also need to be authenticated, so the cell uses a sidecar pattern to communicate with the identity system residing in the use-store cell.
+The order cell manages the core transactions created in the system, which are orders posted by customers, employees, and partners. The order cell exposes an API for the application cells to consume. At the same time, the order cell provides the ability to subscribe to the order status events using an event endpoint. The order cell connects the order management system (OMS), which is a COTS system. The COTS system provides an endpoint to execute remote procedure calls (RPCs) in order to exchange data and the functionality related to orders. The OMS cell falls into the legacy cell category.
+The customer cell represents the customer-focused functionality. It connects to an internal legacy cell to provide customer relationship management (CRM) capabilities. An external cell represents a SaaS-based CRM system.
+The promotions cell exposes the functionality using a streaming endpoint and lets the reactive order application receive information about the campaigns offered by the organization.
+
