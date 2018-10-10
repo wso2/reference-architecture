@@ -85,4 +85,21 @@ First, we discussed a segmented architecture, which is created by dividing the l
 
 ### Cell-based Architecture: enterprise view
 
+![cell-based ea](/media/ra-cell-based-ea.png)
+
+As we discussed earlier, cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization.  Cells can be categorized into a few subcategories based on the architecture patterns used, the implementation, and the provider.
+
+The first level of categorization is based on the provider. Cells owned by internal groups are treated as internal cells, and the cells owned by external parties, such as partners and external service providers, are treated as external cells.
+
+Internal cells can mainly fall into one of three categories:
+
++ Legacy and monolith cells come from a service-oriented architecture (SOA), ESB-centric implementations, legacy applications, and commercial off-the-shelf (COTS) systems.
+  
++ Cells that contain microservice functions are designed using a microservices architecture (MSA) and are deployed in containers.
+
++ End-user application cells represent applications, such as reactive web and mobile apps or API consumer apps, such as Internet of Things (IoT) devices. These cells consume the functionality of other cells using the three channels (APIs, events and streams) exposed by the cell gateways.
+
+
+
+
 
