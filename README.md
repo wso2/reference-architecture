@@ -99,7 +99,10 @@ Internal cells can mainly fall into one of three categories:
 
 + End-user application cells represent applications, such as reactive web and mobile apps or API consumer apps, such as Internet of Things (IoT) devices. These cells consume the functionality of other cells using the three channels (APIs, events and streams) exposed by the cell gateways.
 
+![epr types](/media/ra-epr-types.png)
 
++ **APIs** provide an abstraction over everything that can be **queried** or **activated**.
+  
++ **Events** allow action in real time based on changes that occur in the environment, allowing work to be **triggered**.
 
-
-
++ **Streams** capture the ongoing evolving nature of the environment, allowing **pattern matching** and **analysis**.
