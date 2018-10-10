@@ -1,4 +1,6 @@
 # Reference Architecture for Agility
+
+**_Original Authors_**
 + Asanka Abeysinghe, Vice President - Architecture, CTO Office | asankaa@wso2.com
 + Paul Fremantle, CTO and Co-Founder | paul@wso2.com
 
@@ -106,3 +108,6 @@ Internal cells can mainly fall into one of three categories:
 + **Events** allow action in real time based on changes that occur in the environment, allowing work to be **triggered**.
 
 + **Streams** capture the ongoing evolving nature of the environment, allowing **pattern matching** and **analysis**.
+
+A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable APIs, events, and streams. The difference is how the messages/events are delivered and the underlying protocols used.
+External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
