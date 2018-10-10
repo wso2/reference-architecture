@@ -83,3 +83,6 @@ First, we discussed a segmented architecture, which is created by dividing the l
 
 **Note**: *A layered architecture and the segmented architecture will be illustrated in two different papers for organizations that are building systems using the same architecture models.*
 
+### Cell-based Architecture: enterprise view
+
+
