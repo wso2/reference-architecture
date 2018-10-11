@@ -123,3 +123,7 @@ The order cell manages the core transactions created in the system, which are or
 The customer cell represents the customer-focused functionality. It connects to an internal legacy cell to provide customer relationship management (CRM) capabilities. An external cell represents a SaaS-based CRM system.
 The promotions cell exposes the functionality using a streaming endpoint and lets the reactive order application receive information about the campaigns offered by the organization.
 
+## Section 4: Enterprise support of Cells
+
+### Inter and intra cell communication
+
