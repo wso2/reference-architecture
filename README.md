@@ -133,3 +133,11 @@ This diagram brings the data plane and the control plane concept into the cell-b
 ![cell communication](/media/ra-cell-communication.png)
 
 Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane and a data-plane outside the cells.
+
+### Governance of Cell-based Architecture
+
+![cell governance](/media/ra-cell-gov.png)
+
+The gateway is the control point for a cell-based architecture, which provides a well-defined interface to a subset of APIs, events, and streams. In this pattern, the gateway becomes the only access point (endpoint) for the cell. As a result, the gateway acts as a policy enforcement point, an observability touchpoint, and an enabler for  governance frameworks. Additionally, the gateway pattern helps to implement architectures that comply with domain-specific, technology, or business standards.
+
+The gateway pattern mandates the entire internal and external communication flow through a set of defined gateway clusters. Therefore, it is easy to enforce policies and capture the information required for observation from these gateways. This approach increases the agility of the overall architecture because  the enforcements are introduced, managed, and maintained at the gateways without changing the rest of the associated components in the ecosystem.
