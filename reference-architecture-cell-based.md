@@ -1,4 +1,4 @@
-# Cell-based Reference Architecture 
+# Cell-based Reference Architecture
 
 **_Original Authors_**
 
