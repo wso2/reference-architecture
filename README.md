@@ -144,6 +144,8 @@ The gateway pattern mandates the entire internal and external communication flow
 
 ### Security of Cell-based Architecture
 
+![security of cells](media/ra-cell-security.png)
+
 Security of the cell-based architecture is an area that deserves more detailed coverage than is being offered here. A future paper devoted to a security reference architecture for an agile enterprise is planned. However, it is worth making a few high-level points here. The main point, which needs to be clear, is that the identity and security domain within a cell may be distinct from the domain outside the cell. For example, the cell gateway may replace tokens that are valid outside the cell with alternative tokens that operate within the cell. This is because the cell may need to operate its own security rules, policies, and approaches. This encapsulation ensures that the cell can migrate without affecting the externals users. 
 However, some organizations may choose to operate a single continuous domain across multiple cells. The above diagram shows two common security patterns. Pattern-1 offers a Security Token Service (STS) inside the cell, and the local STS of the cell contains the required security metadata to authorize and authenticate the incoming requests. STS is part of the local control plane; it stores the required policies and acts as a Policy Decision Point (PDP). Pattern-2 connects to an identity provider (IDP) that resides in the conventional control plane, which is stationed outside the cells. Primarily, we would like to emphasize that the cell-based architecture can work on a local security model in the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell.  
 
