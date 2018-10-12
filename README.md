@@ -167,3 +167,16 @@ One of the main advantages architects can gain from a cell-based architecture is
 + Level-3: The **enterprise architecture** can iterate as a whole.
 
 Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
+
+## Section 6: Agile Enterprise
+
+>*“It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change. -Charles Darwin*
+
+### Agile Enterprise Users
+
+**Customers**: Today’s consumer-driven culture has empowered customers to demand the nature of the products and services provided by service providers. Service providers have to deliver and meet expectations to win and retain customers. Switching service providers is a natural process for consumers, so enterprises need to be agile, adaptive, and innovative to win customers, meet their the expectations and retain their loyalty. Setting up essential feedback channels as well as capturing end-user behavior by enabling analytics helps with understanding customer requirements. 
+
+**Employees**: Employees (AKA the digital workforce) are the primary source for creating innovative ideas, design, and implementation. Organizations need to create an open culture and a platform that engages, empowers, and entrusts their employees. This enables employees to build proof of concepts (PoCs), and prototypes, release an minimal viable product (MVP), and identify the product market fit (PMF) rapidly using an iterative approach.
+A podular architecture that results in functional, unit-based pods encourages each pod to be creative, build, run, manage, and support the service offerings that the pod owns. This approach pushes pod members to the edge and allows them to access customers directly. Digital giants in the market today, such as Amazon, eBay, Netflix, and Uber, follow the podular organization structure and operational model to be agile [2].
+
+**Partners**: A business cannot be isolated and operate alone. Connecting with other platforms is essential. We call this ecosystem a partner network. An agile business should be able to connect seamlessly with its partners, share their own business capabilities, and leverage the business capabilities offered by partners. The composability of cell-based architecture increases the ability to expose the business functionality as APIs.  Business APIs act as the digital connectors, enable seamless connectivity, and create a framework to quickly onboard partners. 
