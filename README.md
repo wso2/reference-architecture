@@ -2,8 +2,8 @@
 
 ![ra banner](/media/ra-banner.png)
 
-+ ## [Cell-based Reference Architecture](reference-architecture-cell-based.md)
++ ### [Cell-based Reference Architecture](reference-architecture-cell-based.md)
   
-+ ## Segmented Reference Architecture
++ ### Segmented Reference Architecture
   
-+ ## Layered Reference Architecture
++ ### Layered Reference Architecture
