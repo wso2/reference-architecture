@@ -156,3 +156,14 @@ However, some organizations may choose to operate a single continuous domain acr
 The lifecycle of a cell is similar to a typical application lifecycle. Each cell can have its own lifecycle stages based on the functionality, business criticality, and how the team owning the cell has organized the release pipeline. As described in the above diagram, Cell-1 is pipelined with four lifecycle stages (development, test, stage, and production) while Cell-2 contains three lifecycle stages (development, test, and production).  A cell can have multiple active versions at a given time due to the interdependencies cells create with other cells in an enterprise. Each version of the cell contains a separate lifecycle and a release pipeline. As the above diagram explains, Cell-2 has two versions: v3.00 and v2.70; while v3.00 has three stages, v2.70 has two stages.
 By utilizing the modern container-based, cloud-native infrastructures pre-production stages can spin up when required. As described in the diagram, v2.70 of Cell-2 does not have a “dev” phase (because it assumes that development is completed), but it can spin one up if needed to rollout a required a bug fix or a feature enhancement.
 
+## Section 5: Structured Agility
+
+![structured agility](media/ra-structured-agility.png)
+
+One of the main advantages architects can gain from a cell-based architecture is the extended agility provided by the cells and isolation compared to the traditional layered architecture. As mentioned before, the cell-based approach divides the enterprise architecture into individual cells. As a result, there are three levels of iterative architecture can enforce.
+
++ Level-1: **Components** inside each cell can iterate individually.
++ Level-2: Each **cell** can iterate independently.
++ Level-3: The **enterprise architecture** can iterate as a whole.
+
+Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
