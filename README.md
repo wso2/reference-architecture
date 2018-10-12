@@ -197,3 +197,19 @@ Having decentralized architecture, development, and deployment of the systems ma
 **Reference Methodology (RM)**:  A correct execution model is the delivery vehicle to provide the expected digital experience to consumers. An agile business quickly inherits new technology without affecting the productivity of existing technology and people. Innovation labs and development go hand in hand, and agile development methodologies enable an environment to experiment with new technologies. Proper onboarding programs, evangelization activities, and hackathons help to bring new technologies into the digital enterprise. 
 
 **Reference Architecture (RA)**: A blueprint is required to start, plan, execute, and deliver agile applications. The reference methodology will be built by referring to the reference architecture. Therefore, the reference architecture is the core of an agile business model.
+
+### Agile Enterprise Runtime 
+
+**Iterative and continuous**: Even though there are many endpoints available, an organization is not required to connect with all of them from day one. The integration architecture can follow an iterative approach by identifying the essential endpoints and integration flows based on priorities set by the business and consumers.
+While building application, integration or API platforms, we have to consider another platform: the automation platform. Test automation has been around for a while now, but automation has expanded to cover a broader range of tasks associated with application development and delivery. 
+
+![cicd/pipeline](media/ra-cicd-pipeline.png)
+
+The automation platform is about building a pipeline that can take code or configuration from development to run through a well managed automated process. Activities associated with the pipeline can vary from organization to organization, but Figure 5 above defines a generic approach.
+Automation is key when implementing innovative ideas and taking them to market rapidly. Automation creates an environment that allows developers and integration engineers to focus on the application development and the value they can provide for end-users while the automation framework takes care of the quality, compliance, and delivery of applications. 
+
+**Scaling and workload**: Agile businesses need to scale and handle the workload based on various fluctuations that can happen in the business. Scalability requirements are determined by user behavior, market changes, or external factors, such as weather and political movements. The ability to scale and handle the workload is vital behavior for an agile business. 
+
+**Real-time**: Users associated with an agile business (customers, partners, and employees) along with the systems connected rely on real-time information exchange, primarily due to the digital needs and experiences built around real-time data. 
+
+**Artificial Intelligence (AI)**: AI is a crosscutting concern in the agile business runtime. AI boosts the adaptability and decision-making capabilities of the business by using technologies, such as logical AI, pattern recognition, and heuristics. Capabilities provided by AI can be utilized in development environments to increase the productivity of development teams, as well as increase the end-user experience by linking AI with digital products. The cell-based architecture provides a framework to provide data for AI systems by capturing usage data from the observations. Additionally, the decentralized architecture makes it possible to plug in advanced AI features, such as automatic programming and genetic programming. Finally, AI has become an accessible technology for any enterprise as a result of the open source offerings introduced to the industry.
