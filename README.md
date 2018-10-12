@@ -21,9 +21,10 @@ This architecture is based on experience working across hundreds of projects on 
 
 The rest of the this paper is structured as follows:
 
-+ **Section 1**: Introduces the overall abstractions used.
++ [**Section 1**](#section-1:-abstractions): Introduces the overall abstractions used.
 
-+ **Section 2**: Introduces to the units of an enterprise architecture.
++ [**Section 2**](#section-2:-cell---the-units-of-an-enterprise-architecture
+): Introduces to the units of an enterprise architecture.
 
 + **Section 3**: Defines the new reference architecture. This includes a mapping to a real-world example.
 
