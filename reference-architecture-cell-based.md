@@ -1,6 +1,7 @@
-# Reference Architecture for Agility: Cell-based
+# Cell-based Reference Architecture 
 
 **_Original Authors_**
+
 + Asanka Abeysinghe, Vice President - Architecture, CTO Office | asankaa@wso2.com
 + Paul Fremantle, CTO and Co-Founder | paul@wso2.com
 
