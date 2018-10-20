@@ -12,3 +12,5 @@ A Proven approach to helping every development organization become an integratio
   Functional capabilities sub-grouped within layers based on organizational ownership. It is a centralized system where data flow moves from layer to layer.
 + ### Layered Reference Architecture
   Functional capabilities grouped in layers by following a System of Systems view. It is a centralized system where data moves from layer to layer.
+
+We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to asankaa@wso2.com.
