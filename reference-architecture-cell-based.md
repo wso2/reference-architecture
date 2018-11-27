@@ -1,9 +1,11 @@
 # Cell-based Reference Architecture
 
+_Version: Q2-2018_
+
 **_Original Authors_**
 
-+ Asanka Abeysinghe, Vice President - Architecture, CTO Office | asankaa@wso2.com
-+ Paul Fremantle, CTO and Co-Founder | paul@wso2.com
++ Asanka Abeysinghe, Vice President, Architecture - CTO Office <asankaa@wso2.com>
++ Paul Fremantle, CTO and Co-Founder <paul@wso2.com>
 
 > *This document describes a reference architecture for modern agile digital  enterprises. This reference architecture offers a logical architecture based on a disaggregated cloud-based model that can be instantiated to create an effective and agile approach for digital enterprises, deployed in private, public or hybrid cloud environments. In this paper we present the architecture, the approach to applying this architecture, and existing approaches that fit into this architecture. The architecture defined in this paper can be mapped to current architectures as well as used to define new architectures. It is designed to help move from the “as-is” towards the “to-be”.*
 
@@ -22,10 +24,9 @@ This architecture is based on experience working across hundreds of projects on 
 
 The rest of the this paper is structured as follows:
 
-+ [**Section 1**](#section-1:-abstractions): Introduces the overall abstractions used.
++ **Section 1**: Introduces the overall abstractions used.
 
-+ [**Section 2**](#section-2:-cell---the-units-of-an-enterprise-architecture
-): Introduces to the units of an enterprise architecture.
++ **Section 2**: Introduces to the units of an enterprise architecture.
 
 + **Section 3**: Defines the new reference architecture. This includes a mapping to a real-world example.
 
