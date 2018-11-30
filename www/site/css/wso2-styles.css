@@ -1,0 +1,18 @@
+/*
+  Cinder Theme for MkDocs | Copyright 2015 Christopher Simpkins | MIT License
+*/
+
+body , .nav{
+    font-family:"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+.Wrapper img{padding: 20px 0;}
+
+
+.navbar-brand img.wso2_Logo {width: 54px;}
+.table tr td {vertical-align: middle!important;}
+.table-img img{width: 75px;}
+.table-responsive tr td{font-size: 15px;}
+h1, h2, h3, h4{padding-bottom: 15px;}
+body , p {margin-bottom: 25px!important;}
+h2 {margin-top: 50px;}
+h3 {margin-top: 30px;line-height: 1.4;}

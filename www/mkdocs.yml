@@ -1,0 +1,14 @@
+site_name: WSO2
+theme:
+  name: null 
+  custom_dir: 'cinder/'
+site_author: Christopher Simpkins
+site_description: "A clean, responsive theme for static documentation websites that are generated with MkDocs"
+repo_url: "https://github.com/chrissimpkins/cinder"
+copyright: "Cinder is licensed under the <a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'>MIT license</a>"
+nav:
+  - Home: README.md
+  - Agile: reference-architecture-cell-based.md
+  - Architecture: issue_template.md
+  - Pull: pull_request_template.md
+
