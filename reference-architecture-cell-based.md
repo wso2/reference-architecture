@@ -1,6 +1,9 @@
-# Cell-based Reference Architecture
-
-_Version: Q2-2018_
+<h1 align="center"> Cell-based Reference Architecture </center></h1>
+<p align="center">
+<i>
+Version Q2-2018<br/>
+</i>
+</p>
 
 **_Original Authors_**
 
