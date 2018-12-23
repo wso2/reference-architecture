@@ -1,7 +1,7 @@
 <h1 align="center"> Cell-based Reference Architecture </center></h1>
 <p align="center">
 <i>
-Version Q2-2018<br/>
+Version Q4-2018<br/>
 </i>
 </p>
 
