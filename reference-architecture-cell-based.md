@@ -59,7 +59,7 @@ The rest of the this paper is structured as follows:
 
 ## Section 2: Cell - The Units of an Enterprise Architecture
 
-![cell definition](/media/ra-cell-definition-2.0-75%.png)
+![cell definition](/media/ra-cell-definition-2.0-75.png)
 
 A cell is a collection of components, grouped from design and implementation into deployment. A cell is independently deployable, manageable, and observable.
 Components inside the cell can communicate with each other using supported transports for intra-cell communication. External communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols.
