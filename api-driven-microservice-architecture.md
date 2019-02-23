@@ -158,7 +158,7 @@ Microservices are fine-grained, which means that clients need to interact with m
 Because of these kinds of problems, it rarely makes sense for clients to talk to microservices directly. When designing and building large or complex microservice-based applications, a good approach to consider is an API Gateway. 
 
 #### 2.4.1 API Gateway Pattern
-2.4.1.1 API Gateway
+<b>2.4.1.1 API Gateway</b>
 
 Implementing an API Gateway as the single entry point for all clients will address the issues faced in direct client-to-microservice communication. 
 
@@ -173,7 +173,7 @@ In the API gateway pattern, all requests from clients first go through well-defi
  
 Fundamentally, an API gateway provides for easy developer consumption of microservices as managed APIs and is usually a part of an API management offering. An API management platform should provide ways to onboard and manage developers, create an API catalog and documentation, generate API usage reporting, productize or monetize APIs, and enforce throttling, caching, and other security and reliability precautions. This platform provides the tools, control, and visibility to scale microservices via APIs to new developers and connect them to new systems. 
 
-API Gateway: WSO2 Solution Pattern
+<b>API Gateway: WSO2 Solution Pattern</b>
 
 ![api_gateway_wso2](/media/media_api_driven-msa/api_msa_gateway_wso2.png)  <br>
 <p align="center">
@@ -186,11 +186,11 @@ The WSO2 API Manager, recently named as a leader in the Forrester Wave™: API M
 
 Some microservices projects would be complete re-writes of all the components or just the services layer. In such cases, the developers have the luxury of selecting the technology stack to adopt the MSA pattern. The business logic can be written as Ballerina microservices. The microservices can be directly exposed to client applications via WSO2 API Manager Gateway. The gateway can secure the microservices by using a combination of OAuth2/OIDC at the edge and sending information to the microservices via Java Web Tokens (JWT). The Key Manager can handle the generation and validation of these security tokens.  The WSO2 API Manager will also provide other API management capabilities such as documentation, service discovery via the developer portal and analytics for the exposed APIs. WSO2 API Manager can be deployed as the API Gateway as shown in Figure 6 above. The WSO2 API Analytics profile is always deployed as a separate runtime. 
 
-2.4.1.2 Microservice Orchestration
+<b>2.4.1.2 Microservice Orchestration</b>
 
 Implementing microservices and having them exposed through an API Gateway layer seems to be a fitting choice when it comes to implementing a greenfield MSA. Even though the popularity of microservices is rising day by day, this doesn't mean that monolithic applications are obsolete. There are applications that are still suited for a monolithic architecture and therefore brownfield environments will continue to exist. So, in most greenfield and brownfield scenarios and with evolving business needs, which will require heavy integration of multiple microservices and other legacy systems,  the API gateway alone will not suffice. The capabilities of an Enterprise Service Bus in an SOA, such as message routing, service compositions/chaining, protocol, and message format transformations, implementing resiliency patterns and various other Enterprise Integration Patterns (EIPs), are still required in an MSA to create a cohesive experience.  How should these capabilities be absorbed into an MSA? 
 
-Integration Microservices
+<b>Integration Microservices</b>
 
 In a typical SOA, virtual composite services are exposed from an ESB layer to integrate multiple services and other systems. The ESB is used as the centralized bus that connects all these services and systems. However, this is an anti-pattern in MSA because any system that requires a lot of central management can become problematic as with any monolith. The logic is built into the pipe, thus increasing the coupling in the system. Furthermore, owing to its fundamental incompatibilities, the ESB is unable to fit into an MSA. 
 
@@ -209,7 +209,7 @@ For a configuration approach, a modern microservices-friendly ESB runtime known 
 
 On the other hand, Ballerina is a programming language and platform that aims to fill the gap between integration products and general purpose programming languages. Ballerina makes it easy to create microservices that integrate and orchestrate across distributed endpoints. It attempts to provide agility and integration simplicity simultaneously and it achieves this by packaging a language, integration syntax, and environmental deployment constructs into a single code file which is compiled into a binary, executable within a virtual machine, and then made part of a developer’s toolchain with IntelliSense language servers and debuggers for IDEs.
 
-Integration Microservices: WSO2 Solution Pattern
+<b>Integration Microservices: WSO2 Solution Pattern</b>
 
 ![integration_services_wso2](/media/media_api_driven-msa/api_msa_integration_services_wso2.png)  <br>
 <p align="center">
@@ -219,7 +219,7 @@ Figure 8 - Microservice Architecture: Integration Microservices with Ballerina o
 
 As shown in Figure 8,  both the business logic and integration logic can be written as microservices and will reside in separate runtimes. Integration services, which integrate the microservices, can be exposed to the client applications via the gateway. Ballerina can be used to write these integration microservices. At the same time, the WSO2 Micro Integrator can also be used to write the integration logic using the configuration approach. 
 
-2.4.1.3 Decentralized Gateways
+<b>2.4.1.3 Decentralized Gateways</b>
 
 Decentralized gateways are extremely useful when it comes to scaling. For example, assume a scenario when multiple instances of the products microservices are required but only one or a few instances of the orders microservices are needed. This is a realistic scenario where many requests will be received by a particular set of microservices, such as the products microservice (to browse the product catalog), but not as many requests will be received by the orders microservice (to place orders).  Imagine a single monolith API gateway architecture where all the APIs reside on the monolith gateway and microservices behind that API gateway. To scale the products microservice, the monolith gateway will have to be scaled as well.  Scaling one part of the system results in scaling the entire gateway deployment. To prevent such a situation, a decentralized gateway is a good option where there is a microgateway per microservice. Whenever a microservice needs to be scaled, only the gateway that fronts this microservice will be scaled along with the microservice. 
 
@@ -229,11 +229,11 @@ Decentralized gateways are extremely useful when it comes to scaling. For exampl
 <br/>
 </i>
 
-Decentralized Gateways: WSO2 Solution Pattern
+<b>Decentralized Gateways: WSO2 Solution Pattern</b>
 
 WSO2 API Microgateway is an immutable, ephemeral and lightweight API gateway. The microgateway is used for message security, transport security, routing, and other common API management services. The WSO2 Microgateway is designed to scale, where it does not require any mandatory connections to other components, such as the Key Manager, Analytics, Traffic Manager, etc. as it is done with the standard monolithic WSO2 API Manager. This way it can be made to scale easily without having to worry about scaling the other components. This is achieved through self-validating tokens, localized rate limiting, offline analytics, and immutability.  The microgateway has native support for Docker and Kubernetes, and developers can obtain Docker images and Kubernetes artifacts as the build outcome of a microgateway. 
 
-![wso2_microgateways](/media/media/api_msa_microgateways_wso2.png)  <br>
+![wso2_microgateways](/media/media_api_driven-msa/api_msa_microgateways_wso2.png)<br>
 <p align="center">
 <i>Figure 10 - Microservice Architecture: Decentralized Gateways with WSO2 Microgateways
 <br/>
@@ -243,7 +243,7 @@ In Figure 10, the disaggregated gateway approach is followed, where each gateway
 
 The microgateway supports the standard OAuth2 flow, where a client application will first get a signed JWT token issued by the Security Token Service (STS), which can be the Key Manager of the WSO2 API Manager or any other STS. When the client application sends the signed JWT to the microgateway, the microgateway can self-validate the token as the STS is trusted by the microgateway. In this particular scenario, the microgateway has no link to the Key Manager. If the microgateway needs to be scaled, it can be done without having to scale the STS. For analytics, meta information of the API requests is logged into data files residing in the local file system of the microgateway (shared or private). Subsequently, these files will be uploaded periodically to the API Analytics server (this process can run in the gateway process itself or in a separate process). The API Analytics server will analyze the raw data and generate business intelligence. For traffic management, rate limiting policies are embedded into the microgateway runtime.
 
-2.4.1.4 API Gateways vs Service Meshes
+<b>2.4.1.4 API Gateways vs Service Meshes</b>
 
 One of the frequently asked questions regarding the API gateway is how it is different from a service mesh. A service mesh handles microservice-to-microservice interactions and are used for complicated routing. It can perform tasks such as load balancing, service authentication, service discovery, routing, and policy enforcement. A service mesh can also provide detailed insights into the microservices environment, control traffic, implement security, and enforce policies for all services within the mesh. There are two logical components that create a service mesh: a data plane and a control plane. The sidecar, which is a proxy to the microservice, falls under the data plane. Other than sidecar proxies, all service mesh solutions have a controller (control plane), which defines how sidecar proxies should work. The service mesh control plane is the central place to manage the service proxies and it records a lot of network information. 
 
@@ -302,7 +302,7 @@ Most microservices projects are implemented in brownfield environments which alr
 
 In the architecture above, a layered MSA also coexists with the SOA. New functionality can be implemented within the MSA and the existing services and applications in the SOA can reside as-is. 
 
-3.1.2.1 Transitioning from a Monolith to a Microservice Architecture
+<b>3.1.2.1 Transitioning from a Monolith to a Microservice Architecture</b>
 
 An advantage of introducing a gateway to an MSA is the ability to smoothly and continuously move from a monolith app to an MSA. Rewriting a large monolith application from scratch is a massive effort and has a good amount of risk associated with it. This also prevents users from using the new system until it is complete. There will be a lot of uncertainty involved until the new system is developed and functioning as expected. Consequently, there will be minimal enhancements or new features delivered on the current platform, so the business will have to wait to have any new features developed and released. This task will, most often than not, have to be phased out.
 
