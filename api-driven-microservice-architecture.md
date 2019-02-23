@@ -98,7 +98,7 @@ MSA is an evolution of Service Oriented Architecture (SOA) and adopting an MSA i
 
 |  |
 |--|
-|![monolithic_architecture](/media/media_api_driven-msa/api_msa_monolithic_architecture.png) <br> <p align="center"> <b>Monolithic Architecture </b> </p> ![microservice_architecture](/media_api_driven-msa/api_msa_msa_p2p.png)  <br> <p align="center"> <b>Microservice Architecture </b>|
+|![monolithic_architecture](/media/media_api_driven-msa/api_msa_monolithic_architecture.png) <br> <p align="center"> <b>Monolithic Architecture </b> </p> ![microservice_architecture](/media/media_api_driven-msa/api_msa_msa_p2p.png)  <br> <p align="center"> <b>Microservice Architecture </b>|
 |
 
 <p align="center">
