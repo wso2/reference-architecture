@@ -13,42 +13,42 @@ Version Q1-2019<br/>
 
 > *Microservice Architecture (MSA) is an excellent approach to building decentralized systems. However, microservices are too granular when it comes to architecting larger systems and projects in the brownfield. Most enterprises follow a layered architecture with both Service-oriented Architecture (SOA) principles and MSA concepts by grouping the services or microservices into layers in the overall enterprise architecture. This approach makes each architecture layer a logically centralized set of shared components.*
 
-> *This paper will introduce microservices and will predominantly discuss the layered approach for an API-driven MSA. It will introduce ways of gradually transitioning from a monolithic architecture to a layered MSA via the API gateway pattern using WSO2 middleware and recommended technologies. This paper will also briefly cover other reference architectures such as segmented architecture, which is a subpattern of layered architecture, and the alternative reference architecture known as cell-based architecture. This paper will only cover the request-response communication style for client-microservice communication and a separate paper will discuss the event-driven communication style.*  
+> *This paper will introduce microservices and will predominantly discuss the layered approach for an API-driven MSA. It will introduce ways of gradually transitioning from a monolithic architecture to a layered MSA via the API gateway pattern using WSO2 middleware and recommended technologies. This paper will also briefly cover other reference architectures such as segmented architecture, which is a subpattern of layered architecture, and the alternative reference architecture known as cell-based architecture. This paper will only cover the request-response communication style for client-microservice communication and a separate paper will discuss the event-driven communication style.*
 
 ## Table of Contents
 - 1.0 Introduction
 - 2.0 Microservice Architecture (MSA)	
   - 2.1 Key Characteristics
-  - 2.2 Microservice Architecture: Benefits and Drawbacks  	
-  - 2.3 MSA Implementation  
-  - 2.4 Client-to-Microservice Communication  	
-    - 2.4.1 API Gateway Pattern  
-      - 2.4.1.1 API Gateway	  
+  - 2.2 Microservice Architecture: Benefits and Drawbacks 
+  - 2.3 MSA Implementation
+  - 2.4 Client-to-Microservice Communication
+    - 2.4.1 API Gateway Pattern
+      - 2.4.1.1 API Gateway
         - API Gateway: WSO2 Solution Pattern  	
-      - 2.4.1.2 Microservice Orchestration	  
+      - 2.4.1.2 Microservice Orchestration
         - Integration Microservices	  
         - Integration Microservices: WSO2 Solution Pattern  	
-      - 2.4.1.3 Decentralized Gateways  	
+      - 2.4.1.3 Decentralized Gateways
         - Decentralized Gateways: WSO2 Solution Pattern  	
-      - 2.4.1.4 API Gateways vs Service Meshes  	
-- 3.0 Microservice Architecture - Reference Architectures	  
-  - 3.1 Layered Microservice Architecture  	
-    - 3.1.1 Layered Architecture with WSO2: A Greenfield Deployment  	
-    - 3.1.2 Layered Architecture with WSO2: A Brownfield Deployment  
+      - 2.4.1.4 API Gateways vs Service Meshes
+- 3.0 Microservice Architecture - Reference Architectures
+  - 3.1 Layered Microservice Architecture
+    - 3.1.1 Layered Architecture with WSO2: A Greenfield Deployment
+    - 3.1.2 Layered Architecture with WSO2: A Brownfield Deployment
       - 3.1.2.1 Transitioning from a Monolith to a Microservice Architecture
-  - 3.2 Segmented Microservice Architecture  	
-    - 3.2.1 Segmented Microservice Architecture with WSO2  	
-  - 3.3 Cell-based Microservice Architecture  	
-- 4.0 Installation Experience	  
-  - 4.1 Continuous Integration and Continuous Deployment  	
-  - 4.2 The Technology Stack  	
-- 5.0 Summary	  
+  - 3.2 Segmented Microservice Architecture
+    - 3.2.1 Segmented Microservice Architecture with WSO2
+  - 3.3 Cell-based Microservice Architecture
+- 4.0 Installation Experience
+  - 4.1 Continuous Integration and Continuous Deployment
+  - 4.2 The Technology Stack
+- 5.0 Summary
 - References	
 
 ## 1.0 Introduction
-In an age when delivering great digital experiences is more important than ever,  business success lies in offering agile digital services with high customer satisfaction. There needs to be an alignment between the overall corporate strategy and the pursued digital initiatives in order to transform the core business architecture to a digital architecture. A digital architecture is one that fosters rapid integration of new technologies to fuel digital transformation. To elaborate, a digital architecture is composed of a stack of layers that support the business value chain. Underpinning it all is the technology layer, which encompasses the application, API management, security, analytics, integration, services and data layers, and core infrastructure.  
+In an age when delivering great digital experiences is more important than ever,  business success lies in offering agile digital services with high customer satisfaction. There needs to be an alignment between the overall corporate strategy and the pursued digital initiatives in order to transform the core business architecture to a digital architecture. A digital architecture is one that fosters rapid integration of new technologies to fuel digital transformation. To elaborate, a digital architecture is composed of a stack of layers that support the business value chain. Underpinning it all is the technology layer, which encompasses the application, API management, security, analytics, integration, services and data layers, and core infrastructure.
 
-![digital_architecture](media/media_api_driven-msa/api_msa_digital_architecture.png)
+![digital_architecture](/media/media_api_driven-msa/api_msa_digital_architecture.png)
 <p align="center">
 <i>
 Figure 1 - A Typical Digital Architecture<br/>
@@ -59,7 +59,7 @@ A microservice architecture (MSA) is a method of developing software application
 
 At the same time, most organizations are not fully ready to adopt a pure MSA. Even though an MSA approach is followed for newer development, many conventional systems, such as SOA systems, Enterprise Service Bus (ESB), PaaS/SaaS applications, and any other monolithic vertical deployments of legacy applications will remain a part of an enterprise’s overall topology. These brownfield systems cannot be ignored and will have to be accessed by the microservices (at least during the transition period). These systems and services will have to be exposed via managed APIs for seamless internal and external access. 
 
-By considering the above facts, the holistic view of an MSA-enabled digital architecture can be divided  into three zones as given below:  
+By considering the above facts, the holistic view of an MSA-enabled digital architecture can be divided  into three zones as given below:
 - Zone 1: Inner Architecture 
 - Zone 2: Outer Architecture 
 - Zone 3: External Architecture 
@@ -78,7 +78,7 @@ Table 1 - MSA Architecture Zones<br/>
 
 Consequently, an MSA-enabled digital architecture will closely resemble the architecture depicted in Figure 2 below. 
 
-![msa_enabled-da](media/media_api_driven-msa/api_msa_msa_enabled-da.png)
+![msa_enabled-da](/media/media_api_driven-msa/api_msa_msa_enabled-da.png)
 
 <p align="center">
 <i>
@@ -98,7 +98,7 @@ MSA is an evolution of Service Oriented Architecture (SOA) and adopting an MSA i
 
 |  |
 |--|
-|![monolithic_architecture](media/media_api_driven-msa/api_msa_monolithic_architecture.png) <br> <p align="center"> <b>Monolithic Architecture </b> </p> ![microservice_architecture](/media_api_driven-msa/api_msa_msa_p2p.png)  <br> <p align="center"> <b>Microservice Architecture </b>|
+|![monolithic_architecture](/media/media_api_driven-msa/api_msa_monolithic_architecture.png) <br> <p align="center"> <b>Monolithic Architecture </b> </p> ![microservice_architecture](/media_api_driven-msa/api_msa_msa_p2p.png)  <br> <p align="center"> <b>Microservice Architecture </b>|
 |
 
 <p align="center">
@@ -124,7 +124,7 @@ Like every other technology, the Microservice Architecture has drawbacks and is 
 - Decomposing data and processing them into independent microservices can increase the complexity of the design.
   - A client application has to know several endpoints to perform any meaningful function and each microservice has to know about at least one or two other microservices e.g. how to interact, IP addresses, etc.
   - Developers must differentiate between internal and external microservices and implement the inter-service communication mechanism between these types. Also, client-side and server-side service discovery is crucial.
-  - Developers must also write code to handle partial failure since the destination of a request might be slow or unavailable. They also need to handle distributed transactions to implement use cases that span multiple services.  
+  - Developers must also write code to handle partial failure since the destination of a request might be slow or unavailable. They also need to handle distributed transactions to implement use cases that span multiple services.
 - Client applications will struggle to consume the services because of variations in interfaces and security protocols due to different teams implementing the microservices. 
 - Microservices leads to more network calls and hence a monolith given the same hardware usually performs better. 
 - Developer tools/IDEs are oriented on building monolithic applications and don’t provide explicit support for developing distributed applications.
@@ -140,7 +140,7 @@ Once the microservices are defined and implemented, they should be containerized
 
 ### 2.4 Client-to-Microservice Communication
 
-![microservice_architecture](media/media_api_driven-msa/api_msa_msa.png)  <br>
+![microservice_architecture](/media/media_api_driven-msa/api_msa_msa.png)  <br>
 <p align="center">
 <i>
 Figure 4 - Microservice Architecture: An Example
@@ -162,7 +162,7 @@ Because of these kinds of problems, it rarely makes sense for clients to talk to
 
 Implementing an API Gateway as the single entry point for all clients will address the issues faced in direct client-to-microservice communication. 
 
-![microservice_architecture](media/media_api_driven-msa/api_msa_gateway.png)  <br>
+![microservice_architecture](/media/media_api_driven-msa/api_msa_gateway.png)  <br>
 <p align="center">
 <i>
 Figure 5 - Microservice Architecture: API Gateway Pattern
@@ -175,7 +175,7 @@ Fundamentally, an API gateway provides for easy developer consumption of microse
 
 API Gateway: WSO2 Solution Pattern
 
-![api_gateway_wso2](media/media_api_driven-msa/api_msa_gateway_wso2.png)  <br>
+![api_gateway_wso2](/media/media_api_driven-msa/api_msa_gateway_wso2.png)  <br>
 <p align="center">
 <i>
 Figure 6 - Greenfield MSA: The API Gateway Pattern  with WSO2 API Manager
@@ -196,22 +196,22 @@ In a typical SOA, virtual composite services are exposed from an ESB layer to in
 
 As an alternative to a centralized ESB, implementing integration microservices is the best option from an MSA point of view. In this approach, integration or composite services will be hosted as a second layer of microservices.  These services often have to support ESB functionality such as routing, transformations, orchestration, resilience and stability patterns. If we take the retail application example, we can build an integration microservice which consumes the orders and shipping microservices as shown below. As opposed to the monolithic ESB approach, all ESB/integration functionalities are segregated and dispersed among all the integration microservices. 
 
-![integration_services](media/media_api_driven-msa/api_msa_integration_services.png)  <br>
+![integration_services](/media/media_api_driven-msa/api_msa_integration_services.png)  <br>
 <p align="center">
 <i>
 Figure 7 - Microservice Architecture: Integration Microservices
 <br/>
 </i>
 
-WSO2 has come up with two ways of implementing such integration microservices.  
+WSO2 has come up with two ways of implementing such integration microservices.
 
-For a configuration approach, a modern microservices-friendly ESB runtime known as the WSO2 Micro Integrator can be used. WSO2 Micro Integrator is a lightweight runtime built using the same technology as the WSO2 Enterprise Service Bus. The logic is authored in XML. Various Enterprise Integration Patterns can be implemented and numerous other applications can be connected via connectors.  
+For a configuration approach, a modern microservices-friendly ESB runtime known as the WSO2 Micro Integrator can be used. WSO2 Micro Integrator is a lightweight runtime built using the same technology as the WSO2 Enterprise Service Bus. The logic is authored in XML. Various Enterprise Integration Patterns can be implemented and numerous other applications can be connected via connectors.
 
 On the other hand, Ballerina is a programming language and platform that aims to fill the gap between integration products and general purpose programming languages. Ballerina makes it easy to create microservices that integrate and orchestrate across distributed endpoints. It attempts to provide agility and integration simplicity simultaneously and it achieves this by packaging a language, integration syntax, and environmental deployment constructs into a single code file which is compiled into a binary, executable within a virtual machine, and then made part of a developer’s toolchain with IntelliSense language servers and debuggers for IDEs.
 
 Integration Microservices: WSO2 Solution Pattern
 
-![integration_services_wso2](media/media_api_driven-msa/api_msa_integration_services_wso2.png)  <br>
+![integration_services_wso2](/media/media_api_driven-msa/api_msa_integration_services_wso2.png)  <br>
 <p align="center">
 <i>
 Figure 8 - Microservice Architecture: Integration Microservices with Ballerina or WSO2 Micro Integrator<br/>
@@ -223,7 +223,7 @@ As shown in Figure 8,  both the business logic and integration logic can be writ
 
 Decentralized gateways are extremely useful when it comes to scaling. For example, assume a scenario when multiple instances of the products microservices are required but only one or a few instances of the orders microservices are needed. This is a realistic scenario where many requests will be received by a particular set of microservices, such as the products microservice (to browse the product catalog), but not as many requests will be received by the orders microservice (to place orders).  Imagine a single monolith API gateway architecture where all the APIs reside on the monolith gateway and microservices behind that API gateway. To scale the products microservice, the monolith gateway will have to be scaled as well.  Scaling one part of the system results in scaling the entire gateway deployment. To prevent such a situation, a decentralized gateway is a good option where there is a microgateway per microservice. Whenever a microservice needs to be scaled, only the gateway that fronts this microservice will be scaled along with the microservice. 
 
-![microgateways](media/media_api_driven-msa/api_msa_microgateways.png)  <br>
+![microgateways](/media/media_api_driven-msa/api_msa_microgateways.png)  <br>
 <p align="center">
 <i>Figure 9 - Microservice Architecture: Decentralized Gateways
 <br/>
@@ -233,7 +233,7 @@ Decentralized Gateways: WSO2 Solution Pattern
 
 WSO2 API Microgateway is an immutable, ephemeral and lightweight API gateway. The microgateway is used for message security, transport security, routing, and other common API management services. The WSO2 Microgateway is designed to scale, where it does not require any mandatory connections to other components, such as the Key Manager, Analytics, Traffic Manager, etc. as it is done with the standard monolithic WSO2 API Manager. This way it can be made to scale easily without having to worry about scaling the other components. This is achieved through self-validating tokens, localized rate limiting, offline analytics, and immutability.  The microgateway has native support for Docker and Kubernetes, and developers can obtain Docker images and Kubernetes artifacts as the build outcome of a microgateway. 
 
-![wso2_microgateways](media/media/api_msa_microgateways_wso2.png)  <br>
+![wso2_microgateways](/media/media/api_msa_microgateways_wso2.png)  <br>
 <p align="center">
 <i>Figure 10 - Microservice Architecture: Decentralized Gateways with WSO2 Microgateways
 <br/>
@@ -249,7 +249,7 @@ One of the frequently asked questions regarding the API gateway is how it is dif
 
 Istio is the most popular and comprehensive service mesh platform in the market at the time of this writing. By using the sidecar model, Istio runs in a Linux container in Kubernetes pods and injects and extracts functionality and information based on the controller configuration. This configuration lives outside of the microservice code and therefore makes the code small and simple by moving operational aspects away from code development. 
 
-![service_mesh](/media_api_driven-msa/api_msa_service_mesh.png)  <br>
+![service_mesh](/media/media_api_driven-msa/api_msa_service_mesh.png)  <br>
 <p align="center">
 <i>Figure 11 - Control Plane and Data Plane in a Service Mesh 
 <br/>
@@ -257,9 +257,9 @@ Istio is the most popular and comprehensive service mesh platform in the market 
 
 Even though the API gateway and the service mesh have overlapping capabilities,  the key difference between them is that the API gateway is fundamental in exposing microservices as managed APIs to external (outside the MSA) parties whereas the service mesh is merely an inter-service communication infrastructure which doesn’t have any business notion of the entire solution. Developers can either use in-built inter-service communication capabilities of the API gateway or let the API gateway call the backend microservices via the service mesh by offloading application network functions to the latter. The microgateway can be used in this way as shown in the diagram below.
 
-![api_gateways_and_service_mesh](media/media_api_driven-msa/api_msa_microgateways_and_service_mesh.png)  <br>
+![api_gateways_and_service_mesh](/media/media_api_driven-msa/api_msa_microgateways_and_service_mesh.png)  <br>
 <p align="center">
-<i>Figure 12 - API Gateways and Service Meshes in Co-existence  
+<i>Figure 12 - API Gateways and Service Meshes in Co-existence
 <br/>
 </i>
 
@@ -267,13 +267,13 @@ Even though the API gateway and the service mesh have overlapping capabilities, 
 ### 3.1 Layered Microservice Architecture 
 Most enterprises follow a layered architecture with both SOA principles and MSA concepts by grouping the services or microservices into layers in the overall enterprise architecture. This approach makes each architecture layer a logically centralized set of shared components.
 
-![layered_msa](media/media_api_driven-msa/api_msa_layered_msa.png)  <br>
+![layered_msa](/media/media_api_driven-msa/api_msa_layered_msa.png)  <br>
 <p align="center">
 <i>Figure 13  - Microservices Layered Architecture 
 <br/>
 </i>
 
-In this MSA pattern, functional capabilities are grouped in layers by following a system of systems view. It is a centralized system where data moves from layer to layer. With the gateway layer also being disaggregated, a pure MSA can be implemented with different types of services that can be categorized into a few different layers as shown in Figure 13 above.  
+In this MSA pattern, functional capabilities are grouped in layers by following a system of systems view. It is a centralized system where data moves from layer to layer. With the gateway layer also being disaggregated, a pure MSA can be implemented with different types of services that can be categorized into a few different layers as shown in Figure 13 above.
 
 Core/Atomic microservices are placed at the bottom layer. They are extremely fine-grained self-contained services (with no external service dependencies) comprising the business logic with little or no network communication logic. 
 
@@ -283,7 +283,7 @@ API/Edge microservices are the third type of microservices and topmost in a laye
 
 #### 3.1.1 Layered Architecture with WSO2: A Greenfield Deployment
 
-![greenfield_layered_msa_wso2](media/media_api_driven-msa/api_msa_greenfield_layered_msa.png)  <br>
+![greenfield_layered_msa_wso2](/media/media_api_driven-msa/api_msa_greenfield_layered_msa.png)  <br>
 <p align="center">
 <i>Figure 14 - Microservices Layered Architecture with the WSO2 Technology Stack 
 <br/>
@@ -294,7 +294,7 @@ Management of microservices is handled by WSO2 API Microgateway, which provides 
 #### 3.1.2 Layered Architecture with WSO2: A Brownfield Deployment
 Most microservices projects are implemented in brownfield environments which already have legacy, cloud, and other services, an ESB environment, etc. In such a scenario, a complete rewrite is usually costly. A typical approach is where newer services are implemented as microservices and a separate layered architecture (integration microservices and microgateways along with the core microservices) will be formed while the existing SOA environment (web services, APIs, legacy systems and ESB layer) remain as-is. The ESB will continue to integrate multiple services and other systems and will be used as the centralized bus that connects all these services and systems outside the MSA. These endpoints on the ESB will be exposed to the client applications through the centralized API gateway where they will be secured, throttled and monitored. 
 
-![brownfield_layered_msa_wso2](media/media_api_driven-msa/api_msa_brownfield_layered_msa.png)  <br>
+![brownfield_layered_msa_wso2](/media/media_api_driven-msa/api_msa_brownfield_layered_msa.png)  <br>
 <p align="center">
 <i>Figure 15 - MSA Layered Architecture and SOA in Coexistence with the WSO2 Stack
 <br/>
@@ -308,7 +308,7 @@ An advantage of introducing a gateway to an MSA is the ability to smoothly and c
 
 Known as the Strangler Pattern, this is a design pattern to incrementally transform the monolith into microservices by replacing a particular functionality with a new service. Once the new functionality is ready, the old component is strangled, the new service is put into use, and finally, the old component is decommissioned altogether. However, when phasing out, chances are that there will be a lot of change.  The microservice interfaces will change and doing this over time will result in a nightmare for consuming applications. To make the client applications agnostic to such frequent changes,  the API gateway can be used as the Strangler Facade. 
 
-![strangler_facade](media/media_api_driven-msa/api_msa_strangler_facade.png)  <br>
+![strangler_facade](/media/media_api_driven-msa/api_msa_strangler_facade.png)  <br>
 <p align="center">
 <i>Figure 16 - Microservice Architecture: The Strangler Facade in the Strangler Pattern
 <br/>
@@ -319,14 +319,14 @@ As the Strangler Facade, the API gateway will act as a proxy layer with static o
 ### 3.2 Segmented Microservice Architecture 
 The segmented architecture is a subpattern of the layered architecture, which is created by dividing the layered architecture into small segments based on the functional capabilities within each architecture layer and organizational ownership. It is also a centralized system where data flow moves from layer to layer. This pattern segregates the layers of each subdivision and makes the subdivision responsible for its overall functionality at each layer. 
 
-![segmented_msa](media/media_api_driven-msa/api_msa_segmented_msa.png)  <br>
+![segmented_msa](/media/media_api_driven-msa/api_msa_segmented_msa.png)  <br>
 <p align="center">
 <i>Figure 17 - MSA Segmented Architecture
 <br/>
 </i>
 
 #### 3.2.1 Segmented Microservice Architecture with WSO2
-![segmented_msa_wso2](media/media_api_driven-msa/api_msa_segmented_msa_wso2.png)  <br>
+![segmented_msa_wso2](/media/media_api_driven-msa/api_msa_segmented_msa_wso2.png)  <br>
 <p align="center">
 <i>Figure 18 - MSA Segmented Architecture with WSO2 Technology Stack
 <br/>
@@ -341,7 +341,7 @@ Similar to the layered architecture, the WSO2 components can be used in a layere
 
 A segmented architecture is too high-level to enforce a decentralized, self-contained architecture unit. At the same time, microservices are usually too fine-grained to be treated as an architecture unit. In a cell-based architecture, functional capabilities are grouped in an architecture unit, known as a cell, based on scope and ownership. A cell is independently deployable, manageable, and observable. Components inside the cell can communicate with each other using supported transports for intra-cell communication. All external communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols. Teams can self-organize to produce units of architecture which are continuously deployed and incrementally updated. The cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization. 
 
-![cell](media/media_api_driven-msa/api_msa_cell.png)  <br>
+![cell](/media/media_api_driven-msa/api_msa_cell.png)  <br>
 <p align="center">
 <i>Figure 19 - A Self-contained Architecture Unit: Cell
 <br/>
@@ -349,7 +349,7 @@ A segmented architecture is too high-level to enforce a decentralized, self-cont
 
 The gateway is the control point for a cell-based architecture, which provides a well-defined interface to a subset of APIs, events, and streams. In this pattern, the gateway becomes the only access point (endpoint) for the cell. As a result, the gateway acts as a policy enforcement point, an observability touchpoint, and an enabler for governance frameworks.  The cell-based architecture can work on a local security model within the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell. 
 
-![cell_wso2](media/media_api_driven-msa/api_msa_cell_wso2.png)  <br>
+![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png)  <br>
 <p align="center">
 <i>Figure 20 - Cell: A WSO2 Mapping<br/>
 </i>
@@ -357,7 +357,7 @@ The gateway is the control point for a cell-based architecture, which provides a
 
 Figure 21  depicts a portion of a cell-based architecture mapped with WSO2 components where application functionality is divided into multiple cells. Each cell contains different components for building the expected functionality. 
 
-![cell_implementation_wso2](media/media_api_driven-msa/api_msa_cell_implementation_wso2.png)  <br>
+![cell_implementation_wso2](/media/media_api_driven-msa/api_msa_cell_implementation_wso2.png)  <br>
 <p align="center">
 <i>Figure 21 - Cell-Based Architecture: A WSO2 Implementation<br/>
 </i>
@@ -370,12 +370,12 @@ To create great digital experiences, adopting the ‘continuouses’ is no longe
 
 Each microservice will have its own CI/CD pipeline. CI/CD channels need to be set up so that changes to the source code automatically result in a new container being built, tested and deployed in staging and eventually pushed to production. Autonomous teams will own the entire lifecycle of a microservice. The team will continuously work on enhancing the features of the microservice and fixing the issues that are encountered in production. The CI/CD pipeline for each microservice will be as shown in Figure 22.
 
-![ci_cd](media/media_api_driven-msa/api_msa_ci_cd.png) <br>
+![ci_cd](/media/media_api_driven-msa/api_msa_ci_cd.png) <br>
 <p align="center">
 <i>Figure 22 - CI/CD Pipeline for Microservices<br/>
 </i>
 
-![ci_cd_msa](media/media_api_driven-msa/api_msa_ci_cd_msa.png) <br>
+![ci_cd_msa](/media/media_api_driven-msa/api_msa_ci_cd_msa.png) <br>
 <p align="center">
 <i>Figure 23 - CI/CD Pipeline for Microservices<br/>
 </i>
@@ -388,7 +388,7 @@ Each microservice will have its own CI/CD pipeline. CI/CD channels need to be se
 6. The orchestration engine then pulls the latest release from the repository and deploys it in production. 
 7. All the instances in production are monitored by automated tools that generate alerts for the team if there are any issues. Once alerted, the team fixes the issues and submits the change request to the version control system that triggers the build. The entire process then repeats to push the changes to production.
 
-The orchestration engine generally does a rolling upgrade of the service while deploying updates. This enables the microservices to be upgraded without any downtime. Some teams prefer to do a Blue/Green deployment while others prefer a Canary Release.  
+The orchestration engine generally does a rolling upgrade of the service while deploying updates. This enables the microservices to be upgraded without any downtime. Some teams prefer to do a Blue/Green deployment while others prefer a Canary Release.
 
 The core microservices and integration microservice written in Ballerina in an MSA can seamlessly fit into a CI/CD pipeline. All the changes in a microservice can be committed to a version control repository, such as Git. Ballerina is shipped with its own build system and module management and also works with CI/CD tools such as Jenkins and Codefresh. It can generate deployment artifacts during compilation and run unit tests. Furthermore, it has built-in container support; in other words, Ballerina provides annotations to generate Docker images and Kubernetes artifacts. 
 
