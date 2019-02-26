@@ -344,7 +344,7 @@ Similar to the layered architecture, the WSO2 components can be used in a layere
 
 A segmented architecture is too high-level to enforce a decentralized, self-contained architecture unit. At the same time, microservices are usually too fine-grained to be treated as an architecture unit. In a cell-based architecture, functional capabilities are grouped in an architecture unit, known as a cell, based on scope and ownership. A cell is independently deployable, manageable, and observable. Components inside the cell can communicate with each other using supported transports for intra-cell communication. All external communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols. Teams can self-organize to produce units of architecture which are continuously deployed and incrementally updated. The cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization. 
 
-
+<!--
 ![cell](/media/media_api_driven-msa/api_msa_cell.png)  <br>
 
 
@@ -352,21 +352,22 @@ A segmented architecture is too high-level to enforce a decentralized, self-cont
 <i>Figure 19 - A Self-contained Architecture Unit: Cell
 <br/>
 </i>
+-->
 
 The gateway is the control point for a cell-based architecture, which provides a well-defined interface to a subset of APIs, events, and streams. In this pattern, the gateway becomes the only access point (endpoint) for the cell. As a result, the gateway acts as a policy enforcement point, an observability touchpoint, and an enabler for governance frameworks.  The cell-based architecture can work on a local security model within the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell. 
 
-
+<!--
 ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png)  <br>
 
 
 <p align="center">
 <i>Figure 20 - Cell: A WSO2 Mapping<br/>
-</i>
+</i> -->
 
 | | |
 |--|--|
-|![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) | ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png)|
-|<i>Figure 20 - Cell: A WSO2 Mapping|<i>Figure 21 - Cell-Based Architecture: A WSO2 Implementation|
+|![cell](/media/media_api_driven-msa/api_msa_cell.png) <br> <i>Figure 19 - A Self-contained Architecture Unit: Cell| ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) <br> <i>Figure 20 - Cell: A WSO2 Mapping<br/>|
+
 
 
 Figure 21  depicts a portion of a cell-based architecture mapped with WSO2 components where application functionality is divided into multiple cells. Each cell contains different components for building the expected functionality. 
