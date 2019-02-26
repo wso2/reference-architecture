@@ -412,7 +412,7 @@ Organizations that do implement microservices often adopt the MSA style along wi
 
 <p align="center">
 <i>
-Table 2: Technologies that Enable an MSA 
+Table 2: Useful Technologies for an MSA 
 <br/>
 </i>
 </p>
