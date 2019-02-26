@@ -54,9 +54,9 @@ In an age when delivering great digital experiences is more important than ever,
  <!-- <div style="display: flex; justify-content: center;">
   <img src="./media/media_api_driven-msa/api_msa_digital_architecture.png" style="width: 500px; height: 500px;" />
 </div> -->
-<p align="center">
+
   <img src="./media/media_api_driven-msa/api_msa_digital_architecture.png" style="width: 500px; height: 400px;" />
-</p>
+
 
 <p align="center">
 <i>
