@@ -344,39 +344,21 @@ Similar to the layered architecture, the WSO2 components can be used in a layere
 
 A segmented architecture is too high-level to enforce a decentralized, self-contained architecture unit. At the same time, microservices are usually too fine-grained to be treated as an architecture unit. In a cell-based architecture, functional capabilities are grouped in an architecture unit, known as a cell, based on scope and ownership. A cell is independently deployable, manageable, and observable. Components inside the cell can communicate with each other using supported transports for intra-cell communication. All external communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols. Teams can self-organize to produce units of architecture which are continuously deployed and incrementally updated. The cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization. 
 
-<!--
-![cell](/media/media_api_driven-msa/api_msa_cell.png)  <br>
-
-
-<p align="center">
-<i>Figure 19 - A Self-contained Architecture Unit: Cell
-<br/>
-</i>
--->
-
 The gateway is the control point for a cell-based architecture, which provides a well-defined interface to a subset of APIs, events, and streams. In this pattern, the gateway becomes the only access point (endpoint) for the cell. As a result, the gateway acts as a policy enforcement point, an observability touchpoint, and an enabler for governance frameworks.  The cell-based architecture can work on a local security model within the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell. 
 
-<!--
-![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png)  <br>
-
-
-<p align="center">
-<i>Figure 20 - Cell: A WSO2 Mapping<br/>
-</i> -->
-
-<!--| | | --> 
-|![cell](/media/media_api_driven-msa/api_msa_cell.png) <br> <i>Figure 19 - A Single Architecture Unit: Cell| ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) <br> <i>Figure 20 - Cell: A WSO2 Mapping<br/>|
+|![cell](/media/media_api_driven-msa/api_msa_cell.png) <br> <i><p align="center">A Single Cell| ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) <br> <i><p align="center">Cell: A WSO2 Mapping<br/>|
 |--|--|
 
+<p align="center">
+<i>Figure 19 - Cell: A Self-contained Architecture Unit <br/>
+</i> 
 
-
-
-Figure 21  depicts a portion of a cell-based architecture mapped with WSO2 components where application functionality is divided into multiple cells. Each cell contains different components for building the expected functionality. 
+Figure 20  depicts a portion of a cell-based architecture mapped with WSO2 components where application functionality is divided into multiple cells. Each cell contains different components for building the expected functionality. 
 
 ![cell_implementation_wso2](/media/media_api_driven-msa/api_msa_cell_implementation_wso2.png)  <br>
 
 <p align="center">
-<i>Figure 21 - Cell-Based Architecture: A WSO2 Implementation<br/>
+<i>Figure 20 - Cell-Based Architecture: A WSO2 Implementation<br/>
 </i>
 
 
@@ -385,16 +367,16 @@ Figure 21  depicts a portion of a cell-based architecture mapped with WSO2 compo
 ### 4.1 Continuous Integration and Continuous Deployment
 To create great digital experiences, adopting the ‘continuouses’ is no longer a ‘nice-to-have’ because speed to market can break a company or enable it to survive and thrive into the future. In many leading businesses, the shift from a single development pipeline to multiple pipelines, and from waterfall development to automated continuous integration/continuous delivery (CI/CD) processes that facilitate rapid iteration, is already happening, and microservices are a major driver. The distributed and independent nature of microservices lends itself naturally to implement continuous integration (CI) and continuous deployment (CD). The infrastructure required for the team to integrate, test, and deploy any changes must be completely automated. This promotes a highly responsive user experience. 
 
-Each microservice will have its own CI/CD pipeline. CI/CD channels need to be set up so that changes to the source code automatically result in a new container being built, tested and deployed in staging and eventually pushed to production. Autonomous teams will own the entire lifecycle of a microservice. The team will continuously work on enhancing the features of the microservice and fixing the issues that are encountered in production. The CI/CD pipeline for each microservice will be as shown in Figure 22.
+Each microservice will have its own CI/CD pipeline. CI/CD channels need to be set up so that changes to the source code automatically result in a new container being built, tested and deployed in staging and eventually pushed to production. Autonomous teams will own the entire lifecycle of a microservice. The team will continuously work on enhancing the features of the microservice and fixing the issues that are encountered in production. The CI/CD pipeline for each microservice will be as shown in Figure 21.
 
 ![ci_cd](/media/media_api_driven-msa/api_msa_ci_cd.png) <br>
 <p align="center">
-<i>Figure 22 - CI/CD Pipeline for Microservices<br/>
+<i>Figure 21 - CI/CD Pipeline for Microservices<br/>
 </i>
 
 ![ci_cd_msa](/media/media_api_driven-msa/api_msa_ci_cd_msa.png) <br>
 <p align="center">
-<i>Figure 23 - CI/CD Pipeline for Microservices<br/>
+<i>Figure 22 - CI/CD Pipeline for Microservices<br/>
 </i>
 
 1. The team commits the changes to a version control repository such as Git. 
