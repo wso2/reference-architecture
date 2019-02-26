@@ -364,9 +364,10 @@ The gateway is the control point for a cell-based architecture, which provides a
 <i>Figure 20 - Cell: A WSO2 Mapping<br/>
 </i> -->
 
-| | |
+<!--| | | --> 
+|![cell](/media/media_api_driven-msa/api_msa_cell.png) <br> <i>Figure 19 - A Single Architecture Unit: Cell| ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) <br> <i>Figure 20 - Cell: A WSO2 Mapping<br/>|
 |--|--|
-|![cell](/media/media_api_driven-msa/api_msa_cell.png) <br> <i>Figure 19 - A Self-contained Architecture Unit: Cell| ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) <br> <i>Figure 20 - Cell: A WSO2 Mapping<br/>|
+
 
 
 
