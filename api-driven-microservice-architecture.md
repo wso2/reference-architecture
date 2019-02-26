@@ -49,15 +49,9 @@ Version Q1-2019<br/>
 In an age when delivering great digital experiences is more important than ever,  business success lies in offering agile digital services with high customer satisfaction. There needs to be an alignment between the overall corporate strategy and the pursued digital initiatives in order to transform the core business architecture to a digital architecture. A digital architecture is one that fosters rapid integration of new technologies to fuel digital transformation. To elaborate, a digital architecture is composed of a stack of layers that support the business value chain. Underpinning it all is the technology layer, which encompasses the application, API management, security, analytics, integration, services and data layers, and core infrastructure.
 
 
-<!-- ![digital_architecture](/media/media_api_driven-msa/api_msa_digital_architecture.png) --> 
+![digital_architecture](/media/media_api_driven-msa/api_msa_digital_architecture.png)
 
- <!-- <div style="display: flex; justify-content: center;">
-  <img src="./media/media_api_driven-msa/api_msa_digital_architecture.png" style="width: 500px; height: 500px;" />
-</div> -->
-
-  <img src="./media/media_api_driven-msa/x_api_msa_digital_architecture.png" style="width: 500px; height: 400px;" />
-
-
+ 
 <p align="center">
 <i>
 Figure 1 - A Typical Digital Architecture<br/>
@@ -368,6 +362,12 @@ The gateway is the control point for a cell-based architecture, which provides a
 <p align="center">
 <i>Figure 20 - Cell: A WSO2 Mapping<br/>
 </i>
+
+| | |
+|--|--|
+|![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png) | ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png)|
+|<i>Figure 20 - Cell: A WSO2 Mapping|<i>Figure 21 - Cell-Based Architecture: A WSO2 Implementation|
+
 
 Figure 21  depicts a portion of a cell-based architecture mapped with WSO2 components where application functionality is divided into multiple cells. Each cell contains different components for building the expected functionality. 
 
