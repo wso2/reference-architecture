@@ -49,11 +49,11 @@ Version Q1-2019<br/>
 In an age when delivering great digital experiences is more important than ever,  business success lies in offering agile digital services with high customer satisfaction. There needs to be an alignment between the overall corporate strategy and the pursued digital initiatives in order to transform the core business architecture to a digital architecture. A digital architecture is one that fosters rapid integration of new technologies to fuel digital transformation. To elaborate, a digital architecture is composed of a stack of layers that support the business value chain. Underpinning it all is the technology layer, which encompasses the application, API management, security, analytics, integration, services and data layers, and core infrastructure.
 
 
-![digital_architecture](/media/media_api_driven-msa/api_msa_digital_architecture.png)
+<!-- ![digital_architecture](/media/media_api_driven-msa/api_msa_digital_architecture.png) --> 
 
-<!-- <div style="display: flex; justify-content: center;">
+ <div style="display: flex; justify-content: center;">
   <img src="./media/media_api_driven-msa/api_msa_digital_architecture.png" style="width: 500px; height: 500px;" />
-</div> --> 
+</div> 
 
 <p align="center">
 <i>
