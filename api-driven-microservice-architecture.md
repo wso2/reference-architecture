@@ -51,6 +51,9 @@ In an age when delivering great digital experiences is more important than ever,
 
 ![digital_architecture](/media/media_api_driven-msa/api_msa_digital_architecture.png)
 
+<!-- <div style="display: flex; justify-content: center;">
+  <img src="./media/media_api_driven-msa/api_msa_digital_architecture.png" style="width: 500px; height: 500px;" />
+</div> --> 
 
 <p align="center">
 <i>
@@ -357,6 +360,7 @@ The gateway is the control point for a cell-based architecture, which provides a
 
 
 ![cell_wso2](/media/media_api_driven-msa/api_msa_cell_wso2.png)  <br>
+
 
 <p align="center">
 <i>Figure 20 - Cell: A WSO2 Mapping<br/>
