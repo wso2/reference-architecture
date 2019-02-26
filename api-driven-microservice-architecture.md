@@ -1,5 +1,5 @@
 <h1 align="center"> API-driven Microservice Architecture </center></h1>
-<h2 align="center"> A WSO2 Reference </center></h2>
+<h2 align="center"> A WSO2 Reference Architecture</center></h2>
 <p align="center">
 <i>
 Version Q1-2019<br/>
