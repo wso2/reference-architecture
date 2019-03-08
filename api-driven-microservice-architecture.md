@@ -102,7 +102,6 @@ MSA is an evolution of Service Oriented Architecture (SOA) and adopting an MSA i
 |  |
 |--|
 |![monolithic_architecture](/media/media_api_driven-msa/api_msa_monolithic_architecture.png) <br> <p align="center"> <b>Monolithic Architecture </b> </p> ![microservice_architecture](/media/media_api_driven-msa/api_msa_msa_p2p.png)  <br> <p align="center"> <b>Microservice Architecture </b>|
-|
 
 <p align="center">
 <i>
@@ -307,7 +306,7 @@ In the architecture above, a layered MSA also coexists with the SOA. New functio
 
 <b>3.1.2.1 Transitioning from a Monolith to a Microservice Architecture</b>
 
-An advantage of introducing a gateway to an MSA is the ability to smoothly and continuously move from a monolith app to an MSA. Rewriting a large monolith application from scratch is a massive effort and has a good amount of risk associated with it. This also prevents users from using the new system until it is complete. There will be a lot of uncertainty involved until the new system is developed and functioning as expected. Consequently, there will be minimal enhancements or new features delivered on the current platform, so the business will have to wait to have any new features developed and released. This task will, most often than not, have to be phased out.
+An advantage of introducing a gateway to an MSA is the ability to smoothly and continuously move from a monolith app to an MSA. Rewriting a large monolith application from scratch is a massive effort and has a good amount of risk associated with it. This also prevents users from using the new system until it is complete. There will be a lot of uncertainty involved until the new system is developed and functioning as expected. Consequently, there will be minimal enhancements or new features delivered on the current platform, so the business will have to wait to have any new features developed and released. This task will, more often than not, have to be phased out.
 
 Known as the Strangler Pattern, this is a design pattern to incrementally transform the monolith into microservices by replacing a particular functionality with a new service. Once the new functionality is ready, the old component is strangled, the new service is put into use, and finally, the old component is decommissioned altogether. However, when phasing out, chances are that there will be a lot of change.  The microservice interfaces will change and doing this over time will result in a nightmare for consuming applications. To make the client applications agnostic to such frequent changes,  the API gateway can be used as the Strangler Facade. 
 
