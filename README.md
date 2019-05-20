@@ -13,11 +13,12 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
 + ### API-centric Reference Architecture
   The focus of the enterprises moved to API-driven with the digital transformation became the strategy. As a result, the business and the technical architecture moved from service-orientation to API-centric. The primary focus of this specification is to look at the architecture approaches taken by the industry and represent those patterns as generic reference architectures. We identified two reference architectures, layered and segmented which we will be discussing in detail in this paper.
 
-  Segmented Reference Architecture
-
-  Functional capabilities sub-grouped within layers based on organizational ownership. It is a centralized system where data flow moves from layer to layer.
+  * __Segmented Reference Architecture__: Functional capabilities sub-grouped within layers based on organizational ownership. It is a centralized system where data flow moves from layer to layer.
   
-  Layered Reference Architecture
+  * __Layered Reference Architecture__: Functional capabilities grouped in layers by following a System of Systems view. It is a centralized system where data moves from layer to layer.
 
-  Functional capabilities grouped in layers by following a System of Systems view. It is a centralized system where data moves from layer to layer.
+## Technology Specific Reference Architectural Patterns
 
++ ### [API-driven Microservice Architecture](api-driven-microservice-architecture.md)
+  
++ ### CIAM - A WSO2 Reference Architecture
