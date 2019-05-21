@@ -73,7 +73,7 @@ A cell can have 1:n components grouped. Components inside the cells are reusable
 
 ## Deep-dive into Cells
 
-![cell definition](/media/ra-cell-details-2.0-50.png)
+![cell definition](/media/ra-cell-details-2.0-60.png)
 
 In this example, **Cell-1** contains two microservices and a function operating with a microbroker and a microgateway to fulfill the functionality. The function is communicating with a few external services running outside the cell, and one microservice communicates with a cluster of external databases. The cell contains local storage, which is required by the microbroker. The functionality of a microservice in this cell has been extended by bringing a sidecar.
 
