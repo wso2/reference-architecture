@@ -93,7 +93,7 @@ First, we discussed a segmented architecture, which is created by dividing the l
 
 ### Cell-based Architecture: enterprise view
 
-![cell-based ea](/media/ra-cell-based-ea.png)
+![cell-based ea](/media/ra-cell-based-ea-v2.0.png)
 
 As we discussed earlier, cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization.  Cells can be categorized into a few subcategories based on the architecture patterns used, the implementation, and the provider.
 
