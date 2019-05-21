@@ -37,7 +37,9 @@ The rest of the this paper is structured as follows:
 
 + **Section 5**: Looks at how the reference architecture supports enterprise features.
 
-+ **Section 6**: Examines the overall picture by describing the agile business from the business architecture point of view.
++ **Section 6**: Define the Cell rules that can apply in design, implement and deployment of the cells.
+
++ **Section 7**: Examines the overall picture by describing the agile business from the business architecture point of view.
 
 ## Section 1: Abstractions
 
@@ -188,7 +190,29 @@ One of the main advantages architects can gain from a cell-based architecture is
 
 Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
 
-## Section 6: Agile Enterprise
+## Section 6: Cell Rules
+1. A cell is forms a bounded context that encapsulated a set of functionality, which may be implemented as a monolith, a set of microservices, serverless functions or some combination of such.
+
+2. Each cell is owned by one team. That team owns the development of the cell. In many cases the same team also owns the deployment and runtime of the cell.
+
+3. Communication between cells is via well-defined, versioned APIs, for example using OpenAPI, or gRPC/Protobuf. Asynchronous communication between cells is preferred, so that cells can continue to work if their dependent cells are unavailable. 
+
+4. A cell should implement logic and data. At the least, the logic must offer a versioned business API to that data that is independent of the data storage model.
+
+5. A cell “owns” all the data (as well as logic) for its' domain: only the owning cell may access that directly and all other parties can only access that data via the cell’s APIs. Therefore If a cell needs data that it doesn’t “own” it must use well-defined and versioned APIs (from other cells or external sources) to access that data. A cell may cache data that it does not own temporarily.
+
+6. A cell may replicate its' data to a data lake (e.g. for reporting), but the cell's APIs are always the primary source of truth for its' data.
+
+7. A cell must be secured. The minimum security is that cell access is controlled through API gateways which enable policies that control which other cells can call it. However, end-to-end federated security with identities based on tokens and certificates is recommended.
+
+8. A cell should be deployable as an immutable unit via a versioned DevOps process, enabling blue green, Canary and other deployment patterns.
+
+9. Each cell should be designed to scale independently, and to implement throttling and SLA policies that protect it from DoS or other demand challenges.
+
+10. The internal communication model, control plane, data plane and implementation of the cell are the responsibility of the cell’s team.
+
+
+## Section 7: Agile Enterprise
 
 >*“It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change. -Charles Darwin*
 
