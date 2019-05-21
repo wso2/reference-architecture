@@ -144,7 +144,7 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 ### Inter and intra cell communication
 
 This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
-**DP**: Data Plane, **CP**: Control Plane, **MP**: Data Plane
+**DP**: Data Plane, **CP**: Control Plane, **MP**: Management Plane
 
 ![cell communication](/media/ra-cell-communication-v2.0.png)
 
