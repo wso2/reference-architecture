@@ -65,6 +65,10 @@ A cell is a collection of components, grouped from design and implementation int
 Components inside the cell can communicate with each other using supported transports for intra-cell communication. External communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols.
 A cell can have 1:n components grouped. Components inside the cells are reusable and can instantiate in multiple cells. The cell should document its offers. The capabilities of a cell must be network accessible endpoints. In addition, if the cell needs access to external dependencies, then these must also be exposed as network endpoints through a cell-gateway. These endpoints can expose APIs, events, or streams. Any interfaces that the microservices or serverless components offer that are not made available by the control point should be inaccessible from outside the cell. Every component within the cell should be versioned. The cell should have a name and a version identifier. The versions should change when the cell’s requirements and/or offers change.
 
+* A cell is an immutable application component that can be built, deployed and managed as a complete unit.
+* A cell consists of multiple services, managed APIs, ingress and egress policies (including routing, throttling, access control), security trust domain, deployment policies, rolling update policies and external dependencies.
+* The cell definition captures all of these in a standard technology-neutral fashion.
+
 ## Deep-dive into Cells
 
 ![cell definition](/media/ra-cell-details-2.0.png)
