@@ -54,7 +54,6 @@ CIAM systems vary from employee IAM systems in the following foundational areas:
 |Privacy and User Involvement|Organization-centric policies and procedures|Customer-centric policies and preferences|
 |Scale|100s and 1000s|1000000s|
 |Performance and Reliability|Generally not prioritized|Extremely important|
-|
 
 <p align="center">
 <i>
