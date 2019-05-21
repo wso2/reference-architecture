@@ -200,6 +200,9 @@ Even though most of the large enterprises try to follow an iterative approach, p
 ## Section 6: Developer Experiance
 
 ### Creation of Cells
+![cell creation 1](media/ra-cell-creation-sc1.png)
+
+![cell creation 2](media/ra-cell-creation-sc2.png)
 
 ### Developer Flow
 
