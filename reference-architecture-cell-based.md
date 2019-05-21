@@ -37,9 +37,11 @@ The rest of the this paper is structured as follows:
 
 + **Section 5**: Looks at how the reference architecture supports enterprise features.
 
-+ **Section 6**: Define the Cell rules that can apply in design, implement and deployment of the cells.
++ **Section 6**: Looks at the developer experiance, flow and the possible cell creation scenarios. 
 
-+ **Section 7**: Examines the overall picture by describing the agile business from the business architecture point of view.
++ **Section 7**: Define the Cell rules that can apply in design, implement and deployment of the cells.
+
++ **Appendix-A**: Examines the overall picture by describing the agile business from the business architecture point of view.
 
 ## Section 1: Abstractions
 
@@ -195,7 +197,15 @@ One of the main advantages architects can gain from a cell-based architecture is
 
 Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
 
-## Section 6: Cell Rules
+## Section 6: Developer Experiance
+
+### Creation of Cells
+
+### Developer Flow
+
+
+## Section 7: Cell Rules
+
 1. A cell is forms a bounded context that encapsulated a set of functionality, which may be implemented as a monolith, a set of microservices, serverless functions or some combination of such.
 
 2. Each cell is owned by one team. That team owns the development of the cell. In many cases the same team also owns the deployment and runtime of the cell.
@@ -216,8 +226,24 @@ Even though most of the large enterprises try to follow an iterative approach, p
 
 10. The internal communication model, control plane, data plane and implementation of the cell are the responsibility of the cell’s team.
 
+## Conclusions
 
-## Section 7: Agile Enterprise
+Advancements in technology and changes to the business model are pushing enterprise architectures to be truly agile. Traditionally centralized enterprise architectures no longer deliver on the expectations of the business and consumers. Our approach creates a pragmatic reference architecture that addresses the requirement for agility using a technology-neutral approach. 
+Microservice architecture is an excellent approach to building decentralized systems. However, microservices are too granular when it comes to architecting larger systems and projects in the brownfield. The need for decentralization is not limited to where various IT assets run and who owns and manages it. There is the people aspect as well. An environment where innovative ideas come from every part of the organization and decision-making is decentralized needs to be established. An enterprise architecture group can operate as the center of enablement that brings life to these ideas and provides constructive feedback.
+Identifying the boundaries and the size of the cells depends on the business domain, organizational structure, skill set, and processes adhered to by the organization. Scaling the cells and providing high availability is part of the infrastructure that deploys the cells.  
+Reference implementations using market-leading technology and a reference methodology to implement an agile enterprise successfully will be discussed as a separate white paper in the future.
+
+## References
+
+[1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
+
+[2] Dave Gray - The Connected Company - http://www.xplaner.com/connectedco/ 
+
+[3] Iterative, Segmented Architecture - https://www.slideshare.net/asankama/iterative-architecture-your-path-to-ontime-delivery 
+
+[4] The exploding endpoint problem - https://thenewstack.io/the-exploding-endpoint-problem-why-everything-must-become-an-api/
+
+## Appendix A: Agile Enterprise
 
 >*“It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change. -Charles Darwin*
 
@@ -262,21 +288,3 @@ Automation is key when implementing innovative ideas and taking them to market r
 **Real-time**: Users associated with an agile business (customers, partners, and employees) along with the systems connected rely on real-time information exchange, primarily due to the digital needs and experiences built around real-time data. 
 
 **Artificial Intelligence (AI)**: AI is a crosscutting concern in the agile business runtime. AI boosts the adaptability and decision-making capabilities of the business by using technologies, such as logical AI, pattern recognition, and heuristics. Capabilities provided by AI can be utilized in development environments to increase the productivity of development teams, as well as increase the end-user experience by linking AI with digital products. The cell-based architecture provides a framework to provide data for AI systems by capturing usage data from the observations. Additionally, the decentralized architecture makes it possible to plug in advanced AI features, such as automatic programming and genetic programming. Finally, AI has become an accessible technology for any enterprise as a result of the open source offerings introduced to the industry.
-
-## Conclusions
-
-Advancements in technology and changes to the business model are pushing enterprise architectures to be truly agile. Traditionally centralized enterprise architectures no longer deliver on the expectations of the business and consumers. Our approach creates a pragmatic reference architecture that addresses the requirement for agility using a technology-neutral approach. 
-Microservice architecture is an excellent approach to building decentralized systems. However, microservices are too granular when it comes to architecting larger systems and projects in the brownfield. The need for decentralization is not limited to where various IT assets run and who owns and manages it. There is the people aspect as well. An environment where innovative ideas come from every part of the organization and decision-making is decentralized needs to be established. An enterprise architecture group can operate as the center of enablement that brings life to these ideas and provides constructive feedback.
-Identifying the boundaries and the size of the cells depends on the business domain, organizational structure, skill set, and processes adhered to by the organization. Scaling the cells and providing high availability is part of the infrastructure that deploys the cells.  
-Reference implementations using market-leading technology and a reference methodology to implement an agile enterprise successfully will be discussed as a separate white paper in the future.
-
-## References
-
-[1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
-
-[2] Dave Gray - The Connected Company - http://www.xplaner.com/connectedco/ 
-
-[3] Iterative, Segmented Architecture - https://www.slideshare.net/asankama/iterative-architecture-your-path-to-ontime-delivery 
-
-[4] The exploding endpoint problem - https://thenewstack.io/the-exploding-endpoint-problem-why-everything-must-become-an-api/
-
