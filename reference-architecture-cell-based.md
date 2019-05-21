@@ -143,12 +143,12 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 
 ### Inter and intra cell communication
 
-This diagram brings the data plane and the control plane concept into the cell-based architecture.
-**DP**: Data Plane, **CP**: Control Plane
+This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
+**DP**: Data Plane, **CP**: Control Plane, **MP**: Data Plane
 
 ![cell communication](/media/ra-cell-communication-v2.0.png)
 
-Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane and a data-plane outside the cells.
+Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane data-plane and a management-plane outside the cells.
 
 ### Governance of Cell-based Architecture
 
