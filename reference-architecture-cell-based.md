@@ -200,7 +200,11 @@ Even though most of the large enterprises try to follow an iterative approach, p
 ## Section 6: Developer Experiance
 
 ### Creation of Cells
+
+#### Scenario 1: Brandnew Cell
 ![cell creation 1](media/ra-cell-creation-sc1.png)
+
+#### Scenario 2: From existing (micro) services
 
 ![cell creation 2](media/ra-cell-creation-sc2.png)
 
