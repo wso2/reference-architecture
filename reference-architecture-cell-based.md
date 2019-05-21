@@ -159,7 +159,7 @@ This diagram brings the data plane, control plane and the management plane conce
 |**CP**|Control Plane|Signaling of the network, makes decisions about the traffic flow, runtime governance|
 |**MP**|Management Plane|Configuration, observeabiltty, monitoring, designtime governance|
 
-![cell communication](/media/ra-cell-communication-v2.1.png)
+![cell communication](/media/ra-cell-communication-v2.2.png)
 
 Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane data-plane and a management-plane outside the cells.
 
