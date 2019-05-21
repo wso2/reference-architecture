@@ -150,7 +150,12 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 ### Inter and intra cell communication
 
 This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
-**DP**: Data Plane, **CP**: Control Plane, **MP**: Management Plane
+
+| Code | Name | Definition |
+|---------|---------|---------|
+|**DP**|Data Plane|Forwards traffic between hops, takes data packets|
+|**CP**|Control Plane|Signaling of the network, makes decisions about the traffic flow, runtime governance|
+|**MP**|Management Plane|Configuration, observeabiltty, monitoring, designtime governance|
 
 ![cell communication](/media/ra-cell-communication-v2.0.png)
 
