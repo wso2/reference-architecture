@@ -118,6 +118,16 @@ Internal cells can mainly fall into one of three categories:
 A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable APIs, events, and streams. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
 
+### Cell Types
+| Cell Type | Components |
+|---------|---------|
+|Logic|Microservices, Functions, MicroGateways, lightweight storages|
+|Integration|MicroESB or other integration microservices, lightweight storage and/or cache|
+|Legacy|Existing systems, legacy services|
+|External|SaaS and partner systems|
+|Data|RDBMS, NoSQL, File, Message Broker|
+|Channel|IDP, user stores|
+
 ### Mapping Agile Enterprise to the Real-world: Order Management System, reference implementation
 
 ![epr types](/media/ra-cell-rw-l0.png)
