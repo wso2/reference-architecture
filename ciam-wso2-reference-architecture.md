@@ -272,10 +272,6 @@ WSO2 provides a compelling platform to build a comprehensive CIAM solution with 
 
 Identity data is the new gold, and CIAM is a mainstream business capability that will further empower developers as a way to continuously adapt to new customer and business needs.
 
-<b>About WSO2</b>
-
-WSO2 is the world’s #1 open source integration vendor, helping digital-driven organizations become integration agile. Customers choose us for our broad integrated platform, our approach to open source, and agile transformation methodology. The company’s hybrid platform for developing, reusing, running and managing integrations prevents lock-in through open source software that runs on-premises or in the cloud. Today, hundreds of leading brands and thousands of global projects execute 6 trillion transactions annually using WSO2 integration technologies. Visit https://wso2.com to learn more.
-
 ## 5.0 References
 [1] Prabath Siriwardena - Customer IAM (CIAM) - Turning Identity Data Into Gold!
 https://medium.facilelogin.com/customer-iam-ciam-turning-identity-data-into-gold-3dcfc93f0073
