@@ -107,13 +107,19 @@ As we discussed earlier, cell-based architecture goes beyond the traditional lay
 
 The first level of categorization is based on the provider. Cells owned by internal groups are treated as internal cells, and the cells owned by external parties, such as partners and external service providers, are treated as external cells.
 
-Internal cells can mainly fall into one of three categories:
+#### Cell Types
 
-+ Legacy and monolith cells come from a service-oriented architecture (SOA), ESB-centric implementations, legacy applications, and commercial off-the-shelf (COTS) systems.
-  
-+ Cells that contain microservice functions are designed using a microservices architecture (MSA) and are deployed in containers.
+| Cell Type | Components |
+|---------|---------|
+|Logic|Microservices, Functions, MicroGateways, lightweight storages|
+|Integration|MicroESB or other integration microservices, lightweight storage and/or cache|
+|Legacy|Existing systems, legacy services, COATS systems|
+|External|SaaS and partner systems|
+|Data|RDBMS, NoSQL, File, Message Broker|
+|Security|IDP, user stores|
+|Channel| WEB, mobile, IOT *(end-user)* applications|
 
-+ End-user application cells represent applications, such as reactive web and mobile apps or API consumer apps, such as Internet of Things (IoT) devices. These cells consume the functionality of other cells using the three channels (APIs, events and streams) exposed by the cell gateways.
+ These cells consume the functionality of other cells using the three channels (APIs, events and streams) exposed by the cell gateways.
 
 ![epr types](/media/ra-epr-types.png)
 
@@ -125,16 +131,6 @@ Internal cells can mainly fall into one of three categories:
 
 A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable APIs, events, and streams. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
-
-### Cell Types
-| Cell Type | Components |
-|---------|---------|
-|Logic|Microservices, Functions, MicroGateways, lightweight storages|
-|Integration|MicroESB or other integration microservices, lightweight storage and/or cache|
-|Legacy|Existing systems, legacy services|
-|External|SaaS and partner systems|
-|Data|RDBMS, NoSQL, File, Message Broker|
-|Channel|IDP, user stores|
 
 ### Mapping Agile Enterprise to the Real-world: Order Management System, reference implementation
 
