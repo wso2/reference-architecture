@@ -209,6 +209,8 @@ Even though most of the large enterprises try to follow an iterative approach, p
 
 ## Section 7: Cell Rules
 
+###Generic
+
 1. A cell is forms a bounded context that encapsulated a set of functionality, which may be implemented as a monolith, a set of microservices, serverless functions or some combination of such.
 
 2. Each cell is owned by one team. That team owns the development of the cell. In many cases the same team also owns the deployment and runtime of the cell.
@@ -228,6 +230,18 @@ Even though most of the large enterprises try to follow an iterative approach, p
 9. Each cell should be designed to scale independently, and to implement throttling and SLA policies that protect it from DoS or other demand challenges.
 
 10. The internal communication model, control plane, data plane and implementation of the cell are the responsibility of the cell’s team.
+
+### Cell Granuality
+
+1. The design of systems has always required an approach to the clustering of functionality, and it remains an open Computer Science problem - so don't expect a definitive answer!
+
+2. The number of component-component connections within a cell should be higher than the number that crosses the cell boundary. Hence one approach would be to cluster components based on the connections.
+
+3. Other approaches such as Domain-driven Design (DDD) may help, but fundamentally the cell model is there to provide team boundaries.
+
+4. Hence the size of a cell should be based on the size, responsibility, and output of a team - and the size and output of a team based on team concepts (like the two-pizza rule).
+
+5. CBA aims to create business focussed architectural constructs that can reuse at a higher level, so naturally organizing the teams and cells around business functions is essential.
 
 ## Conclusions
 
