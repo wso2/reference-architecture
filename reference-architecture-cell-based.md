@@ -209,7 +209,7 @@ Even though most of the large enterprises try to follow an iterative approach, p
 
 ## Section 7: Cell Rules
 
-###Generic
+### Generic
 
 1. A cell is forms a bounded context that encapsulated a set of functionality, which may be implemented as a monolith, a set of microservices, serverless functions or some combination of such.
 
