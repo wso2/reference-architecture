@@ -243,6 +243,8 @@ Even though most of the large enterprises try to follow an iterative approach, p
 
 5. CBA aims to create business focussed architectural constructs that can reuse at a higher level, so naturally organizing the teams and cells around business functions is essential.
 
+**Note**:*A specification focused on cell granularity is in progress, which is shaping the cell boundaries by considering the bounded context, component interaction graph as a model of components and characteristics of their interactions.*
+
 ## Conclusions
 
 Advancements in technology and changes to the business model are pushing enterprise architectures to be truly agile. Traditionally centralized enterprise architectures no longer deliver on the expectations of the business and consumers. Our approach creates a pragmatic reference architecture that addresses the requirement for agility using a technology-neutral approach. 
