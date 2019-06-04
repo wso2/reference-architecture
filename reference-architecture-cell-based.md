@@ -159,6 +159,8 @@ This diagram brings the data plane, control plane and the management plane conce
 
 Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane data-plane and a management-plane outside the cells.
 
+Communication planes inside a cell call as the **local mesh** and the communication planes outside the cells call as **global mesh**. 
+
 ### Governance of Cell-based Architecture
 
 ![cell governance](/media/ra-cell-gov.png)
