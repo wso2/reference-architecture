@@ -85,7 +85,7 @@ Components in **Cell-3** are running in a hypervisor-based virtualized environme
 
 The concept of a cell moves away from centralized a enterprise architecture to a decentralized architecture. The segmented approach allows each cell to be independent and iterate individually.
 
-## Section 3: Building an Agile Enterprise with the Cell-based Architecture
+## Section 3: Building an Agile Enterprise with the Cell-based Architecture (CBA)
 
 One of the objectives of building a modern reference architecture is to enable adaptivity. Adaptivity is an organization’s ability to respond to changes in the environment, overcome new challenges, and meet new customer demands in an effective and agile way. The aim of the cell-based architecture is to create an environment where new applications can be created from existing capabilities in a modular and iterative approach. A well architected system of cells within the enterprise creates a platform for innovation. The use of APIs, streams, and events ensures a consistent, effective model for building interactive and real-time applications. Effectively, the logical cell-based architecture becomes the basis of an evolving platform for the digital enterprise.
 
@@ -237,11 +237,11 @@ Even though most of the large enterprises try to follow an iterative approach, p
 
 2. The number of component-component connections within a cell should be higher than the number that crosses the cell boundary. Hence one approach would be to cluster components based on the connections.
 
-3. Other approaches such as Domain-driven Design (DDD) may help, but fundamentally the cell model is there to provide team boundaries.
+3. Other approaches such as Domain-driven Design (DDD)[5] may help, but fundamentally the cell model is there to provide team boundaries.
 
 4. Hence the size of a cell should be based on the size, responsibility, and output of a team - and the size and output of a team based on team concepts (like the two-pizza rule).
 
-5. CBA aims to create business focussed architectural constructs that can reuse at a higher level, so naturally organizing the teams and cells around business functions is essential.
+5. Cell-based architecture aims to create business focussed architectural constructs that can reuse at a higher level, so naturally organizing the teams and cells around business functions is essential.
 
 **Note**:*A specification focused on cell granularity is in progress, which is shaping the cell boundaries by considering the bounded context, component interaction graph as a model of components and characteristics of their interactions.*
 
@@ -261,6 +261,8 @@ Reference implementations using market-leading technology and a reference method
 [3] Iterative, Segmented Architecture - https://www.slideshare.net/asankama/iterative-architecture-your-path-to-ontime-delivery 
 
 [4] The exploding endpoint problem - https://thenewstack.io/the-exploding-endpoint-problem-why-everything-must-become-an-api/
+
+[5] Domian Driven Design (DDD) - https://en.wikipedia.org/wiki/Domain-driven_design
 
 ## Appendix A: Agile Enterprise
 
