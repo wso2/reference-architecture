@@ -121,7 +121,7 @@ The first level of categorization is based on the provider. Cells owned by inter
 
  These cells consume the functionality of other cells using the three channels (APIs, events and streams) exposed by the cell gateways.
 
-![epr types](/media/ra-gw-communication.png)
+![epr types](/media/ra-gw-communication-75.png)
 
 + **APIs** provide an abstraction over everything that can be **queried** or **activated**.
   
