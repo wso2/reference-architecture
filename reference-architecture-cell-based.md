@@ -119,17 +119,17 @@ The first level of categorization is based on the provider. Cells owned by inter
 |Security|IDP, user stores|
 |Channel| WEB, mobile, IOT *(end-user)* applications|
 
- These cells consume the functionality of other cells using the three channels (APIs, events and streams) exposed by the cell gateways.
+ These cells consume the functionality of other cells using the three API types (RESTful, events and streams) exposed by the cell gateways.
 
 ![epr types](/media/ra-gw-communication-75.png)
 
-+ **APIs** provide an abstraction over everything that can be **queried** or **activated**.
++ **RESTful** provide an abstraction over everything that can be **queried** or **activated**.
   
 + **Events** allow action in real time based on changes that occur in the environment, allowing work to be **triggered**.
 
 + **Streams** capture the ongoing evolving nature of the environment, allowing **pattern matching** and **analysis**.
 
-A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable APIs, events, and streams. The difference is how the messages/events are delivered and the underlying protocols used.
+A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable API type. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
 
 ### Mapping Agile Enterprise to the Real-world: Order Management System, reference implementation
