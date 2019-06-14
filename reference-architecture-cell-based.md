@@ -85,6 +85,21 @@ Components in **Cell-3** are running in a hypervisor-based virtualized environme
 
 The concept of a cell moves away from centralized a enterprise architecture to a decentralized architecture. The segmented approach allows each cell to be independent and iterate individually.
 
+## Cell Gateway Communication
+
+The cells consume the functionality of other cells using the three API types (RESTful, events and streams) exposed by the cell gateways.
+
+![epr types](/media/ra-gw-communication-75.png)
+
++ **RESTful** provide an abstraction over everything that can be **queried** or **activated**.
+  
++ **Events** allow action in real time based on changes that occur in the environment, allowing work to be **triggered**.
+
++ **Streams** capture the ongoing evolving nature of the environment, allowing **pattern matching** and **analysis**.
+
+A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable API type. The difference is how the messages/events are delivered and the underlying protocols used.
+External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
+
 ## Section 3: Building an Agile Enterprise with the Cell-based Architecture (CBA)
 
 One of the objectives of building a modern reference architecture is to enable adaptivity. Adaptivity is an organization’s ability to respond to changes in the environment, overcome new challenges, and meet new customer demands in an effective and agile way. The aim of the cell-based architecture is to create an environment where new applications can be created from existing capabilities in a modular and iterative approach. A well architected system of cells within the enterprise creates a platform for innovation. The use of APIs, streams, and events ensures a consistent, effective model for building interactive and real-time applications. Effectively, the logical cell-based architecture becomes the basis of an evolving platform for the digital enterprise.
@@ -119,18 +134,6 @@ The first level of categorization is based on the provider. Cells owned by inter
 |Security|IDP, user stores|
 |Channel| WEB, mobile, IOT *(end-user)* applications|
 
- These cells consume the functionality of other cells using the three API types (RESTful, events and streams) exposed by the cell gateways.
-
-![epr types](/media/ra-gw-communication-75.png)
-
-+ **RESTful** provide an abstraction over everything that can be **queried** or **activated**.
-  
-+ **Events** allow action in real time based on changes that occur in the environment, allowing work to be **triggered**.
-
-+ **Streams** capture the ongoing evolving nature of the environment, allowing **pattern matching** and **analysis**.
-
-A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable API type. The difference is how the messages/events are delivered and the underlying protocols used.
-External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
 
 ### Mapping Agile Enterprise to the Real-world: Order Management System, reference implementation
 
