@@ -203,6 +203,8 @@ Even though most of the large enterprises try to follow an iterative approach, p
 ### Creation of Cells
 
 #### Scenario 1: Brandnew Cell
+
+A developer can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
 ![cell creation 1](media/ra-cell-creation-sc1.png)
 
 #### Scenario 2: From existing (micro) services
