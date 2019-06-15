@@ -89,7 +89,7 @@ The concept of a cell moves away from centralized a enterprise architecture to a
 
 The cells consume the functionality of other cells using the three API types (RESTful, events and streams) exposed by the cell gateways.
 
-![epr types](/media/ra-gw-communication-75.png)
+![epr types](/media/ra-gw-communication-v2-75.png)
 
 + **RESTful** provide an abstraction over everything that can be **queried** or **activated**.
   
