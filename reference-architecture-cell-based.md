@@ -95,7 +95,7 @@ First, we discussed a segmented architecture, which is created by dividing the l
 
 ![cell-based ea](/media/ra-cell-based-ea.png)
 
-As we discussed earlier, cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization.  Cells can be categorized into a few subcategories based on the architecture patterns used, the implementation, and the provider.
+As we discussed  earlier, cell-based architecture goes beyond the traditional layered architecture and creates a framework for decentralization.  Cells can be categorized into a few subcategories based on the architecture patterns used, the implementation, and the provider.
 
 The first level of categorization is based on the provider. Cells owned by internal groups are treated as internal cells, and the cells owned by external parties, such as partners and external service providers, are treated as external cells.
 
