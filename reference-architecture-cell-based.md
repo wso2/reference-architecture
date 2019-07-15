@@ -202,6 +202,8 @@ Even though most of the large enterprises try to follow an iterative approach, p
 
 ### Creation of Cells
 
+Creation of the cells can take two approaches based on the current state of the organization. Greenfield projects can take a top-down approach by defining the cells first and develop the components after that. However, in a situation, the components already developed and exist in the infrastructure, components can be reorganized by mapping to cells — also, a combination of the above two methods a viable approach too.
+
 #### Scenario 1: Brandnew Cell
 
 A developer can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
