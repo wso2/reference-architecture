@@ -198,7 +198,7 @@ One of the main advantages architects can gain from a cell-based architecture is
 
 Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
 
-## Section 6: Developer Experiance
+## Section 6: Cells and Agile teams
 
 ### Creation of Cells
 
@@ -206,7 +206,7 @@ Creation of the cells can take two approaches based on the current state of the 
 
 #### Scenario 1: Brandnew Cell
 
-A developer can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
+A development team can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
 
 ![cell creation 1](media/ra-cell-creation-sc1.png)
 
