@@ -198,25 +198,25 @@ One of the main advantages architects can gain from a cell-based architecture is
 
 Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
 
-## Section 6: Cells and Agile teams
+### Cells and Agile teams
 
-### Creation of Cells
+#### Creation of Cells
 
 Creation of the cells can take two approaches based on the current state of the organization. Greenfield projects can take a top-down approach by defining the cells first and develop the components after that. However, in a situation, the components already developed and exist in the infrastructure, components can be reorganized by mapping to cells — also, a combination of the above two methods a viable approach too.
 
-#### Scenario 1: Brandnew Cell
+##### Scenario 1: Brandnew Cell
 
 A development team can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
 
 ![cell creation 1](media/ra-cell-creation-sc1.png)
 
-#### Scenario 2: From existing (micro) services
+##### Scenario 2: From existing (micro) services
 
 The second scenario comes when the components already exist or built outside the cell boundary. Cell owner or the self-organized team members can create a new cell definition and include the components or edit an existing cell definition and introduce the new components.
 
 ![cell creation 2](media/ra-cell-creation-sc2.png)
 
-### Developer Flow
+#### Developer Flow
 
 
 ## Section 7: Cell - Recommendations and Best Practices
