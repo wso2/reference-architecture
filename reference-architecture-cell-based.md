@@ -74,7 +74,7 @@ A cell can have 1:n components grouped. Components inside the cells are reusable
 * A cell consists of multiple services, managed APIs, ingress and egress policies (including routing, throttling, access control), security trust domain, deployment policies, rolling update policies and external dependencies.
 * The cell definition captures all of these in a standard technology-neutral fashion.
 
-## Deep-dive into Cells
+### Deep-dive into Cells
 
 ![cell definition](/media/ra-cell-details-2.0-60.png)
 
@@ -86,7 +86,7 @@ Components in **Cell-3** are running in a hypervisor-based virtualized environme
 
 The concept of a cell moves away from centralized a enterprise architecture to a decentralized architecture. The segmented approach allows each cell to be independent and iterate individually.
 
-### Cell Gateway Communication
+#### Cell Gateway Communication
 
 The cells consume the functionality of other cells using the three API types (RESTful, events and streams) exposed by the cell gateways.
 
@@ -101,7 +101,7 @@ The cells consume the functionality of other cells using the three API types (RE
 A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable API type. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
 
-### Inter and intra cell communication
+#### Inter and intra cell communication
 
 This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
 
@@ -117,7 +117,7 @@ Components in a cell are required to communicate with each other in a seamless w
 
 Communication planes inside a cell call as the **local mesh** and the communication planes outside the cells call as **global mesh**. 
 
-### Governance of Cell-based Architecture
+#### Governance of Cell-based Architecture
 
 ![cell governance](/media/ra-cell-gov.png)
 
@@ -125,14 +125,14 @@ The gateway is the control point for a cell-based architecture, which provides a
 
 The gateway pattern mandates the entire internal and external communication flow through a set of defined gateway clusters. Therefore, it is easy to enforce policies and capture the information required for observation from these gateways. This approach increases the agility of the overall architecture because  the enforcements are introduced, managed, and maintained at the gateways without changing the rest of the associated components in the ecosystem.
 
-### Security of Cell-based Architecture
+#### Security of Cell-based Architecture
 
 ![security of cells](media/ra-cell-security-v2.1.png)
 
 Security of the cell-based architecture is an area that deserves more detailed coverage than is being offered here. A future paper devoted to a security reference architecture for an agile enterprise is planned. However, it is worth making a few high-level points here. The main point, which needs to be clear, is that the identity and security domain within a cell may be distinct from the domain outside the cell. For example, the cell gateway may replace tokens that are valid outside the cell with alternative tokens that operate within the cell. This is because the cell may need to operate its own security rules, policies, and approaches. This encapsulation ensures that the cell can migrate without affecting the externals users. 
 However, some organizations may choose to operate a single continuous domain across multiple cells. The above diagram shows two common security patterns. Pattern-1 offers a Security Token Service (STS) inside the cell, and the local STS of the cell contains the required security metadata to authorize and authenticate the incoming requests. STS is part of the local control plane; it stores the required policies and acts as a Policy Decision Point (PDP). Pattern-2 connects to an identity provider (IDP) that resides in the conventional control plane, which is stationed outside the cells. Primarily, we would like to emphasize that the cell-based architecture can work on a local security model in the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell. 
 
-### Lifecycle and versioning of cells
+#### Lifecycle and versioning of cells
 
 ![cell lcm](media/ra-cell-lcm.png)
 
