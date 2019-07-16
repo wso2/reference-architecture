@@ -218,6 +218,8 @@ The second scenario comes when the components already exist or built outside the
 
 #### Developer Flow
 
+A new architecture style can change the developer flow, which might affect their productivity. However, Cell-based Architecture taking a developer-friendly approach that increases efficiency. 
+
 ![developer lcm](media/ra-dev-lcm.png)
 
 ## Section 7: Cell - Recommendations and Best Practices
