@@ -218,6 +218,7 @@ The second scenario comes when the components already exist or built outside the
 
 #### Developer Flow
 
+![developer lcm](media/ra-dev-lcm.png)
 
 ## Section 7: Cell - Recommendations and Best Practices
 
