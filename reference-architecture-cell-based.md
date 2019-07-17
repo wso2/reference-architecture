@@ -49,7 +49,7 @@ The rest of the this paper is structured as follows:
 |---------|---------|---------|
 |![Person](/media/ra-person.png )| User |A user is a human interacting with the system. Users can be external customers of the organization, internal employees, or partners.|
 |![Component](/media/ra-component.png )| Component| A **component** is the **atomic unit** of this reference architecture. A component represents a process or business logic running in a container, serverless environment, or an existing runtime. This can then be categorized into many subtypes based on the functional capabilities. A component is designed based on a specific scope, which can be independently run and reused at the runtime. Runtime requirements and the behavior of the component vary based on the component type and the functional capabilities. The user may decide to build and run the code as a service, function, or microservice, or choose to reuse an existing legacy service based on the architectural need.  |
-|![Cell](media/ra-cell-icon.png)| Cell| Cell - an architecture block represents by an **octogon**|
+|![Cell](media/ra-cell-icon.png)| Cell| Cell - an architecture block represents by an **octogon**.|
 
 ### Component Types: Main Categories
 
@@ -247,6 +247,10 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 9. Each cell should be designed to scale independently and to implement throttling and SLA policies that protect it from DoS or other demand challenges.
 
 10. The internal communication model, control plane, data plane, and implementation of the cell are the responsibility of the cell's team.
+       
+11. The cells disregard cyclic dependencies by not having cells inside cells.
+    
+12. A group of cells label as a **virtual application**. 
 
 ### Cell Granuality
 
