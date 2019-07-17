@@ -31,13 +31,9 @@ The rest of the this paper is structured as follows:
 
 + **Section 2**: Introduces to the units of an enterprise architecture.
 
-+ **Section 3**: Defines the new reference architecture. This includes a mapping to a real-world example.
++ **Section 3**: Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
 
-+ **Section 4**: Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
-
-+ **Section 5**: Looks at how the reference architecture supports enterprise features.
-
-+ **Section 6**: Looks at the developer experiance, flow and the possible cell creation scenarios. 
++ **Section 4**: Defines the new reference architecture. This includes a mapping to a real-world example.
 
 + **Section 7**: Define the Cell rules that can apply in design, implement and deployment of the cells.
 
