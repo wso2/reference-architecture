@@ -281,6 +281,8 @@ Reference implementations using market-leading technology and a reference method
 
 [5] Domian Driven Design (DDD) - https://en.wikipedia.org/wiki/Domain-driven_design
 
+[6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
+
 ## Appendix A: Agile Enterprise
 
 >*“It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change. -Charles Darwin*
