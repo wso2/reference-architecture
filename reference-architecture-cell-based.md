@@ -171,9 +171,11 @@ The second scenario comes when the components already exist or built outside the
 
 #### Developer Flow
 
-A new architecture style can change the developer flow, which might affect their productivity. However, Cell-based Architecture taking a developer-friendly approach that increases efficiency. 
+A new architecture paradigm can change the natural development flow, which might affect the productivity of the developers. However, Cell-based Architecture taking a developer-friendly approach that increases efficiency and adoption.
 
 ![developer lcm](media/ra-dev-lcm.png)
+
+Developers implement components by writing code or configuration and test in their local sandbox environment. Once the units tests passed, they push (or pull) the changes to the shared source control repository. At that point, the CI/CD process will kickoff and deploy the components into the cells based on the cell configuration defined by the cell owner. CI/CD process takes the components and the cells through the configured application lifecycle stages. The cell definitions can create by using a programming language or infrastructure as a code script and utilizing the functionality provided by the targeted infrastructure.
 
 ## Section 4: Building an Agile Enterprise with the Cell-based Architecture (CBA)
 
