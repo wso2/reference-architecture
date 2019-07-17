@@ -186,7 +186,7 @@ Most enterprises follow a layered architecture with both service-oriented archit
 
 First, we discussed a segmented architecture, which is created by dividing the layered architecture into small segments based on the functional capabilities within each architecture layer [4]. However, that segmentation is too high-level to enforce a decentralized, self-contained architecture unit. At the same time, microservices are generally too fine-grained to be treated as an architecture unit. As a result, we are introducing the cell as the architecture unit in this reference architecture.
 
-**Note**: *A layered architecture and the segmented architecture will be illustrated in a different paper (API-centric Architecture) for organizations that are building systems using the same architecture models.*
+**Note**: *A layered architecture and the segmented architecture will be illustrated in a different paper (**API-centric Architecture**) for organizations that are building systems using the same architecture models.*
 
 ### Cell-based Architecture: enterprise view
 
