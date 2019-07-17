@@ -35,7 +35,7 @@ The rest of the this paper is structured as follows:
 
 + **Section 4**: Defines the new reference architecture. This includes a mapping to a real-world example.
 
-+ **Section 7**: Define the Cell rules that can apply in design, implement and deployment of the cells.
++ **Section 5**: Define the Cell rules that can apply in design, implement and deployment of the cells.
 
 + **Appendix-A**: Examines the overall picture by describing the agile business from the business architecture point of view.
 
