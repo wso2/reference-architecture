@@ -31,15 +31,11 @@ The rest of the this paper is structured as follows:
 
 + **Section 2**: Introduces to the units of an enterprise architecture.
 
-+ **Section 3**: Defines the new reference architecture. This includes a mapping to a real-world example.
++ **Section 3**: Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
 
-+ **Section 4**: Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
++ **Section 4**: Defines the new reference architecture. This includes a mapping to a real-world example.
 
-+ **Section 5**: Looks at how the reference architecture supports enterprise features.
-
-+ **Section 6**: Looks at the developer experiance, flow and the possible cell creation scenarios. 
-
-+ **Section 7**: Define the Cell rules that can apply in design, implement and deployment of the cells.
++ **Section 5**: Define the Cell rules that can apply in design, implement and deployment of the cells.
 
 + **Appendix-A**: Examines the overall picture by describing the agile business from the business architecture point of view.
 
@@ -49,6 +45,7 @@ The rest of the this paper is structured as follows:
 |---------|---------|---------|
 |![Person](/media/ra-person.png )| User |A user is a human interacting with the system. Users can be external customers of the organization, internal employees, or partners.|
 |![Component](/media/ra-component.png )| Component| A **component** is the **atomic unit** of this reference architecture. A component represents a process or business logic running in a container, serverless environment, or an existing runtime. This can then be categorized into many subtypes based on the functional capabilities. A component is designed based on a specific scope, which can be independently run and reused at the runtime. Runtime requirements and the behavior of the component vary based on the component type and the functional capabilities. The user may decide to build and run the code as a service, function, or microservice, or choose to reuse an existing legacy service based on the architectural need.  |
+|![Cell](media/ra-cell-icon.png)| Cell| Cell - an architecture block represents by an **octogon**.|
 
 ### Component Types: Main Categories
 
@@ -63,7 +60,7 @@ The rest of the this paper is structured as follows:
 
 ## Section 2: Cell - The Units of an Enterprise Architecture
 
-![cell definition](/media/ra-cell-definition-2.0-75.png)
+![cell definition](/media/ra-cell-definition-2.2-75.png)
 
 A **cell** is a **collection of components**, grouped from design and implementation into deployment. A cell is independently deployable, manageable, and observable.
 Components inside the cell can communicate with each other using supported transports for intra-cell communication. External communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols.
@@ -73,7 +70,7 @@ A cell can have 1:n components grouped. Components inside the cells are reusable
 * A cell consists of multiple services, managed APIs, ingress and egress policies (including routing, throttling, access control), security trust domain, deployment policies, rolling update policies and external dependencies.
 * The cell definition captures all of these in a standard technology-neutral fashion.
 
-## Deep-dive into Cells
+### Deep-dive into Cells
 
 ![cell definition](/media/ra-cell-details-2.0-60.png)
 
@@ -85,7 +82,7 @@ Components in **Cell-3** are running in a hypervisor-based virtualized environme
 
 The concept of a cell moves away from centralized a enterprise architecture to a decentralized architecture. The segmented approach allows each cell to be independent and iterate individually.
 
-## Cell Gateway Communication
+#### Cell Gateway Communication
 
 The cells consume the functionality of other cells using the three API types (RESTful, events and streams) exposed by the cell gateways.
 
@@ -100,7 +97,84 @@ The cells consume the functionality of other cells using the three API types (RE
 A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from applicable API type. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software as a service (SaaS) application, integration or API gateway encapsulating a set of functionality provided by the external counterpart.
 
-## Section 3: Building an Agile Enterprise with the Cell-based Architecture (CBA)
+#### Inter and intra cell communication
+
+This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
+
+| Code | Name | Definition |
+|---------|---------|---------|
+|**DP**|Data Plane|Forwards traffic between hops, takes data packets|
+|**CP**|Control Plane|Signaling of the network, makes decisions about the traffic flow, runtime governance|
+|**MP**|Management Plane|Configuration, observeabiltty, monitoring, designtime governance|
+
+![cell communication](/media/ra-cell-communication-v2.2.png)
+
+Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane data-plane and a management-plane outside the cells.
+
+Communication planes inside a cell call as the **local mesh** and the communication planes outside the cells call as **global mesh**. 
+
+#### Governance of Cell-based Architecture
+
+![cell governance](/media/ra-cell-gov.png)
+
+The gateway is the control point for a cell-based architecture, which provides a well-defined interface to a subset of APIs, events, and streams. In this pattern, the gateway becomes the only access point (endpoint) for the cell. As a result, the gateway acts as a policy enforcement point, an observability touchpoint, and an enabler for  governance frameworks. Additionally, the gateway pattern helps to implement architectures that comply with domain-specific, technology, or business standards.
+
+The gateway pattern mandates the entire internal and external communication flow through a set of defined gateway clusters. Therefore, it is easy to enforce policies and capture the information required for observation from these gateways. This approach increases the agility of the overall architecture because  the enforcements are introduced, managed, and maintained at the gateways without changing the rest of the associated components in the ecosystem.
+
+#### Security of Cell-based Architecture
+
+![security of cells](media/ra-cell-security-v2.1.png)
+
+Security of the cell-based architecture is an area that deserves more detailed coverage than is being offered here. A future paper devoted to a security reference architecture for an agile enterprise is planned. However, it is worth making a few high-level points here. The main point, which needs to be clear, is that the identity and security domain within a cell may be distinct from the domain outside the cell. For example, the cell gateway may replace tokens that are valid outside the cell with alternative tokens that operate within the cell. This is because the cell may need to operate its own security rules, policies, and approaches. This encapsulation ensures that the cell can migrate without affecting the externals users. 
+However, some organizations may choose to operate a single continuous domain across multiple cells. The above diagram shows two common security patterns. Pattern-1 offers a Security Token Service (STS) inside the cell, and the local STS of the cell contains the required security metadata to authorize and authenticate the incoming requests. STS is part of the local control plane; it stores the required policies and acts as a Policy Decision Point (PDP). Pattern-2 connects to an identity provider (IDP) that resides in the conventional control plane, which is stationed outside the cells. Primarily, we would like to emphasize that the cell-based architecture can work on a local security model in the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell. 
+
+#### Lifecycle and versioning of cells
+
+![cell lcm](media/ra-cell-lcm.png)
+
+The lifecycle of a cell is similar to a typical application lifecycle. Each cell can have its own lifecycle stages based on the functionality, business criticality, and how the team owning the cell has organized the release pipeline. As described in the above diagram, Cell-1 is pipelined with four lifecycle stages (development, test, stage, and production) while Cell-2 contains three lifecycle stages (development, test, and production).  A cell can have multiple active versions at a given time due to the interdependencies cells create with other cells in an enterprise. Each version of the cell contains a separate lifecycle and a release pipeline. As the above diagram explains, Cell-2 has two versions: v3.00 and v2.70; while v3.00 has three stages, v2.70 has two stages.
+By utilizing the modern container-based, cloud-native infrastructures pre-production stages can spin up when required. As described in the diagram, v2.70 of Cell-2 does not have a “dev” phase (because it assumes that development is completed), but it can spin one up if needed to rollout a required a bug fix or a feature enhancement.
+
+## Section 3: Structured Agility
+
+![structured agility](media/ra-structured-agility.png)
+
+One of the main advantages architects can gain from a cell-based architecture is the extended agility provided by the cells and isolation compared to the traditional layered architecture. As mentioned before, the cell-based approach divides the enterprise architecture into individual cells. As a result, there are three levels of iterative architecture can enforce.
+
++ Level-1: **Components** inside each cell can iterate individually.
++ Level-2: Each **cell** can iterate independently.
++ Level-3: The **enterprise architecture** can iterate as a whole.
+
+Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
+
+### Cells and Agile teams
+
+#### Creation of Cells
+
+Creation of the cells can take two approaches based on the current state of the organization. Greenfield projects can take a top-down approach by defining the cells first and develop the components after that. However, in a situation, the components already developed and exist in the infrastructure, components can be reorganized by mapping to cells — also, a combination of the above two methods a viable approach too.
+
+##### Scenario 1: Brandnew Cell
+
+A development team can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
+
+![cell creation 1](media/ra-cell-creation-sc1.png)
+
+##### Scenario 2: From existing (micro) services
+
+The second scenario comes when the components already exist or built outside the cell boundary. Cell owner or the self-organized team members can create a new cell definition and include the components or edit an existing cell definition and introduce the new components.
+
+![cell creation 2](media/ra-cell-creation-sc2.png)
+
+#### Developer Flow
+
+A new architecture paradigm can change the natural development flow, which might affect the productivity of the developers. However, Cell-based Architecture taking a developer-friendly approach that increases efficiency and adoption.
+
+![developer lcm](media/ra-dev-lcm.png)
+
+Developers implement components by writing code or configuration and test in their local sandbox environment. Once the units tests passed, they push (or pull) the changes to the shared source control repository. At that point, the CI/CD process will kickoff and deploy the components into the cells based on the cell configuration defined by the cell owner. CI/CD process takes the components and the cells through the configured application lifecycle stages. Deployment of the component can take two paths based on the immutability of the cell. Immutable cells (recomended) signal the global control-plane and deploy the entire cell for a component change if the cell is mutable, it signals the local control-plane and deploy only the updated component.
+The cell definitions can create by using a programming language or infrastructure as a code script and utilizing the functionality provided by the targeted infrastructure.
+
+## Section 4: Building an Agile Enterprise with the Cell-based Architecture (CBA)
 
 One of the objectives of building a modern reference architecture is to enable adaptivity. Adaptivity is an organization’s ability to respond to changes in the environment, overcome new challenges, and meet new customer demands in an effective and agile way. The aim of the cell-based architecture is to create an environment where new applications can be created from existing capabilities in a modular and iterative approach. A well architected system of cells within the enterprise creates a platform for innovation. The use of APIs, streams, and events ensures a consistent, effective model for building interactive and real-time applications. Effectively, the logical cell-based architecture becomes the basis of an evolving platform for the digital enterprise.
 
@@ -112,7 +186,7 @@ Most enterprises follow a layered architecture with both service-oriented archit
 
 First, we discussed a segmented architecture, which is created by dividing the layered architecture into small segments based on the functional capabilities within each architecture layer [4]. However, that segmentation is too high-level to enforce a decentralized, self-contained architecture unit. At the same time, microservices are generally too fine-grained to be treated as an architecture unit. As a result, we are introducing the cell as the architecture unit in this reference architecture.
 
-**Note**: *A layered architecture and the segmented architecture will be illustrated in two different papers for organizations that are building systems using the same architecture models.*
+**Note**: *A layered architecture and the segmented architecture will be illustrated in a different paper (**API-centric Architecture**) for organizations that are building systems using the same architecture models.*
 
 ### Cell-based Architecture: enterprise view
 
@@ -146,78 +220,7 @@ The order cell manages the core transactions created in the system, which are or
 The customer cell represents the customer-focused functionality. It connects to an internal legacy cell to provide customer relationship management (CRM) capabilities. An external cell represents a SaaS-based CRM system.
 The promotions cell exposes the functionality using a streaming endpoint and lets the reactive order application receive information about the campaigns offered by the organization.
 
-## Section 4: Enterprise support of Cells
-
-### Inter and intra cell communication
-
-This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
-
-| Code | Name | Definition |
-|---------|---------|---------|
-|**DP**|Data Plane|Forwards traffic between hops, takes data packets|
-|**CP**|Control Plane|Signaling of the network, makes decisions about the traffic flow, runtime governance|
-|**MP**|Management Plane|Configuration, observeabiltty, monitoring, designtime governance|
-
-![cell communication](/media/ra-cell-communication-v2.2.png)
-
-Components in a cell are required to communicate with each other in a seamless way, which we call the intra-cell communication. Cells in a system architecture are required to communicate with each other through the edge-gateway, which we call the inter-cell communication. As a result, a control-plane and a data-plane operate inside each cell along with a common control-plane data-plane and a management-plane outside the cells.
-
-Communication planes inside a cell call as the **local mesh** and the communication planes outside the cells call as **global mesh**. 
-
-### Governance of Cell-based Architecture
-
-![cell governance](/media/ra-cell-gov.png)
-
-The gateway is the control point for a cell-based architecture, which provides a well-defined interface to a subset of APIs, events, and streams. In this pattern, the gateway becomes the only access point (endpoint) for the cell. As a result, the gateway acts as a policy enforcement point, an observability touchpoint, and an enabler for  governance frameworks. Additionally, the gateway pattern helps to implement architectures that comply with domain-specific, technology, or business standards.
-
-The gateway pattern mandates the entire internal and external communication flow through a set of defined gateway clusters. Therefore, it is easy to enforce policies and capture the information required for observation from these gateways. This approach increases the agility of the overall architecture because  the enforcements are introduced, managed, and maintained at the gateways without changing the rest of the associated components in the ecosystem.
-
-### Security of Cell-based Architecture
-
-![security of cells](media/ra-cell-security-v2.1.png)
-
-Security of the cell-based architecture is an area that deserves more detailed coverage than is being offered here. A future paper devoted to a security reference architecture for an agile enterprise is planned. However, it is worth making a few high-level points here. The main point, which needs to be clear, is that the identity and security domain within a cell may be distinct from the domain outside the cell. For example, the cell gateway may replace tokens that are valid outside the cell with alternative tokens that operate within the cell. This is because the cell may need to operate its own security rules, policies, and approaches. This encapsulation ensures that the cell can migrate without affecting the externals users. 
-However, some organizations may choose to operate a single continuous domain across multiple cells. The above diagram shows two common security patterns. Pattern-1 offers a Security Token Service (STS) inside the cell, and the local STS of the cell contains the required security metadata to authorize and authenticate the incoming requests. STS is part of the local control plane; it stores the required policies and acts as a Policy Decision Point (PDP). Pattern-2 connects to an identity provider (IDP) that resides in the conventional control plane, which is stationed outside the cells. Primarily, we would like to emphasize that the cell-based architecture can work on a local security model in the cell or extend to a federated security model (which is common) by connecting beyond the boundary of the cell.  
-
-### Lifecycle and versioning of cells
-
-![cell lcm](media/ra-cell-lcm.png)
-
-The lifecycle of a cell is similar to a typical application lifecycle. Each cell can have its own lifecycle stages based on the functionality, business criticality, and how the team owning the cell has organized the release pipeline. As described in the above diagram, Cell-1 is pipelined with four lifecycle stages (development, test, stage, and production) while Cell-2 contains three lifecycle stages (development, test, and production).  A cell can have multiple active versions at a given time due to the interdependencies cells create with other cells in an enterprise. Each version of the cell contains a separate lifecycle and a release pipeline. As the above diagram explains, Cell-2 has two versions: v3.00 and v2.70; while v3.00 has three stages, v2.70 has two stages.
-By utilizing the modern container-based, cloud-native infrastructures pre-production stages can spin up when required. As described in the diagram, v2.70 of Cell-2 does not have a “dev” phase (because it assumes that development is completed), but it can spin one up if needed to rollout a required a bug fix or a feature enhancement.
-
-## Section 5: Structured Agility
-
-![structured agility](media/ra-structured-agility.png)
-
-One of the main advantages architects can gain from a cell-based architecture is the extended agility provided by the cells and isolation compared to the traditional layered architecture. As mentioned before, the cell-based approach divides the enterprise architecture into individual cells. As a result, there are three levels of iterative architecture can enforce.
-
-+ Level-1: **Components** inside each cell can iterate individually.
-+ Level-2: Each **cell** can iterate independently.
-+ Level-3: The **enterprise architecture** can iterate as a whole.
-
-Even though most of the large enterprises try to follow an iterative approach, projects are pushed to an agile-waterfall model due to the size and complexity of the systems. The cell-based approach divides these larger architectures into small chunks and facilitates iteration within. Each iterative step can version individually and manage the dependencies by sticking to the principles of loose-coupling.
-
-## Section 6: Developer Experiance
-
-### Creation of Cells
-
-#### Scenario 1: Brandnew Cell
-
-A developer can start creating a cell before developing the components. In this scenario, the developer treats the cell as a composite. During the development process developer (cell owner/creator) and(or) the teammates can add components to the cell. However, the cell should contain the essential components linked with the local mesh (DP and CP) before deploying the cell from the local sandbox environment.
-
-![cell creation 1](media/ra-cell-creation-sc1.png)
-
-#### Scenario 2: From existing (micro) services
-
-The second scenario comes when the components already exist or built outside the cell boundary. Cell owner or the self-organized team members can create a new cell definition and include the components or edit an existing cell definition and introduce the new components.
-
-![cell creation 2](media/ra-cell-creation-sc2.png)
-
-### Developer Flow
-
-
-## Section 7: Cell - Recommendations and Best Practices
+## Section 5: Cell - Recommendations and Best Practices
 
 ### Generic
 
@@ -240,6 +243,10 @@ The second scenario comes when the components already exist or built outside the
 9. Each cell should be designed to scale independently and to implement throttling and SLA policies that protect it from DoS or other demand challenges.
 
 10. The internal communication model, control plane, data plane, and implementation of the cell are the responsibility of the cell's team.
+       
+11. The cells disregard cyclic dependencies by not having cells inside cells.
+    
+12. A group of cells label as a **virtual application**. 
 
 ### Cell Granuality
 
@@ -260,7 +267,8 @@ The second scenario comes when the components already exist or built outside the
 Advancements in technology and changes to the business model are pushing enterprise architectures to be truly agile. Traditionally centralized enterprise architectures no longer deliver on the expectations of the business and consumers. Our approach creates a pragmatic reference architecture that addresses the requirement for agility using a technology-neutral approach. 
 Microservice architecture is an excellent approach to building decentralized systems. However, microservices are too granular when it comes to architecting larger systems and projects in the brownfield. The need for decentralization is not limited to where various IT assets run and who owns and manages it. There is the people aspect as well. An environment where innovative ideas come from every part of the organization and decision-making is decentralized needs to be established. An enterprise architecture group can operate as the center of enablement that brings life to these ideas and provides constructive feedback.
 Identifying the boundaries and the size of the cells depends on the business domain, organizational structure, skill set, and processes adhered to by the organization. Scaling the cells and providing high availability is part of the infrastructure that deploys the cells.  
-Reference implementations using market-leading technology and a reference methodology to implement an agile enterprise successfully will be discussed as a separate white paper in the future.
+Reference implementations using market-leading technologies and solutions for various vertical markets successfully will be discussed as separate white papers in the future. 
+Authors have published a [**Reference Methodology**](https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md) as a guideline to implement application systems and agile enterprises using Cell-based Architecture.
 
 ## References
 
@@ -273,6 +281,8 @@ Reference implementations using market-leading technology and a reference method
 [4] The exploding endpoint problem - https://thenewstack.io/the-exploding-endpoint-problem-why-everything-must-become-an-api/
 
 [5] Domian Driven Design (DDD) - https://en.wikipedia.org/wiki/Domain-driven_design
+
+[6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
 
 ## Appendix A: Agile Enterprise
 
