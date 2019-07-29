@@ -24,4 +24,4 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
 
 + ### [API-driven Microservice Architecture](api-driven-microservice-architecture.md)
   
-+ ### CIAM - A WSO2 Reference Architecture
++ ### [CIAM - A WSO2 Reference Architecture](ciam-wso2-reference-architecture.md)
