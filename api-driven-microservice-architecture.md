@@ -257,13 +257,20 @@ Istio is the most popular and comprehensive service mesh platform in the market 
 <br/>
 </i>
 
-Even though the API gateway and the service mesh have overlapping capabilities,  the key difference between them is that the API gateway is fundamental in exposing microservices as managed APIs to external (outside the MSA) parties whereas the service mesh is merely an inter-service communication infrastructure which doesn’t have any business notion of the entire solution. Developers can either use in-built inter-service communication capabilities of the API gateway or let the API gateway call the backend microservices via the service mesh by offloading application network functions to the latter. The microgateway can be used in this way as shown in the diagram below.
+Even though the API gateway and the service mesh have overlapping capabilities,  the key difference between them is that the API gateway is fundamental in exposing microservices as managed APIs to external (outside the MSA) parties whereas the service mesh is merely an inter-service communication infrastructure which doesn’t have any business notion of the entire solution. Service meshes in their native form have an API management gap that requires to be filled. These are related to exposing services to external consumers (advanced security, discovery, governance, etc), business insights, policy enforcement, and monetization. 
 
-![api_gateways_and_service_mesh](/media/media_api_driven-msa/api_msa_microgateways_and_service_mesh.png)  <br>
+The service mesh and API gateway are complementary such that they live at different levels and solve different problems. They can exist independently but co-exist complementarily.
+
+![api_gateways_and_service_mesh](/media/media_api_driven-msa/api_msa_wso2_istio_mixer_adapter.png)  <br>
 <p align="center">
-<i>Figure 12 - API Gateways and Service Meshes in Co-existence
+<i>Figure 12 - Istio Mixer Adapter for WSO2 API Manager 
 <br/>
 </i>
+
+The WSO2 API Manager can be positioned to integrate with Istio and manage microservices deployed in Istio as APIs via the Istio mixer adapter for WSO2 API Manager. The WSO2 API Manager goes beyond and provides broader business capabilities such as designing, publishing, documenting, analyzing and monetizing APIs in a secure environment.
+
+The Istio mixer adapter for WSO2 API Manager can secure services using JWT and OAuth2 tokens,
+validate subscriptions and scopes, use WSO2 API Manager Analytics for business insights and more.
 
 ## 3.0 Microservice Architecture - Reference Architectures 
 ### 3.1 Layered Microservice Architecture 
