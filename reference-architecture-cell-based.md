@@ -1,7 +1,7 @@
 <h1 align="center"> Cell-Based Architecture </center></h1>
 <p align="center">
 <i>
-Version Q2-2019<br/>
+Version Q1-2020<br/>
 </i>
 </p>
 
@@ -273,6 +273,12 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 5. Cell-based architecture aims to create business focused architectural constructs that can be reused at a higher level, so naturally organizing the teams and cells around business functions is essential.
 
 **Note**:*A specification focused on cell granularity is in progress, which is shaping the cell boundaries by considering the bounded context and component interaction graph as a model of components and characteristics of their interactions.*
+
+### Cell Use Cases
+
+#### API Products
+
+APIs can comprehend as the products of the 21st century. For many millennia, human trade was mostly directly between the producers and consumers of products. Furthermore, APIs enable connecting businesses and exchange transactions. Technical APIs are too granular hence exposing a collection of APIs as application developer-friendly managed APIs make application developers productive. Grouping a set of managed APIs providing a business functionality makes the application developer productivity further. The grouping of managed APIs call API products and cells provides an excellent framework to develop, manage, and expose API products by classifying a set of components.
 
 ## Conclusions
 
