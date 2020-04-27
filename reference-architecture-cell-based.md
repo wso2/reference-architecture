@@ -1,7 +1,7 @@
 <h1 align="center"> Cell-Based Architecture </center></h1>
 <p align="center">
 <i>
-Version Q1-2020<br/>
+Version Spring-2020<br/>
 </i>
 </p>
 
@@ -279,6 +279,8 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 #### API Products
 
 APIs can comprehend as the products of the 21st century. For many millennia, human trade was mostly directly between the producers and consumers of products. Furthermore, APIs enable connecting businesses and exchange transactions. Technical APIs are too granular hence exposing a collection of APIs as application developer-friendly managed APIs make application developers productive. Grouping a set of managed APIs providing a business functionality makes the application developer productivity further. The grouping of managed APIs call API products and cells provides an excellent framework to develop, manage, and expose API products by classifying a set of components.
+
+![API products](/media/ra-api-product-25.png)
 
 ## Conclusions
 
