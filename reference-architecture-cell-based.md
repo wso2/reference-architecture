@@ -280,7 +280,7 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 
 APIs can comprehend as the products of the 21st century. For many millennia, human trade was mostly directly between the producers and consumers of products. Furthermore, APIs enable connecting businesses and exchange transactions. Technical APIs are too granular hence exposing a collection of APIs as application developer-friendly managed APIs make application developers productive. Grouping a set of managed APIs providing a business functionality makes the application developer productivity further. The grouping of managed APIs call API products and cells provides an excellent framework to develop, manage, and expose API products by classifying a set of components.
 
-![API products](/media/ra-api-product-25.png)
+![API products](/media/ra-api-product-10.png)
 
 ## Conclusions
 
