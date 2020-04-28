@@ -283,7 +283,7 @@ APIs can comprehend as the products of the 21st century. For many millennia, hum
 ![API products](/media/ra-api-product-10.png)
 
 #### Reference implementation (Cellery)
-[Cellery](https://cellery.io/) is a code-first approach (architecture as a code) to building, integrating, running and managing composite applications on Kubernetes. Build, push/pull, test, deploy, update, scale and observe cells. Create secure APIs by default. Use your existing container images, written in any language.
+[Cellery](https://cellery.io/) is a code-first approach (architecture as code) to building, integrating, running and managing composite applications on Kubernetes. Build, push/pull, test, deploy, update, scale and observe cells. Create secure APIs by default. Use your existing container images, written in any language.
 Cellery started off as a learning experiment. Our passion for services composition and the need for a reference implementation for Cell-based architecture gave birth to Cellery. Last year and half was a great learning experience for us. Through Cellery, we learnt to organize services and deploy on Kubernetes at scale. We also found out that this is a common problem that many technical communities are trying to solve and we are planning to contribute to such communities like Open Application Model ([OAM](https://oam.dev/)) in future. As for Cellery, we are no longer actively maintaining the codebase. If you are interested in forking Cellery and using it in your project, please feel free to do so.
 
 You can navigate to the code base at - [https://github.com/wso2/cellery](https://github.com/wso2/cellery).
