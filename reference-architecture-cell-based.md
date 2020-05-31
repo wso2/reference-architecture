@@ -88,7 +88,7 @@ The concept of a cell moves away from centralized a enterprise architecture to a
 
 The cells consume the functionality of other cells using the three API types (request response, events and streams) exposed by the cell gateways.
 
-![epr types](/media/ra-gw-communication-v3-25.png)
+![epr types](/media/ra-gw-communication-v3-15.png)
 
 + **Request Response** API types provide an abstraction over everything that can be **queried** or **activated**.
   
