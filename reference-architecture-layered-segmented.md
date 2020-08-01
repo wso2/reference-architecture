@@ -13,33 +13,9 @@ Version Summer-2020<br/>
 
 > *Enterprises depend on API-driven strategies to bring about digital transformation. The benefits include increased productivity, simplification, seamless connectivity, and rich experiences through digital channels. Connecting humans, things, applications, systems, and data is a fundamental requirement to become a digitally-driven organization, city, or country. APIs are the digital connectors that act as the glue for various digital assets. As a result, the business and technical architecture moved to API-centric from service-orientation. The primary focus of this paper is to look at the architecture approaches taken by the industry and represent these patterns as generic reference architectures. We identified two centralized reference architectures, i.e., layered and segmented, and we will discuss them in detail.*
 
-## Introduction
+## An API-Centric Architecture Approach
 
-Enterprise architecture has one main aim-to bring structure and organization to evolving systems, thus enabling better maintainability, flexibility, and agility. Enterprise architects have the unending task of trying to bring order to chaos. Over the past five years, a rapid shift has taken place in the agility of software development and in particular DevOps. As a result, continuous integration and continuous deployment (CI/CD) approaches have dramatically accelerated the time needed for new deployments of software projects from months to weeks to days to hours. In many ways, enterprise architectures have struggled to adjust. This reference architecture aims to enable an agile enterprise by increasing the agility at the project level and take it to the enterprise level.
-
-This architecture is based on experience working across hundreds of projects on building digital systems. It also offers a forward-looking view aimed at addressing emerging challenges. The aim of this architecture is to enhance agility at the enterprise level. We define agility as the ability of an organization to respond effectively and in good time to changes in the business environment, in customer requirements, or in enterprise strategy. Agility is not just about one-time changes. It's about ongoing, repeated adaptation to meet the challenges of the enterprise. In creating agility, we assert that four properties are key:
-
-+ **Scalability**, the ability to deal with changing workloads by utilizing available resources and effectively maintaining a service level. Modern cloud infrastructure allows components, such as containers, to be scaled effectively, provided they are designed in the correct manner
-
-+ **Modularity**, is the idea that components of the architecture are versioned, replicable, and have well-defined interfaces. It is about exposing the right interfaces into a versioned system as well as hiding the details of the internal workings.
-
-+ **Composability**, is about creating a recursive and uniform architecture where new components and capabilities add to the overall platform in a seamless way. For example, adding business logic in a web page makes it hard for other systems to build on top of that logic, whereas adding the same logic to an API allows web applications, mobile apps, and other server-based systems to access that logic.
-
-+ **Governance**, is about building managed, monitored, resilient systems and ensuring that organizational policies are enforced.
-
-The rest of the this paper is structured as follows:
-
-+ **Section 1**: Introduces the overall abstractions used.
-
-+ **Section 2**: Introduces to the units of an enterprise architecture.
-
-+ **Section 3**: Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
-
-+ **Section 4**: Defines the new reference architecture. This includes a mapping to a real-world example.
-
-+ **Section 5**: Define the rules that can apply in the design, implementation and deployment of the cells.
-
-+ **Appendix-A**: Examines the overall picture by describing the agile business from the business architecture point of view.
+Digital transformation forced organizations to expose their capabilities in standard and easy-to-access ways. As a result, (managed) APIs became the norm to access business data and functionalities. Every architecture took an API-first approach and was augmented to support the same. Most enterprises followed the layered approach for a while and subsequently moved to segmented architecture with the rise of microservices. This paper focuses on these two centralized API-centric architecture patterns.  
 
 ## Section 1: Abstractions
 
