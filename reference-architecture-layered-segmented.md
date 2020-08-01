@@ -1,4 +1,4 @@
-<h3 align="center"> API-centric Centralized Reference Architectures</center></h3>
+<h3 align="center"> API-Centric Centralized Reference Architectures</center></h3>
 <h1 align="center"> Layered and Segmented Architecture</center></h1>
 
 <p align="center">
@@ -7,7 +7,7 @@ Version Summer-2020<br/>
 </i>
 </p>
 
-**_Original Authors_**
+**_Original Author_**
 
 + Asanka Abeysinghe | Chief Technology Evangelist | WSO2, Inc | <asankaa@wso2.com>
 
@@ -21,7 +21,7 @@ Digital transformation forced organizations to expose their capabilities in stan
 
 | Icon | Name | Description |
 |---------|---------|---------|
-|![Person](/media/ra-person.png )| User |A user is a human interacting with the system. Users can be external customers of the organization, internal employees, or partners.|
+|![Person](/media/ra-ls-component.png)| Component |In this architecture, any runtime is treated as a component. A component is an atomic unit. It can represent data, data abstraction, business logic, an end-user application, etc. |
 |![Component](/media/ra-component.png )| Component| A **component** is the **atomic unit** of this reference architecture. A component represents a process or business logic running in a container, serverless environment, or an existing runtime. This can then be categorized into many subtypes based on the functional capabilities. A component is designed based on a specific scope, which can be independently run and reused at the runtime. Runtime requirements and the behavior of the component vary based on the component type and the functional capabilities. The user may decide to build and run the code as a service, function, or microservice, or choose to reuse an existing legacy service based on the architectural need.  |
 |![Cell](media/ra-cell-icon.png)| Cell| Cell - an architecture block represents by an **octagon**.|
 
