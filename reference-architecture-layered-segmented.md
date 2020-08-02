@@ -203,3 +203,16 @@ The components in an application architecture expose the functional capabilities
 | Edge APIs |![Edge](/media/ra-ls-edge-api-20.png)| Edge APIs utilize applications to build applications and share business capabilities internally and externally. These can be highly secured, managed, discoverable, and monetized API products. |
 | Domain APIs |![Domain](/media/ra-ls-domain-api-20.png )| Business logic can be exposed as APIs based on the domain by utilizing utility APIs. They can be used for services, microservices, service composition (orchestration/choreography), functions, and business processes. |
 | Utility APIs |![Utility](media/ra-ls-utility-api-20.png)| These can expose various system of record layers as APIs using data drivers, file, B2B, legacy, and cloud connectors. |
+
+#### Based on Behavior 
+
+Applications (or things) consuming the APIs require the message exchange between the API gateway and the application based on usage. For example, a mobile application on the move requires an asynchronous message exchange to the service during connection interruptions. Therefore, the APIs have to support multiple message exchange patterns. There are three main API types identified based on the behavior. Most of the API gateways available in the market support these three types. 
+
+| API Type | Icon | Description |
+|---------|---------|---------|
+| Request Response |![Edge](/media/ra-ls-request-response-20.png)| The request response API type provides an abstraction over everything that can be queried or activated. 
+Protocols: HTTP/s, gRPC |
+| Events |![Domain](/media/ra-ls-events-20.png )| Events allow action in real-time based on changes that occur in the environment, allowing work to be triggered. 
+Protocols: JMS, AMQP, SMTP, WebSockets, Webhooks, REST hooks, ServerSent |
+| Streams |![Utility](media/ra-ls-streams-20.png)| Streams capture the ongoing evolving nature of the environment, allowing pattern matching and analysis.
+Protocols: Kafka, MQTT |
