@@ -164,3 +164,14 @@ In the runtime partitioning approach, components inside a layer are grouped as s
 
 Multi-tenancy introduced a way to provide isolation in hosted solutions, such as software as a service (SaaS) or platform as a service (Paas). Later on, the same concept was utilized to achieve segmentation in application development. Layered architecture platforms started providing the runtime capabilities and used a tenant as the boundary for each team. The common practice is to provide a tenant in each layer, but it can be obsolete in some layers and make them shared across the tenants. The system of record layer is an example of a shared layer. 
 
+![MT](/media/ra-ls-mt-25.png)
+
+Types of Multi-tenancy in Message-oriented Middleware 
+
+- Shared data, control, and management plane
+- Individual data plane, shared control and management plane
+- Individual data and control plane, shared management plane
+
+Based on various functional and non-functional requirements, internal and external service providers decide which model of multi-tenancy should be offered to consumers. Isolation requirements of functional runtimes, security, and system load are some considerations service providers have to take into account when making this decision. 
+
+If you are new to the concept of the data, control, and management plane, please refer to this article. 
