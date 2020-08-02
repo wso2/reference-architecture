@@ -181,3 +181,19 @@ If you are new to the concept of the data, control, and management plane, please
 ![Platform of platforms](/media/ra-ls-platform-of-platforms-25.png)
 
 In this approach, the entire platform is duplicated and is treated as a segment for a business unit or an agile team. When a new project or a business unit requires an environment, the authorized infrastructure team provision and spin up the entire platform and hand it over to the required team. The platform of platforms is a costly approach from an infrastructure point of view. Each team might require several environments based on their application development lifecycle. The number of environments can vary by the size of the team and the nature of the applications they build. For example, Team A requires development, testing, and production environments, while Team B needs development, testing, staging, production-blue, and production-green environments. In this approach, a clone of the same platform is required to represent each environment. However, there are considerable advantages in terms of productivity; the isolation of runtime environments allow teams to independently develop and release the products or the services they own. Most organizations offer some services across the platforms, such as master data, identities, user stores, and build processes associated with the CI/CD pipeline. 
+
+## API-centric Architecture
+
+In this section, we look at the relationships between APIs and layered and segmented architecture patterns.
+
+### The Evolution of APIs
+
+![API timeline](/media/ra-ls-api-timeline.png)
+
+In the prior section, we looked at the architecture evolution that occurred during the past two decades. The above table is a snapshot of how APIs evolved during the same period. If you carefully analyze both, there is a synergy we can see in both progression paths that involve APIs from the beginning. Therefore, APIs were involved in each architecture approach in different forms and characteristics. Digital transformation, consumer-driven application requirements, and business-focused application development led APIs to shift to the right—from technical APIs to business-friendly APIs. 
+
+### The Categorization of APIs
+
+#### Based on Functionality
+
+The components in an application architecture expose the functional capabilities as APIs. These APIs are created using different message exchange patterns, transports, and formats.  The purpose of the APIs varies based on the nature of the component. Based on various usage patterns, we have categorized APIs into three buckets.
