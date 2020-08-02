@@ -145,5 +145,22 @@ The fundamental concept behind layered architecture did not change in segmented 
 
 Segments were created based on how each enterprise was organized; in some cases, it was based on the business units, a set of functionality delivered to larger application systems,  or center of excellence (CoE) teams. The team owns the segment and has access to the segment in different environments associated with the lifecycle of the application, such as development, testing, staging, and production. 
 
+![Segmented Architecture](/media/ra-ls-segmented-ov-25.png)
 
+The above diagram illustrates a logical abstraction of segmented architecture. Architecture layers remain as it is, and the data flow happens from one layer to another. However, the components in each layer are grouped as segments. Segmentation is implemented using the combination of infrastructure capabilities and security, such as role-based access control (RBAC) and entitlement policies. 
+Organizations are taking different approaches to achieve segmentation. They can be categorized into three areas. 
+
+1. Runtime partitioning
+2. Multi-tenancy 
+3. Platform of platforms
+
+#### Runtime Partitioning
+
+In the runtime partitioning approach, components inside a layer are grouped as segments, which adheres to the fundamentals of the segmented architecture pattern. The partitioning of components (or runtimes) is done based on the development and production deployment needs and isolation requirements. The following diagram shows a segmentation approach based on the business domains. Only the services layer is segmented based on the business domains and each segment is owned by an individual team. The remaining layers (other than domain services) are not partitioned and act as shared services across segments. 
+
+![Runtime partioning](/media/ra-ls-runtime-part.png)
+
+#### Multi-tenancy 
+
+Multi-tenancy introduced a way to provide isolation in hosted solutions, such as software as a service (SaaS) or platform as a service (Paas). Later on, the same concept was utilized to achieve segmentation in application development. Layered architecture platforms started providing the runtime capabilities and used a tenant as the boundary for each team. The common practice is to provide a tenant in each layer, but it can be obsolete in some layers and make them shared across the tenants. The system of record layer is an example of a shared layer. 
 
