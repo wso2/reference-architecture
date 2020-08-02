@@ -160,7 +160,7 @@ In the runtime partitioning approach, components inside a layer are grouped as s
 
 ![Runtime partioning](/media/ra-ls-runtime-part.png)
 
-#### Multi-tenancy 
+#### Multi-Tenancy 
 
 Multi-tenancy introduced a way to provide isolation in hosted solutions, such as software as a service (SaaS) or platform as a service (Paas). Later on, the same concept was utilized to achieve segmentation in application development. Layered architecture platforms started providing the runtime capabilities and used a tenant as the boundary for each team. The common practice is to provide a tenant in each layer, but it can be obsolete in some layers and make them shared across the tenants. The system of record layer is an example of a shared layer. 
 
@@ -182,7 +182,7 @@ If you are new to the concept of the data, control, and management plane, please
 
 In this approach, the entire platform is duplicated and is treated as a segment for a business unit or an agile team. When a new project or a business unit requires an environment, the authorized infrastructure team provision and spin up the entire platform and hand it over to the required team. The platform of platforms is a costly approach from an infrastructure point of view. Each team might require several environments based on their application development lifecycle. The number of environments can vary by the size of the team and the nature of the applications they build. For example, Team A requires development, testing, and production environments, while Team B needs development, testing, staging, production-blue, and production-green environments. In this approach, a clone of the same platform is required to represent each environment. However, there are considerable advantages in terms of productivity; the isolation of runtime environments allow teams to independently develop and release the products or the services they own. Most organizations offer some services across the platforms, such as master data, identities, user stores, and build processes associated with the CI/CD pipeline. 
 
-## API-centric Architecture
+## API-Centric Architecture
 
 In this section, we look at the relationships between APIs and layered and segmented architecture patterns.
 
@@ -224,7 +224,7 @@ The reason for claiming layered architecture as an API-centric approach is highl
 
 While bridging connectivity between layers, APIs connect components within the layers as well. Connectivity between the components shares either business- or system-level information based on the runtime need. 
 
-### Service-oriented Architecture and APIs 
+### Service-Oriented Architecture and APIs 
 
 Inherited from the generic layered architecture connection with APIs, SOA uses the same concept. 
 
@@ -234,7 +234,7 @@ A new layer called API management was added to the architecture and resides betw
 
 The nature of the systems residing in each layer mandate the type of APIs exposed. Behavioral API models come in handy here to support that. In addition, heterogeneous systems expect various message formats and security standards, so message mediation and security bridging are common practices in this architecture pattern. Traditional enterprise service bus (ESB), composite services, and API gateways facilitate the mediation processes. Mediation is an overhead due to the added latency, but it can instantly negotiate by looking at the simplicity brought to the architecture and functional capabilities. 
 
-### Segmented architecture and APIs 
+### Segmented Architecture and APIs 
 
 The usage of APIs in the segmented architecture is similar to the layered architecture. However, it increases dependency because a business unit or a team owns each segment. The only way (or recommended way) is to use APIs to communicate between the segments. Similar to the layered architecture, APIs will glue the segments as well as components inside each segment. In general, edge APIs get exposed between segments, but there are no restrictions to prove the capabilities as domain and utility APIs. 
 
