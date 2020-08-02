@@ -22,7 +22,7 @@ Digital transformation forced organizations to expose their capabilities in stan
 | Icon | Name | Description |
 |---------|---------|---------|
 |![Person](/media/ra-ls-component-10.png)| Component |In this architecture, any runtime is treated as a component. A component is an atomic unit. It can represent data, data abstraction, business logic, an end-user application, etc. |
-|![Layer](/media/ra-ls-layer-30.png )| Layer| A layer is a grouping of a set of similar components and creates a clear boundary at design time and runtime. Layers are stacked on one another.|
+|![Layer](/media/ra-ls-layer-20.png )| Layer| A layer is a grouping of a set of similar components and creates a clear boundary at design time and runtime. Layers are stacked on one another.|
 |![DFlow](media/ra-ls-dflow.png)| Data flow| The data flow represents how information is exchanged between each layer. Data flows sequentially (without bypassing) based on how the layers are stacked.|
 |![Segment](/media/ra-ls-segment.png )| Segment|The subgrouping of components within a layer or across a number of layers.|
 |![API](/media/ra-ls-api.png )| API|An **A**pplication **P**rogramming **I**nterface. They can represent edge, domain, and utility APIs.|
