@@ -213,3 +213,17 @@ Applications (or things) consuming the APIs require the message exchange between
 | Request Response |![Edge](/media/ra-ls-reqest-response-20.png)| The request response API type provides an abstraction over everything that can be queried or activated Protocols: HTTP/s, gRPC |
 | Events |![Domain](/media/ra-ls-events-20.png )| Events allow action in real-time based on changes that occur in the environment, allowing work to be triggered. Protocols: JMS, AMQP, SMTP, WebSockets, Webhooks, REST hooks, ServerSent |
 | Streams |![Utility](media/ra-ls-streams-20.png)| Streams capture the ongoing evolving nature of the environment, allowing pattern matching and analysis. Protocols: Kafka, MQTT |
+
+Different behavioral APIs can be exposed using a single API gateway or use separate gateways per each behavioral type. The decision might depend on the functional capabilities of the API gateway and the architecture. 
+
+### Layered Architecture and APIs
+
+The reason for claiming layered architecture as an API-centric approach is highlighted in the following diagram. APIs act as the glue to connect the layers. Based on the functional capabilities exposed, the API type varies and fit into a category explained in the previous section. 
+
+![Layered API](/media/ra-ls-layered-api-25.png)
+
+While bridging connectivity between layers, APIs connect components within the layers as well. Connectivity between the components shares either business- or system-level information based on the runtime need. 
+
+### Service-oriented Architecture and APIs 
+
+Inherited from the generic layered architecture connection with APIs, SOA uses the same concept. 
