@@ -174,7 +174,7 @@ Types of Multi-tenancy in Message-oriented Middleware
 
 Based on various functional and non-functional requirements, internal and external service providers decide which model of multi-tenancy should be offered to consumers. Isolation requirements of functional runtimes, security, and system load are some considerations service providers have to take into account when making this decision. 
 
-If you are new to the concept of the data, control, and management plane, please refer to this article. 
+If you are new to the concept of the data, control, and management plane, please refer to this [**article**](https://www.ciscopress.com/articles/article.asp?p=2928193). 
 
 #### Platform of Platforms 
 
