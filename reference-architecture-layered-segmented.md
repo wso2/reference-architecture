@@ -197,3 +197,9 @@ In the prior section, we looked at the architecture evolution that occurred duri
 #### Based on Functionality
 
 The components in an application architecture expose the functional capabilities as APIs. These APIs are created using different message exchange patterns, transports, and formats.  The purpose of the APIs varies based on the nature of the component. Based on various usage patterns, we have categorized APIs into three buckets.
+
+| API Category | Icon | Description |
+|---------|---------|---------|
+| Edge APIs|![Edge](/media/ra-ls-edge-api.png)| Edge APIs utilize applications to build applications and share business capabilities internally and externally. These can be highly secured, managed, discoverable, and monetized API products. |
+| Domain APIs |![Domain](/media/ra-ls-domain-api.png )| Business logic can be exposed as APIs based on the domain by utilizing utility APIs. They can be used for services, microservices, service composition (orchestration/choreography), functions, and business processes. |
+| Utility APIs |![Utility](media/ra-ls-utility-api.png)| These can expose various system of record layers as APIs using data drivers, file, B2B, legacy, and cloud connectors. |
