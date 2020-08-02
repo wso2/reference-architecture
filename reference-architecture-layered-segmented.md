@@ -83,9 +83,13 @@ Data flow in a sequential manner from one layer to another. As a result, two lay
 Developers working on and responsible for a layer experience the same behavior from the two layers surrounding it.
 
 
-#### Cell Gateway Communication
+### Layered Architecture with SOA
 
-The cells consume the functionality of other cells using the three API types (request response, events and streams) exposed by the cell gateways.
+![Layered SOA](/media/ra-ls-layered-soa-25.png)
+
+The above diagram represents a common layered architecture used by architects that used SOA to implement systems. However, this is not an architecture diagram used at the beginning of SOA—rather it presents an architecture after the SOA concepts were well established in the industry. Initial SOA concepts were built using a triangular web services model and consisted of a service provider, service registry or discovery, and a service consumer. 
+
+Architects extended the triangular model by following one of the fundamental concepts of SOA "decoupling" and grouped the decoupled functional capabilities into layers. Organizations modeled their teams and reporting structures to fit into the layered architecture and each layer became an individual team or even a business unit. 
 
 ![epr types](/media/ra-gw-communication-v3-20.png)
 
