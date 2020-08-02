@@ -29,7 +29,7 @@ Digital transformation forced organizations to expose their capabilities in stan
 
 
 
-## The Evolution of API-Centric Architecture 
+## The Evolution of Application Architecture 
 
 ![evolution of api architecture](/media/ra-ls-api-evo-75.png)
 
