@@ -73,7 +73,7 @@ The movement of hardware and software, in addition to the hierarchical and centr
 
 ### An Overview of Layered Architecture
 
-![Layered architecture](/media/ra-ls-layered-ov.png)
+![Layered architecture](/media/ra-ls-layered-ov-50.png)
 
 As noted at the beginning of this paper, in a layered architecture, components are the atomic units. Components that provide similar functional capabilities are grouped into layers. Layers are arranged as a stack.
 
