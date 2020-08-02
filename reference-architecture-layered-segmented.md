@@ -91,7 +91,10 @@ The above diagram represents a common layered architecture used by architects th
 
 Architects extended the triangular model by following one of the fundamental concepts of SOA "decoupling" and grouped the decoupled functional capabilities into layers. Organizations modeled their teams and reporting structures to fit into the layered architecture and each layer became an individual team or even a business unit. 
 
-![epr types](/media/ra-gw-communication-v3-20.png)
+### Improved Layered Architecture with SOA: August-2011 
+
+![Layered SOA2](/media/ra-ls-layered-soa2.png)
+
 
 + **Request Response** API types provide an abstraction over everything that can be **queried** or **activated**.
   
