@@ -210,9 +210,6 @@ Applications (or things) consuming the APIs require the message exchange between
 
 | API Type | Icon | Description |
 |---------|---------|---------|
-| Request Response |![Edge](/media/ra-ls-request-response-20.png)| The request response API type provides an abstraction over everything that can be queried or activated. 
-Protocols: HTTP/s, gRPC |
-| Events |![Domain](/media/ra-ls-events-20.png )| Events allow action in real-time based on changes that occur in the environment, allowing work to be triggered. 
-Protocols: JMS, AMQP, SMTP, WebSockets, Webhooks, REST hooks, ServerSent |
-| Streams |![Utility](media/ra-ls-streams-20.png)| Streams capture the ongoing evolving nature of the environment, allowing pattern matching and analysis.
-Protocols: Kafka, MQTT |
+| Request Response |![Edge](/media/ra-ls-reqest-response-20.png)| The request response API type provides an abstraction over everything that can be queried or activated Protocols: HTTP/s, gRPC |
+| Events |![Domain](/media/ra-ls-events-20.png )| Events allow action in real-time based on changes that occur in the environment, allowing work to be triggered. Protocols: JMS, AMQP, SMTP, WebSockets, Webhooks, REST hooks, ServerSent |
+| Streams |![Utility](media/ra-ls-streams-20.png)| Streams capture the ongoing evolving nature of the environment, allowing pattern matching and analysis. Protocols: Kafka, MQTT |
