@@ -58,16 +58,30 @@ One of the main motivations behind the [**Cell-Based Architecture**](https://git
 
 The system of systems concept groups the functionality and the teams (people) associated with delivering the functionality. The system of record, system of operations, system of engagement, and system of intelligence are a few high-level classifications that derive into subsystems based on the size and the complexity of the overall system. 
 
+#### Introduction of New Usage Patterns 
 
-![cell definition](/media/ra-cell-details-2.0-60.png)
+There were various usage patterns that were introduced from time to time-based on functionality enhancements. As an example, API management introduced an API gateway layer, identity and access management (IAM), and analytics moved to a centralized service layer. At the same time, infrastructure-related operations moved to an infrastructure as a service layer. These patterns influenced the shape of layered architecture.  
 
-In this example, **Cell-1** contains two microservices and a function operating with a microbroker and a microgateway to fulfill the functionality. The function is communicating with a few external services running outside the cell, and one microservice communicates with a cluster of external databases. The cell contains local storage, which is required by the microbroker. The functionality of a microservice in this cell has been extended by bringing a sidecar.
+## Layered Architecture
 
-**Cell-2** contains a cluster of relational databases exposed via a Java Database Connectivity (JDBC) endpoint.
+For nearly two decades, reference architectures primarily focused on layers, where comparable functional capabilities were grouped into layers by following the SoS approach. Centralized data moved from one layer to another. Layered architecture not only created architecture and technology layers but it also created a culture, an organization structure, and a new way for how teams operate.
+There are pros and cons to using this pattern. We position this as part of the emerging architecture pattern by considering enterprises that are moving from brownfield to greenfield and heavy usage of this pattern on the systems already built and providing a digital experience for consumers. 
 
-Components in **Cell-3** are running in a hypervisor-based virtualized environment with a few RESTful services, an application server runtime, and a business process. Cell-3 exposes its capabilities through an endpoint implemented via a traditional enterprise service bus (ESB) or an API gateway.
+Layered architecture is a natural progression based on how hardware and software systems have evolved, which started from tightly coupled, centralized, and single-purpose systems to distributed (centralized) multi-functional systems and modern decentralized any-functional systems. 
 
-The concept of a cell moves away from centralized a enterprise architecture to a decentralized architecture. The segmented approach allows each cell to be independent and iterate individually.
+The movement of hardware and software, in addition to the hierarchical and centralized setup of the organization structure, was also an excellent fit for layered architecture. In such an organization, sub-teams are disconnected and operate as silos. Centralized, layered architecture helps these disconnected teams to connect by making the centralized system the source of truth. 
+
+### An Overview of Layered Architecture
+
+![Layered architecture](/media/rs-la-layered-ov.png)
+
+As noted at the beginning of this paper, in a layered architecture, components are the atomic units. Components that provide similar functional capabilities are grouped into layers. Layers are arranged as a stack.
+
+The number of layers is not fixed. However, at least three layers introduced by the three-tier architecture (presentation, logic, and data) exist in most layered architecture approaches. The complexity of the systems and the level of distribution (separation of concerns), introduced sub-layers to the basic three layers. 
+
+Data flow in a sequential manner from one layer to another. As a result, two layers cannot bypass a layer in between. Different message exchange patterns (MEPs) can be used to exchange data between each layer. An architect can use one or a combination of different MEPs. For example, request-response and publish/subscribe (pub/sub) MEPs can be used to exchange data between layers.  
+Developers working on and responsible for a layer experience the same behavior from the two layers surrounding it.
+
 
 #### Cell Gateway Communication
 
