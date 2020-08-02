@@ -93,7 +93,7 @@ Architects extended the triangular model by following one of the fundamental con
 
 ### Improved Layered Architecture with SOA: August-2011 
 
-![Layered SOA2](/media/ra-ls-layered-soa2.png)
+![Layered SOA2](/media/ra-ls-layered-soa-2-orig.png)
 
 
 + **Request Response** API types provide an abstraction over everything that can be **queried** or **activated**.
