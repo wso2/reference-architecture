@@ -45,7 +45,8 @@ N-Tier Architecture: Smart devices added another application type—mobile apps.
 
 Service-Oriented Architecture (SOA): Web services standardized distributed system calls by introducing interface definitions (contracts) and message formats, which were initially XML based. In addition, web services simplified remote procedure calls and brought in the concept of business interfaces and business data. As a result, a new architecture layer was added to the n-tier architecture: the services layer. As the entire architecture was created based on services, it was named service-oriented architecture. Later on, services were categorized as data services, business services, composite services, etc., and each service category represented an architecture layer. SOA was further improved with the addition of many sub-architecture patterns, such as event-driven architecture (EDA) and web-oriented architecture (WOA). 
 
-*This paper mainly focuses on the layered and segmented architecture(s) defined after SOA.*
+***This paper mainly focuses on the layered and segmented architecture(s) defined after SOA.***
+
 Microservice Architecture (MSA): The theory behind microservices proposed a decentralized and non-layered architecture. However, most enterprises that adopted MSA ended in a layered architecture once they started reusing existing systems and data as well as the added quality of services. 
 
 One of the main motivations behind the cell-based architecture [1] was to find the right reference architecture to enable MSA outside a layered approach. Cell-based architecture is an API-led decentralized reference architecture that is compliant with microservice architecture (MSA) and cloud-native architecture (CNA). 
