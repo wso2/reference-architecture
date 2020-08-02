@@ -8,12 +8,12 @@ A Proven approach to helping every development organization become an integratio
 
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to asankaa@wso2.com.
 
-+ ### [Cell-based Architecture](reference-architecture-cell-based.md)
++ ### [Cell-based Architecture](reference-architecture-cell-based.md) - *Decentralized, Clound-native, Microservice complient* 
   
   Functional capabilities grouped in an architecture unit based on scope and ownership. It is a decentralized where data moves within and across cells and governance is transparently applied through a control plane embedded within cells.
 
-+ ### API-centric Architecture
-  *- will be released in fall-2019*
++ ### [Layered and Segmented Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-layered-segmented.md) -  *API-centric centralized architectures*
+
   
   The focus of the enterprises moved to API-driven with the digital transformation became the strategy. As a result, the business and the technical architecture moved from service-orientation to API-centric. The primary focus of this specification is to look at the architecture approaches taken by the industry and represent those patterns as generic reference architectures. We identified two reference architectures, layered and segmented which we will be discussing in detail in this paper.
 
