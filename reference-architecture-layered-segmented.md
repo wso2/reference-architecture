@@ -49,7 +49,7 @@ Service-Oriented Architecture (SOA): Web services standardized distributed syste
 
 Microservice Architecture (MSA): The theory behind microservices proposed a decentralized and non-layered architecture. However, most enterprises that adopted MSA ended in a layered architecture once they started reusing existing systems and data as well as the added quality of services. 
 
-One of the main motivations behind the cell-based architecture [1] was to find the right reference architecture to enable MSA outside a layered approach. Cell-based architecture is an API-led decentralized reference architecture that is compliant with microservice architecture (MSA) and cloud-native architecture (CNA). 
+One of the main motivations behind the [**Cell-Based Architecture**](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) **(CBA)** was to find the right reference architecture to enable MSA outside a layered approach. Cell-Based Architecture is an API-led decentralized reference architecture that is compliant with Microservice Architecture (MSA) and Cloud-Native Architecture (CNA). 
 
 
 ### Influence from Other Concepts
