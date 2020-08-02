@@ -17,7 +17,7 @@ Version Summer-2020<br/>
 
 Digital transformation forced organizations to expose their capabilities in standard and easy-to-access ways. As a result, (managed) APIs became the norm to access business data and functionalities. Every architecture took an API-first approach and was augmented to support the same. Most enterprises followed the layered approach for a while and subsequently moved to segmented architecture with the rise of microservices. This paper focuses on these two centralized API-centric architecture patterns.  
 
-## Section 1: Abstractions
+## Abstractions
 
 | Icon | Name | Description |
 |---------|---------|---------|
@@ -28,20 +28,10 @@ Digital transformation forced organizations to expose their capabilities in stan
 |![API](/media/ra-ls-api-20.png )| API|An **A**pplication **P**rogramming **I**nterface. They can represent edge, domain, and utility APIs.|
 
 
-### Component Types: Main Categories
 
-| Icon | Category | Component |
-|---------|---------|---------|
-|![Component](/media/ra-data-service.png )|Legacy and data services|Databases, Existing systems, Registries and repositories, User stores, Business processes|
-|![Component](/media/ra-microservice.png )|Microservices and serverless components|Core business logic, Aggregation and service composition, Transformation|
-|![Component](/media/ra-gateway.png)|Gateways and brokers|Exposed APIs, events, and streams, Policy enforcement points, Message brokers, Identity brokers and identity gateways, Sidecars and bridges|
-|![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events,  and streams, Cloud systems and SaaS|
-|![Frontend Clients](/media/ra-front-end-clients.png)|Frontend clients|Mobile apps, Reactive apps, API consumers|
-|![Gov and Utils](/media/ra-gov-utils.png)|Governance and utilities|Registry, Observability, Automation tools|
+## The Evolution of API-Centric Architecture 
 
-## Section 2: Cell - The Units of an Enterprise Architecture
-
-![cell definition](/media/ra-cell-definition-2.2-75.png)
+![evolution of api architecture](/media/ra-ls-api-evo.png)
 
 A **cell** is a **collection of components**, grouped from design and implementation into deployment. A cell is independently deployable, manageable, and observable.
 Components inside the cell can communicate with each other using supported transports for intra-cell communication. External communication must happen through the edge-gateway or proxy, which provides APIs, events, or streams via governed network endpoints using standard network protocols.
