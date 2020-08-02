@@ -31,7 +31,7 @@ Digital transformation forced organizations to expose their capabilities in stan
 
 ## The Evolution of API-Centric Architecture 
 
-![evolution of api architecture](/media/ra-ls-api-evo.png)
+![evolution of api architecture](/media/ra-ls-api-evo-75.png)
 
 Single-tier Architecture: As we discussed earlier, application systems started as being centralized and single-purpose, with user interfaces, business logic, and data bundled together as a single layer. If you have built systems using Cobol and RPG (3G programming languages), you would have experienced how to generate user interfaces (forms) by pointing to a data set and building business logic directly interacting with the record sets and user interface. To run complex logic and data manipulation, business processes had to be scheduled in a queue and were executed sequentially (FIFO). 3G programming languages, ISAM databases, and mainframes were some of the technical elements in the single-tier era. 
 
@@ -178,7 +178,7 @@ If you are new to the concept of the data, control, and management plane, please
 
 #### Platform of Platforms 
 
-![Platform of platforms](/media/ra-ls-platform-of-platforms-25.png)
+![Platform of platforms](/media/ra-ls-platform-of-platforms-50.png)
 
 In this approach, the entire platform is duplicated and is treated as a segment for a business unit or an agile team. When a new project or a business unit requires an environment, the authorized infrastructure team provision and spin up the entire platform and hand it over to the required team. The platform of platforms is a costly approach from an infrastructure point of view. Each team might require several environments based on their application development lifecycle. The number of environments can vary by the size of the team and the nature of the applications they build. For example, Team A requires development, testing, and production environments, while Team B needs development, testing, staging, production-blue, and production-green environments. In this approach, a clone of the same platform is required to represent each environment. However, there are considerable advantages in terms of productivity; the isolation of runtime environments allow teams to independently develop and release the products or the services they own. Most organizations offer some services across the platforms, such as master data, identities, user stores, and build processes associated with the CI/CD pipeline. 
 
