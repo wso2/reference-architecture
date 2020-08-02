@@ -123,6 +123,18 @@ Quality of Services (QoS): We identified three primary quality of services in th
 
 The layered architecture described above does not look interesting for current greenfield projects that follow concepts such as microservices and cloud-native. The reality is that a majority of enterprises cannot take a 100% greenfield approach; it is a mix of brownfield and greenfield. Therefore, a multi-dimensional layered architecture is still used as a reference architecture to build large distributed systems. The next section explains a way to enhance this approach to address greenfield architecture requirements. 
 
+### Layered Architecture with Microservice Architecture (MSA): February-2014
+
+The term microservices was coined by Dr. Peter Rogers in 2005; however, it was adopted as an architecture pattern that could be applied to build production-ready systems in 2011. Best practices and guidelines provided by technology evangelists like Martin Fowler and organizations that adopted the principles, such as Netflix and Uber, made it famous in the architecture community. 
+
+However, architects found it difficult to apply all the theories associated with microservice architecture during that period. Development teams started writing microservices when they revamped existing services or when introducing new services. At the same time, greenfield projects started adopting microservices. But those microservices had to fit into the overall application architecture due to various reasons, such as fetching data, integrating with business processes, and even producing data to various end-user applications residing in the system of the engagement layer. As a result, microservices became another layer in layered architecture. The following diagram explains how microservices fit into the layered architecture during the early stage. 
+
+![Layered MSA](/media/ra-ls-layered-msa.png)
+
+Primarily the business logic and integration logic focused on service composition (orchestration and choreography) moved to microservices. The centralized nature of the runtime, dependency with multiple application architecture layers, and hypervisor-based and bare-metal infrastructure did not support the flexibility and depth required for MSA. Container-based infrastructures were there at that time, such as Linux Containers (LXC) and Warden, but they were not mature enough to run production systems. 
+
+To break the limitations identified above, application and DevOps architects came up with a workaround. This is the birth of segmented architecture. 
+
 
 + **Request Response** API types provide an abstraction over everything that can be **queried** or **activated**.
   
