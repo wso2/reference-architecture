@@ -188,7 +188,7 @@ In this section, we look at the relationships between APIs and layered and segme
 
 ### The Evolution of APIs
 
-![API timeline](/media/ra-ls-api-timeline.png)
+![API timeline](/media/ra-ls-api-timeline-75.png)
 
 In the prior section, we looked at the architecture evolution that occurred during the past two decades. The above table is a snapshot of how APIs evolved during the same period. If you carefully analyze both, there is a synergy we can see in both progression paths that involve APIs from the beginning. Therefore, APIs were involved in each architecture approach in different forms and characteristics. Digital transformation, consumer-driven application requirements, and business-focused application development led APIs to shift to the right—from technical APIs to business-friendly APIs. 
 
