@@ -52,7 +52,12 @@ Microservice Architecture (MSA): The theory behind microservices proposed a dece
 One of the main motivations behind the cell-based architecture [1] was to find the right reference architecture to enable MSA outside a layered approach. Cell-based architecture is an API-led decentralized reference architecture that is compliant with microservice architecture (MSA) and cloud-native architecture (CNA). 
 
 
-### Deep-Dive into Cells
+### Influence from Other Concepts
+
+#### System of Systems (SoS)
+
+The system of systems concept groups the functionality and the teams (people) associated with delivering the functionality. The system of record, system of operations, system of engagement, and system of intelligence are a few high-level classifications that derive into subsystems based on the size and the complexity of the overall system. 
+
 
 ![cell definition](/media/ra-cell-details-2.0-60.png)
 
