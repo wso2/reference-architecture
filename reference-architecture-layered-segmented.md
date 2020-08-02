@@ -95,6 +95,34 @@ Architects extended the triangular model by following one of the fundamental con
 
 ![Layered SOA2](/media/ra-ls-layered-soa-2-orig.png)
 
+>*In fall 2015, I was involved in defining the future state architecture for a leading European automobile company. The company’s chief architect visited our office in California, and we started the project by taking the standard SOA-based layered architecture defined in the previous section. After a full working day and many whiteboard diagrams, we realized that single-dimensional layers could not represent the full architecture landscape we wanted. We started day two by extending the layered architecture to one that was multi-dimensional by bringing in application lifecycle stages and quality of services into separate dimensions. This allowed us to group cross-cutting concerns into different blocks within the layers and address a broader scope of capabilities.*
+
+The system of systems concept influenced this architecture as the foundation. Also, concepts such as Gartner's pace layered architecture and the functionality richness expected by the enterprise architecture considered heavily while defining this pattern.  
+We used this pattern to build many systems in medium to large enterprises, and still, many architects refer to this as a logical pattern. 
+Let's go through each layer in detail. 
+
+Source System of Record (SSoR): This is the layer that physically stores data. Different types of data storage can represent this layer. In reality, enterprises use heterogeneous data storage added with the time based on the internally and externally built systems introduced. This storage can vary from SQL, NoSQL, file system, to cloud storage, or a combination of these.
+
+System of Record (SoR): This layer is responsible for managing and maintaining data stored in the SSoR layer. Typically a core system application represents this layer by encapsulating the SSoR. 
+
+Data Virtualization: This layer allows access to the SoR or multiple SoRs by building business objects. Data manipulation tools and technologies, such as master data management (MDM) and extract, transform, load (ETL), reside in this layer. Object-relational mapping (ORM), data services introduced by SOA, data APIs, and new data lakes implemented using data caches can be new additions. 
+
+Service-Oriented Architecture (SOA): The SOA layer contains the business logic and processes that expose the business capabilities as services. Traditional web service standards or RESTful service standards use this layer to define the interfaces on accessing the services. 
+
+Application Programming Interfaces (APIs): Data and business functionalities are exposed in secure and standard ways via (managed) APIs. The application developer only sees the APIs as the way to perform create/read/update/delete (CRUD) operations and execute business processes. APIs encapsulate the complexity of the underlying systems and data and provide a pure abstraction. 
+
+System of Engagement: This is the layer that human interaction happens through various applications, such as web and mobile applications. As we identified before, applications are built by consuming (managed) APIs. There can be a system-to-system interaction, and device interaction through IoT (Internet of Things) can represent this layer, in addition to human-centric applications. Even robotics is a candidate to represent this layer. 
+
+As explained previously, the difference between this layered architecture compared to the standard layered diagrams is the multi-dimensional aspect of it. So let's look at the horizontal view of the same. 
+
+System of Automation: Infrastructure, infrastructure as a service (IaaS), and virtualization of hardware, such as the physical location of different runtimes, runs in this layer. Besides, a supportive process of application lifecycle management, such as continuous integration (CI), continuous deployment (CD), infrastructure as a code, and various DevOps automation, represents this layer. This layer runs across the vertical layers we looked in the previous sections. 
+
+Application lifecycle stages (develop/publish/consume and run): Tools and actions bound with development sandbox environments are represented in the development layer. Once the application advances from the development by successfully passing the relevant quality tests, it gets promoted to the publishing stage. Publishing can proceed to a relevant listing (store or registry) as well as to an application composite repository. In some cases, it can be just a branch or a tag in the source control system, which contains a separate build pipeline. Application usage outside development and testing can be found in the consume and run layer. The production-ready versions of applications are represented here. In addition to the applications, the dependent runtimes in each vertical layer are presented from bottom to top (data to screen). 
+
+Quality of Services (QoS): We identified three primary quality of services in this architecture, which can engage at the runtime separated from the core application and business logic. Securing, governing, and monitoring the applications and business logic are added as separate horizontal layers. 
+
+The layered architecture described above does not look interesting for current greenfield projects that follow concepts such as microservices and cloud-native. The reality is that a majority of enterprises cannot take a 100% greenfield approach; it is a mix of brownfield and greenfield. Therefore, a multi-dimensional layered architecture is still used as a reference architecture to build large distributed systems. The next section explains a way to enhance this approach to address greenfield architecture requirements. 
+
 
 + **Request Response** API types provide an abstraction over everything that can be **queried** or **activated**.
   
