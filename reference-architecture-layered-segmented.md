@@ -227,3 +227,28 @@ While bridging connectivity between layers, APIs connect components within the l
 ### Service-oriented Architecture and APIs 
 
 Inherited from the generic layered architecture connection with APIs, SOA uses the same concept. 
+
+![SOA and API](/media/ra-ls-soa-api-25.png)
+
+A new layer called API management was added to the architecture and resides between end-user applications and services. Utility APIs and domain APIs mainly are consumed internally; hence, additional control and security are required for the edge APIs that service end-user applications. 
+
+The nature of the systems residing in each layer mandate the type of APIs exposed. Behavioral API models come in handy here to support that. In addition, heterogeneous systems expect various message formats and security standards, so message mediation and security bridging are common practices in this architecture pattern. Traditional enterprise service bus (ESB), composite services, and API gateways facilitate the mediation processes. Mediation is an overhead due to the added latency, but it can instantly negotiate by looking at the simplicity brought to the architecture and functional capabilities. 
+
+### Segmented architecture and APIs 
+
+The usage of APIs in the segmented architecture is similar to the layered architecture. However, it increases dependency because a business unit or a team owns each segment. The only way (or recommended way) is to use APIs to communicate between the segments. Similar to the layered architecture, APIs will glue the segments as well as components inside each segment. In general, edge APIs get exposed between segments, but there are no restrictions to prove the capabilities as domain and utility APIs. 
+
+![Segmented API](/media/ra-ls-segmented-api-25.png)
+
+The usage and deployment of API gateways depend on the segmentation technique used. Shared gateways can be applied to runtime partitioning and multi-tenancy patterns, while independent gateways can be used in all three models, including platform of platforms. 
+
+## Conclusion 
+
+The two architecture patterns discussed in this paper (layered and segmented) originate from the same family, i.e., centralized. The sequential data flow from one layer to another is a common characteristic in both designs. Segmented architecture provides more flexibility for agile teams than layered architecture because of the elongated isolation provided by the segments. 
+
+The evolution of architecture and APIs happened in parallel. The type of APIs, protocols, and technology used to build the APIs varied based on the improvements in distributed computing, API economy, and organization structure. APIs act as the glue between the layers and components inside the layers. 
+
+Architects have the freedom to pick the right reference architecture based on the application and organizational needs. If you are looking for a decentralized approach, you can refer to the Cell-based Architecture. The Methodology for Agility defines a guide to implement these three architecture patterns. 
+
+> *Note from the author:
+I have been involved in implementing more than 1000 projects using layered and segmented architecture in many parts of the world. Even the current trend of decentralized architecture, layered architecture, and segmented architecture is a valid architecture that can be beneficial for many organizations. If you are looking for guidance for picking the correct architecture for your project, I'm happy to guide you using a strategic consultancy engagement.*
