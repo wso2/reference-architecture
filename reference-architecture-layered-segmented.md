@@ -85,7 +85,7 @@ Developers working on and responsible for a layer experience the same behavior f
 
 ### Layered Architecture with SOA
 
-![Layered SOA](/media/ra-ls-layered-soa-25.png)
+![Layered SOA](/media/ra-ls-layered-soa-25-2.png)
 
 The above diagram represents a common layered architecture used by architects that used SOA to implement systems. However, this is not an architecture diagram used at the beginning of SOA—rather it presents an architecture after the SOA concepts were well established in the industry. Initial SOA concepts were built using a triangular web services model and consisted of a service provider, service registry or discovery, and a service consumer. 
 
