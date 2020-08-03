@@ -164,7 +164,7 @@ In the runtime partitioning approach, components inside a layer are grouped as s
 
 Multi-tenancy introduced a way to provide isolation in hosted solutions, such as software as a service (SaaS) or platform as a service (Paas). Later on, the same concept was utilized to achieve segmentation in application development. Layered architecture platforms started providing the runtime capabilities and used a tenant as the boundary for each team. The common practice is to provide a tenant in each layer, but it can be obsolete in some layers and make them shared across the tenants. The system of record layer is an example of a shared layer. 
 
-![MT](/media/ra-ls-mt-25.png)
+![MT](/media/ra-ls-mt-25-2.png)
 
 Types of Multi-tenancy in Message-oriented Middleware 
 
