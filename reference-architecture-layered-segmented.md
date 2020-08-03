@@ -145,7 +145,7 @@ The fundamental concept behind layered architecture did not change in segmented 
 
 Segments were created based on how each enterprise was organized; in some cases, it was based on the business units, a set of functionality delivered to larger application systems,  or center of excellence (CoE) teams. The team owns the segment and has access to the segment in different environments associated with the lifecycle of the application, such as development, testing, staging, and production. 
 
-![Segmented Architecture](/media/ra-ls-segmented-ov-25.png)
+![Segmented Architecture](/media/ra-ls-segmented-ov-25-2.png)
 
 The above diagram illustrates a logical abstraction of segmented architecture. Architecture layers remain as it is, and the data flow happens from one layer to another. However, the components in each layer are grouped as segments. Segmentation is implemented using the combination of infrastructure capabilities and security, such as role-based access control (RBAC) and entitlement policies. 
 Organizations are taking different approaches to achieve segmentation. They can be categorized into three areas. 
