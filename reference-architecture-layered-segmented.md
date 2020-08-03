@@ -220,7 +220,7 @@ Different behavioral APIs can be exposed using a single API gateway or use separ
 
 The reason for claiming layered architecture as an API-centric approach is highlighted in the following diagram. APIs act as the glue to connect the layers. Based on the functional capabilities exposed, the API type varies and fit into a category explained in the previous section. 
 
-![Layered API](/media/ra-ls-layered-api-25.png)
+![Layered API](/media/ra-ls-layered-api-25-2.png)
 
 While bridging connectivity between layers, APIs connect components within the layers as well. Connectivity between the components shares either business- or system-level information based on the runtime need. 
 
