@@ -228,7 +228,7 @@ While bridging connectivity between layers, APIs connect components within the l
 
 Inherited from the generic layered architecture connection with APIs, SOA uses the same concept. 
 
-![SOA and API](/media/ra-ls-soa-api-25.png)
+![SOA and API](/media/ra-ls-soa-api-25-2.png)
 
 A new layer called API management was added to the architecture and resides between end-user applications and services. Utility APIs and domain APIs mainly are consumed internally; hence, additional control and security are required for the edge APIs that service end-user applications. 
 
