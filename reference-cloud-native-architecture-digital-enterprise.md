@@ -42,7 +42,7 @@ As a result, APIs have become the norm to expose integrated business functionali
 Cloud native has its own foundation: the **Cloud Native Computing Foundation (CNCF)**, which was launched in 2015 by the Linux Foundation. The main goal of the CNCF is to build sustainable ecosystems and foster communities to support the growth and health of cloud-native open-source software.
 
 ## Cloud-Native Reference Architecture
-![Cloud-native reference architecture by CNCF](/media/ra-cloud-nativearchitecture-cncf.png) 
+![Cloud-native reference architecture by CNCF](/media/ra-cloud-nativearchitecture-cncf-v1.png) 
 <p align="center">
 <i>
 Figure 1 - Cloud-native reference architecture by CNCF<br/>
