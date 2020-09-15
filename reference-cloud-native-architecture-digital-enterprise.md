@@ -72,4 +72,7 @@ A **Container storage interface** (CSI) provides a common standard to connect co
 
 These base orchestrators can be used to create higher-level orchestrators such as service mesh and serverless platforms. Istio, Linkerd, and OpenPaaS are some service mesh platforms created on top of the Kubernetes orchestrator. 
 
+## Application Definition / Deployment 
+
+The application definition layer defines application composition, application-specific configurations, deployment properties, image repositories, continuous integration / continuous delivery, etc. Cloud-native application developers are mainly engaged with the functionality of this layer. 
 
