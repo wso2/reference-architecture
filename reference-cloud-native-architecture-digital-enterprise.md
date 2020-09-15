@@ -108,6 +108,15 @@ One of key benefits of shipping applications as container images is the universa
 
 ![Container Image Naming](/media/ra-container-image-naming.png) 
 
+#### Container Runtime
+The container orchestration platform is scheduled and creates a container (runtime) in a worker node. Each container gets its own IP address, storage, and a namespace with the allocated CPU and memory resources. These resource allocations should be able to pass as runtime properties or be allocated with default values.
+
+![Container Image Naming](/media/ra-container-runtime.png)
+
+*Figure 5 - Container (runtime)*
+
+In addition to the all application dependencies that come with the container image, the container runtime needs to be associated with some environment-specific properties such as configurations, certificates, and credentials. These properties can be changed in the developer, test, and production environments. Therefore, these properties should not burn into the container image but should be associated with the container runtime. 
+
 
 
 
