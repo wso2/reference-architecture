@@ -31,3 +31,4 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Bot Client](/media/ra-bot-client.png)|API Consumers|Bots, API consumers|
 |![IOT Client](/media/ra-iot-client.png)|API Consumers|IoT devices, apps, API consumers|
 |![Key](/media/ra-key.png)|Credentials|Credentials, keys, passwords|
+|![Config](/media/ra-config.png)|Configurations|Configurations|
