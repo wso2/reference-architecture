@@ -66,3 +66,10 @@ The **Container network interface** (CNI) enables APIs to plug different contain
 Docker does not implement the CNI and it has its own implementation known as the container network model (CNM) and it only works with the Docker container runtime.
 
 A **Container storage interface** (CSI) provides a common standard to connect container orchestration platforms to plugin to persistent storage. With the help of CSI, storage vendors can write a plugin to a single specification and this works on many orchestration platforms. Dynamic provisioning and decommissioning of volumes, attachment and detachment of volumes from a host node, and mounting and unmounting of a volume from a host node are the main capabilities that are provided by the CSI. 
+
+### Orchestration and Management
+**Container orchestrators** help to manage a large number of containerized application deployments across multiple container host machines. Cloud Foundry, Mesos, Nomad, and  Kubernetes are popular container orchestrators used in the cloud-native space. Container scheduling, provisioning, launching, and discovery; system monitoring, tracing, and crash recovery; declarative system configuration; routing, load balancing, and policy enforcements are a few common features that are managed by these orchestrators.  
+
+These base orchestrators can be used to create higher-level orchestrators such as service mesh and serverless platforms. Istio, Linkerd, and OpenPaaS are some service mesh platforms created on top of the Kubernetes orchestrator. 
+
+
