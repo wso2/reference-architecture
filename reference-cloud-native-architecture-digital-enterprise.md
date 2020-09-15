@@ -76,3 +76,22 @@ These base orchestrators can be used to create higher-level orchestrators such a
 
 The application definition layer defines application composition, application-specific configurations, deployment properties, image repositories, continuous integration / continuous delivery, etc. Cloud-native application developers are mainly engaged with the functionality of this layer. 
 
+
+## A Cloud-Native Architecture for a Digital Enterprise
+
+Cloud-native applications are all about dynamism. **Microservice architecture (MSA)** is critical to accomplish agility. To gain the benefits of MSA (e.g., faster to develop, test, and deploy, and much easier to understand and maintain) these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. To align with business requirements, it is required to composite and integrate multiple microservices and expose them as business APIs. These APIs should be secured, managed, observed, and monetized. API-led integration platforms combined with cloud-native technologies are critical for a digital enterprise. 
+
+![CNI](/media/ra-cloud-native-architecture-for-a-digital-enterprise.png) 
+
+*Figure 3 - A reference cloud-native architecture for a digital enterprise)*
+
+### Infrastructure 
+This layer represents the same functionality that we discussed in the cloud-native reference architecture.
+Container Orchestration Platform / Function as a Service Platform
+
+This layer also represents the same functionality that we discussed in the cloud-native reference architecture. Cloud Foundry, Mesos, Nomad, Kubernetes, Istio, Linkerd, and OpenPaaS are some examples of current industry-leading container orchestration platforms. Knative, AWS Lambda, Azure Functions, Google Functions, Oracle Functions are a few examples of functions as a service platform (FaaS).
+
+### Microservices and Serverless Components 
+Decompositioning a complex problem into a set of smaller problems will be easier to tackle and faster to develop, test, deploy, scale, and much easier to update. This smaller problem can be implemented as microservices or a serverless function. Each microservice or serverless function is developed by a smaller team with the freedom of choosing appropriate technologies. Digital enterprises can have in-house or cloud orchestration platforms to deploy these MSA-based applications. Some cloud providers offer PaaS on top of these orchestration platforms and enterprises can use them with a pay-as-you-go model. If enterprises use serverless functions, then it is recommended to use a FaaS platform provided by a well-known cloud provider. Cloud locking might be a downside for the use of a FaaS platform, but it can depend on your enterprise's policies
+
+
