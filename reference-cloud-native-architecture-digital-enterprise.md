@@ -94,4 +94,9 @@ This layer also represents the same functionality that we discussed in the cloud
 ### Microservices and Serverless Components 
 Decompositioning a complex problem into a set of smaller problems will be easier to tackle and faster to develop, test, deploy, scale, and much easier to update. This smaller problem can be implemented as microservices or a serverless function. Each microservice or serverless function is developed by a smaller team with the freedom of choosing appropriate technologies. Digital enterprises can have in-house or cloud orchestration platforms to deploy these MSA-based applications. Some cloud providers offer PaaS on top of these orchestration platforms and enterprises can use them with a pay-as-you-go model. If enterprises use serverless functions, then it is recommended to use a FaaS platform provided by a well-known cloud provider. Cloud locking might be a downside for the use of a FaaS platform, but it can depend on your enterprise's policies
 
+#### Containers Images
+
+[“The Twelve Factor App”](https://12factor.net/) defines a methodology to develop and deploy scalable applications and many of them are nicely fit into MSA.
+
+Once the microservices are defined and implemented, they should be bundled with all their dependencies and shipped as container images. Environment-specific configurations should be defined externally and  injected into containers at the runtime. These container images should be stored in a registry where other developers as well as runtime environments cloud-pull and create containers out of these images. 
 
