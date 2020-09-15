@@ -139,5 +139,13 @@ After the container boots up, container orchestrators do a health check to confi
 
 Sometimes applications might not  fully recover from an unhealthy situation or can be in a fatal error. In such a scenario, orchestrators should be able to identify the situation through the health check probes and replace the error container with a new container. These health check probes are known as liveness probes. 
 
+![Container Health Check](/media/ra-container-health-check.png)
+
+*Figure 8 - Container health check probes*
+
+#### Autoscaling
+Autoscaling is a critical function to accomplish a scalable architecture. Individual microservices that are deployed as containers should be able to scale in and out depending on the load spikes. Running unnecessary containers wastes computing resources and having a short number of containers can cause a service downtime. 
+
+Container orchestrators can monitor these load spikes and are able to remove unnecessary containers or add additional containers to perform scale in and out. CPU usage, memory usage, and in-flight-request counts (load balancer routing queue) are few well known load spike monitoring factors and help to compute scale in and out decisions. Some orchestrators use advanced auto scaling algorithms, where it can predict future load spikes and do scale out early to avoid service disruptions. 
 
 
