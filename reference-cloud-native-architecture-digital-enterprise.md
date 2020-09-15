@@ -85,4 +85,13 @@ Cloud-native applications are all about dynamism. **Microservice architecture (M
 
 *Figure 3 - A reference cloud-native architecture for a digital enterprise)*
 
+### Infrastructure 
+This layer represents the same functionality that we discussed in the cloud-native reference architecture.
+Container Orchestration Platform / Function as a Service Platform
+
+This layer also represents the same functionality that we discussed in the cloud-native reference architecture. Cloud Foundry, Mesos, Nomad, Kubernetes, Istio, Linkerd, and OpenPaaS are some examples of current industry-leading container orchestration platforms. Knative, AWS Lambda, Azure Functions, Google Functions, Oracle Functions are a few examples of functions as a service platform (FaaS).
+
+### Microservices and Serverless Components 
+Decompositioning a complex problem into a set of smaller problems will be easier to tackle and faster to develop, test, deploy, scale, and much easier to update. This smaller problem can be implemented as microservices or a serverless function. Each microservice or serverless function is developed by a smaller team with the freedom of choosing appropriate technologies. Digital enterprises can have in-house or cloud orchestration platforms to deploy these MSA-based applications. Some cloud providers offer PaaS on top of these orchestration platforms and enterprises can use them with a pay-as-you-go model. If enterprises use serverless functions, then it is recommended to use a FaaS platform provided by a well-known cloud provider. Cloud locking might be a downside for the use of a FaaS platform, but it can depend on your enterprise's policies
+
 
