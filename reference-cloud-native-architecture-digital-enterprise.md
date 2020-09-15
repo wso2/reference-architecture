@@ -76,3 +76,13 @@ These base orchestrators can be used to create higher-level orchestrators such a
 
 The application definition layer defines application composition, application-specific configurations, deployment properties, image repositories, continuous integration / continuous delivery, etc. Cloud-native application developers are mainly engaged with the functionality of this layer. 
 
+
+## A Cloud-Native Architecture for a Digital Enterprise
+
+Cloud-native applications are all about dynamism. **Microservice architecture (MSA)** is critical to accomplish agility. To gain the benefits of MSA (e.g., faster to develop, test, and deploy, and much easier to understand and maintain) these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. To align with business requirements, it is required to composite and integrate multiple microservices and expose them as business APIs. These APIs should be secured, managed, observed, and monetized. API-led integration platforms combined with cloud-native technologies are critical for a digital enterprise. 
+
+![CNI](/media/ra-cloud-native-architecture-for-a-digital-enterprise.png) 
+
+*Figure 3 - A reference cloud-native architecture for a digital enterprise)*
+
+
