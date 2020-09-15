@@ -100,3 +100,14 @@ Decompositioning a complex problem into a set of smaller problems will be easier
 
 Once the microservices are defined and implemented, they should be bundled with all their dependencies and shipped as container images. Environment-specific configurations should be defined externally and  injected into containers at the runtime. These container images should be stored in a registry where other developers as well as runtime environments cloud-pull and create containers out of these images. 
 
+![Container Image Build](/media/ra-container-image-build.png) 
+
+*Figure 4 - Container image creation*
+
+One of key benefits of shipping applications as container images is the universal packaging model, which is supported by all the cloud providers, and the property of immutability. Once container images have been built, then it is guaranteed all the required dependencies will be met when the container runtime is created. It helps to maintain consistency from developer machines to production servers. Every release should create a new container image with proper versioning. These versions can be used as a container image tag.   
+
+![Container Image Naming](/media/ra-container-image-naming.png) 
+
+
+
+
