@@ -22,7 +22,7 @@ As a result, APIs have become the norm to expose integrated business functionali
 | Icon | Name | Description |
 |---------|---------|---------|
 |![Component](/media/ra-microservice.png| width=100)| Microservices and serverless components |Core business logic, aggregation and service composition, transformation.|
-|![Component](/media/ra-gateway.png)|Gateways|API gateways, ingress gateways, mesh gateways, micro integrators, exposed APIs, events and streams, policy enforcement points|
+|![Component](/media/ra-gateway.png | width=100)|Gateways|API gateways, ingress gateways, mesh gateways, micro integrators, exposed APIs, events and streams, policy enforcement points|
 |![Component](/media/ra-data-service.png =250x250)|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
 |![SaaS EPR](/media/ra-saas-epr.png =250x250)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
 |![Front end Client](/media/ra-front-end-clients.png =250x250)|API Consumers|Mobile apps, reactive apps, API consumers|
