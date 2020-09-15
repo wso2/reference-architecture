@@ -33,3 +33,4 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Key](/media/ra-key.png)|Credentials|Credentials, keys, passwords|
 |![Config](/media/ra-config.png)|Configurations|Configurations|
 |![Cert](/media/ra-cert.png)|Certificats|Certificats|
+|![Load Balancer](/media/ra-load-balancer.png)|Load balancer|Load balancer|
