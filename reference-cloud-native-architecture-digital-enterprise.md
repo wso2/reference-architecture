@@ -53,3 +53,16 @@ The infrastructure layer represents the actual computing resources. These comput
 
 ### Provisioning
 The provisioning layer covers the host management activities such as installation and setting up operating systems. It has a set of DevOps (maintenance) and management (software updates, security patches, etc) activities. Operating systems like CoreOS and RancherOS are specialized host operating systems to run containerized environments.
+
+### Runtime
+The runtime layer mainly consists of the container runtime. The **Container runtime interface** (CRI) allows to plug different implementations of container times. Docker is the widely used container runtime; alternatively,  CRI-O (Open Container Initiative compatible runtimes) or rkt container runtimes can be used. You can even plug a hypervisor-based container runtime like Frakti with support from CRI. 
+
+The **Container network interface** (CNI) enables APIs to plug different container network runtime implementations. The CNI comes with inbuilt network plugins such as BRIDGE, VLAN, IPVLAN, DHCP, loopback, and etc. Also, it allows the plugin of the container network from third-party originations such as Weave, Calico, Cilium, Flannel, WMWare, and NSX. All of the network runtimes implement CNI specifications. 
+
+![CNI](/media/ra-cni.png.png) 
+
+*Figure 2 - Container network interface (CNI)*
+
+Docker does not implement the CNI and it has its own implementation known as the container network model (CNM) and it only works with the Docker container runtime.
+
+A **Container storage interface** (CSI) provides a common standard to connect container orchestration platforms to plugin to persistent storage. With the help of CSI, storage vendors can write a plugin to a single specification and this works on many orchestration platforms. Dynamic provisioning and decommissioning of volumes, attachment and detachment of volumes from a host node, and mounting and unmounting of a volume from a host node are the main capabilities that are provided by the CSI. 
