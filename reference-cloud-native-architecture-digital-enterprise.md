@@ -29,3 +29,4 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Desktop Client](/media/ra-desktop-client.png)|API Consumers|Mobile apps, reactive apps, API consumers|
 |![Mobile Client](/media/ra-mobile-client.png)|API Consumers|Mobile apps, reactive apps, API consumers|
 |![Bot Client](/media/ra-bot-client.png)|API Consumers|Bots, API consumers|
+|![IOT Client](/media/ra-iot-client.png)|API Consumers|IoT devices, apps, API consumers|
