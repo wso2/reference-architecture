@@ -26,14 +26,14 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Component](/media/ra-data-service.png)|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
 |![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
 |![Front end Client](/media/ra-front-end-clients.png)|API Consumers|Mobile apps, reactive apps, API consumers|
-|![Desktop Client](/media/ra-desktop-client-v1.png)|API Consumers|Mobile apps, reactive apps, API consumers|
+|![Desktop Client](/media/ra-desktop-client-v2.png)|API Consumers|Mobile apps, reactive apps, API consumers|
 |![Mobile Client](/media/ra-mobile-client-v1.png)|API Consumers|Mobile apps, reactive apps, API consumers|
 |![Bot Client](/media/ra-bot-client-v1.png)|API Consumers|Bots, API consumers|
 |![IOT Client](/media/ra-iot-client-v1.png)|API Consumers|IoT devices, apps, API consumers|
 |![Key](/media/ra-key-v1.png)|Credentials|Credentials, keys, passwords|
-|![Config](/media/ra-config-v1.png)|Configurations|Configurations|
+|![Config](/media/ra-config-v2.png)|Configurations|Configurations|
 |![Cert](/media/ra-cert-v1.png)|Certificats|Certificats|
-|![Load Balancer](/media/ra-load-balancer-v1.png)|Load balancer|Load balancer|
+|![Load Balancer](/media/ra-load-balancer-v2.png)|Load balancer|Load balancer|
 
 ## What is Cloud Native?
 
