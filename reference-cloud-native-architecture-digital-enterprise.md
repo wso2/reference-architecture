@@ -148,4 +148,13 @@ Autoscaling is a critical function to accomplish a scalable architecture. Indivi
 
 Container orchestrators can monitor these load spikes and are able to remove unnecessary containers or add additional containers to perform scale in and out. CPU usage, memory usage, and in-flight-request counts (load balancer routing queue) are few well known load spike monitoring factors and help to compute scale in and out decisions. Some orchestrators use advanced auto scaling algorithms, where it can predict future load spikes and do scale out early to avoid service disruptions. 
 
+![Autoscaler](/media/ra-autoscaler.png)
+
+*Figure 9 - Autoscaling*
+
+#### Rollouts and Rollbacks
+MSA produces frequent releases and these releases need to be seamlessly rolled out into production. As we know, even though we do thorough testing, sometimes we need to roll back to a stable state due to some late-found error. To mitigate these kinds of situations, we should  have different deployment strategies. The following deployment strategies help to have zero downtime in rollouts and rollbacks. 
+
+##### Ramped 
+Ramped (also known as rolling-update) is the simplest rollout strategy that can be achieved with  zero downtime. In this, a new version (e.g., version 2) is achieved by replacing containers one after another until all the containers are rolled out.
 
