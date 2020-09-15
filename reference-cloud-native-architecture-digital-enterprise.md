@@ -34,3 +34,10 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Config](/media/ra-config.png)|Configurations|Configurations|
 |![Cert](/media/ra-cert.png)|Certificats|Certificats|
 |![Load Balancer](/media/ra-load-balancer.png)|Load balancer|Load balancer|
+
+## What is Cloud Native?
+
+**“Cloud native”** is a two-fold term. It is a name for technologies that help to create, deploy, and operate applications in a scalable environment such as public, private, and hybrid clouds. It also refers to explaining characteristics of these applications, specifically made to address scalability. The capability of packaging and shipping application as a lightweight container is one of the main characteristics of cloud nativeness. 
+
+Cloud native has its own foundation: the **Cloud Native Computing Foundation (CNCF)**, which was launched in 2015 by the Linux Foundation. The main goal of the CNCF is to build sustainable ecosystems and foster communities to support the growth and health of cloud-native open-source software.
+
