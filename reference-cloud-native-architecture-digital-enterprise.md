@@ -100,7 +100,7 @@ Decompositioning a complex problem into a set of smaller problems will be easier
 
 Once the microservices are defined and implemented, they should be bundled with all their dependencies and shipped as container images. Environment-specific configurations should be defined externally and  injected into containers at the runtime. These container images should be stored in a registry where other developers as well as runtime environments cloud-pull and create containers out of these images. 
 
-![Container Image Build](/media/ra-container-image-build.png) 
+![Container Image Build](/media/ra-container-image-build-v1.png) 
 
 *Figure 4 - Container image creation*
 
