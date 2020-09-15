@@ -126,5 +126,18 @@ Microservices communicate with each other to complete a given business task. Whe
 
 Compared to hypervisor-based virtual machine instances, a container runtime’s overhead is minimal. Owing to the combination of container properties and MSA best practises, these containers can be scaled out very fast. When scaling out, ingress traffic should be routed to each container with a proper load balancing mechanism. Every application should have a proper load balancer bound to a service name.
 
+![Service Discovery and Load Balancing](/media/ra-service-discovery-load-balancing.png)
+
+*Figure 7 - Scaling, load balancing, and service name resolving*
+
+#### Health Check and Auto-Healing
+An important feature of orchestration platforms is doing the health check probe for each container and being able to auto-heal if something is wrong. Health checks can be done in multiple levels of the container lifecycle. 
+
+Some applications are required to carry out some initialization tasks when the container is booted up. Container orchestration platforms should be able to monitor the progress of these initialization tasks and advertise the successful completion before accepting any workload. These kinds of health check probes are known as startup probes. 
+
+After the container boots up, container orchestrators do a health check to confirm the application readiness to accept the workload, then notify the load balancer to route incoming traffic to the container. In some cases, a running application can become unhealthy due to some temporary load spike. In these kinds of scenarios, orchestrators can detect the unhealthiness of the application from the health check probe and notify load balancers to skip further traffic routing. This helps affected containers to recover. When it recovers, then again opened traffic routes through the load balancers. 
+
+Sometimes applications might not  fully recover from an unhealthy situation or can be in a fatal error. In such a scenario, orchestrators should be able to identify the situation through the health check probes and replace the error container with a new container. These health check probes are known as liveness probes. 
+
 
 
