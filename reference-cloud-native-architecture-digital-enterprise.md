@@ -26,3 +26,4 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Component](/media/ra-data-service.png )|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
 |![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
 |![Front end Client](/media/ra-front-end-clients.png)|API Consumers|Mobile apps, reactive apps, API consumers|
+|![Desktop Client](/media/ra-desktop-client.png)|API Consumers|Mobile apps, reactive apps, API consumers|
