@@ -43,7 +43,7 @@ Cloud native has its own foundation: the **Cloud Native Computing Foundation (CN
 
 ## Cloud-Native Reference Architecture
 <p align="center">
-![Cloud-Native Reference Architecture - CNCF](/media/ra-cloud-nativearchitecture-cncf.png)
+<img src="https://github.com/wso2/reference-architecture/blob/master/media/ra-cloud-nativearchitecture-cncf.png" />
 </p>  
 <p align="center">
 <i>
