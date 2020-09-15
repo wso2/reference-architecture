@@ -117,6 +117,14 @@ The container orchestration platform is scheduled and creates a container (runti
 
 In addition to the all application dependencies that come with the container image, the container runtime needs to be associated with some environment-specific properties such as configurations, certificates, and credentials. These properties can be changed in the developer, test, and production environments. Therefore, these properties should not burn into the container image but should be associated with the container runtime. 
 
+![Container Runtime Properties](/media/ra-container-runtime-properties.png)
+
+*Figure 6 - Configs, credential, and certificate association with the container*
+
+#### Scalability, Load Balancing and Service Discovery
+Microservices communicate with each other to complete a given business task. When the number of services increase, we need to have a proper discovery service and should be able to communicate with a unique name (service-name) such as a domain name service (DNS). These service names should not be bound to a specific environment (dev, pod, etc.) and they should be resolved to correct the IP address of the services that are running in the given environment.
+
+Compared to hypervisor-based virtual machine instances, a container runtime’s overhead is minimal. Owing to the combination of container properties and MSA best practises, these containers can be scaled out very fast. When scaling out, ingress traffic should be routed to each container with a proper load balancing mechanism. Every application should have a proper load balancer bound to a service name.
 
 
 
