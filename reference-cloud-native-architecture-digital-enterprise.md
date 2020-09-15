@@ -21,4 +21,4 @@ As a result, APIs have become the norm to expose integrated business functionali
 
 | Icon | Name | Description |
 |---------|---------|---------|
-|![Component](/media/ra-component.png)| Microservices and serverless components |Core business logic, aggregation and service composition, transformation.|
+|![Component](/media/ra-microservice.png)| Microservices and serverless components |Core business logic, aggregation and service composition, transformation.|
