@@ -165,3 +165,10 @@ Ramped (also known as rolling-update) is the simplest rollout strategy that can 
 ##### Blue/Green
 The blue/green deployment strategy deploys version 2 (green) alongside version 1 (blue) with exactly the same amount of containers. After testing by running some for a time period, the new version traffic is switched from version 1 to version 2 at the load balancer level.
 
+![Blue/Green](/media/ra-blue-green.png)
+
+*Figure 11 - Blue/Green deployment strategy*
+
+##### Canary
+A canary deployment gradually shifts production traffic from version 1 to version 2. Initially a smaller percentage of traffic will be routed to the new version. Canary is mostly used when the tests are lacking or there is little confidence about the stability of the new version.
+
