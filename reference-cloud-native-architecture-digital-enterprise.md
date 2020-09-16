@@ -308,7 +308,7 @@ Combining cloud-native technologies with an API-led integration platform creates
 
 ## References:
 
-[1] [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
-[2] [API Microgateway](https://medium.com/@lakwarus/micro-api-gateway-58cce43f2d7d)
-[3] [The twelve-factor Apps](https://12factor.net/)
+- [1] [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
+- [2] [API Microgateway](https://medium.com/@lakwarus/micro-api-gateway-58cce43f2d7d)
+- [3] [The twelve-factor Apps](https://12factor.net/)
 
