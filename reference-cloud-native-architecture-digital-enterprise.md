@@ -62,9 +62,11 @@ The runtime layer mainly consists of the container runtime. The **Container runt
 
 The **Container network interface** (CNI) enables APIs to plug different container network runtime implementations. The CNI comes with inbuilt network plugins such as BRIDGE, VLAN, IPVLAN, DHCP, loopback, and etc. Also, it allows the plugin of the container network from third-party originations such as Weave, Calico, Cilium, Flannel, WMWare, and NSX. All of the network runtimes implement CNI specifications. 
 
-![CNI](/media/ra-cni-v1.png) 
-
-*Figure 2 - Container network interface (CNI)*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cni-v1.png">
+<br> 
+<i>Figure 2 - Container network interface (CNI)</i>
+</p>
 
 Docker does not implement the CNI and it has its own implementation known as the container network model (CNM) and it only works with the Docker container runtime.
 
