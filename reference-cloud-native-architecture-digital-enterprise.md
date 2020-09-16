@@ -186,4 +186,16 @@ A/B testing deployments routes a subset of users to a new version (functionality
 ##### Shadow
 Shadow deployment strategies run version 1 and 2 together and fork version 1 incoming requests and send them to version 2 as well without impacting production traffic. This is a fairly complex deployment strategy and is mainly used to test production load on a new feature.  When the required stability and performance are met, the new version of the application can be rolled out.
 
+![Shadow](/media/ra-shadow.png)
+
+*Figure 13 - Shadow deployment strategy*
+
+### Composition / Integration / Policy Enforcement 
+Microservices are fine-grained and are developed as smaller logical components to make systems more agile and scalable. Microservices are not designed from the end users point of view, where users really need access to the system with their business needs. To expose system functionality as business APIs, these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. 
+
+Every enterprise already has some kind of system. When introducing new business functionalities, it is necessary to integrate with these legacy systems. These integrations are often supported by enterprise service bus (ESB) functionality such as routing, transformations, orchestration, aggregation, and resilient patterns. 
+
+However, in general, ESB is a monolithic system and does not fit well with MSA. Alternatively in MSA, integrations are achieved by using integration microservices. These integration microservices can have either a codebase implementation approach or a configuration-driven approach. Integration-focused specifical programming languages and frameworks help with the code-based approach by providing necessary abstractions and libraries. For a configuration approach, a modern microservices-friendly lightweight ESB runtime, known as a micro integrator, can be used.
+
+Microservice expose APIs to be consumed by other microservices to complete a given business functionality. These individual microservices need to be aggregated to meet user needs. This aggregation can be done in another microservice to expose meaningful APIs to consumers. These APIs should be secured, managed, observed, and monetized. This requires a governance model with  policy enforcement. This is where API gateways are important.
 
