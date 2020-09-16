@@ -255,5 +255,15 @@ A private jet API gateway itself can be scaled independently. This pattern also 
 ##### Sidecar Gateway
 Hetrogeneos services are one of the key benefits in the MSA. Microservices can be implemented in different languages depending on the benefits. An API gateway can be attached as a sidecar to the microservice, which can then benefit from all the capabilities of the API gateway.
 
+![SideCar Gateway](/media/ra-sidecar-gateway.png)
 
+*Figure 16 - Sidecar API gateway*
+
+The sidecar pattern reduces the additional external network hops that are required in the centralized and private jet gateway patterns, while having the local network call to communicate.
+
+A sidecar is heavily used in service mesh architectural patterns. Offloading all service to service communication matters, such as discovery, reliable delivery, routing, failover, load balancing, etc., into a mesh sidecar will give freedom to developers to focus on business functionality.
+
+A sidecar API gateway pattern can be used when and where you want to have service-mesh architecture.
+
+#### All-in-One Gateway
 
