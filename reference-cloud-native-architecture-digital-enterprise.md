@@ -46,7 +46,7 @@ Cloud native has its own foundation: the **Cloud Native Computing Foundation (CN
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cloud-nativearchitecture-cncf-v1.png">
 <br> 
-Figure 1 - Cloud-native reference architecture by CNCF
+<i>Figure 1 - Cloud-native reference architecture by CNCF</i>
 </p>
 
 Figure 1 illustrates the cloud-native reference architecture presented by the CNCF. Each layer has its own specialized cloud-native software stacks and many of them are governed by the CNCF.  
