@@ -236,3 +236,7 @@ Aligning with the MSA, API governance can be achieved via three main API gateway
 
 ##### Centralized/Shared Gateway
 A centralized API gateway is a well-established and popular deployment pattern. The shared cluster of API gateways handle all API requests. These requests can be internal as well as external API calls. An API gateway cluster can be scaled horizontally and the load is distributed among all the API gateway containers.
+
+![Shared Gateway](/media/ra-shared-gateway.png)
+
+*Figure 14 - Centralized/shared API gateway*
