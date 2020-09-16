@@ -158,3 +158,10 @@ MSA produces frequent releases and these releases need to be seamlessly rolled o
 ##### Ramped 
 Ramped (also known as rolling-update) is the simplest rollout strategy that can be achieved with  zero downtime. In this, a new version (e.g., version 2) is achieved by replacing containers one after another until all the containers are rolled out.
 
+![Ramped](/media/ra-ramped.png)
+
+*Figure 10 - Ramped deployment strategy*
+
+##### Blue/Green
+The blue/green deployment strategy deploys version 2 (green) alongside version 1 (blue) with exactly the same amount of containers. After testing by running some for a time period, the new version traffic is switched from version 1 to version 2 at the load balancer level.
+
