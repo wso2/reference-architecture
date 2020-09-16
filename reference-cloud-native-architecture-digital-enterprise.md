@@ -245,3 +245,15 @@ In this deployment, the API gateway adds an additional hop into inter-microservi
 
 ##### Private Jet Gateway
 In this pattern, each individual microservice has a dedicated API Gateway. This provides maximum security as well as guarantees resource allocation for API execution. A single private jet API gateway can be attached to a cluster of microservices of the same type. Load balancing, failover features will be necessary and naturally fit into this kind of scenario.
+
+![Private Jet Gateway](/media/ra-private-jet-gateway.png)
+
+*Figure 15 - Private Jet API Gateway*
+
+A private jet API gateway itself can be scaled independently. This pattern also increases one network hop in inter-microservice communication similar to a centralized API gateway.
+
+##### Sidecar Gateway
+Hetrogeneos services are one of the key benefits in the MSA. Microservices can be implemented in different languages depending on the benefits. An API gateway can be attached as a sidecar to the microservice, which can then benefit from all the capabilities of the API gateway.
+
+
+
