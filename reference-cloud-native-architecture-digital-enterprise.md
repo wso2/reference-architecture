@@ -191,6 +191,7 @@ Shadow deployment strategies run version 1 and 2 together and fork version 1 inc
 *Figure 13 - Shadow deployment strategy*
 
 ### Composition / Integration / Policy Enforcement 
+
 Microservices are fine-grained and are developed as smaller logical components to make systems more agile and scalable. Microservices are not designed from the end users point of view, where users really need access to the system with their business needs. To expose system functionality as business APIs, these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. 
 
 Every enterprise already has some kind of system. When introducing new business functionalities, it is necessary to integrate with these legacy systems. These integrations are often supported by enterprise service bus (ESB) functionality such as routing, transformations, orchestration, aggregation, and resilient patterns. 
@@ -199,3 +200,39 @@ However, in general, ESB is a monolithic system and does not fit well with MSA. 
 
 Microservice expose APIs to be consumed by other microservices to complete a given business functionality. These individual microservices need to be aggregated to meet user needs. This aggregation can be done in another microservice to expose meaningful APIs to consumers. These APIs should be secured, managed, observed, and monetized. This requires a governance model with  policy enforcement. This is where API gateways are important.
 
+### API Gateway
+
+An API gateway can be used as a policy enforcement point of API governance while working in sync with the control and management plane components like lifecycle management, traffic control, policy control and identity and access management. The following are the key functionalities of an API gateway;
+
+#### Authentication and Security:
+While microservices are mainly focusing on business logic, authentication and security can be implemented in the service level as well. But it duplicates functionality and increases maintainability issues. One main benefit of MSA is heterogeneous language support for service implementation. An API Gateway enforces standard authentication and security across all microservices.
+
+#### API Rate Limiting:
+The load handling capacity differs from microservice to microservice. Overloading a few microservices might lead to an unresponsive application and recovering from this kind of a situation is hard. An API gateway only allows requests that can be handled in each microservice and it controls requests that go over the limit.
+
+#### Dynamic API Discovery and Routing:
+Applications go through a series of different lifecycle stages. These life cycles can differ from enterprise to enterprise. Development, test, staging, and production are common lifecycle stages; these are sometimes called  environments. In the development stage, developers need to discover other microservices for inter-communication. In addition to discoverability, these inter-communication links should work in different environments without altering anything. Dynamic discovery and dynamic routing should be a key functionality in an API gateway.
+
+#### API Loadbance and Failover:
+To make microservices highly available or scalable, we need to run two or more of the same microservice in a deployment. In such a case, an  API gateway can handle the load balancing or failover functionality.
+
+#### API Shaping:
+An API gateway can optimize the API response depending on the nature of the API consumer. For example, if the API consumer is a mobile device, we can strip down some content of the response to optimize bandwidth usage compared to a web consumer.
+
+#### API Composition:
+Especially when we expose APIs to external parties, we might need to aggregate multiple microservice responses and create a single composite API response. An API gateway plays a major role in these kinds of edge compositions.
+
+#### API Mediation and Transformation:
+The same microservice may need to support new microservice consumers as well as legacy consumers. Mediation and message transformation in the API gateway is very useful in such a situation.
+
+#### Response Caching:
+Response caching could be handy in some situations rather than expecting the backend to process each and every request. An API gateway comes in handy in this kind of requirement.
+ 
+#### API Gateway Deployment Patterns
+Aligning with the MSA, API governance can be achieved via three main API gateway deployment patterns.
+- Centralized/shared API gateway
+- Private jet API gateway
+- Sidecar API gateway
+
+##### Centralized/Shared Gateway
+A centralized API gateway is a well-established and popular deployment pattern. The shared cluster of API gateways handle all API requests. These requests can be internal as well as external API calls. An API gateway cluster can be scaled horizontally and the load is distributed among all the API gateway containers.
