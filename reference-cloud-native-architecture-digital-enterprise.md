@@ -1,4 +1,4 @@
-<h1 align="center"> Reference Cloud Native Architecture for a Digital Enterprise </center></h1>
+<h1 align="center"> Reference Architecture for a Cloud Native Digital Enterprise </center></h1>
 <p align="center">
 <i>
 Version Fall-2020<br/>
@@ -9,13 +9,13 @@ Version Fall-2020<br/>
 
 + Lakmal Warusawithana | Senior Director - Technology Evangelism | WSO2, Inc | <lakmal@wso2.com>
 
-> *This document describes a vendor/technology-neutral reference cloud native architecture (CNA) for a digital enterprise. The architecture defined in this paper can be mapped into different cloud-native platforms (Kubernetes and service mesh), different cloud providers (Microsoft Azure, Amazon AWS, and Google GCP), and infrastructure services to perform the implementation. These reference implementations will be covered in separate papers.*
+> *This document describes a vendor/technology-neutral reference architecture for a cloud native digital enterprise. The architecture defined in this paper can be mapped into different cloud-native platforms (Kubernetes and service mesh), different cloud providers (Microsoft Azure, Amazon AWS, and Google GCP), and infrastructure services to perform the implementation. These reference implementations will be covered in separate papers.*
 
 ## Introduction
 
 In an era of digital transformation, **(digital) enterprises** are looking for fast innovation through effective collaboration to deliver more value to their customers with dramatically less effort. Digital enterprises enable companies of every sector to integrate, expose, and monetize their business capabilities by digitizing entire value chains.
 
-As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience. Enterprises can start their digital transformation in greenfield or brownfield; in both cases, having a well defined **API-led integration architecture** is important. Apart from integration and API platforms, these architectures should be able to provide agility, flexibility, and scalability. This paper focuses on how to use cloud-native technologies along with an API-led integration platform to create an effective architecture, i.e., a **cloud-native architecture (CNA) for a digital enterprise**, to increase productivity by having automation, production or operation, and services. 
+As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience. Enterprises can start their digital transformation in greenfield or brownfield; in both cases, having a well defined **API-led integration architecture** is important. Apart from integration and API platforms, these architectures should be able to provide agility, flexibility, and scalability. This paper focuses on how to use cloud-native technologies along with an API-led integration platform to create an effective architecture, i.e., a **reference architecture for a cloud native digital enterprise**, to increase productivity by having automation, production or operation, and services. 
 
 ## Abstractions
 
@@ -82,14 +82,14 @@ These base orchestrators can be used to create higher-level orchestrators such a
 The application definition layer defines application composition, application-specific configurations, deployment properties, image repositories, continuous integration / continuous delivery, etc. Cloud-native application developers are mainly engaged with the functionality of this layer. 
 
 
-## A Cloud-Native Architecture for a Digital Enterprise
+## Reference Architecture for a Cloud Native Digital Enterprise
 
 Cloud-native applications are all about dynamism. **Microservice architecture (MSA)** is critical to accomplish agility. To gain the benefits of MSA (e.g., faster to develop, test, and deploy, and much easier to understand and maintain) these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. To align with business requirements, it is required to composite and integrate multiple microservices and expose them as business APIs. These APIs should be secured, managed, observed, and monetized. API-led integration platforms combined with cloud-native technologies are critical for a digital enterprise. 
 
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cloud-native-architecture-for-a-digital-enterprise.png">
 <br> 
-<i>Figure 3 - A reference cloud-native architecture for a digital enterprise</i>
+<i>Figure 3 - Reference Architecture for a Cloud Native Digital Enterprise</i>
 </p>
 
 ### Infrastructure 
