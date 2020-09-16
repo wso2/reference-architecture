@@ -267,3 +267,48 @@ A sidecar API gateway pattern can be used when and where you want to have servic
 
 #### All-in-One Gateway
 
+![All-in-One Gateway](/media/ra-future-gateways.png)
+
+*Figure 17 - Gateway convergence*
+
+Technology is evolving in a way that all types of gateways such as API gateways, ingress gateways, service mesh gateways, and micro integrators are merging into one single all-in-one gateway.
+
+But even if these gateways are merging into a single gateway concept, depending on the use case and the requirement, in some cases, it is good to use multiple gateways to have a clean and scalable architecture. 
+
+### Control and Management Plane
+
+API gateways are the interception point to policy enforcement, capture stats, metrics, and analyze to find out how APIs are behaving. Managing these APIs is a necessity in today's digital economy. Control and management planes should provide the API management capabilities.
+
+#### Design and Lifecycle Management
+API design is a very important phase in the software development life cycle (SDLC). The design phase helps to gather developer feedback before implementing (API-irst design). OpenAPI (Swagger) is the common industry standard to define the API design. Deploying a prototyped API, providing early access to APIs, creating mock API implementations, and getting early feedback are some of the functionalities that are provided by design and lifecycle management. 
+
+#### Control Access and Enforce Security
+Security is paramount when exposing business capabilities via APIs. This  not only involves authentication and authorization but also covers policies to protect attacks, sensitive data leaking, revoke compromise APIs, blocking subscriptions due to non-payment, threat protection, bot detection, token-fraud detection, etc. APIs can be secured by using OAuth2.0, OIDC, Basic Auth, API Key, and Mutual TLS. The control and management planes can be used to define these security policies.
+
+#### Manage and Scale API Traffic
+API management enables users  to control traffic flows to backend business services. API quotas and spike arrest helps to protect backend systems from being properly throttled and managed. The control and management planes should be able to define these policies and enforce them in the data plan via API gateways.
+
+### Observability
+Unlike monolith architecture, auditing and tracing are hard problems in decentralized architectures such as MSA. Having the necessary interceptors to collect metrics, stats, and data is critical. The control and management planes should have capable analytics tools and engines to analyze these collected metrics, stats, and data to generate business intelligence reports. These reports can be utilized to monetize business capabilities by combining them with the defined business plans.
+
+### Developer Portal
+It also important that these APIs are listed in an externally accessible self-service developer portal, where application developers or API users can easily discover these APIs and use them with a well-defined business plan. The developer experience is key to the adoption and success of your APIs, and having a feedback mechanism, such as customer ratings and forums, is key for a  developer portal.
+
+### Business Insight Report
+To become a successful digital enterprise, it is important to collect data, analyze, and get meaningful business insights on how these APIs are behaving. Comprehensive observability and business insight reporting systems play a major role here. These dashboards and reports can be used by both business and operations leaders to gain a 360-degree view of their digital business.
+
+## Conclusion
+The digital enterprise enables companies of every sector to integrate and expose their business capabilities as APIs by digitalization of the entire value chain in their digital transformation journey. These APIs should be secured, managed, observed, and monetized. An API-led integration platform is essential for digital enterprises whether they start with a greenfield or a brownfield. 
+
+Cloud-native applications are all about dynamism. Microservice architecture (MSA) is critical to accomplish agility. Cloud-native technologies, such as containers and orchestration platforms, are critical for successful microservice implementation and deployments. API gateways play a key role by enforcing policies that are defined in the control and management plane. 
+
+A self-service developer portal is important to build an effective API ecosystem. Dashboards and reports help both business and operations to gain a 360-degree view of their digital business.
+
+Combining cloud-native technologies with an API-led integration platform creates an effective architecture for a digital enterprise to increase productivity by having automation, production or operation, and services. 
+
+## References:
+
+[1] [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
+[2] [API Microgateway](https://medium.com/@lakwarus/micro-api-gateway-58cce43f2d7d)
+[3] [The twelve-factor Apps](https://12factor.net/)
+
