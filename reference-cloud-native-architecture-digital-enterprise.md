@@ -5,7 +5,7 @@ Version Fall-2020<br/>
 </i>
 </p>
 
-**_Original Authors_**
+**_Original Author_**
 
 + Lakmal Warusawithana | Senior Director - Technology Evangelism | WSO2, Inc | <lakmal@wso2.com>
 
