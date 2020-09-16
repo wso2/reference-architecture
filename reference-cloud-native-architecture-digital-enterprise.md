@@ -172,3 +172,12 @@ The blue/green deployment strategy deploys version 2 (green) alongside version 1
 ##### Canary
 A canary deployment gradually shifts production traffic from version 1 to version 2. Initially a smaller percentage of traffic will be routed to the new version. Canary is mostly used when the tests are lacking or there is little confidence about the stability of the new version.
 
+![Blue/Green](/media/ra-canary.png)
+
+*Figure 12 - Canary deployment strategy*
+
+##### A/B Testing
+A/B testing deployments routes a subset of users to a new version (functionality) under specific conditions. This deployment strategy is used to test the conversion of a given feature and only rolls out the version that converts the most.
+
+
+
