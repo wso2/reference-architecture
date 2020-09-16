@@ -240,3 +240,8 @@ A centralized API gateway is a well-established and popular deployment pattern. 
 ![Shared Gateway](/media/ra-shared-gateway.png)
 
 *Figure 14 - Centralized/shared API gateway*
+
+In this deployment, the API gateway adds an additional hop into inter-microservice communications. The same gateway cluster can be used to manage external APIs as well as internal APIs or can have a dedicated API gateway layer to manage external traffic. 
+
+##### Private Jet Gateway
+In this pattern, each individual microservice has a dedicated API Gateway. This provides maximum security as well as guarantees resource allocation for API execution. A single private jet API gateway can be attached to a cluster of microservices of the same type. Load balancing, failover features will be necessary and naturally fit into this kind of scenario.
