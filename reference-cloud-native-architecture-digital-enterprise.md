@@ -86,9 +86,11 @@ The application definition layer defines application composition, application-sp
 
 Cloud-native applications are all about dynamism. **Microservice architecture (MSA)** is critical to accomplish agility. To gain the benefits of MSA (e.g., faster to develop, test, and deploy, and much easier to understand and maintain) these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. To align with business requirements, it is required to composite and integrate multiple microservices and expose them as business APIs. These APIs should be secured, managed, observed, and monetized. API-led integration platforms combined with cloud-native technologies are critical for a digital enterprise. 
 
-![CNI](/media/ra-cloud-native-architecture-for-a-digital-enterprise.png) 
-
-*Figure 3 - A reference cloud-native architecture for a digital enterprise)*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cloud-native-architecture-for-a-digital-enterprise.png">
+<br> 
+<i>Figure 3 - A reference cloud-native architecture for a digital enterprise</i>
+</p>
 
 ### Infrastructure 
 This layer represents the same functionality that we discussed in the cloud-native reference architecture.
@@ -105,9 +107,11 @@ Decompositioning a complex problem into a set of smaller problems will be easier
 
 Once the microservices are defined and implemented, they should be bundled with all their dependencies and shipped as container images. Environment-specific configurations should be defined externally and  injected into containers at the runtime. These container images should be stored in a registry where other developers as well as runtime environments cloud-pull and create containers out of these images. 
 
-![Container Image Build](/media/ra-container-image-build-v1.png) 
-
-*Figure 4 - Container image creation*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-container-image-build-v1.png">
+<br> 
+<i>Figure 4 - Container image creation</i>
+</p>
 
 One of key benefits of shipping applications as container images is the universal packaging model, which is supported by all the cloud providers, and the property of immutability. Once container images have been built, then it is guaranteed all the required dependencies will be met when the container runtime is created. It helps to maintain consistency from developer machines to production servers. Every release should create a new container image with proper versioning. These versions can be used as a container image tag.   
 
@@ -116,24 +120,31 @@ One of key benefits of shipping applications as container images is the universa
 #### Container Runtime
 The container orchestration platform is scheduled and creates a container (runtime) in a worker node. Each container gets its own IP address, storage, and a namespace with the allocated CPU and memory resources. These resource allocations should be able to pass as runtime properties or be allocated with default values.
 
-![Container Image Naming](/media/ra-container-runtime.png)
-
-*Figure 5 - Container (runtime)*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-container-runtime.png">
+<br> 
+<i>Figure 5 - Container (runtime)</i>
+</p>
 
 In addition to the all application dependencies that come with the container image, the container runtime needs to be associated with some environment-specific properties such as configurations, certificates, and credentials. These properties can be changed in the developer, test, and production environments. Therefore, these properties should not burn into the container image but should be associated with the container runtime. 
 
-![Container Runtime Properties](/media/ra-container-runtime-properties.png)
-
-*Figure 6 - Configs, credential, and certificate association with the container*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-container-runtime-properties.png">
+<br> 
+<i>Figure 6 - Configs, credential, and certificate association with the container</i>
+</p>
 
 #### Scalability, Load Balancing and Service Discovery
 Microservices communicate with each other to complete a given business task. When the number of services increase, we need to have a proper discovery service and should be able to communicate with a unique name (service-name) such as a domain name service (DNS). These service names should not be bound to a specific environment (dev, pod, etc.) and they should be resolved to correct the IP address of the services that are running in the given environment.
 
 Compared to hypervisor-based virtual machine instances, a container runtime’s overhead is minimal. Owing to the combination of container properties and MSA best practises, these containers can be scaled out very fast. When scaling out, ingress traffic should be routed to each container with a proper load balancing mechanism. Every application should have a proper load balancer bound to a service name.
 
-![Service Discovery and Load Balancing](/media/ra-service-discovery-load-balancing.png)
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-discovery-load-balancing.png">
+<br> 
+<i>Figure 7 - Scaling, load balancing, and service name resolving</i>
+</p>
 
-*Figure 7 - Scaling, load balancing, and service name resolving*
 
 #### Health Check and Auto-Healing
 An important feature of orchestration platforms is doing the health check probe for each container and being able to auto-heal if something is wrong. Health checks can be done in multiple levels of the container lifecycle. 
@@ -144,18 +155,22 @@ After the container boots up, container orchestrators do a health check to confi
 
 Sometimes applications might not  fully recover from an unhealthy situation or can be in a fatal error. In such a scenario, orchestrators should be able to identify the situation through the health check probes and replace the error container with a new container. These health check probes are known as liveness probes. 
 
-![Container Health Check](/media/ra-container-health-check.png)
-
-*Figure 8 - Container health check probes*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-container-health-check.png">
+<br> 
+<i>Figure 8 - Container health check probes</i>
+</p>
 
 #### Autoscaling
 Autoscaling is a critical function to accomplish a scalable architecture. Individual microservices that are deployed as containers should be able to scale in and out depending on the load spikes. Running unnecessary containers wastes computing resources and having a short number of containers can cause a service downtime. 
 
 Container orchestrators can monitor these load spikes and are able to remove unnecessary containers or add additional containers to perform scale in and out. CPU usage, memory usage, and in-flight-request counts (load balancer routing queue) are few well known load spike monitoring factors and help to compute scale in and out decisions. Some orchestrators use advanced auto scaling algorithms, where it can predict future load spikes and do scale out early to avoid service disruptions. 
 
-![Autoscaler](/media/ra-autoscaler.png)
-
-*Figure 9 - Autoscaling*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-autoscaler.png">
+<br> 
+<i>Figure 9 - Autoscaling</i>
+</p>
 
 #### Rollouts and Rollbacks
 MSA produces frequent releases and these releases need to be seamlessly rolled out into production. As we know, even though we do thorough testing, sometimes we need to roll back to a stable state due to some late-found error. To mitigate these kinds of situations, we should  have different deployment strategies. The following deployment strategies help to have zero downtime in rollouts and rollbacks. 
@@ -163,37 +178,47 @@ MSA produces frequent releases and these releases need to be seamlessly rolled o
 ##### Ramped 
 Ramped (also known as rolling-update) is the simplest rollout strategy that can be achieved with  zero downtime. In this, a new version (e.g., version 2) is achieved by replacing containers one after another until all the containers are rolled out.
 
-![Ramped](/media/ra-ramped.png)
-
-*Figure 10 - Ramped deployment strategy*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-ramped.png">
+<br> 
+<i>Figure 10 - Ramped deployment strategy</i>
+</p>
 
 ##### Blue/Green
 The blue/green deployment strategy deploys version 2 (green) alongside version 1 (blue) with exactly the same amount of containers. After testing by running some for a time period, the new version traffic is switched from version 1 to version 2 at the load balancer level.
 
-![Blue/Green](/media/ra-blue-green.png)
-
-*Figure 11 - Blue/Green deployment strategy*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-blue-green.png">
+<br> 
+<i>Figure 11 - Blue/Green deployment strategy</i>
+</p>
 
 ##### Canary
 A canary deployment gradually shifts production traffic from version 1 to version 2. Initially a smaller percentage of traffic will be routed to the new version. Canary is mostly used when the tests are lacking or there is little confidence about the stability of the new version.
 
-![Canary](/media/ra-canary.png)
-
-*Figure 12 - Canary deployment strategy*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-canary.png">
+<br> 
+<i>Figure 12 - Canary deployment strategy</i>
+</p>
 
 ##### A/B Testing
 A/B testing deployments routes a subset of users to a new version (functionality) under specific conditions. This deployment strategy is used to test the conversion of a given feature and only rolls out the version that converts the most.
 
-![AB Testing](/media/ca-ab-testing.png)
-
-*Figure 13 - A/B testing deployment strategy*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ca-ab-testing.png">
+<br> 
+<i>Figure 13 - A/B testing deployment strategy</i>
+</p>
 
 ##### Shadow
 Shadow deployment strategies run version 1 and 2 together and fork version 1 incoming requests and send them to version 2 as well without impacting production traffic. This is a fairly complex deployment strategy and is mainly used to test production load on a new feature.  When the required stability and performance are met, the new version of the application can be rolled out.
 
-![Shadow](/media/ra-shadow.png)
-
-*Figure 13 - Shadow deployment strategy*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-shadow.png">
+<br> 
+<i>Figure 14 - Shadow deployment strategy</i>
+</p>
 
 ### Composition / Integration / Policy Enforcement 
 
@@ -242,27 +267,33 @@ Aligning with the MSA, API governance can be achieved via three main API gateway
 ##### Centralized/Shared Gateway
 A centralized API gateway is a well-established and popular deployment pattern. The shared cluster of API gateways handle all API requests. These requests can be internal as well as external API calls. An API gateway cluster can be scaled horizontally and the load is distributed among all the API gateway containers.
 
-![Shared Gateway](/media/ra-shared-gateway.png)
-
-*Figure 14 - Centralized/shared API gateway*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-shared-gateway.png">
+<br> 
+<i>Figure 15 - Centralized/shared API gateway</i>
+</p>
 
 In this deployment, the API gateway adds an additional hop into inter-microservice communications. The same gateway cluster can be used to manage external APIs as well as internal APIs or can have a dedicated API gateway layer to manage external traffic. 
 
 ##### Private Jet Gateway
 In this pattern, each individual microservice has a dedicated API Gateway. This provides maximum security as well as guarantees resource allocation for API execution. A single private jet API gateway can be attached to a cluster of microservices of the same type. Load balancing, failover features will be necessary and naturally fit into this kind of scenario.
 
-![Private Jet Gateway](/media/ra-private-jet-gateway.png)
-
-*Figure 15 - Private Jet API Gateway*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-private-jet-gateway.png">
+<br> 
+<i>Figure 16 - Private Jet API Gateway</i>
+</p>
 
 A private jet API gateway itself can be scaled independently. This pattern also increases one network hop in inter-microservice communication similar to a centralized API gateway.
 
 ##### Sidecar Gateway
 Hetrogeneos services are one of the key benefits in the MSA. Microservices can be implemented in different languages depending on the benefits. An API gateway can be attached as a sidecar to the microservice, which can then benefit from all the capabilities of the API gateway.
 
-![SideCar Gateway](/media/ra-sidecar-gateway.png)
-
-*Figure 16 - Sidecar API gateway*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-sidecar-gateway.png">
+<br> 
+<i>Figure 17 - Sidecar API gateway</i>
+</p>
 
 The sidecar pattern reduces the additional external network hops that are required in the centralized and private jet gateway patterns, while having the local network call to communicate.
 
@@ -272,9 +303,11 @@ A sidecar API gateway pattern can be used when and where you want to have servic
 
 #### All-in-One Gateway
 
-![All-in-One Gateway](/media/ra-future-gateways.png)
-
-*Figure 17 - Gateway convergence*
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-future-gateways.png">
+<br> 
+<i>Figure 18 - Gateway convergence</i>
+</p>
 
 Technology is evolving in a way that all types of gateways such as API gateways, ingress gateways, service mesh gateways, and micro integrators are merging into one single all-in-one gateway.
 
