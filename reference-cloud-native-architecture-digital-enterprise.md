@@ -25,14 +25,14 @@ As a result, APIs have become the norm to expose integrated business functionali
 |![Component](/media/ra-gateway.png)|Gateways|API gateways, ingress gateways, mesh gateways, micro integrators, exposed APIs, events and streams, policy enforcement points|
 |![Component](/media/ra-data-service.png)|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
 |![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
-|![Front end Client](/media/ra-front-end-clients.png)|API Consumers|Mobile apps, reactive apps, API consumers|
-|![Desktop Client](/media/ra-desktop-client-v3.png)|API Consumers|Mobile apps, reactive apps, API consumers|
-|![Mobile Client](/media/ra-mobile-client-v3.png)|API Consumers|Mobile apps, reactive apps, API consumers|
-|![Bot Client](/media/ra-bot-client-v3.png)|API Consumers|Bots, API consumers|
-|![IOT Client](/media/ra-iot-client-v3.png)|API Consumers|IoT devices, apps, API consumers|
+|![Front end Client](/media/ra-front-end-clients.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Desktop Client](/media/ra-desktop-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Mobile Client](/media/ra-mobile-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Bot Client](/media/ra-bot-client-v3.png)|API consumers|Bots, API consumers|
+|![IOT Client](/media/ra-iot-client-v3.png)|API consumers|IoT devices, apps, API consumers|
 |![Key](/media/ra-key-v3.png)|Credentials|Credentials, keys, passwords|
 |![Config](/media/ra-config-v3.png)|Configurations|Configurations|
-|![Cert](/media/ra-cert-v3.png)|Certificats|Certificats|
+|![Cert](/media/ra-cert-v3.png)|Certificates|Certificates|
 |![Load Balancer](/media/ra-load-balancer-v3.png)|Load balancer|Load balancer|
 
 ## What is Cloud Native?
@@ -46,7 +46,7 @@ Cloud native has its own foundation: the **Cloud Native Computing Foundation (CN
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cloud-nativearchitecture-cncf-v1.png">
 <br> 
-<i>Figure 1 - Cloud-native reference architecture by CNCF</i>
+<i>Figure 1 - Cloud-native reference architecture by the CNCF</i>
 </p>
 
 Figure 1 illustrates the cloud-native reference architecture presented by the CNCF. Each layer has its own specialized cloud-native software stacks and many of them are governed by the CNCF.  
@@ -58,9 +58,9 @@ The infrastructure layer represents the actual computing resources. These comput
 The provisioning layer covers the host management activities such as installation and setting up operating systems. It has a set of DevOps (maintenance) and management (software updates, security patches, etc) activities. Operating systems like CoreOS and RancherOS are specialized host operating systems to run containerized environments.
 
 ### Runtime
-The runtime layer mainly consists of the container runtime. The **Container runtime interface** (CRI) allows to plug different implementations of container times. Docker is the widely used container runtime; alternatively,  CRI-O (Open Container Initiative compatible runtimes) or rkt container runtimes can be used. You can even plug a hypervisor-based container runtime like Frakti with support from CRI. 
+The runtime layer mainly consists of the container runtime. The **container runtime interface** (CRI) allows to plug different implementations of container times. Docker is the widely used container runtime; alternatively,  CRI-O (Open Container Initiative compatible runtimes) or rkt container runtimes can be used. You can even plug a hypervisor-based container runtime like Frakti with support from CRI. 
 
-The **Container network interface** (CNI) enables APIs to plug different container network runtime implementations. The CNI comes with inbuilt network plugins such as BRIDGE, VLAN, IPVLAN, DHCP, loopback, and etc. Also, it allows the plugin of the container network from third-party originations such as Weave, Calico, Cilium, Flannel, WMWare, and NSX. All of the network runtimes implement CNI specifications. 
+The **container network interface** (CNI) enables APIs to plug different container network runtime implementations. The CNI comes with inbuilt network plugins such as BRIDGE, VLAN, IPVLAN, DHCP, loopback, etc. Also, it allows the plugin of the container network from third-party originations such as Weave, Calico, Cilium, Flannel, WMWare, and NSX. All of the network runtimes implement CNI specifications. 
 
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cni-v1.png">
