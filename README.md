@@ -20,7 +20,7 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
   * __Layered Reference Architecture__: Functional capabilities grouped in layers by following a System of Systems view. It is a centralized system where data moves from layer to layer.
   
-+ ### [Cloud Native Digital Enterprise](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md) - *Reference Architecture for a Cloud Native Digital Enterprise*
++ ### [Cloud Native Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md) - *Reference Architecture for a Cloud Native Digital Enterprise*
 
   In an era of digital transformation, (digital) enterprises are looking for fast innovation through effective collaboration to deliver more value to their customers with dramatically less effort. As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience.
   
