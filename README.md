@@ -22,9 +22,9 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
 + ### [Cloud Native Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md) - *Reference Architecture for a Cloud Native Digital Enterprise*
 
-  In an era of digital transformation, (digital) enterprises are looking for fast innovation through effective collaboration to deliver more value to their customers with dramatically less effort. As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience.
+  In an era of digital transformation, **(digital) enterprises** are looking for fast innovation through effective collaboration to deliver more value to their customers with dramatically less effort. As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience.
   
-  This paper focuses on how to use cloud-native technologies along with an API-led integration platform to create an effective architecture, i.e., a reference architecture for a cloud native digital enterprise, to increase productivity by having automation, production or operation, and services.
+  This paper focuses on how to use cloud-native technologies along with an API-led integration platform to create an effective architecture, i.e., a **reference architecture for a cloud native digital enterprise**, to increase productivity by having automation, production or operation, and services.
 
 ## Technology Specific Reference Architectural Patterns
 
