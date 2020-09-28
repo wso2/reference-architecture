@@ -1,10 +1,8 @@
-# Reference Architecture for Agility
+# Emerging Reference Architectural Patterns
 
 ![ra banner](/media/ra-banner.png)
 
 A proven approach to helping every development organization become an integration agile organization. The Reference Architecture for Agility is a technology neutral logical architecture based on a disaggregated cloud-based model. It can be applied in incremental stages to create an integration agile foundation for any digital enterprises - deployable in private, public or hybrid cloud environments.
-
-## Emerging Reference Architectural Patterns
 
 We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to asankaa@wso2.com.
 
