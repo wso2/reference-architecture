@@ -1,13 +1,13 @@
 <h1 align="center"> Cell-Based Architecture </center></h1>
 <p align="center">
 <i>
-Version: Summer-2020<br/>
+Version: Fall-2020<br/>
 </i>
 </p>
 
 **_Original Authors_**
 
-+ Asanka Abeysinghe | Chief Technology Evangelist | WSO2, Inc | <asankaa@wso2.com> (Summer-2018 - Summer-2020)
++ Asanka Abeysinghe | Chief Technology Evangelist | WSO2, Inc | <asankaa@wso2.com> (Summer-2018 - Fall-2020)
 + Paul Fremantle | CTO and Co-Founder | WSO2, Inc | <paul@wso2.com> (Summer-2018 - Spring-2020)
 
 > *This document describes a reference architecture for modern agile digital  enterprises. This reference architecture offers a logical architecture based on a disaggregated cloud-based model that can be instantiated to create an effective and agile approach for digital enterprises, deployed in private, public or hybrid cloud environments. In this paper we present the architecture, the approach to applying this architecture, and existing approaches that fit into this architecture. The architecture defined in this paper can be mapped to current architectures as well as used to define new architectures. It is designed to help move from the “as-is” towards the “to-be”.*
@@ -282,11 +282,22 @@ APIs can comprehend as the products of the 21st century. For many millennia, hum
 
 ![API products](/media/ra-api-product-10.png)
 
-#### Reference implementation (Cellery)
+#### Reference implementations 
+
+##### Cellery
+
 [Cellery](https://cellery.io/) is a code-first approach (architecture as code) to building, integrating, running and managing composite applications on Kubernetes. Build, push/pull, test, deploy, update, scale and observe cells. Create secure APIs by default. Use your existing container images, written in any language.
 Cellery started off as a learning experiment. Our passion for services composition and the need for a reference implementation for Cell-based architecture gave birth to Cellery. Last year and half was a great learning experience for us. Through Cellery, we learnt to organize services and deploy on Kubernetes at scale. We also found out that this is a common problem that many technical communities are trying to solve and we are planning to contribute to such communities like Open Application Model ([OAM](https://oam.dev/)) in future. As for Cellery, we are no longer actively maintaining the codebase. If you are interested in forking Cellery and using it in your project, please feel free to do so.
 
 You can navigate to the code base at - [https://github.com/wso2/cellery](https://github.com/wso2/cellery).
+
+##### Okta
+
+[An Insider Look: How Okta Builds and Runs Scalable Infrastructure](https://www.okta.com/resources/whitepaper/how-okta-builds-and-runs-scalable-infrastructure/) using Cell-based Architecture. 
+
+##### Microservice DSL (MDSL)
+
+[A Domain-Specific Language (DSL) to specify (micro-)service contracts](https://microservice-api-patterns.github.io/MDSL-Specification/), their data representations and API endpoints.
 
 ## Conclusions
 
