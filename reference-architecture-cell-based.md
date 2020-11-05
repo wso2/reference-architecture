@@ -327,6 +327,14 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
 
+## Publications 
+
+[1] Kristopher Sandoval - What is Cell-Based Architecture - https://nordicapis.com/what-is-cell-based-architecture/ 
+
+[2] Asanka Abeysinghe - Cell-Based Architecture: A New Decentralized Approach for Cloud Native Patterns - https://thenewstack.io/cell-based-architecture-a-new-decentralized-approach-for-cloud-native-patterns/
+
+[3] Asanka Abeysinghe - The Cellular Enterprise - https://www.forbes.com/sites/forbestechcouncil/2020/06/29/the-cellular-enterprise/
+
 ## Appendix A: Agile Enterprise
 
 >*“It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change. -Charles Darwin*
