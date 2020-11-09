@@ -53,8 +53,7 @@ There are mainly three components in the  architecture:
 - The API  exposure layer:  Ideally an API gateway or a micro gateway but sometimes also a load balancer, a layer 7 firewall, a CDN, or any other layer 7 application on top of core service(s). 
 - The microservices:  A microservice (a core service or integration service) basically encapsulates a logic.
 
- <!-- ![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png) 
--->
+ <!-- ![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png) -->
 <p align="center">
 <img src="/media/media_event_driven_apis/1_synchronous_api_driven_msa.png" alt="synchronous api driven msa" width="80%" height="80%" />
 </p>
@@ -87,7 +86,10 @@ Application languages and backend architectures have relied on events before RES
 
 In contrast to REST-fashioned APIs (which are usually implemented in polling scenarios),  push or streaming APIs are event-driven.  An event-driven API requires two capabilities—a mechanism to allow a consumer to subscribe (this can be user-controlled or programmatic) and the means to deliver events to consumers that are subscribed. The event-enabled APIs and/or services can connect to the broker and clients can subscribe to a channel of interest. Eventually, when an event takes place, it triggers a data flow to a client that’s waiting for the inbound data in order to process it in real-time. Additionally, when it comes to two-way communication, the client application should be able to publish events to the backend via the event-driven API as well. 	
 
-![asynchronous api-driven msa ](/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png)
+<!-- ![asynchronous api-driven msa ](/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png) --> 
+<p align="center">
+<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="asynchronous api-driven msa" width="50%" height="50%" />
+</p>
 
 <p align="center">
 <i>
