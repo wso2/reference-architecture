@@ -9,11 +9,30 @@ Version Q4-2020<br/>
 
 **_Author_**
 + Dakshitha Ratnayake, Associate Director - Technology Evangelism
-<dakshitha@wso2.com>
+<dakshitha@wso2.com> [@techieducky](https://twitter.com/techieducky) 
 
 
 > *This paper will focus on event-driven APIs and their management. Event-driven as a concept has been around for a long time but event-driven APIs are a more recent topic, which entails using event-driven architecture to support scalable, real-time (or near-real-time), push-based communication in APIs published to third parties.*
 
+## Table of Contents
+- 1.0 Introduction	
+  - 1.1 Event-Driven Systems	
+- 2.0 Architecture	5
+  - 2.1 A Synchronous API-first Microservice Architecture	
+  - 2.2 An Event-Driven API-first Microservices Architecture	
+- 3.0 Event-Driven APIs	
+  - 3.1 Defining Event-Driven APIs with AsyncAPI	
+  - 3.2 Asynchronous Messaging Protocols for APIs	
+    - Webhooks	
+    - WebSockets	
+    - Server-Sent Events	
+    - GraphQL	
+        - GraphQL Subscriptions	
+        - GraphQL Live Queries	
+    - gRPC	
+- 3.3 Event-Enabling API Management	
+- 4.0 Conclusion	
+- 5.0 References	
 
 ## 1.0 Introduction
  
@@ -31,7 +50,7 @@ What is event-driven? An event-driven architecture (EDA) centers around the conc
 <p><b>Real-time (or near real-time) experiences are built with event-driven architectures. </b></p>
 
  
-It’s about the power of being able to do something in that instant as it happens. What is real-time varies for different industries (usually milliseconds or less) with their own metrics. In capital markets, 1 millisecond is worth $8m. This means that apps need to be highly reactive to change. One of the biggest advantages of EDA is that it optimizes the time it takes between the occurrence of an event and the reaction by the company to that event.  So, instead of polling, consumers can register their interest (subscribe) and react to events in real-time. With the real-time transmission of events (pushing instead of polling) and services being executed in parallel, everything interacts with each other efficiently. Better response times result in better user engagement and satisfaction and, therefore, better business. 
+It’s about the power of being able to do something in that instant as it happens. What is real-time varies for different industries (usually milliseconds or less) with their own metrics. In capital markets, [1 millisecond is worth $8m](https://research.tabbgroup.com/report/v06-007-value-millisecond-finding-optimal-speed-trading-infrastructure). This means that apps need to be highly reactive to change. One of the biggest advantages of EDA is that it optimizes the time it takes between the occurrence of an event and the reaction by the company to that event.  So, instead of polling, consumers can register their interest (subscribe) and react to events in real-time. With the real-time transmission of events (pushing instead of polling) and services being executed in parallel, everything interacts with each other efficiently. Better response times result in better user engagement and satisfaction and, therefore, better business. 
 
 <b>EDAs are loosely-coupled and agile.</b>
 
