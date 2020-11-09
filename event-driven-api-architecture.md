@@ -55,14 +55,9 @@ There are mainly three components in the  architecture:
 
  <!-- ![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png) 
 -->
-
+<p align="center">
 <img src="/media/media_event_driven_apis/1_synchronous_api_driven_msa.png" alt="synchronous api driven msa" width="80%" height="80%" />
-
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
-<tr><td align="center">
-<img src="/media/media_event_driven_apis/1_synchronous_api_driven_msa.png" alt="synchronous api driven msa" width="80%" height="80%" />
-</td></tr>
-</table>
+</p>
 
  
 <p align="center">
