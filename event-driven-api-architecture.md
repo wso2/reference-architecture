@@ -88,7 +88,7 @@ In contrast to REST-fashioned APIs (which are usually implemented in polling sce
 
 <!-- ![asynchronous api-driven msa ](/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png) --> 
 <p align="center">
-<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="asynchronous api-driven msa" width="50%" height="50%" />
+<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="asynchronous api-driven msa" width="20%" height="20%" />
 </p>
 
 <p align="center">
