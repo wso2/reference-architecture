@@ -56,6 +56,8 @@ There are mainly three components in the  architecture:
 
 ![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png)
 
+<img src="/media/media_event_driven_apis/1_synchronous_api_driven_msa.png" width="20%" height="20%" />
+
  
 <p align="center">
 <i>
@@ -300,14 +302,3 @@ Event-driven APIs have been the missing piece to realizing an end-to-end event-d
 [11] Arshardh Ifthikar - [Introducing WebSocket APIs with WSO2 API Manager](https://wso2.com/library/articles/2017/05/introducing-websocket-apis-with-wso2-api-manager/)
 
 [12] WSO2 API Manager Documentation - [Create and Publish a WebSocket API](https://apim.docs.wso2.com/en/latest/learn/tutorials/create-and-publish-websocket-api/#create-and-publish-a-websocket-api)
-
-
-
- 
-![test](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png =250x250)
-
-<img src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
-
-<img src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
-
-<img src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="20%" height="20%" />
