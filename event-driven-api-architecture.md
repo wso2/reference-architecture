@@ -71,7 +71,7 @@ A synchronous API call involves a single thread to process a request and its res
 
 <!-- ![events in a retail application ](/media/media_event_driven_apis/2_events_in_a_retail_app.png) -->
 <p align="center">
-<img src="/media/media_event_driven_apis/2_events_in_a_retail_app.png" alt="events in a retail application" width="70%" height="70%" />
+<img src="/media/media_event_driven_apis/2_events_in_a_retail_app.png" alt="events in a retail application" width="60%" height="60%" />
 </p>
 
 <p align="center">
@@ -229,7 +229,7 @@ Implementing a GraphQL subscription requires the use of a message broker. The Ap
 
 <!-- ![graphql live queries ](/media/media_event_driven_apis/8_graphql_live_queries.png) --> 
 <p align="center">
-<img src="/media/media_event_driven_apis/8_graphql_live_queries.png" alt="graphql live queries" width="80%" height="80%" />
+<img src="/media/media_event_driven_apis/8_graphql_live_queries.png" alt="graphql live queries" width="70%" height="70%" />
 </p>
 
 <p align="center">
