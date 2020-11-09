@@ -1,6 +1,6 @@
-<h1 align="center"> Event-driven API Architecture
+<h1 align="center"> Event-driven APIs in Microservice Architectures
  </center></h1>
-<h2 align="center"> A Reference Architecture</center></h2>
+<h2 align="center"> A Reference Document </center></h2>
 <p align="center">
 <i>
 Version Q4-2020<br/>
@@ -17,9 +17,9 @@ Version Q4-2020<br/>
 ## Table of Contents
 - 1.0 Introduction	
   - 1.1 Event-Driven Systems	
-- 2.0 Architecture	5
+- 2.0 Architecture	
   - 2.1 A Synchronous API-first Microservice Architecture	
-  - 2.2 An Event-Driven API-first Microservices Architecture	
+  - 2.2 An Event-Driven API-first Microservice Architecture	
 - 3.0 Event-Driven APIs	
   - 3.1 Defining Event-Driven APIs with AsyncAPI	
   - 3.2 Asynchronous Messaging Protocols for APIs	
@@ -57,7 +57,7 @@ It’s about the power of being able to do something in that instant as it happe
 In event-driven architectures, applications and the underlying services are loosely coupled. Consequently, event producers simply transmit events (and do not care if anyone is interested). They fire, usually to a broker, and forget. Consuming apps and microservices do not have to know how many different applications they are consuming data from; they are only concerned about the data. So, the consuming applications are registered with the broker to receive the data updates they want. Decoupling, as we all know, offers many benefits. Because things are dealt with independently, consumers can be scaled independently of the sender. This means allowing millions of devices to consume events. Furthermore, bottleneck issues can be more easily tracked to a single component due to the decoupling.
 
 
-It also makes systems flexible and agile, such that new systems can be easily plugged into the architecture without making any changes to the source systems or impacting other systems, thus future-proofing the architecture. It allows developers to spend less time worrying about the systems and more about the business logic, allowing them to build products faster. An event-driven microservices architecture means faster time-to-market for new and modified business capabilities.
+It also makes systems flexible and agile, such that new systems can be easily plugged into the architecture without making any changes to the source systems or impacting other systems, thus future-proofing the architecture. It allows developers to spend less time worrying about the systems and more about the business logic, allowing them to build products faster. An event-driven microservice architecture means faster time-to-market for new and modified business capabilities.
 
 <b>Becoming event-driven creates efficient systems.</b>
 
@@ -103,8 +103,8 @@ Figure 2: Pushing Events via Async APIs in a Retail Application
 
 However, if the retail application is implemented in an event-driven way, the price changes are pushed to the client instead. First of all, any application that is interested in the price change event will subscribe to the event. When a price change occurs, that data will get distributed out to the subscribed apps. Such an app will now no longer need to continuously query for the price because the latest price is in its system; the app can keep this data in its cache or keep it persisted. For such scenarios, it makes more sense to receive push events via ‘async’ APIs than polling via ‘sync’ APIs as shown in Figure 2. 
 
-### 2.2 An Event-Driven API-first Microservices Architecture
-Application languages and backend architectures have relied on events before REST was created. Back then, financial industries had events from exchanges pushed to hedge funds to allow them to stay in front of the market using IP-based tweaks and proprietary middleware. Since then, message buses have evolved to open standards adopted outside finance. Although EDA does not explicitly require the use of middleware, using such an intermediary between event producers and consumers helps to implement corresponding patterns and deliver more manageable and scalable solutions. We refer to this middleware as the event broker. A few notable examples of brokers are RabbitMQ, Apache Kafka, and Apache ActiveMQ, among many others in the market today. Moreover, a scalable microservices architecture (MSA) is the optimal architecture for complex event-driven backend services. These event-driven microservices can act as event subscribers or publishers in order to process events, handle errors, and persist event-driven states. 
+### 2.2 An Event-Driven API-first Microservice Architecture
+Application languages and backend architectures have relied on events before REST was created. Back then, financial industries had events from exchanges pushed to hedge funds to allow them to stay in front of the market using IP-based tweaks and proprietary middleware. Since then, message buses have evolved to open standards adopted outside finance. Although EDA does not explicitly require the use of middleware, using such an intermediary between event producers and consumers helps to implement corresponding patterns and deliver more manageable and scalable solutions. We refer to this middleware as the event broker. A few notable examples of brokers are [RabbitMQ](https://www.rabbitmq.com/), [Apache Kafka](https://kafka.apache.org/), and [Apache ActiveMQ](http://activemq.apache.org/), among many others in the market today. Moreover, a scalable [microservices architecture](https://microservices.io/patterns/microservices.html) (MSA) is the optimal architecture for complex event-driven backend services. These event-driven microservices can act as event subscribers or publishers in order to process events, handle errors, and persist event-driven states. 
 
 In contrast to REST-fashioned APIs (which are usually implemented in polling scenarios),  push or streaming APIs are event-driven.  An event-driven API requires two capabilities—a mechanism to allow a consumer to subscribe (this can be user-controlled or programmatic) and the means to deliver events to consumers that are subscribed. The event-enabled APIs and/or services can connect to the broker and clients can subscribe to a channel of interest. Eventually, when an event takes place, it triggers a data flow to a client that’s waiting for the inbound data in order to process it in real-time. Additionally, when it comes to two-way communication, the client application should be able to publish events to the backend via the event-driven API as well. 	
 
@@ -123,29 +123,29 @@ Figure 3: An Asynchronous API-driven Microservice Architecture
 
 To be more specific, an event broker, as shown in Figure 3, can be used to:
 - Behave as a backbone or the event distribution layer for microservices that publish and process events.
-- Liberate data from existing systems/brownfield. This can be done via an Enterprise Service Bus or Change Data Capture (CDC) tools. When something changes on the mainframe, they can publish events to the broker. 
+- Liberate data from existing systems/brownfield. This can be done via an [Enterprise Service Bus](https://wso2.com/what-is-an-esb/) or [Change Data Capture (CDC)](https://www.qlik.com/us/change-data-capture/cdc-change-data-capture) tools. When something changes on the mainframe, they can publish events to the broker. 
 - Be fed by IoT devices (alarms, sensors, devices), connected systems (PoS terminals), etc. 
-- Interact with API gateways to expose data as events to the outside. These gateways (or micro gateways) can take data from a request/response and transform it into an event or can even event-enable existing REST APIs. 
+- Interact with [API gateways](https://wso2.com/what-is-an-api-gateway/) to expose data as events to the outside. These gateways (or [micro gateways](https://wso2.com/api-management/api-microgateway/)) can take data from a request/response and transform it into an event or can even event-enable existing REST APIs. 
 
 # 3.0 Event-Driven APIs
 Receiving notifications about someone liking a picture or reacting to a story on Instagram,  a new Whatsapp message, a stock ticker, or social stream displaying the latest updates are all made possible through various modes of asynchronous communication. So how exactly should we perform asynchronous event-driven communication in the world of APIs where synchronous communication is predominant and most firewalls block non-HTTP traffic? There really is no one-size-fits-all solution.  
  
-The technology landscape for asynchronous APIs is rapidly booming. The older protocols such as WS-Eventing and XMPP (a polling protocol that opens an HTTP thread and never closes it) are now making way for newer technologies (even though Whatsapp is still based on XMPP at the time of this writing). Since 2011, with the advent of social networks and to support reactive UI, the web has standardized protocols for low-volume bi-directional/peer-to-peer traffic (Websockets) and server to client push over HTTP (Server-Sent Events). For battery constrained IoT devices, one would generally prefer using MQTT. Webhooks have become popular to handle low-volume events. Even though Kafka, which is based on TCP, is great for dealing with asynchronous communication between internal microservices, it is not optimized to be exposed to provide API consumers with easy access to real-time data and it will create issues with firewalls.
+The technology landscape for asynchronous APIs is rapidly booming. The older protocols such as [WS-Eventing](https://www.w3.org/Submission/WS-Eventing/) and [XMPP](https://xmpp.org/) (a polling protocol that opens an HTTP thread and never closes it) are now making way for newer technologies (even though Whatsapp is still based on XMPP at the time of this writing). Since 2011, with the advent of social networks and to support reactive UI, the web has standardized protocols for low-volume bi-directional/peer-to-peer traffic ([Websockets](https://html.spec.whatwg.org/multipage/web-sockets.html)) and server to client push over HTTP ([Server-Sent Events](https://html.spec.whatwg.org/multipage/server-sent-events.html)). For battery constrained IoT devices, one would generally prefer using [MQTT](https://mqtt.org/). [Webhooks]https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks have become popular to handle low-volume events. Even though Kafka, which is based on TCP, is great for dealing with asynchronous communication between internal microservices, it is not optimized to be exposed to provide API consumers with easy access to real-time data and it will create issues with firewalls.
  
-The payloads are still mostly JSON but Avro in Kafka and protocol buffers in gRPC are becoming more prevalent. In synchronous REST APIs, queries can be appended to the URL string that addresses an API’s endpoint (a GET request), or package the same query as a JSON payload instead (a POST request). Push/streaming approaches can be very different to each other. For example, Websockets allow for bi-directional streams while Webhooks and Server-Side Events are unidirectional. XMPP and SMPP differ substantially, such that XMPP is primarily based on XML payloads while SMPP relies on binary data.
+The payloads are still mostly [JSON](https://www.json.org/json-en.html) but [Avro](http://avro.apache.org/) in Kafka and [protocol buffers](https://developers.google.com/protocol-buffers) in [gRPC](https://grpc.io/) are becoming more prevalent. In synchronous REST APIs, queries can be appended to the URL string that addresses an API’s endpoint (a GET request), or package the same query as a JSON payload instead (a POST request). Push/streaming approaches can be very different to each other. For example, Websockets allow for bi-directional streams while Webhooks and Server-Side Events are unidirectional. XMPP and [SMPP](https://smpp.org/) differ substantially, such that XMPP is primarily based on XML payloads while SMPP relies on binary data.
  
-A message broker is usually required in the backend architecture to capture and filter events and manage event subscriptions. Moreover, languages traditionally used to create application layers linked to databases have also gone through their event revolution with reactive extensions such as RxJava widely adopted by the Java community. And then there’s AsyncAPIs, which is now widely adopted to document event-driven APIs.
+A message broker is usually required in the backend architecture to capture and filter events and manage event subscriptions. Moreover, languages traditionally used to create application layers linked to databases have also gone through their event revolution with reactive extensions such as [RxJava](https://github.com/ReactiveX/RxJava) widely adopted by the Java community. And then there’s [AsyncAPI](https://www.asyncapi.com/), which is now widely adopted to document event-driven APIs.
  
 Let’s dig deeper into a few commonly-used and emerging standards in the event-driven API space. 
 
-## 3.1 Defining Event-Driven APIs with AsyncAPI 
+## 3.1 Defining Event-Driven APIs with [AsyncAPI](https://www.asyncapi.com/) 
 One of the reasons why API management platforms really took off is their ability to streamline the development and drive adoption for their APIs via developer portals and API definition standards like OpenAPI. Once the provider defines the API interface as per the specification, consumers can pass the interface definition into a code generation framework (such as Swagger) to generate documentation and code for execution on a runtime platform. This minimized the amount of manual effort and communication required from an end-to-end perspective. 
 
 A similar specification to standardize event-driven APIs has come up fairly recently: AsyncAPI. AsyncAPI is designed along the same elements of OpenAPI and shares many common constructs to simplify the adoption, but it also comes with additional features to accommodate eventing. It supports a wide variety of messaging protocols and transports (such as AMQP, MQTT, WebSockets, Kafka, JMS, STOMP, HTTP, etc.) and event schema formats. Therefore, the API definition will contain the event payload definition, channel name, application/transport headers, protocols, and other eventing semantics to connect, publish, and subscribe to the API. 
 
 ## 3.2 Asynchronous Messaging Protocols for APIs 
 
-### Webhooks
+### [Webhooks](https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks)
 Also known as “reverse APIs”,  webhook APIs completely detach the HTTP request and response from each other. 
 
 <!-- ![webhooks ](/media/media_event_driven_apis/4_webhooks.png) -->
@@ -174,7 +174,7 @@ Webhooks are rather easy to implement.  However, compared to other mechanisms, w
 The OpenAPI 3.0.0  specification supports webhooks through a callback element that can be used to define a webhook. However, in general, there are no formal standards around webhooks. 
 
 
-### WebSockets
+### [WebSockets](https://html.spec.whatwg.org/multipage/web-sockets.html)
 
 The WebSocket protocol allows for constant, bi-directional communication between the server and client, which means both parties can communicate and exchange data as and when needed.  WebSockets are point-to-point connections modeled on TCP sockets and lack any native pub-sub support. 
 
@@ -195,7 +195,7 @@ WebSockets don’t use a request/response strategy where a connection is opened 
  
 Using a single TCP connection reduces resource usage by transferring only essential information (the HTTP header overhead is reduced) and thereby optimizes performance. To use WebSockets, the browser must be compatible. However, this limitation is insignificant because a majority of the browsers today already support the WebSocket protocol. The WebSocket interface can be defined with the AsyncAPI specification.  WebSockets have been combined with MQTT, AMQP, and proprietary protocol implementations to provide pub-sub communications.
 
-### Server-Sent Events
+### [Server-Sent Events](https://html.spec.whatwg.org/multipage/server-sent-events.html)
 
 With Server-Side Events (SSE), an open, lightweight, subscribe-only protocol, a browser application can subscribe to a stream of events or message updates generated by a server. First of all, the client creates a new [EventSource](https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface) object, and passes the URL of an endpoint to the server over a regular HTTP request. The client then waits for a response with a stream of event messages. The server leaves the HTTP response open until it has no more events to send. The server will terminate a stale connection (if the connection has been open long enough) or wait for the client to explicitly close the initial request. 
 
@@ -219,11 +219,11 @@ There are two common ways to perform asynchronous communications from a GraphQL 
  
 Subscriptions observe events; live queries observe data. Both are request/stream operations where the server responds to a client request with a stream of GraphQL responses, in the format designated by the client’s request document. Subscriptions are GraphQL operations, defined in the specification. Live queries are not formally defined in the [specification](https://facebook.github.io/graphql/June2018/#sec-Subscription), and are generally modeled by adding a special directive to a query operation. 
  
-Both methods are technology agnostic. In the spec, subscriptions only specify algorithms for the creation of a stream, the content of each payload on that stream, and the closing of that stream. There are intentionally no specifications for serialization formats, the transport mechanism, message acknowledgment, buffering, resend requests, or any other quality of service (QoS) details. These are left to be chosen by the implementation service. So, those programming GraphQL subscriptions or live queries can use a messaging technology that best suits their needs. Both methods can use a variety of protocols (e.g., MQTT, AMQP, RSocket, Redis, Socket.io, and other formats) and transport (e.g., WebSocket, TCP, HTTP long-polling, SSE, etc.) combinations.  
+Both methods are technology agnostic. In the spec, subscriptions only specify algorithms for the creation of a stream, the content of each payload on that stream, and the closing of that stream. There are intentionally no specifications for serialization formats, the transport mechanism, message acknowledgment, buffering, resend requests, or any other quality of service (QoS) details. These are left to be chosen by the implementation service. So, those programming GraphQL subscriptions or live queries can use a messaging technology that best suits their needs. Both methods can use a variety of protocol (e.g., MQTT, AMQP, RSocket, Redis, Socket.io, and other formats) and transport (e.g., WebSocket, TCP, HTTP long-polling, SSE, etc.) combinations.  
  
 Subscriptions require a message broker. Live queries that outgrow polling will need reactive data sources (such as a database that allows to tail a query) and an accompanying programming model (such as Rx). In both cases, the server needs to store each operation execution request, subscribe to underlying source streams, and maintain an index of long-lived connections back to the client via a real-time gateway. 
 
-#### GraphQL Subscriptions
+#### [GraphQL Subscriptions](https://www.apollographql.com/docs/apollo-server/data/subscriptions/#gatsby-focus-wrapper)
 
 GraphQL subscriptions is a streaming mechanism built into GraphQL and is designed in a way that both synchronous HTTP communication and asynchronous event-driven interactions are available from a single API experience, i.e., a single API defined in GraphQL can support a mix of request-response queries and mutations (commands) as well as asynchronous event notifications. Subscriptions provide the ability to emit messages (not bi-directional) asynchronously out of the GraphQL API from within query or mutation execution logic. 
 
@@ -242,9 +242,9 @@ Figure 7: Event-driven APIs with GraphQL Subscriptions
 
 Subscriptions are client-driven, meaning that consuming applications define what data must be included in the event. Clients can indicate a subscription operation by using the subscription keyword, so that whenever the event defined occurs, it executes the defined selection and sends the result.
  
-Implementing a GraphQL subscription requires the use of a message broker. The Apollo GraphQL Server uses the WebSocket protocol and comes with a message broker installed by default. Sangria (another implementation of GraphQL) uses Server-Sent Events. While WebSockets is the popular choice, other protocols such as AMQP or XMPP can be used too. 
+Implementing a GraphQL subscription requires the use of a message broker. The [Apollo GraphQL Server](https://www.apollographql.com/docs/apollo-server/) uses the WebSocket protocol and comes with a message broker installed by default. [Sangria](https://sangria-graphql.github.io/learn/) (another implementation of GraphQL) uses Server-Sent Events. While WebSockets is the popular choice, other protocols such as [AMQP](http://www.amqp.org/) or XMPP can be used too. 
 
-#### GraphQL Live Queries
+#### [GraphQL Live Queries](https://dev.to/n1ru4l/graphql-live-queries-with-socket-io-4mh6)
 
 <!-- ![graphql live queries ](/media/media_event_driven_apis/8_graphql_live_queries.png) --> 
 <p align="center">
@@ -261,13 +261,13 @@ Figure 8: Event-driven APIs with GraphQL Live Queries
 
 A GraphQL query can be transformed into a live query by including a directive, such as ‘@live’.
  
-Clients can indicate a subscription operation by using the subscription keyword, so that whenever the event defined occurs, it executes the defined selection and sends the result. In short, the client is telling the server to evaluate the defined selection and inform whenever the ‘selection’ would yield a different response. Just like subscriptions, a live query is a read-only push stream (not bi-directional). It requires the implementation of a reactive data layer (e.g., rxjs) in the GraphQL server (e.g., to tail a query). The reactive data layer listens to database level changes, which can be streamed back to the consumer. 
+Clients can indicate a subscription operation by using the subscription keyword, so that whenever the event defined occurs, it executes the defined selection and sends the result. In short, the client is telling the server to evaluate the defined selection and inform whenever the ‘selection’ would yield a different response. Just like subscriptions, a live query is a read-only push stream (not bi-directional). It requires the implementation of a reactive data layer (e.g., [RxJS](https://angular.io/guide/rx-library)) in the GraphQL server (e.g., to tail a query). The reactive data layer listens to database level changes, which can be streamed back to the consumer. 
  
 [Hasura](https://hasura.io/) supports both Subscriptions and Live Queries, and the Apollo client can approximate the behavior of a Live Query with its built-in [polling feature](https://www.apollographql.com/docs/react/essentials/queries.html#refetching).
 
 
-### gRPC
-Despite being widely used for synchronous communication between internal microservices (microservices within an organization), [gRPC](https://grpc.io/), unbeknownst to many, supports bi-directional streaming because of its ties to HTTP/2. In other words, it allows defining a service operation that either accepts an incoming stream or emits an outgoing stream, or both. This is popular for microservices that are built with gRPC and need to be able to communicate back and forth.
+### [gRPC](https://grpc.io/)
+Despite being widely used for synchronous communication between internal microservices (microservices within an organization), gRPC, unbeknownst to many, supports bi-directional streaming because of its ties to HTTP/2. In other words, it allows defining a service operation that either accepts an incoming stream or emits an outgoing stream, or both. This is popular for microservices that are built with gRPC and need to be able to communicate back and forth.
  
 gRPC is a standard that takes advantage of HTTP/2 and protocol buffers (instead of JSON) to ensure increased performance and maximum interoperability. gRPC uses protocol buffers (or protobufs) as serialization format over HTTP/2 and also to create the interface definition of the gRPC service.  In other words, the  .proto file acts as the service definition (instead of a Swagger file) and can be used to generate client stubs and server-side skeletons. Compared to REST APIs, gRPC APIs are faster. However, there is a considerable learning curve and it isn’t always as intuitive and easy to learn as REST.
 
@@ -287,7 +287,7 @@ Figure 9 - Event-driven APIs with gRPC
 Even though external-facing communication based on gRPC is rare, there are methods to do so. For example, a gRPC web client, which is a special client for  browsers, can be used for client-server interactions.  However, this is complicated. Therefore, as a general practice, we can use gRPC for synchronous and asynchronous communications between internal microservices and in B2B environments. 
 
 ## Event-Enabling API Management
-Because dynamic access to data and the federation of data across ecosystems can create groundbreaking capabilities, existing API management platforms have also begun to support several asynchronous API protocols (the most common ones being webhooks and WebSockets at the time of this writing), thereby facilitating an end-to-end event-driven architecture. By leveraging both OpenAPI and AsyncAPI specifications to document and discover these event-driven APIs, enterprises and SaaS companies have been able to produce streamlined real-time applications, API products, and services for their customers, B2B partner companies, and internal business units. 
+Because dynamic access to data and the federation of data across ecosystems can create groundbreaking capabilities, [existing API management platforms have also begun to support several asynchronous API protocols](https://apim.docs.wso2.com/en/latest/learn/design-api/create-api/create-a-websocket-api/) (the most common ones being webhooks and WebSockets at the time of this writing), thereby facilitating an end-to-end event-driven architecture. By leveraging both [OpenAPI](https://swagger.io/specification/) and AsyncAPI specifications to document and discover these event-driven APIs, enterprises and SaaS companies have been able to produce streamlined real-time applications, API products, and services for their customers, B2B partner companies, and internal business units. 
  
 An event-driven backbone will manage the overall real-time data flow securely and at scale,  while the asynchronous APIs can be managed for external and internal consumption with a traditional API management solution that comes with inherent or extended capabilities to support event-driven semantics. The API manager will handle security, monitoring, auditing, throttling, discovery, and tooling capabilities for the event-driven APIs and also provide ways to enable commercial models around the APIs
 
