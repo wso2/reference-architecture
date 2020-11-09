@@ -53,11 +53,9 @@ There are mainly three components in the  architecture:
 - The API  exposure layer:  Ideally an API gateway or a micro gateway but sometimes also a load balancer, a layer 7 firewall, a CDN, or any other layer 7 application on top of core service(s). 
 - The microservices:  A microservice (a core service or integration service) basically encapsulates a logic.
 
-<!-->
-![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png)
--->
+<!--> ![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png) -->
 
-<img src="/media/media_event_driven_apis/1_synchronous_api_driven_msa.png" width="80%" height="80%" />
+<img src="/media/media_event_driven_apis/1_synchronous_api_driven_msa.png" alt="synchronous api driven msa" class="center" width="80%" height="80%" />
 
  
 <p align="center">
