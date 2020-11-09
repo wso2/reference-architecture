@@ -71,7 +71,7 @@ A synchronous API call involves a single thread to process a request and its res
 
 <!-- ![events in a retail application ](/media/media_event_driven_apis/2_events_in_a_retail_app.png) -->
 <p align="center">
-<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="events in a retail application" width="50%" height="50%" />
+<img src="/media/media_event_driven_apis/2_events_in_a_retail_app.png" alt="events in a retail application" width="70%" height="70%" />
 </p>
 
 <p align="center">
