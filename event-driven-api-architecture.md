@@ -54,7 +54,7 @@ There are mainly three components in the  architecture:
 - The microservices:  A microservice (a core service or integration service) basically encapsulates a logic.
 
 
-![synchronous api driven msa ](/media/media_event_driven_apis/1_synchronous_api_driven_msa.png)
+![synchronous api driven msa ](/media/media_event_driven_apis/synchronous_api_driven_msa_1.png)
 
  
 <p align="center">
