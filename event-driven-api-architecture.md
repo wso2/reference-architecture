@@ -229,7 +229,7 @@ Implementing a GraphQL subscription requires the use of a message broker. The Ap
 
 <!-- ![graphql live queries ](/media/media_event_driven_apis/8_graphql_live_queries.png) --> 
 <p align="center">
-<img src="/media/media_event_driven_apis/8_graphql_live_queries.png" alt="graphql live queries" width="70%" height="70%" />
+<img src="/media/media_event_driven_apis/8_graphql_live_queries.png" alt="graphql live queries" width="60%" height="60%" />
 </p>
 
 <p align="center">
