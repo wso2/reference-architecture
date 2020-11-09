@@ -69,7 +69,10 @@ Figure 1: A Synchronous API-driven Microservice Architecture
 
 A synchronous API call involves a single thread to process a request and its response.  As shown in Figure 1, for each request (REST, GraphQL, gRPC), a response follows. Synchronous communication is ideal for many scenarios especially if you need an instant response; however, in other cases, especially when the processing required for the response happens at a different time, ordinary synchronous messaging becomes tricky.  As a solution, developers have resorted to using polling techniques to get updates. But the data keeps changing constantly.  For example, a retail application wanting to know price changes will need to poll the API continuously, thus overloading the backend system. As in most cases, if an API management system is present, it will throttle out these requests.  
 
-![events in a retail application ](/media/media_event_driven_apis/2_events_in_a_retail_app.png)
+<!-- ![events in a retail application ](/media/media_event_driven_apis/2_events_in_a_retail_app.png) -->
+<p align="center">
+<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="events in a retail application" width="50%" height="50%" />
+</p>
 
 <p align="center">
 <i>
@@ -88,7 +91,7 @@ In contrast to REST-fashioned APIs (which are usually implemented in polling sce
 
 <!-- ![asynchronous api-driven msa ](/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png) --> 
 <p align="center">
-<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="asynchronous api-driven msa" width="10%" height="10%" />
+<img src="/media/media_event_driven_apis/3_asynchronous_api_driven_msa.png" alt="asynchronous api-driven msa" width="80%" height="80%" />
 </p>
 
 <p align="center">
