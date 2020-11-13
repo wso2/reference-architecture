@@ -7,8 +7,8 @@ Version: Fall-2020<br/>
 
 **_Original Authors_**
 
-+ Asanka Abeysinghe | Chief Technology Evangelist | WSO2, Inc | <asankaa@wso2.com> (Summer-2018 - Fall-2020)
-+ Paul Fremantle | CTO and Co-Founder | WSO2, Inc | <paul@wso2.com> (Summer-2018 - Spring-2020)
++ Asanka Abeysinghe | Chief Technology Evangelist- [WSO2, Inc](https://wso2.com/) | [@asankama](https://twitter.com/asankama) (Summer-2018 - Fall-2020)
++ Paul Fremantle | former CTO and Co-Founder - [WSO2, Inc](https://wso2.com/) | [@pzfreo](https://twitter.com/pzfreo) (Summer-2018 - Spring-2020)
 
 > *This document describes a reference architecture for modern agile digital  enterprises. This reference architecture offers a logical architecture based on a disaggregated cloud-based model that can be instantiated to create an effective and agile approach for digital enterprises, deployed in private, public or hybrid cloud environments. In this paper we present the architecture, the approach to applying this architecture, and existing approaches that fit into this architecture. The architecture defined in this paper can be mapped to current architectures as well as used to define new architectures. It is designed to help move from the “as-is” towards the “to-be”.*
 
@@ -298,6 +298,14 @@ You can navigate to the code base at - [https://github.com/wso2/cellery](https:/
 ##### Microservice DSL (MDSL)
 
 [A Domain-Specific Language (DSL) to specify (micro-)service contracts](https://microservice-api-patterns.github.io/MDSL-Specification/), their data representations and API endpoints.
+
+#### Parallels
+
+[1] UBER - Domain-oriented Microservice Architecture (DOMA) - https://eng.uber.com/microservice-architecture/
+
+[2] Gartner - Mesh Architecture of Apps, APIs and Services (MASA) - https://www.gartner.com/en/documents/3980382/masa-how-to-create-an-agile-application-architecture-wit
+
+[3] NEU - Law of Demeter (LoD) - https://en.wikipedia.org/wiki/Law_of_Demeter
 
 ## Conclusions
 
