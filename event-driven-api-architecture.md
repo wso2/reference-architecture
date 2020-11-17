@@ -13,28 +13,9 @@ Version Q4-2020<br/>
 
 
 > *This paper will focus on event-driven APIs and their management. Event-driven as a concept has been around for a long time but event-driven APIs are a more recent topic, which entails using event-driven architecture to support scalable, real-time (or near-real-time), push-based communication in APIs published to third parties.*
+	
 
-## Table of Contents
-- 1.0 Introduction	
-  - 1.1 Event-driven Systems	
-- 2.0 Architecture	
-  - 2.1 A Synchronous API-first Microservice Architecture	
-  - 2.2 An Event-driven API-first Microservice Architecture	
-- 3.0 Event-driven APIs	
-  - 3.1 Defining Event-driven APIs with AsyncAPI	
-  - 3.2 Asynchronous Messaging Protocols for APIs	
-    - Webhooks	
-    - WebSockets	
-    - Server-Sent Events	
-    - GraphQL	
-        - GraphQL Subscriptions	
-        - GraphQL Live Queries	
-    - gRPC	
-- 3.3 Event-enabling API Management	
-- 4.0 Conclusion	
-- 5.0 References	
-
-## 1.0 Introduction
+## Introduction
  
 As architectures and technologies evolved to enable ‘digital transformation’, monolithic applications got broken down into coarse-grained services and now into more fine-grained loosely-coupled microservices that can be implemented using a variety of technologies.  Docker and Kubernetes have simplified the containerized deployment and scaling of microservices across different environments. To enable consumption for customers, partners, and other third parties, these microservices have been exposed via managed RESTful APIs and they communicate directly and synchronously with each other over HTTP. Developers have designed resource-based APIs using CRUD actions. And of course, API management platforms and rich tooling have made the consumption experience all the more easier and better. 
 The grand majority of APIs that make up the web today are synchronous APIs. However, synchronous, request/reply interactions happen one at a time, in a pre-arranged sequence, and each interaction blocks the progress of the process until its completion. This means that the response time to the user is a cumulative sum of response times of the microservices. Also, if a client wishes to know about an update, it must continuously invoke the API to check for data modifications. This pattern is known as polling and has been a common solution for clients that need to become aware of new data or notified of backend events. And most of these ‘polling’ calls are wasted because the data hasn't changed and the resources (CPU, network, etc.) were used unnecessarily.  Thus, the term ‘polling madness’ was coined. Furthermore, rate limiting (mostly enforced by API managers) prevents clients from polling often enough to support the solution’s needs for event updates. 
@@ -43,7 +24,7 @@ The grand majority of APIs that make up the web today are synchronous APIs. Howe
 Making APIs event-driven or asynchronous can systematically address these issues and really deliver on the (near) real-time experience, and adopting an event-driven architecture at a system level can truly provide sizable benefits and bring comfort to end-users and efficiency to the web. This paper will discuss how. 
 
 
-### 1.1 Event-driven Systems
+### Event-driven Systems
 What is event-driven? An event-driven architecture (EDA) centers around the concept of events. An event can be defined as a change in state and can closely represent what happens in the real world. Online purchases, human actions, command and control instructions, sensor readings, news feeds, stock ticks, interest rate changes, process alerts, workflow notifications, fault detection, and fraud detection are all real-world incidents that can be captured as events in an event-driven system. Being event-driven is about taking advantage of events as they happen; in other words, it’s about sensing, capturing, and responding to these events in (near) real-time to deliver a higher quality of service, offer a better customer experience, and make more informed business decisions. 
 
 
@@ -65,8 +46,8 @@ EDAs not only improve latency (so that users don’t have to refresh their UIs t
 
 With these gains due to EDA, an API vendor servicing clients with events can not only make them happier but also reduce their cloud bill on CPU and network drastically. 
 
-## 2.0 Architecture
-### 2.1 A Synchronous API-first Microservice Architecture 
+## Architecture
+### A Synchronous API-first Microservice Architecture 
 There are mainly three components in the  architecture:  
 - The consumer applications:  Anything that can consume an API.
 - The API  exposure layer:  Ideally an API gateway or a micro gateway but sometimes also a load balancer, a layer 7 firewall, a CDN, or any other layer 7 application on top of core service(s). 
@@ -103,7 +84,7 @@ Figure 2: Pushing Events via Async APIs in a Retail Application
 
 However, if the retail application is implemented in an event-driven way, the price changes are pushed to the client instead. First of all, any application that is interested in the price change event will subscribe to the event. When a price change occurs, that data will get distributed out to the subscribed apps. Such an app will now no longer need to continuously query for the price because the latest price is in its system; the app can keep this data in its cache or keep it persisted. For such scenarios, it makes more sense to receive push events via ‘async’ APIs than polling via ‘sync’ APIs as shown in Figure 2. 
 
-### 2.2 An Event-driven API-first Microservice Architecture
+### An Event-driven API-first Microservice Architecture
 Application languages and backend architectures have relied on events before REST was created. Back then, financial industries had events from exchanges pushed to hedge funds to allow them to stay in front of the market using IP-based tweaks and proprietary middleware. Since then, message buses have evolved to open standards adopted outside finance. Although EDA does not explicitly require the use of middleware, using such an intermediary between event producers and consumers helps to implement corresponding patterns and deliver more manageable and scalable solutions. We refer to this middleware as the event broker. A few notable examples of brokers are [RabbitMQ](https://www.rabbitmq.com/), [Apache Kafka](https://kafka.apache.org/), and [Apache ActiveMQ](http://activemq.apache.org/), among many others in the market today. Moreover, a scalable [microservices architecture](https://microservices.io/patterns/microservices.html) (MSA) is the optimal architecture for complex event-driven backend services. These event-driven microservices can act as event subscribers or publishers in order to process events, handle errors, and persist event-driven states. 
 
 In contrast to REST-fashioned APIs (which are usually implemented in polling scenarios),  push or streaming APIs are event-driven.  An event-driven API requires two capabilities—a mechanism to allow a consumer to subscribe (this can be user-controlled or programmatic) and the means to deliver events to consumers that are subscribed. The event-enabled APIs and/or services can connect to the broker and clients can subscribe to a channel of interest. Eventually, when an event takes place, it triggers a data flow to a client that’s waiting for the inbound data in order to process it in real-time. Additionally, when it comes to two-way communication, the client application should be able to publish events to the backend via the event-driven API as well. 	
@@ -127,7 +108,7 @@ To be more specific, an event broker, as shown in Figure 3, can be used to:
 - Be fed by IoT devices (alarms, sensors, devices), connected systems (PoS terminals), etc. 
 - Interact with [API gateways](https://wso2.com/what-is-an-api-gateway/) to expose data as events to the outside. These gateways (or [micro gateways](https://wso2.com/api-management/api-microgateway/)) can take data from a request/response and transform it into an event or can even event-enable existing REST APIs. 
 
-# 3.0 Event-driven APIs
+# Event-driven APIs
 Receiving notifications about someone liking a picture or reacting to a story on Instagram,  a new Whatsapp message, a stock ticker, or social stream displaying the latest updates are all made possible through various modes of asynchronous communication. So how exactly should we perform asynchronous event-driven communication in the world of APIs where synchronous communication is predominant and most firewalls block non-HTTP traffic? There really is no one-size-fits-all solution.  
  
 The technology landscape for asynchronous APIs is rapidly booming. The older protocols such as [WS-Eventing](https://www.w3.org/Submission/WS-Eventing/) and [XMPP](https://xmpp.org/) (a polling protocol that opens an HTTP thread and never closes it) are now making way for newer technologies (even though Whatsapp is still based on XMPP at the time of this writing). Since 2011, with the advent of social networks and to support reactive UI, the web has standardized protocols for low-volume bi-directional/peer-to-peer traffic ([Websockets](https://html.spec.whatwg.org/multipage/web-sockets.html)) and server to client push over HTTP ([Server-Sent Events](https://html.spec.whatwg.org/multipage/server-sent-events.html)). For battery constrained IoT devices, one would generally prefer using [MQTT](https://mqtt.org/). [Webhooks](https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks) have become popular to handle low-volume events. Even though Kafka, which is based on TCP, is great for dealing with asynchronous communication between internal microservices, it is not optimized to be exposed to provide API consumers with easy access to real-time data and it will create issues with firewalls.
@@ -138,12 +119,12 @@ A message broker is usually required in the backend architecture to capture and 
  
 Let’s dig deeper into a few commonly-used and emerging standards in the event-driven API space. 
 
-## 3.1 Defining Event-driven APIs with [AsyncAPI](https://www.asyncapi.com/) 
+## Defining Event-driven APIs with [AsyncAPI](https://www.asyncapi.com/) 
 One of the reasons why API management platforms really took off is their ability to streamline the development and drive adoption for their APIs via developer portals and API definition standards like OpenAPI. Once the provider defines the API interface as per the specification, consumers can pass the interface definition into a code generation framework (such as Swagger) to generate documentation and code for execution on a runtime platform. This minimized the amount of manual effort and communication required from an end-to-end perspective. 
 
 A similar specification to standardize event-driven APIs has come up fairly recently: AsyncAPI. AsyncAPI is designed along the same elements of OpenAPI and shares many common constructs to simplify the adoption, but it also comes with additional features to accommodate eventing. It supports a wide variety of messaging protocols and transports (such as AMQP, MQTT, WebSockets, Kafka, JMS, STOMP, HTTP, etc.) and event schema formats. Therefore, the API definition will contain the event payload definition, channel name, application/transport headers, protocols, and other eventing semantics to connect, publish, and subscribe to the API. 
 
-## 3.2 Asynchronous Messaging Protocols for APIs 
+## Asynchronous Messaging Protocols for APIs 
 
 ### [Webhooks](https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/about-webhooks)
 Also known as “reverse APIs”,  webhook APIs completely detach the HTTP request and response from each other. 
@@ -315,7 +296,7 @@ While each eventing protocol will have nuanced needs to event-enable the managem
 
 To sum up, even though most organizations have basic event processing infrastructure, many don’t have the capabilities to design, develop, test, and manage event-centric APIs. Combining traditional API management capabilities—particularly governance, access control, monitoring and analytics—with an event-driven architecture provides a tremendous value addition in terms of expanding the business reach and adoption by providing managed access.  
 
-## 4.0 Conclusion
+## Conclusion
  
 Making APIs asynchronous reverses the paradigm by letting the backend push streams of events to the API client. Augmenting a REST API with event-driven capabilities allows for better and (near) real-time experiences, and drastically increases efficiency in CPU and network use for even the most demanding traffic.  
  
@@ -323,7 +304,7 @@ Event-enabling APIs comes with many challenges. There are multiple complexities 
  
 Event-driven APIs have been the missing piece to realizing an end-to-end event-driven architecture. With these in place, the entire chain – from the data plane, API, network, up to the front-ends – can be event-driven. This allows organizations, their customers, and partners to truly reap the benefits of an event-driven architecture including the simplicity, agility, and efficiency it brings to all components individually and collectively. Having said that, event-driven client applications still need traditional request/response synchronous communication for interactive, non-event-driven interactions between the client and the backend. Combining event-driven APIs (underpinned by an event-driven architecture) with traditional request/response design brings the best of both worlds to build reactive client applications that delight customers and work just right. 
 
-## 5.0 References
+## References
 
 [1] Emmelyn Wang - [An API Strategist Explores Event-Driven APIs](https://www.asyncapi.com/blog/an-api-strategist-explores-event-driven-apis/)
 
