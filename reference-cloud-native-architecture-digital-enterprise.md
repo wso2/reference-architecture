@@ -345,7 +345,7 @@ In GitOps, as a general practice, you can have two Git repositories, one to keep
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-gitops.png">
 <br> 
-<i>Figure 18 - GitOps</i>
+<i>Figure 19 - GitOps</i>
 </p>
 
 By configuring Git triggers for application source code push events, build pipelines can start the configured pipeline steps depending on the application requirements. One step could be building and pushing relevant container images. Another step could be creating declarative deployment descriptors and committing and pushing to the separate deployment Git repository. 
