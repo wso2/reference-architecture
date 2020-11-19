@@ -1,7 +1,7 @@
 <h1 align="center"> Reference Architecture for a Cloud Native Digital Enterprise </center></h1>
 <p align="center">
 <i>
-Version Fall-2020<br/>
+Version Winter-2020<br/>
 </i>
 </p>
 
@@ -335,6 +335,24 @@ It also important that these APIs are listed in an externally accessible self-se
 ### Business Insight Report
 To become a successful digital enterprise, it is important to collect data, analyze, and get meaningful business insights on how these APIs are behaving. Comprehensive observability and business insight reporting systems play a major role here. These dashboards and reports can be used by both business and operations leaders to gain a 360-degree view of their digital business.
 
+## GitOps
+Continuous integration and continuous deployment is critical to achieving agility. GitOps is a way of implementing continuous deployment to cloud-native applications. It combines the functionalities of Git and continuous deployment tools and provides a developer-centric experience when operating infrastructure.
+
+A Git repository keeps all declarative deployment descriptions of the infrastructure in the given environment (dev, test, stage, prod, etc.) and continuous deployment tools automate the process to make the environment match the described state in the repository. During an unfortunate event, it is easy to rollback to a working state by referring to the Git revision. 
+
+In GitOps, as a general practice, you can have two Git repositories, one to keep application code revisions and another to keep track of declarative descriptions for deployments. 
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-gitops.png">
+<br> 
+<i>Figure 18 - GitOps</i>
+</p>
+
+By configuring Git triggers for application source code push events, build pipelines can start the configured pipeline steps depending on the application requirements. One step could be building and pushing relevant container images. Another step could be creating declarative deployment descriptors and committing and pushing to the separate deployment Git repository. 
+
+If you have many deployment environments, then you can have separate Git branches for each environment. After completing environment testing, we can then promote to upper environments (e.g., stage to prod) by merging into the relevant Git branch. With this mode, If you want to deploy a new application or update an existing one, you only need to update the repository; the automated process handles everything else. 
+
+
 ## Conclusion
 The digital enterprise enables companies of every sector to integrate and expose their business capabilities as APIs by digitalization of the entire value chain in their digital transformation journey. These APIs should be secured, managed, observed, and monetized. An API-led integration platform is essential for digital enterprises whether they start with a greenfield or a brownfield. 
 
@@ -349,4 +367,5 @@ Combining cloud-native technologies with an API-led integration platform creates
 - [1] [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
 - [2] [API Microgateway](https://medium.com/@lakwarus/micro-api-gateway-58cce43f2d7d)
 - [3] [The twelve-factor Apps](https://12factor.net/)
+- [4] [GitOps](https://www.gitops.tech/)
 
