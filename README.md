@@ -30,4 +30,4 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
 + ### [CIAM - A WSO2 Reference Architecture](ciam-wso2-reference-architecture.md)
 
-+ ### [Event-driven APIs in Microservice Architectuures](event-driven-api-architecture.md)
++ ### [Event-driven APIs in Microservice Architectures](event-driven-api-architecture.md)
