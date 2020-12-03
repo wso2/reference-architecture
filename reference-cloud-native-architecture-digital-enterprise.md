@@ -155,7 +155,7 @@ Container orchestrators can monitor these load spikes and are able to remove unn
 </p>
 
 #### Rollouts and Rollbacks
-MSA produces frequent releases and these releases need to be seamlessly rolled out into production. As we know, even though we do thorough testing, sometimes we need to roll back to a stable state due to some late-found error. To mitigate these kinds of situations, we should  have different deployment strategies. The  deployment strategies, ramped, Blue/Green, Canary, A/B testing, shadow help to have zero downtime in rollouts and rollbacks. 
+MSA produces frequent releases and these releases need to be seamlessly rolled out into production. As we know, even though we do thorough testing, sometimes we need to roll back to a stable state due to some late-found error. To mitigate these kinds of situations, we should  have different deployment strategies. The  deployment strategies, [ramped](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md#ramped), Blue/Green, Canary, A/B testing, shadow help to have zero downtime in rollouts and rollbacks. 
 
 
 ### Composition / Integration / Policy Enforcement 
