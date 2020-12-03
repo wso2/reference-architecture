@@ -17,24 +17,6 @@ In an era of digital transformation, **(digital) enterprises** are looking for f
 
 As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience. Enterprises can start their digital transformation in greenfield or brownfield; in both cases, having a well defined **API-led integration architecture** is important. Apart from integration and API platforms, these architectures should be able to provide agility, flexibility, and scalability. This paper focuses on how to use cloud-native technologies along with an API-led integration platform to create an effective architecture, i.e., a **reference architecture for a cloud native digital enterprise**, to increase productivity by having agility, flexibility, and scalability through automation and services.
 
-## Abstractions
-
-| Icon | Name | Description |
-|---------|---------|---------|
-|![Component](/media/ra-microservice.png)| Microservices and serverless components |Core business logic, aggregation and service composition, transformation.|
-|![Component](/media/ra-gateway.png)|Gateways|API gateways, ingress gateways, mesh gateways, micro integrators, exposed APIs, events and streams, policy enforcement points|
-|![Component](/media/ra-data-service.png)|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
-|![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
-|![Front end Client](/media/ra-front-end-clients.png)|API consumers|Mobile apps, reactive apps, API consumers|
-|![Desktop Client](/media/ra-desktop-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
-|![Mobile Client](/media/ra-mobile-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
-|![Bot Client](/media/ra-bot-client-v3.png)|API consumers|Bots, API consumers|
-|![IOT Client](/media/ra-iot-client-v3.png)|API consumers|IoT devices, apps, API consumers|
-|![Key](/media/ra-key-v3.png)|Credentials|Credentials, keys, passwords|
-|![Config](/media/ra-config-v3.png)|Configurations|Configurations|
-|![Cert](/media/ra-cert-v3.png)|Certificates|Certificates|
-|![Load Balancer](/media/ra-load-balancer-v3.png)|Load balancer|Load balancer|
-
 ## What is Cloud Native?
 
 **“Cloud native”** is a two-fold term. It is a name for technologies that help to create, deploy, and operate applications in a scalable environment such as public, private, and hybrid clouds. It also refers to explaining characteristics of these applications, specifically made to address scalability. The capability of packaging and shipping application as a lightweight container is one of the main characteristics of cloud nativeness. 
@@ -361,6 +343,26 @@ Cloud-native applications are all about dynamism. Microservice architecture (MSA
 A self-service developer portal is important to build an effective API ecosystem. Dashboards and reports help both business and operations to gain a 360-degree view of their digital business.
 
 Combining cloud-native technologies with an API-led integration platform creates an effective architecture for a digital enterprise to increase productivity by having automation, production or operation, and services. 
+
+# Appendix
+
+## Abstractions
+
+| Icon | Name | Description |
+|---------|---------|---------|
+|![Component](/media/ra-microservice.png)| Microservices and serverless components |Core business logic, aggregation and service composition, transformation.|
+|![Component](/media/ra-gateway.png)|Gateways|API gateways, ingress gateways, mesh gateways, micro integrators, exposed APIs, events and streams, policy enforcement points|
+|![Component](/media/ra-data-service.png)|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
+|![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
+|![Front end Client](/media/ra-front-end-clients.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Desktop Client](/media/ra-desktop-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Mobile Client](/media/ra-mobile-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Bot Client](/media/ra-bot-client-v3.png)|API consumers|Bots, API consumers|
+|![IOT Client](/media/ra-iot-client-v3.png)|API consumers|IoT devices, apps, API consumers|
+|![Key](/media/ra-key-v3.png)|Credentials|Credentials, keys, passwords|
+|![Config](/media/ra-config-v3.png)|Configurations|Configurations|
+|![Cert](/media/ra-cert-v3.png)|Certificates|Certificates|
+|![Load Balancer](/media/ra-load-balancer-v3.png)|Load balancer|Load balancer|
 
 ## References:
 
