@@ -155,52 +155,8 @@ Container orchestrators can monitor these load spikes and are able to remove unn
 </p>
 
 #### Rollouts and Rollbacks
-MSA produces frequent releases and these releases need to be seamlessly rolled out into production. As we know, even though we do thorough testing, sometimes we need to roll back to a stable state due to some late-found error. To mitigate these kinds of situations, we should  have different deployment strategies. The following deployment strategies help to have zero downtime in rollouts and rollbacks. 
+MSA produces frequent releases and these releases need to be seamlessly rolled out into production. As we know, even though we do thorough testing, sometimes we need to roll back to a stable state due to some late-found error. To mitigate these kinds of situations, we should  have different deployment strategies. The  deployment strategies, ramped, Blue/Green, Canary, A/B testing, shadow help to have zero downtime in rollouts and rollbacks. 
 
-##### Ramped 
-Ramped (also known as rolling-update) is the simplest rollout strategy that can be achieved with  zero downtime. In this, a new version (e.g., version 2) is achieved by replacing containers one after another until all the containers are rolled out.
-
-<p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-ramped.png">
-<br> 
-<i>Figure 10 - Ramped deployment strategy</i>
-</p>
-
-##### Blue/Green
-The blue/green deployment strategy deploys version 2 (green) alongside version 1 (blue) with exactly the same amount of containers. After testing by running some for a time period, the new version traffic is switched from version 1 to version 2 at the load balancer level.
-
-<p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-blue-green.png">
-<br> 
-<i>Figure 11 - Blue/Green deployment strategy</i>
-</p>
-
-##### Canary
-A canary deployment gradually shifts production traffic from version 1 to version 2. Initially a smaller percentage of traffic will be routed to the new version. Canary is mostly used when the tests are lacking or there is little confidence about the stability of the new version.
-
-<p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-canary.png">
-<br> 
-<i>Figure 12 - Canary deployment strategy</i>
-</p>
-
-##### A/B Testing
-A/B testing deployments routes a subset of users to a new version (functionality) under specific conditions. This deployment strategy is used to test the conversion of a given feature and only rolls out the version that converts the most.
-
-<p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ca-ab-testing.png">
-<br> 
-<i>Figure 13 - A/B testing deployment strategy</i>
-</p>
-
-##### Shadow
-Shadow deployment strategies run version 1 and 2 together and fork version 1 incoming requests and send them to version 2 as well without impacting production traffic. This is a fairly complex deployment strategy and is mainly used to test production load on a new feature.  When the required stability and performance are met, the new version of the application can be rolled out.
-
-<p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-shadow.png">
-<br> 
-<i>Figure 14 - Shadow deployment strategy</i>
-</p>
 
 ### Composition / Integration / Policy Enforcement 
 
@@ -363,6 +319,54 @@ Combining cloud-native technologies with an API-led integration platform creates
 |![Config](/media/ra-config-v3.png)|Configurations|Configurations|
 |![Cert](/media/ra-cert-v3.png)|Certificates|Certificates|
 |![Load Balancer](/media/ra-load-balancer-v3.png)|Load balancer|Load balancer|
+
+## Deployment Strategies 
+
+##### Ramped 
+Ramped (also known as rolling-update) is the simplest rollout strategy that can be achieved with  zero downtime. In this, a new version (e.g., version 2) is achieved by replacing containers one after another until all the containers are rolled out.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-ramped.png">
+<br> 
+<i>Figure 10 - Ramped deployment strategy</i>
+</p>
+
+##### Blue/Green
+The blue/green deployment strategy deploys version 2 (green) alongside version 1 (blue) with exactly the same amount of containers. After testing by running some for a time period, the new version traffic is switched from version 1 to version 2 at the load balancer level.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-blue-green.png">
+<br> 
+<i>Figure 11 - Blue/Green deployment strategy</i>
+</p>
+
+##### Canary
+A canary deployment gradually shifts production traffic from version 1 to version 2. Initially a smaller percentage of traffic will be routed to the new version. Canary is mostly used when the tests are lacking or there is little confidence about the stability of the new version.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-canary.png">
+<br> 
+<i>Figure 12 - Canary deployment strategy</i>
+</p>
+
+##### A/B Testing
+A/B testing deployments routes a subset of users to a new version (functionality) under specific conditions. This deployment strategy is used to test the conversion of a given feature and only rolls out the version that converts the most.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ca-ab-testing.png">
+<br> 
+<i>Figure 13 - A/B testing deployment strategy</i>
+</p>
+
+##### Shadow
+Shadow deployment strategies run version 1 and 2 together and fork version 1 incoming requests and send them to version 2 as well without impacting production traffic. This is a fairly complex deployment strategy and is mainly used to test production load on a new feature.  When the required stability and performance are met, the new version of the application can be rolled out.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-shadow.png">
+<br> 
+<i>Figure 14 - Shadow deployment strategy</i>
+</p>
+
 
 ## References:
 
