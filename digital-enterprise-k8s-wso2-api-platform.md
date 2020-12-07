@@ -296,13 +296,13 @@ In imperative mode, we have to run a series of commands and follow a given step 
 
 - Create a POD
 -- ```kubectl run --image=nginx nginx```
--Create a Deployment
+- Create a Deployment
 -- ```kubectl create deployment --image=nginx nginx```
--Create a Service
+- Create a Service
 -- ```kubectl expose deployment nginx --port 80```
--Edit existing object
+- Edit existing object
 -- ```kubectl edit deployment nginx```
--Scaling a Deployment
+- Scaling a Deployment
 -- ```kubectl scale deployment nginx --replicas=3```
 
 All of the above are imperative approaches to managing objects in Kubernetes.
