@@ -74,3 +74,17 @@ The API developer portal is a hub to discover and onboard developers with low fr
 </p>
 
 The developer portal’s web UI is a single page React application written on top of well-defined APIs. Organizations can customize the web UI to align with organization needs or build their own branded developer portal by consuming these developer APIs.
+
+### Enabling QoS through traffic regulation
+
+When productizing APIs, it is vital to have API traffic regulation capabilities to provide consumers with different service levels. WSO2 Traffic Manager helps to define throttling policies and enforce them in API gateways. WSO2 Traffic Manager comes with a dynamic throttling engine that processes throttling policies in real-time and enables rate-limiting of API requests to prevent APIs from being overwhelmed, allowing API owners to enforce a limit on the number of requests.
+
+### Business intelligence
+
+Obtaining meaningful business insights on how APIs are behaving is critical in every business. WSO2 API Analytics Server is capable of generating all kinds of business intelligence. In addition to statistical graphs, its real-time event processing engine can identify abnormalities and alert users about potential malicious attacks.  
+
+### API security and anomaly detection
+
+Security is paramount when exposing business capabilities via APIs. WSO2 Key Manager 
+manages all clients, security, and access token-related operations. It supports OAuth 2.0, JWT, Basic Auth, Mutual SSL, and API-Key-based authentication mechanisms.
+
