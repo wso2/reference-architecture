@@ -294,16 +294,11 @@ The kubectl command-line tool lets you interact and control Kubernetes clusters.
 ##### Imperative
 In imperative mode, we have to run a series of commands and follow a given step to complete a task. In Kubernetes, you can use the kubectl command to do things in imperative mode. Here are some examples:
 
-- Create a POD
--- ```kubectl run --image=nginx nginx```
-- Create a Deployment
--- ```kubectl create deployment --image=nginx nginx```
-- Create a Service
--- ```kubectl expose deployment nginx --port 80```
-- Edit existing object
--- ```kubectl edit deployment nginx```
-- Scaling a Deployment
--- ```kubectl scale deployment nginx --replicas=3```
+- Create a POD        : ```kubectl run --image=nginx nginx```
+- Create a Deployment : ```kubectl create deployment --image=nginx nginx```
+- Create a Service    : ```kubectl expose deployment nginx --port 80```
+- Edit existing object: ```kubectl edit deployment nginx```
+- Scaling a Deployment: ```kubectl scale deployment nginx --replicas=3```
 
 All of the above are imperative approaches to managing objects in Kubernetes.
 
