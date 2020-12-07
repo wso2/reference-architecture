@@ -35,7 +35,7 @@ Kubernetes, an open-source cloud-native orchestration platform or a framework, p
 
 The Kubernetes architecture consists of a control-plane and a set of worker nodes. Typically, control-plane components deploy in master (control-plane) nodes, and work-loads deploy on worker nodes. The control-plane is responsible for storing information regarding nodes, monitoring the nodes, container workload scheduling, etc. If you are new to Kubernetes, I would recommend reading the [Kubernetes Architecture](#kubernetes-architecture) appendix section.
 
-Kubernetes’ rich cloud-native abstractions give the flexibility to create a wide variety of cloud-native platforms. *PODs, Services, Deployments, ConfigMaps, Labels,* and the *Horizontal POD Autoscaler* are some of the key cloud-native abstractions. The Kubernetes [cloud-native abstractions](#kubernetes-cloud-native-abstractions) section discusses details of the Kubernetes abstractions used in the API-led integration platform to build a cloud-native digital enterprise.
+Kubernetes’ rich cloud-native abstractions give the flexibility to create a wide variety of cloud-native platforms. *PODs, Services, Deployments, ConfigMaps, Labels,* and the *Horizontal POD Autoscaler* are some of the key cloud-native abstractions. The [Kubernetes cloud-native abstractions](#kubernetes-cloud-native-abstractions) section discusses details of the Kubernetes abstractions used in the API-led integration platform to build a cloud-native digital enterprise.
 
 ### Custom resources and custom controllers
 
