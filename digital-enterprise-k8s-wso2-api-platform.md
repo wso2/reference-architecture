@@ -19,6 +19,12 @@ This paper discusses a reference implementation for a cloud-native digital enter
 
 ## Reference Implementation: A Cloud-Native Digital Enterprise 
 
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-reference-implementation-digital-enterprise.png">
+<br> 
+<i>Figure 1 - Cloud-Native Digital Enterprise Architecture</i>
+</p>
+
 In this reference implementation, Kubernetes provides the cloud-native platform capabilities, and WSO2’s API-led integration solution offers the required integration and API management capabilities for a digital enterprise.
 
 Kubernetes can install on top of any private, public, or hybrid cloud infrastructure. WSO2’s API-led integration platform (WSO2 API Manager and WSO2 Enterprise Integrator) can be installed on top of Kubernetes with native support through the WSO2 Kubernetes API Operator. This native integration provides the necessary automation, scalability, and operations as well as giving API-led integration capabilities.
