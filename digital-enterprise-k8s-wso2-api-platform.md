@@ -393,9 +393,9 @@ Alternatively, you can rollback to a specific revision by specifying it with --t
 
 ## References
 
-[1] [https://kubernetes.io/](https://kubernetes.io/)
-[2] [https://wso2.com/api-management/](https://wso2.com/api-management/)
-[3] [https://wso2.com/integration/micro-integrator/](https://wso2.com/integration/micro-integrator/)
-[4] [https://github.com/wso2/k8s-api-operator](https://github.com/wso2/k8s-api-operator)
-[5] [https://www.gitops.tech/](https://www.gitops.tech/)
+- [https://kubernetes.io/](https://kubernetes.io/)
+- [https://wso2.com/api-management/](https://wso2.com/api-management/)
+- [https://wso2.com/integration/micro-integrator/](https://wso2.com/integration/micro-integrator/)
+- [https://github.com/wso2/k8s-api-operator](https://github.com/wso2/k8s-api-operator)
+- [https://www.gitops.tech/](https://www.gitops.tech/)
 
