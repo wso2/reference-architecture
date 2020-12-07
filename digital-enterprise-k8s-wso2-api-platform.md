@@ -251,4 +251,29 @@ Using the Kubernetes *Deployment* object, we can define the desired state (e.g.,
 #### Resource quota
 Resource quota provides constraints that limit aggregate resource consumption per namespace. Cluster administrators can define resource quota allocated to a namespace, then the quota system tracks usage to ensure it does not exceed hard resource limits defined.
 
+#### Services
+Kubernetes *Service* exposes an application running on a set of *PODs* as a network service. When we deploy an application, each *POD* gets its IP address. However, to maintain the desired state in a *Deployment*, it can create and destroy *PODs* dynamically. Kubernetes *Service* provides a single IP address and a DNS name to a set of *PODs* in deployment and can monitor *POD* behaviors and update their IP addresses dynamically. Also, this given Service endpoint is capable of routing traffic to *PODs* in a load-balancing manner. In addition to this, Kubernetes *Services* is essential to have a service discovery mechanism without modifying your application code.
 
+Depending on how you want to expose your application, you can configure Kubernetes Services to behave in the main three modes. The ClusterIP service type helps expose your applications within the cluster.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-clusterIP.png">
+<br> 
+<i>Figure 12 - ClusterIP Service</i>
+</p>
+
+If you want to expose applications outside of the cluster, you can use the NodePort type or Loadbalancer type. NodePort will expose applications by opening a port in every node in the cluster and map and forward traffic to the application port.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-nodePort.png">
+<br> 
+<i>Figure 13 - NodePort Service</i>
+</p>
+
+The Loadbalancer type will create a load balancing endpoint that is configured with the cluster’s relevant cloud provider and exposed through the cloud provider’s load balancer. 
+
+#### ConfigMaps
+Every reusable application has some kind of configuration. Decoupling configuration with the application code helps to use the same application code in different environments. *ConfigMaps* allow you to decouple configuration artifacts from container image content to keep containerized applications portable. 
+Secrets
+
+Like the configurations, we need to pass sensitive information, such as passwords, OAuth tokens, and ssh keys, to the application to perform the required tasks. Rather than placing sensitive information in a container image, we can use a Kubernetes Secret object. By default, Secrets obfuscate with Base64 encoding, but you can make them more secure (encrypt) by using deference techniques. 
