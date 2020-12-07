@@ -70,7 +70,7 @@ The API developer portal is a hub to discover and onboard developers with low fr
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-api-dev-portal.png">
 <br> 
-<i>Figure 2 - WSO2 API Developer Portal</i>
+<i>Figure 3 - WSO2 API Developer Portal</i>
 </p>
 
 The developer portal’s web UI is a single page React application written on top of well-defined APIs. Organizations can customize the web UI to align with organization needs or build their own branded developer portal by consuming these developer APIs.
@@ -91,7 +91,7 @@ manages all clients, security, and access token-related operations. It supports 
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-key-manager-v1.png">
 <br> 
-<i>Figure 3 - WSO2 API Key Manager</i>
+<i>Figure 4 - WSO2 API Key Manager</i>
 </p>
 
 Sometimes, traditional security measures, such as authentication and authorization, alone are not enough. Compromised security tokens can cause a data breach or malicious activities. You can use WSO2’s integrated artificial intelligence-based solutions to control these kinds of incidents. 
