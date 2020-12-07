@@ -130,4 +130,15 @@ Depending on the API strategy, users can choose an effective API gateway deploym
 
 You can automate gateway deployment by using a Kubernetes platform that deploys across multi regions. Having a scalable gateway cluster is critical if you are looking for a global operational digital enterprise. 
 
+### Automation through the Kubernetes operator pattern
+
+WSO2 Kubernetes API Operator provides a fully automated experience for cloud-native API management. It introduces a set of custom resources to deploy and manage API-led integration artifacts into Kubernetes easily.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-wso2-k8s-api-operator.png">
+<br> 
+<i>Figure 7 - WSO2 Kubernetes API Operator</i>
+</p>
+
+WSO2 Kubernetes API Operator can create and deploy WSO2 API Micro Gateway and WSO2 Micro Integrator by reading Swagger definitions or integration definitions provided by the API developer/publisher. These gateways and integrators automatically deploy into the defined Kubernetes cluster along with the necessary Kubernetes deployment artifacts.
 
