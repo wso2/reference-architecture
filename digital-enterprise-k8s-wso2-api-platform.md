@@ -13,3 +13,6 @@ Version Winter-2020<br/>
 
 ## Introduction
 
+The recent constraints on businesses have pushed organizations to accelerate their plans for moving operations to the digital world—often shrinking timelines from years to months. In the process, APIs have emerged as the products of the 21st century. As discussed in the [Reference Architecture for a Cloud-Native Digital Enterprise](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md), the combination of cloud-native technologies and an API-led integration platform significantly increases productivity by enabling agility, flexibility, and scalability through automation and services.
+
+This paper discusses a reference implementation for a cloud-native digital enterprise using two industry-leading, open-source technology stacks: Kubernetes and WSO2’s API-led integration platform. 
