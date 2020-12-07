@@ -1,7 +1,7 @@
 <h1 align="center"> Reference Implementation for a Cloud-Native Digital Enterprise </center></h1>
 <p align="center">
 <i>
-Version Fall-2020<br/>
+Version Winter-2020<br/>
 </i>
 </p>
 
