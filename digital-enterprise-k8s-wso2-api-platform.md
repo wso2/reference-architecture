@@ -45,3 +45,8 @@ Custom controllers help keep the current state of Kubernetes objects (defined in
 
 Custom resources and custom controllers give flexibility and an immense power to architects to build cloud native platforms on top of Kubernetes.
 
+## WSO2’s API-led integration platform
+
+WSO2’s API-led integration platform is an open-source, market-leading enterprise solution that supports full API lifecycle management and integration. The platform was named a Leader in The Forrester Wave™: API Management Solutions, Q3 2020  [report](https://wso2.com/resources/analyst-reports/the-forrester-wave-api-management-solutions-q3-2020/).
+
+WSO2’s offering comes with an API designer and publisher, a developer portal, a key manager, an API analytics server, an API gateway, an enterprise integrator, and a Kubernetes API operator.
