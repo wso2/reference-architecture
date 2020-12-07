@@ -187,3 +187,41 @@ Then, the deployment pipeline triggers and calls WSO2 Kubernetes API Operator (b
 
 After completing environment testing, you can then promote to upper environments (e.g., stage to prod) by merging into the relevant Git branch. With this mode, If you want to deploy a new application or update an existing one, you only need to update the repository; the automated process handles everything else. 
 
+## Conclusion
+
+By becoming digital enterprises and digitalizing value chains, companies in any sector can integrate and expose their business capabilities as APIs. These APIs should be secured, managed, observed, and monetized. An API-led integration platform is essential for digital enterprises, whether they start with greenfield or brownfield projects. 
+
+Kubernetes, an open-source cloud-native orchestration platform, provides a complete set of cloud-native abstractions and a toolkit to build a scalable, flexible solution that aligns with business growth. 
+
+WSO2’s API-led integration platform is an open-source, market-leading enterprise solution that supports full API lifecycle management and integration.
+
+The platform and its native Kubernetes integration capabilities provide an effective digital enterprise architecture to increase productivity by enabling agility, flexibility, and scalability through automation and services.
+
+## Appendix
+
+### Kubernetes Architecture
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media//ra-kubernetes-architecture.png">
+<br> 
+<i>Figure 10 - Kubernetes Architecture</i>
+</p>
+
+#### Control-plane components
+Dedicated components manage control-plane functionalities. 
+
+**ETCD**: is a database that stores all node information and container workload information as a key-value pair in a highly available manner. 
+
+**Kube-scheduler**: is responsible for scheduling container workloads for the worker nodes by considering requesting computing resources of the workloads, available resources in the nodes, the type of workload allowed in the worker nodes, and the other management policies and constraints. 
+
+**Kube-controller manager**: consists of multiple controller managers. Node controller is responsible for onboarding new nodes to the cluster and handling node unavailability. The replication controller ensures that the desired number of container workloads are running all the time. In addition to these two, many other controllers help manage different functionalities. 
+
+**Kube-API server**: is the primary communication center for all cluster components. It is responsible for orchestrating all operations within the cluster components and also exposes the Kubernetes API that is used by the external users who manage the container workloads. Worker node components also communicate with the control-plane via the Kube API server.
+
+#### Worker node components
+Worker nodes should be able to communicate with control-plane components and provide necessary information to manage container workloads. Worker nodes have two major management components. 
+
+**Kubelet**: is an agent running in each node and responsible for scheduling container workloads with the control-plane instructions and  reporting back the status of the nodes and the container workloads. 
+
+**Kube-Proxy**: is running in each worker node and ensures all communication among the container workloads run in multiple nodes.
+
