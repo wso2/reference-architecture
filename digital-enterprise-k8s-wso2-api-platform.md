@@ -63,3 +63,14 @@ In an era of digital transformation, APIs are a strategic investment to any orga
 
 In addition to the graphical interface, WSO2’s API-led platform has a command-line tool, i.e., apictl, which automates full API lifecycle management functionalities. 
 
+### The communication hub for an API ecosystem
+
+The API developer portal is a hub to discover and onboard developers with low friction experiences. WSO2’s developer API portal enables developers to find APIs, test them before subscription and consumption, calculate monetization with specific metrics, view feedback, and feature requests from consumers through forums, and more.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-api-dev-portal.png">
+<br> 
+<i>Figure 2 - WSO2 API Developer Portal</i>
+</p>
+
+The developer portal’s web UI is a single page React application written on top of well-defined APIs. Organizations can customize the web UI to align with organization needs or build their own branded developer portal by consuming these developer APIs.
