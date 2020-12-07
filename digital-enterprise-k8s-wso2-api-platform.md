@@ -107,7 +107,7 @@ WSO2 Enterprise Integrator is capable of playing multiple roles in your enterpri
 WSO2 Micro Integrator provides a unique low code approach to microservices integration. Its rich, full connectors help integrate with a wide range of legacy systems. The offering’s easy-to-use code integration approach speeds creating composite integration microservices, while enabling users to reap the benefits of MSA.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-facade-pattern.png">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-facade-pattern-v1.png">
 <br> 
 <i>Figure 5 - Micro integration</i>
 </p>
