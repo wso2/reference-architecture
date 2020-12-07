@@ -20,7 +20,7 @@ This paper discusses a reference implementation for a cloud-native digital enter
 ## Reference Implementation: A Cloud-Native Digital Enterprise 
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-reference-implementation-digital-enterprise.png">
+<img src="/media/ra-reference-implementation-digital-enterprise.png">
 <br> 
 <i>Figure 1 - Cloud-Native Digital Enterprise</i>
 </p>
