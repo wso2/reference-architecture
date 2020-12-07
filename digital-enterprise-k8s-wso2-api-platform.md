@@ -99,3 +99,15 @@ Sometimes, traditional security measures, such as authentication and authorizati
 Malicious payloads could come with authorized and authenticated requests, and identifying and stopping them immediately at an early stage is critical. You can set rules to analyze the request payload (e.g., JSON or XML) and prevent them from passing through the gateway to the respective backends.
 
 Anomalies can be identified by analyzing the access patterns to the APIs. Artificial intelligence and machine learning techniques help to identify these kinds of security threats. These advanced techniques help digital enterprises proactively monitor and prevent possible risks and malicious activities. 
+
+### Composition, integration, and mediation
+
+WSO2 Enterprise Integrator is capable of playing multiple roles in your enterprise architecture. It can be used as an Enterprise Service Bus (ESB), a streaming data processor, and a microservices integrator. WSO2 Micro Integrator supports both centralized (ESB style) and decentralized (microservices, cloud-native) architectural styles. WSO2 Streaming Integrator allows you to implement streaming ETL (extract, transform, and load), change data capture (CDC), and process large files and real-time APIs. 
+
+WSO2 Micro Integrator provides a unique low code approach to microservices integration. Its rich, full connectors help integrate with a wide range of legacy systems. The offering’s easy-to-use code integration approach speeds creating composite integration microservices, while enabling users to reap the benefits of MSA.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-facade-pattern.png">
+<br> 
+<i>Figure 5 - Micro integration</i>
+</p>
