@@ -277,3 +277,85 @@ Every reusable application has some kind of configuration. Decoupling configurat
 Secrets
 
 Like the configurations, we need to pass sensitive information, such as passwords, OAuth tokens, and ssh keys, to the application to perform the required tasks. Rather than placing sensitive information in a container image, we can use a Kubernetes Secret object. By default, Secrets obfuscate with Base64 encoding, but you can make them more secure (encrypt) by using deference techniques. 
+
+#### Horizontal POD Autoscaling
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-hpa.png">
+<br> 
+<i>Figure 14 - Horizontal Pod Autoscaler</i>
+</p>
+
+The capability of scaling each microservice gives the real benefit of the MSA. The Kubernetes Horizontal POD Autoscaler helps to automatically scale microservices by scaling the number of Pods in a deployment, replica set, or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics). 
+
+#### Kubectl
+The kubectl command-line tool lets you interact and control Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs. Kubectl can be used either in imperative mode or in a declarative way.
+
+##### Imperative
+In imperative mode, we have to run a series of commands and follow a given step to complete a task. In Kubernetes, you can use the kubectl command to do things in imperative mode. Here are some examples:
+
+Create a POD
+```kubectl run --image=nginx nginx```
+Create a Deployment
+```kubectl create deployment --image=nginx nginx```
+Create a Service
+```kubectl expose deployment nginx --port 80```
+Edit existing object
+```kubectl edit deployment nginx```
+Scaling a Deployment
+```kubectl scale deployment nginx --replicas=3```
+
+All of the above are imperative approaches to managing objects in Kubernetes.
+
+##### Declarative
+In the declarative model, we can list our requirements (in a required format), and the system will be capable of completing the required task. In this mode, we can create a set of files that define the expected state of applications and services on a Kubernetes cluster. With a single kubectl apply command and Kubernetes should set the desired state by reading the given configuration files.  
+
+Example: ```kubectl apply -f nginx.yaml```
+
+#### Labels and Selectors
+Labels are key/value pairs that are attached to objects, such as pods. Labels can be used to organize and to select subsets of objects in a loosely coupled fashion. Application deployment and management often consist of multi-dimensional entities, such as multiple release tracks, multiple tiers, environments, etc. Mapping these into labels will help in day-to-day management and operational activities.  
+
+Example labels:
+
+- "release" : "stable", "release" : "canary"
+- "environment" : "dev", "environment" : "qa", "environment" : "production"
+- "tier" : "frontend", "tier" : "backend", "tier" : "cache"
+- "partition" : "customerA", "partition" : "customerB"
+- "track" : "daily", "track" : "weekly"
+
+The label selector is the core grouping primitive in Kubernetes. You can use label sectors to perform operation activities like the rolling update, rollback, drain nodes to put in maintenance, scaling, etc.
+
+#### Health check probes
+Heath probes are critical to achieving the high availability required to run our application in production. Kubernetes uses three health check probes to determine the necessary action to achieve auto-healing and high availability. 
+
+##### Liveness probe
+
+Defining liveness probes help to determine any deadlock scenarios, where an application is running but unable to make progress, and restart the container to overcome the situation.
+
+##### Readiness probe
+Readiness probes help determine when a container is ready to start accepting traffic. One use of this signal is to control which PODs use backends for services. When a POD is not ready, it is removed from Service load balancers.
+
+##### Startup probes
+Some applications have longer startup times. In such situations, setting up a startup probe helps to disable liveness and readiness checks until it succeeds, making sure those probes do not interfere with application startup.  
+
+#### Rollout
+When you create a new deployment, Kubernetes will attach a revision related to it. When you roll out a new version of your deployment, it will update the revision history. You can see all the rollout versions by using the following commands. 
+
+```kubectl rollout status deployment.v1.apps/nginx-deployment```
+
+```kubectl rollout history deployment.v1.apps/nginx-deployment```
+
+Kubernetes support two deployment strategies. The first strategy is to recreate, destroy all currently running instances, and create the same number of new instances, not a zero-downtime deployment strategy. 
+
+Kubernetes default is the rolling-update deployment strategy. This strategy will not take down all currently running instances at once; instead, it will take down a current version and bring up a newer version one by one. The best way to do this is by updating the declarative application file (yaml file) and executing the kubectl apply command. It will trigger a new rollout and a new revision is created. 
+
+#### Rollbacks
+Even though we perform thorough testing, sometimes we need to roll back to a stable state due to a late-found error. You can use the following command to rollback a deployed version.
+
+```kubectl rollout undo deployment.v1.apps/nginx-deployment```
+
+Alternatively, you can rollback to a specific revision by specifying it with --to-revision:
+
+```kubectl rollout undo deployment.v1.apps/nginx-deployment --to-revision=2```
+
+
