@@ -22,7 +22,7 @@ This paper discusses a reference implementation for a cloud-native digital enter
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-reference-implementation-digital-enterprise.png">
 <br> 
-<i>Figure 1 - Cloud-Native Digital Enterprise Architecture</i>
+<i>Figure 1 - Cloud-Native Digital Enterprise</i>
 </p>
 
 In this reference implementation, Kubernetes provides the cloud-native platform capabilities, and WSO2’s API-led integration solution offers the required integration and API management capabilities for a digital enterprise.
