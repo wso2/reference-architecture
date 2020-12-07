@@ -111,3 +111,23 @@ WSO2 Micro Integrator provides a unique low code approach to microservices integ
 <br> 
 <i>Figure 5 - Micro integration</i>
 </p>
+
+### Policy enforcement at scale
+
+The API Gateway is the main policy enforcement point. It supports OAuth 2.0, JWT, Basic Auth, Mutual SSL, and API-Key based authentication mechanisms and enables IT organizations to enforce rate limits and throttling policies. 
+
+In addition to the policy enforcements, you can perform edge integrations, like mediation, transformation, etc., depending on your requirement. Suppose your integration is complex or wants to have a highly scalable architecture. In that case, WSO2 recommends using a facade pattern by using an enterprise micro integrator along with the API Gateway. 
+
+WSO2 API Micro Gateway is optimized for microservices and supports all three deployment patterns: shared-gateway, private-jet gateway, and sidecar gateway (described in the reference architecture [paper](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md)).
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-wso2-api-gateway-deployment.png">
+<br> 
+<i>Figure 6 - WSO2 API Micro Gateway Deployment Patterns</i>
+</p>
+
+Depending on the API strategy, users can choose an effective API gateway deployment model. In some use cases, we can handle all API traffic by using a shared API Gateway cluster. Users  can also group APIs and distribute them in different API gateway clusters. These groupings can be done based on API functionalities or regions that they are accessing. These can be deployed in private jet mode or shared mode depending on scalable requirements.
+
+You can automate gateway deployment by using a Kubernetes platform that deploys across multi regions. Having a scalable gateway cluster is critical if you are looking for a global operational digital enterprise. 
+
+
