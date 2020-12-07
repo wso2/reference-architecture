@@ -167,3 +167,23 @@ Jaeger is a distributed tracing system toolkit that is governed by the CNCF. Jae
 #### Fluentd
 Fluentd is an open-source data collector for unified logging layers. The CNCF governs the Fluentd project. By default, containers do not persist any operational data (such as logs, etc.), and when containers terminate, they will lose data. You can configure the Kubernetes cluster to push all aggregated logs from microservices, API gateways, and API integrators to Fluentd. These aggregate data can be used to perform different analyses to identify any operational problems. 
 
+## GitOps
+
+GitOps is a way of implementing continuous deployment for cloud-native applications. It combines the functionalities of Git and continuous deployment tools and provides a developer-centric experience when operating infrastructure.
+
+In a digital enterprise, publishing an API is not just a simple process. It involves creating APIs and then deploying them in a lower API management environment to go through different testing rounds (developer testing, stress testing, QA testing, etc.). Once these tests are successful, they move to the production environment.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-gitops-api-automation.png">
+<br> 
+<i>Figure 9 - API CI/CD Automation with GitOps</i>
+</p>
+
+Each deployment environment has a specific Kubernetes cluster configured with WSO2 Kubernetes API Operator and WSO2 API management components. Depending on the enterprise requirements, API management components, such as WSO2 API Publisher, WSO2 API Traffic Manager, WSO2 API Key Manager, and WSO2 API Developer Portal, can be configured. 
+
+WSO2 API Manager is 100% compatible with open specifications (Swagger) based API design and development. Developers create API artifacts and commit them to a Git version control system. Then a  CI/CD build pipeline, such as Jenkins, CircleCI, Bamboo, can configure to pull artifacts and create container images and API/integration deployment descriptors. The *apictl* (API control CLI tool) tool helps to script the automation. Generated deployment descriptors can be committed and pushed to the deployment repository. 
+
+Then, the deployment pipeline triggers and calls WSO2 Kubernetes API Operator (by using apictl/kubectl commands) and deploys the necessary API gateways and enterprise integrators in the given environment Kubernetes cluster. This automated process helps to carry out different testing rounds (developer testing, stress testing, QA testing, etc.). 
+
+After completing environment testing, you can then promote to upper environments (e.g., stage to prod) by merging into the relevant Git branch. With this mode, If you want to deploy a new application or update an existing one, you only need to update the repository; the automated process handles everything else. 
+
