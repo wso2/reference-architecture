@@ -257,7 +257,7 @@ Kubernetes *Service* exposes an application running on a set of *PODs* as a netw
 Depending on how you want to expose your application, you can configure Kubernetes Services to behave in the main three modes. The ClusterIP service type helps expose your applications within the cluster.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-clusterIP.png">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-clusterIP-v1.png">
 <br> 
 <i>Figure 12 - ClusterIP Service</i>
 </p>
@@ -265,7 +265,7 @@ Depending on how you want to expose your application, you can configure Kubernet
 If you want to expose applications outside of the cluster, you can use the NodePort type or Loadbalancer type. NodePort will expose applications by opening a port in every node in the cluster and map and forward traffic to the application port.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-nodePort.png">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-nodePort-v1.png">
 <br> 
 <i>Figure 13 - NodePort Service</i>
 </p>
