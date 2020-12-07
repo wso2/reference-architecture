@@ -142,3 +142,28 @@ WSO2 Kubernetes API Operator provides a fully automated experience for cloud-nat
 
 WSO2 Kubernetes API Operator can create and deploy WSO2 API Micro Gateway and WSO2 Micro Integrator by reading Swagger definitions or integration definitions provided by the API developer/publisher. These gateways and integrators automatically deploy into the defined Kubernetes cluster along with the necessary Kubernetes deployment artifacts.
 
+### API observability
+
+Unlike monolith architecture, auditing and tracing are challenging problems in decentralized architectures such as MSA. Performance issues, errors, and exceptions are unfortunate events that may occur in a production environment. To identify  such an event, observing the production environment is essential. 
+
+Often, microservices do not act alone and they interconnect to each other through the API calls. WSO2 API Gateway can work with cloud-native observability tools, such as Prometheus, Jaeger, and Fluentd, to analyze these captured metrics, statistics, and data to produce meaningful visualizations to understand system behavior. 
+
+#### Prometheus
+Prometheus is an open-source system monitoring and alerting toolkit that is governed by the CNCF. Prometheus can set up to work natively with a Kubernetes cluster. 
+
+The API gateway exposes a metrics endpoint that gives metrics related to service level data, client-side data, and some process-related data such as memory and CPU usage. These metrics can then feed into Prometheus. In addition to this, users can configure an analytics dashboard, such as Grafana, to visualize Prometheus’s metrics. 
+
+In addition to observability dashboards, you can use these collected metrics to scale backend services and API gateways by extending the Kubernetes Horizontal Pod Autoscaler.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-prometheus-autoscale.png">
+<br> 
+<i>Figure 8 - Custom metrics-based autoscaling</i>
+</p>
+
+#### Jaeger
+Jaeger is a distributed tracing system toolkit that is governed by the CNCF. Jaeger support comes out-of-the-box in WSO2 API Gateway. It is well suited for distributed transaction monitoring, performance and latency optimization, service dependency analysis, and many operational problems when moving to a distributed architecture. 
+
+#### Fluentd
+Fluentd is an open-source data collector for unified logging layers. The CNCF governs the Fluentd project. By default, containers do not persist any operational data (such as logs, etc.), and when containers terminate, they will lose data. You can configure the Kubernetes cluster to push all aggregated logs from microservices, API gateways, and API integrators to Fluentd. These aggregate data can be used to perform different analyses to identify any operational problems. 
+
