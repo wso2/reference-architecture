@@ -88,3 +88,14 @@ Obtaining meaningful business insights on how APIs are behaving is critical in e
 Security is paramount when exposing business capabilities via APIs. WSO2 Key Manager 
 manages all clients, security, and access token-related operations. It supports OAuth 2.0, JWT, Basic Auth, Mutual SSL, and API-Key-based authentication mechanisms.
 
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-key-manager.png">
+<br> 
+<i>Figure 3 - WSO2 API Key Manager</i>
+</p>
+
+Sometimes, traditional security measures, such as authentication and authorization, alone are not enough. Compromised security tokens can cause a data breach or malicious activities. You can use WSO2’s integrated artificial intelligence-based solutions to control these kinds of incidents. 
+
+Malicious payloads could come with authorized and authenticated requests, and identifying and stopping them immediately at an early stage is critical. You can set rules to analyze the request payload (e.g., JSON or XML) and prevent them from passing through the gateway to the respective backends.
+
+Anomalies can be identified by analyzing the access patterns to the APIs. Artificial intelligence and machine learning techniques help to identify these kinds of security threats. These advanced techniques help digital enterprises proactively monitor and prevent possible risks and malicious activities. 
