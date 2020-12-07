@@ -202,7 +202,7 @@ The platform and its native Kubernetes integration capabilities provide an effec
 ### Kubernetes Architecture
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media//ra-kubernetes-architecture.png">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-kubernetes-architecture.png">
 <br> 
 <i>Figure 10 - Kubernetes Architecture</i>
 </p>
@@ -224,4 +224,31 @@ Worker nodes should be able to communicate with control-plane components and pro
 **Kubelet**: is an agent running in each node and responsible for scheduling container workloads with the control-plane instructions and  reporting back the status of the nodes and the container workloads. 
 
 **Kube-Proxy**: is running in each worker node and ensures all communication among the container workloads run in multiple nodes.
+
+### Kubernetes cloud-native abstractions
+
+Kubernetes’ rich cloud-native abstractions give the flexibility to create a wide variety of cloud-native platforms. This section will only discuss the abstractions (or building blocks) used in the API-led integration platform to build the cloud-native digital enterprise.  
+
+#### POD
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-pod-concept.png">
+<br> 
+<i>Figure 11 - POD</i>
+</p>
+
+A *POD* is a single instance of our containerized application. Kubernetes will not directly deploy containers, and it encapsulates within a *POD*. A *POD* is the smallest unit that scales out depending on the load. A *POD* can consist of multiple containers. The containers in a *POD* are automatically co-located and co-scheduled on the same node in the cluster. Containers living within the POD can share the same network space, storage space, and process space. 
+
+#### ReplicaSet
+ReplicaSet helps to define the number of replica *PODs* running at any given time. It monitors the PODs and creates a new one when a failure occurs in the current set. It also helps to scale out the application by increasing the number of replicas.
+
+#### Deployment
+Using the Kubernetes *Deployment* object, we can define the desired state (e.g., number of replicas of a given version). The Deployment Controller changes the actual state to the desired state at a controlled rate and the deployment strategy. We can use Deployment rollouts to provision newer versions and rollback if the current state of the Deployment is not stable. 
+
+#### Namespaces
+*Namespace* helps to divide physical clusters into multiple virtual clusters. The namespace provides a scope to Kubernetes naming objects. Names of resources need to be unique within a namespace but not across namespaces. Namespaces cannot be nested inside one another, and each Kubernetes resource can only be in one namespace.
+
+#### Resource quota
+Resource quota provides constraints that limit aggregate resource consumption per namespace. Cluster administrators can define resource quota allocated to a namespace, then the quota system tracks usage to ensure it does not exceed hard resource limits defined.
+
 
