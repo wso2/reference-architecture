@@ -50,3 +50,16 @@ Custom resources and custom controllers give flexibility and an immense power to
 WSO2’s API-led integration platform is an open-source, market-leading enterprise solution that supports full API lifecycle management and integration. The platform was named a Leader in The Forrester Wave™: API Management Solutions, Q3 2020  [report](https://wso2.com/resources/analyst-reports/the-forrester-wave-api-management-solutions-q3-2020/).
 
 WSO2’s offering comes with an API designer and publisher, a developer portal, a key manager, an API analytics server, an API gateway, an enterprise integrator, and a Kubernetes API operator.
+
+### Full API lifecycle management
+
+In an era of digital transformation, APIs are a strategic investment to any organization. They play a significant role as both technical enablers and  business drivers. WSO2 API Manager provides state-of-the-art web interfaces, e.g., WSO2 API Designer and Publisher, for API development and management. It is 100% compliant with the Open API Specification, helping API creators to develop, document, scale, and version APIs, while also facilitating more API management-related tasks such as publishing, monetizing, and promoting APIs.
+
+<p align="center">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-api-publisher.png">
+<br> 
+<i>Figure 2 - WSO2 API Designer and Publisher</i>
+</p>
+
+In addition to the graphical interface, WSO2’s API-led platform has a command-line tool, i.e., apictl, which automates full API lifecycle management functionalities. 
+
