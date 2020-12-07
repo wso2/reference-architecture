@@ -39,7 +39,7 @@ Kubernetes’ rich cloud-native abstractions give the flexibility to create a wi
 
 ### Custom resources and custom controllers
 
-A custom resource is an extension of the Kubernetes API; it does not ship with the default Kubernetes installation. A Kubernetes cluster admin can add/remove custom resources independently of the cluster itself. Once a custom resource installs, users can create and access its objects using kubectl, just as they do for built-in resources such as PODs.
+A custom resource is an extension of the Kubernetes API; it does not ship with the default Kubernetes installation. A Kubernetes cluster admin can add/remove custom resources independently of the cluster itself. Once a custom resource installs, users can create and access its objects using kubectl, just as they do for built-in resources such as *PODs*.
 
 Custom controllers help keep the current state of Kubernetes objects (defined in CR) in sync with the desired state. The controller interprets the structured data as a record of the user’s desired state and continually maintains it. So, custom resources provide a dedicated declarative API when you combine a custom resource with a custom controller.
 
