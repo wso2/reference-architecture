@@ -89,7 +89,7 @@ Security is paramount when exposing business capabilities via APIs. WSO2 Key Man
 manages all clients, security, and access token-related operations. It supports OAuth 2.0, JWT, Basic Auth, Mutual SSL, and API-Key-based authentication mechanisms.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-key-manager.png">
+<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-key-manager-v1.png">
 <br> 
 <i>Figure 3 - WSO2 API Key Manager</i>
 </p>
