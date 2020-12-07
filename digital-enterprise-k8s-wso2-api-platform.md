@@ -353,4 +353,16 @@ Alternatively, you can rollback to a specific revision by specifying it with --t
 
 ```kubectl rollout undo deployment.v1.apps/nginx-deployment --to-revision=2```
 
+## Abstractions
 
+| Icon | Name | Description |
+|---------|---------|---------|
+|![Component](/media/ra-microservice.png)| Microservices and serverless components |Core business logic, aggregation and service composition, transformation.|
+|![Component](/media/ra-gateway.png)|Gateways|API gateways, ingress gateways, mesh gateways, micro integrators, exposed APIs, events and streams, policy enforcement points|
+|![Component](/media/ra-data-service.png)|Legacy and data services|Databases, existing systems, registries and repositories, user stores, business processes|
+|![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events, and streams, cloud systems, and SaaS|
+|![Front end Client](/media/ra-front-end-clients.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Desktop Client](/media/ra-desktop-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Mobile Client](/media/ra-mobile-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
+|![Bot Client](/media/ra-bot-client-v3.png)|API consumers|Bots, API consumers|
+|![IOT Client](/media/ra-iot-client-v3.png)|API consumers|IoT devices, apps, API consumers|
