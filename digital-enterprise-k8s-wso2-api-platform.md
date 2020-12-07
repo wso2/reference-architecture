@@ -56,7 +56,7 @@ WSO2’s offering comes with an API designer and publisher, a developer portal, 
 In an era of digital transformation, APIs are a strategic investment to any organization. They play a significant role as both technical enablers and  business drivers. WSO2 API Manager provides state-of-the-art web interfaces, e.g., WSO2 API Designer and Publisher, for API development and management. It is 100% compliant with the Open API Specification, helping API creators to develop, document, scale, and version APIs, while also facilitating more API management-related tasks such as publishing, monetizing, and promoting APIs.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-api-publisher.png">
+<img src="/media/ra-api-publisher.png">
 <br> 
 <i>Figure 2 - WSO2 API Designer and Publisher</i>
 </p>
@@ -68,7 +68,7 @@ In addition to the graphical interface, WSO2’s API-led platform has a command-
 The API developer portal is a hub to discover and onboard developers with low friction experiences. WSO2’s developer API portal enables developers to find APIs, test them before subscription and consumption, calculate monetization with specific metrics, view feedback, and feature requests from consumers through forums, and more.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-api-dev-portal.png">
+<img src="/media/ra-api-dev-portal.png">
 <br> 
 <i>Figure 3 - WSO2 API Developer Portal</i>
 </p>
@@ -89,7 +89,7 @@ Security is paramount when exposing business capabilities via APIs. WSO2 Key Man
 manages all clients, security, and access token-related operations. It supports OAuth 2.0, JWT, Basic Auth, Mutual SSL, and API-Key-based authentication mechanisms.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-key-manager-v1.png">
+<img src="/media/ra-key-manager-v1.png">
 <br> 
 <i>Figure 4 - WSO2 API Key Manager</i>
 </p>
@@ -107,7 +107,7 @@ WSO2 Enterprise Integrator is capable of playing multiple roles in your enterpri
 WSO2 Micro Integrator provides a unique low code approach to microservices integration. Its rich, full connectors help integrate with a wide range of legacy systems. The offering’s easy-to-use code integration approach speeds creating composite integration microservices, while enabling users to reap the benefits of MSA.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-facade-pattern-v2.png">
+<img src="/media/ra-facade-pattern-v2.png">
 <br> 
 <i>Figure 5 - Micro integration</i>
 </p>
@@ -121,7 +121,7 @@ In addition to the policy enforcements, you can perform edge integrations, like 
 WSO2 API Micro Gateway is optimized for microservices and supports all three deployment patterns: shared-gateway, private-jet gateway, and sidecar gateway (described in the reference architecture [paper](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md)).
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-wso2-api-gateway-deployment.png">
+<img src="/media/ra-wso2-api-gateway-deployment.png">
 <br> 
 <i>Figure 6 - WSO2 API Micro Gateway Deployment Patterns</i>
 </p>
@@ -135,7 +135,7 @@ You can automate gateway deployment by using a Kubernetes platform that deploys 
 WSO2 Kubernetes API Operator provides a fully automated experience for cloud-native API management. It introduces a set of custom resources to deploy and manage API-led integration artifacts into Kubernetes easily.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-wso2-k8s-api-operator.png">
+<img src="/media/ra-wso2-k8s-api-operator.png">
 <br> 
 <i>Figure 7 - WSO2 Kubernetes API Operator</i>
 </p>
@@ -156,7 +156,7 @@ The API gateway exposes a metrics endpoint that gives metrics related to service
 In addition to observability dashboards, you can use these collected metrics to scale backend services and API gateways by extending the Kubernetes Horizontal Pod Autoscaler.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-prometheus-autoscale.png">
+<img src="/media/ra-prometheus-autoscale.png">
 <br> 
 <i>Figure 8 - Custom metrics-based autoscaling</i>
 </p>
@@ -174,7 +174,7 @@ GitOps is a way of implementing continuous deployment for cloud-native applicati
 In a digital enterprise, publishing an API is not just a simple process. It involves creating APIs and then deploying them in a lower API management environment to go through different testing rounds (developer testing, stress testing, QA testing, etc.). Once these tests are successful, they move to the production environment.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-gitops-api-automation.png">
+<img src="/media/ra-gitops-api-automation.png">
 <br> 
 <i>Figure 9 - API CI/CD Automation with GitOps</i>
 </p>
@@ -202,7 +202,7 @@ The platform and its native Kubernetes integration capabilities provide an effec
 ### Kubernetes Architecture
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-kubernetes-architecture.png">
+<img src="/media/ra-kubernetes-architecture.png">
 <br> 
 <i>Figure 10 - Kubernetes Architecture</i>
 </p>
@@ -232,7 +232,7 @@ Kubernetes’ rich cloud-native abstractions give the flexibility to create a wi
 #### POD
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-pod-concept.png">
+<img src="/media/ra-pod-concept.png">
 <br> 
 <i>Figure 11 - POD</i>
 </p>
@@ -257,7 +257,7 @@ Kubernetes *Service* exposes an application running on a set of *PODs* as a netw
 Depending on how you want to expose your application, you can configure Kubernetes Services to behave in the main three modes. The ClusterIP service type helps expose your applications within the cluster.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-clusterIP-v1.png">
+<img src="/media/ra-service-clusterIP-v1.png">
 <br> 
 <i>Figure 12 - ClusterIP Service</i>
 </p>
@@ -265,7 +265,7 @@ Depending on how you want to expose your application, you can configure Kubernet
 If you want to expose applications outside of the cluster, you can use the NodePort type or Loadbalancer type. NodePort will expose applications by opening a port in every node in the cluster and map and forward traffic to the application port.
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-nodePort-v1.png">
+<img src="/media/ra-service-nodePort-v1.png">
 <br> 
 <i>Figure 13 - NodePort Service</i>
 </p>
@@ -281,7 +281,7 @@ Like the configurations, we need to pass sensitive information, such as password
 #### Horizontal POD Autoscaling
 
 <p align="center">
-<img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-hpa.png">
+<img src="/media/ra-hpa.png">
 <br> 
 <i>Figure 14 - Horizontal Pod Autoscaler</i>
 </p>
