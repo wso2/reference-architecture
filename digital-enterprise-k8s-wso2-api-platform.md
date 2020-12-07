@@ -366,3 +366,36 @@ Alternatively, you can rollback to a specific revision by specifying it with --t
 |![Mobile Client](/media/ra-mobile-client-v3.png)|API consumers|Mobile apps, reactive apps, API consumers|
 |![Bot Client](/media/ra-bot-client-v3.png)|API consumers|Bots, API consumers|
 |![IOT Client](/media/ra-iot-client-v3.png)|API consumers|IoT devices, apps, API consumers|
+|![WSO2 API Gateway](/media/ra-wso2-api-gateway.png)|WSO2 API Gateway|WSO2 API Gateway, WSO2 Micro API Gateway|
+|![WSO2 API Developer Portal](/media/ra-wso2-apim-developer-store.png)|WSO2 API Developer Portal|Developer portal for API discovery, an API marketplace|
+|![WSO2 API Publisher](/media/ra-wso2-apim-publisher.png)|WSO2 API Publisher|API Publisher Portal, API design, develop, API package, API publish|
+|![WSO2 API Key Manager](/media/ra-wso2-apim-key-manager.png)|WSO2 API Key Manager|Manage API keys and all security tokens|
+|![WSO2 API Traffic Manager](/media/ra-wso2-apim-traffic-manager.png)|WSO2 API Traffic Manager|Rate Limiting, Traffic control policy defining portal|
+|![WSO2 API Analytics Server](/media/ra-wso2-apim-analytics-server.png)|WSO2 API Analytics Server|Real-time analytics server, generate API business intelligence, anomaly detection engine, and altering|
+|![WSO2 Micro Integrator](/media/ra-wso2-micro-ei.png)|WSO2 Micro Integrator|Enterprise integrator, mediation, transformation engine|
+|![WSO2 Stream Integrator](/media/ra-wso2-ei-stream-integrator.png)|WSO2 Stream Integrator|Enterprise stream integration|
+|![WSO2 Enterprise Workflow](/media/ra-wso2-ei-workflow.png)|WSO2 Enterprise Workflow|Workflow engine|
+|![Kubernetes Deployment](/media/ra-k8s-deployment.png)|Kubernetes Deployment|An object that manages replica sets, rollouts, health checks|
+|![Kubernetes POD](/media/ra-k8s-pod.png)|Kubernetes POD|A single instance of our containerized application|
+|![Kubernetes Service](/media/ra-k8s-service.png)|Kubernetes Service|Exposes an application running on a set of Pods as a network service|
+|![Kubernetes Custom Resources](/media/ra-k8s-crd.png)|Kubernetes Custom Resources|A custom resource is an extension of the Kubernetes API|
+|![Kubernetes ConfigMap](/media/ra-k8s-configmap.png)|Kubernetes ConfigMap|Contains the configuration data|
+|![Kubernetes Secret](/media/ra-k8s-secret.png)|Kubernetes Secret|Contain sensitive data like keys, credentials, certs|
+|![Kubernetes Horizontal POD Autoscaler](/media/ra-k8s-hpa.png)|Kubernetes Horizontal POD Autoscaler|Scale workload based on observed CPU, memory utilization|
+|![Kubernetes Namespace](/media/ra-k8s-namespace.png)|Kubernetes Namespace|Divide physical clusters into multiple virtual clusters|
+|![ETCD](/media/ra-k8s-etcd.png)|ETCD|A database that stores all node information and container workload information as key-value pairs|
+|![Kubernetes Cloud Control Manager](/media/ra-k8s-ccm.png)|Kubernetes Cloud Control Manager|Kubernetes Cloud Control Manager|
+|![Kubernetes Control Manager](/media/ra-k8s-cm.png)|Kubernetes Control Manager|Kubernetes Control Manager|
+|![Kubernetes Kube Proxy](/media/ra-k8s-kube-proxy.png)|Kubernetes Kube Proxy|Running in each worker node and ensures all communication among the container workloads|
+|![Kubernetes Kubelet](/media/ra-k8s-kubelet.png)|Kubernetes Kubelet|An agent running in each node|
+|![Kubernetes scheduler](/media/ra-k8s-schedular.png)|Kubernetes scheduler|Scheduling container workloads for the worker nodes|
+|![Kubernetes API Server](/media/ra-k8s-api-server.png)|Kubernetes API Server|Primary communication center for all cluster components. |
+
+## References
+
+[1] [https://kubernetes.io/](https://kubernetes.io/)
+[2] [https://wso2.com/api-management/](https://wso2.com/api-management/)
+[3] [https://wso2.com/integration/micro-integrator/](https://wso2.com/integration/micro-integrator/)
+[4] [https://github.com/wso2/k8s-api-operator](https://github.com/wso2/k8s-api-operator)
+[5] [https://www.gitops.tech/](https://www.gitops.tech/)
+
