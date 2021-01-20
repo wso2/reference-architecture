@@ -19,7 +19,7 @@ As a result, APIs have become the norm to expose integrated business functionali
 
 ## What is Cloud Native?
 
-**“Cloud native”** is a two-fold term. It is a name for technologies that help to create, deploy, and operate applications in a scalable environment such as public, private, and hybrid clouds. It also refers to explaining characteristics of these applications, specifically made to address scalability. The capability of packaging and shipping application as a lightweight container is one of the main characteristics of cloud nativeness. 
+**"Cloud native"** is combination of a philosophical approach and a set of technologies that allow organizations to build, deploy, and operate software applications more frequently, resiliently, and reliably. The culture is an important one that is mostly ignored when describing the cloud native. In addition to the architectural and technical requirements, it should include cultural changes like more agile processes, dynamic and decentralized decision-making, and autonomy teams that will allow the organizations to utilize the benefits of all those modern technologies. In this document we mainly focused architectures and technologies that essential for cloud native digital enterprise. 
 
 Cloud native has its own foundation: the **Cloud Native Computing Foundation (CNCF)**, which was launched in 2015 by the Linux Foundation. The main goal of the CNCF is to build sustainable ecosystems and foster communities to support the growth and health of cloud-native open-source software.
 
