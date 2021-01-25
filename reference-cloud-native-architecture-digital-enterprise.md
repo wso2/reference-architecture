@@ -9,29 +9,29 @@ Version Winter-2020<br/>
 
 + Lakmal Warusawithana | Senior Director - Technology Evangelism | WSO2, Inc | <lakmal@wso2.com> | [@lakwarus](https://twitter.com/lakwarus)
 
-> *This document describes a vendor/technology-neutral reference architecture for a cloud native digital enterprise. The architecture defined in this paper can be mapped into different cloud-native platforms (Kubernetes and service mesh), different cloud providers (Microsoft Azure, Amazon AWS, and Google GCP), and infrastructure services to perform the implementation. These reference implementations will be covered in separate papers.*
+> *This document describes a vendor/technology-neutral reference architecture for a cloud native digital enterprise. The architecture defined in this paper can be mapped into different cloud native platforms (Kubernetes and service mesh), different cloud providers (Microsoft Azure, Amazon AWS, and Google GCP), and infrastructure services to perform the implementation. These reference implementations will be covered in separate papers.*
 
 ## Introduction
 
 In an era of digital transformation, **(digital) enterprises** are looking for fast innovation through effective collaboration to deliver more value to their customers with dramatically less effort. Digital enterprises enable companies of every sector to integrate, expose, and monetize their business capabilities by digitizing entire value chains.
 
-As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience. Enterprises can start their digital transformation in greenfield or brownfield; in both cases, having a well defined **API-led integration architecture** is important. Apart from integration and API platforms, these architectures should be able to provide agility, flexibility, and scalability. This paper focuses on how to use cloud-native technologies along with an API-led integration platform to create an effective architecture, i.e., a **reference architecture for a cloud native digital enterprise**, to increase productivity by having agility, flexibility, and scalability through automation and services.
+As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience. Enterprises can start their digital transformation in greenfield or brownfield; in both cases, having a well defined **API-led integration architecture** is important. Apart from integration and API platforms, these architectures should be able to provide agility, flexibility, and scalability. This paper focuses on how to use cloud native technologies along with an API-led integration platform to create an effective architecture, i.e., a **reference architecture for a cloud native digital enterprise**, to increase productivity by having agility, flexibility, and scalability through automation and services.
 
 ## What is Cloud Native?
 
 **"Cloud native"** is combination of a philosophical approach and a set of technologies that allow organizations to build, deploy, and operate software applications more frequently, resiliently, and reliably. The culture is an important one that is mostly ignored when describing the cloud native. In addition to the architectural and technical requirements, it should include cultural changes like more agile processes, dynamic and decentralized decision-making, and autonomy teams that will allow the organizations to utilize the benefits of all those modern technologies. In this document, we mainly focused on architectures and technologies that important for cloud native digital enterprise, and we will discuss essential cultural changes in a separate methodology paper.
 
-Cloud native has its own foundation: the **Cloud Native Computing Foundation (CNCF)**, which was launched in 2015 by the Linux Foundation. The main goal of the CNCF is to build sustainable ecosystems and foster communities to support the growth and health of cloud-native open-source software.
+Cloud native has its own foundation: the **Cloud Native Computing Foundation (CNCF)**, which was launched in 2015 by the Linux Foundation. The main goal of the CNCF is to build sustainable ecosystems and foster communities to support the growth and health of cloud native open-source software.
 
-## Cloud-Native Reference Architecture
+## Cloud Native Reference Architecture
 
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cloud-nativearchitecture-cncf-v1.png">
 <br> 
-<i>Figure 1 - Cloud-native reference architecture by the CNCF</i>
+<i>Figure 1 - Cloud native reference architecture by the CNCF</i>
 </p>
 
-Figure 1 illustrates the cloud-native reference architecture presented by the CNCF. Each layer has its own specialized cloud-native software stacks and many of them are governed by the CNCF.  
+Figure 1 illustrates the cloud native reference architecture presented by the CNCF. Each layer has its own specialized cloud native software stacks and many of them are governed by the CNCF.  
 
 ### Infrastructure
 The infrastructure layer represents the actual computing resources. These computing resources can be composed by using a set of bare metal machines networked together in a local data center. If the digital enterprise already runs a private cloud with the support of hypervisor-based virtualization technologies like VMware, OpenStack, and CloudStack, then the infrastructure layer can be composed by using a set of virtual machines connected and worked in the same virtual network. Alternatively, an enterprise can use virtual infrastructures, which is provided by public cloud providers such as Google, Microsoft, and Amazon. Or it can be a hybrid cloud by combining private cloud and public cloud computing resources.
@@ -55,18 +55,18 @@ Docker does not implement the CNI and it has its own implementation known as the
 A **Container storage interface** (CSI) provides a common standard to connect container orchestration platforms to plugin to persistent storage. With the help of CSI, storage vendors can write a plugin to a single specification and this works on many orchestration platforms. Dynamic provisioning and decommissioning of volumes, attachment and detachment of volumes from a host node, and mounting and unmounting of a volume from a host node are the main capabilities that are provided by the CSI. 
 
 ### Orchestration and Management
-**Container orchestrators** help to manage a large number of containerized application deployments across multiple container host machines. Cloud Foundry, Mesos, Nomad, and  Kubernetes are popular container orchestrators used in the cloud-native space. Container scheduling, provisioning, launching, and discovery; system monitoring, tracing, and crash recovery; declarative system configuration; routing, load balancing, and policy enforcements are a few common features that are managed by these orchestrators.  
+**Container orchestrators** help to manage a large number of containerized application deployments across multiple container host machines. Cloud Foundry, Mesos, Nomad, and  Kubernetes are popular container orchestrators used in the cloud native space. Container scheduling, provisioning, launching, and discovery; system monitoring, tracing, and crash recovery; declarative system configuration; routing, load balancing, and policy enforcements are a few common features that are managed by these orchestrators.  
 
 These base orchestrators can be used to create higher-level orchestrators such as service mesh and serverless platforms. Istio, Linkerd, and OpenPaaS are some service mesh platforms created on top of the Kubernetes orchestrator. 
 
 ## Application Definition / Deployment 
 
-The application definition layer defines application composition, application-specific configurations, deployment properties, image repositories, continuous integration / continuous delivery, etc. Cloud-native application developers are mainly engaged with the functionality of this layer. 
+The application definition layer defines application composition, application-specific configurations, deployment properties, image repositories, continuous integration / continuous delivery, etc. Cloud native application developers are mainly engaged with the functionality of this layer. 
 
 
 ## Reference Architecture for a Cloud Native Digital Enterprise
 
-Cloud-native applications are all about dynamism. **Microservice architecture (MSA)** is critical to accomplish agility. To gain the benefits of MSA (e.g., faster to develop, test, and deploy, and much easier to understand and maintain) these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. To align with business requirements, it is required to composite and integrate multiple microservices and expose them as business APIs. These APIs should be secured, managed, observed, and monetized. API-led integration platforms combined with cloud-native technologies are critical for a digital enterprise. 
+Cloud native applications are all about dynamism. **Microservice architecture (MSA)** is critical to accomplish agility. To gain the benefits of MSA (e.g., faster to develop, test, and deploy, and much easier to understand and maintain) these microservices need to integrate with different SaaS endpoints, legacy applications, and other microservices to perform the defined business functionality. To align with business requirements, it is required to composite and integrate multiple microservices and expose them as business APIs. These APIs should be secured, managed, observed, and monetized. API-led integration platforms combined with cloud native technologies are critical for a digital enterprise. 
 
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-cloud-native-architecture-for-a-digital-enterprise.png">
@@ -75,10 +75,10 @@ Cloud-native applications are all about dynamism. **Microservice architecture (M
 </p>
 
 ### Infrastructure 
-This layer represents the same functionality that we discussed in the cloud-native reference architecture.
+This layer represents the same functionality that we discussed in the cloud native reference architecture.
 Container Orchestration Platform / Function as a Service Platform
 
-This layer also represents the same functionality that we discussed in the cloud-native reference architecture. Cloud Foundry, Mesos, Nomad, Kubernetes, Istio, Linkerd, and OpenPaaS are some examples of current industry-leading container orchestration platforms. Knative, AWS Lambda, Azure Functions, Google Functions, Oracle Functions are a few examples of functions as a service platform (FaaS).
+This layer also represents the same functionality that we discussed in the cloud native reference architecture. Cloud Foundry, Mesos, Nomad, Kubernetes, Istio, Linkerd, and OpenPaaS are some examples of current industry-leading container orchestration platforms. Knative, AWS Lambda, Azure Functions, Google Functions, Oracle Functions are a few examples of functions as a service platform (FaaS).
 
 ### Microservices and Serverless Components 
 Decompositioning a complex problem into a set of smaller problems will be easier to tackle and faster to develop, test, deploy, scale, and much easier to update. This smaller problem can be implemented as microservices or a serverless function. Each microservice or serverless function is developed by a smaller team with the freedom of choosing appropriate technologies. Digital enterprises can have in-house or cloud orchestration platforms to deploy these MSA-based applications. Some cloud providers offer PaaS on top of these orchestration platforms and enterprises can use them with a pay-as-you-go model. If enterprises use serverless functions, then it is recommended to use a FaaS platform provided by a well-known cloud provider. Cloud locking might be a downside for the use of a FaaS platform, but it can depend on your enterprise's policies
@@ -274,7 +274,7 @@ It also important that these APIs are listed in an externally accessible self-se
 To become a successful digital enterprise, it is important to collect data, analyze, and get meaningful business insights on how these APIs are behaving. Comprehensive observability and business insight reporting systems play a major role here. These dashboards and reports can be used by both business and operations leaders to gain a 360-degree view of their digital business.
 
 ## GitOps
-Continuous integration and continuous deployment is critical to achieving agility. GitOps is a way of implementing continuous deployment to cloud-native applications. It combines the functionalities of Git and continuous deployment tools and provides a developer-centric experience when operating infrastructure.
+Continuous integration and continuous deployment is critical to achieving agility. GitOps is a way of implementing continuous deployment to cloud native applications. It combines the functionalities of Git and continuous deployment tools and provides a developer-centric experience when operating infrastructure.
 
 A Git repository keeps all declarative deployment descriptions of the infrastructure in the given environment (dev, test, stage, prod, etc.) and continuous deployment tools automate the process to make the environment match the described state in the repository. During an unfortunate event, it is easy to rollback to a working state by referring to the Git revision. 
 
@@ -294,11 +294,11 @@ If you have many deployment environments, then you can have separate Git branche
 ## Conclusion
 The digital enterprise enables companies of every sector to integrate and expose their business capabilities as APIs by digitalization of the entire value chain in their digital transformation journey. These APIs should be secured, managed, observed, and monetized. An API-led integration platform is essential for digital enterprises whether they start with a greenfield or a brownfield. 
 
-Cloud-native applications are all about dynamism. Microservice architecture (MSA) is critical to accomplish agility. Cloud-native technologies, such as containers and orchestration platforms, are critical for successful microservice implementation and deployments. API gateways play a key role by enforcing policies that are defined in the control and management plane. 
+Cloud native applications are all about dynamism. Microservice architecture (MSA) is critical to accomplish agility. Cloud native technologies, such as containers and orchestration platforms, are critical for successful microservice implementation and deployments. API gateways play a key role by enforcing policies that are defined in the control and management plane. 
 
 A self-service developer portal is important to build an effective API ecosystem. Dashboards and reports help both business and operations to gain a 360-degree view of their digital business.
 
-Combining cloud-native technologies with an API-led integration platform creates an effective architecture for a digital enterprise to increase productivity by having automation, production or operation, and services. 
+Combining cloud native technologies with an API-led integration platform creates an effective architecture for a digital enterprise to increase productivity by having automation, production or operation, and services. 
 
 # Appendix
 
