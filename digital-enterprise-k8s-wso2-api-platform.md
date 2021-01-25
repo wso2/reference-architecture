@@ -1,4 +1,4 @@
-<h1 align="center"> Reference Implementation for a Cloud-Native Digital Enterprise </center></h1>
+<h1 align="center"> Reference Implementation for a Cloud Native Digital Enterprise </center></h1>
 <p align="center">
 <i>
 Version Winter-2020<br/>
@@ -9,33 +9,33 @@ Version Winter-2020<br/>
 
 + Lakmal Warusawithana | Senior Director - Technology Evangelism | WSO2, Inc | <lakmal@wso2.com> | [@lakwarus](https://twitter.com/lakwarus)
 
-> *This paper presents a reference implementation for a cloud-native digital enterprise architecture described in the [Reference Architecture for a Cloud-Native Digital Enterprise](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md). We will focus on an implementation using Kubernetes and WSO2’s API-led integration platform.*
+> *This paper presents a reference implementation for a cloud native digital enterprise architecture described in the [Reference Architecture for a Cloud-Native Digital Enterprise](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md). We will focus on an implementation using Kubernetes and WSO2’s API-led integration platform.*
 
 ## Introduction
 
-The recent constraints on businesses have pushed organizations to accelerate their plans for moving operations to the digital world—often shrinking timelines from years to months. In the process, APIs have emerged as the products of the 21st century. As discussed in the [Reference Architecture for a Cloud-Native Digital Enterprise](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md), the combination of cloud-native technologies and an API-led integration platform significantly increases productivity by enabling agility, flexibility, and scalability through automation and services.
+The recent constraints on businesses have pushed organizations to accelerate their plans for moving operations to the digital world—often shrinking timelines from years to months. In the process, APIs have emerged as the products of the 21st century. As discussed in the [Reference Architecture for a Cloud Native Digital Enterprise](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md), the combination of cloud native technologies and an API-led integration platform significantly increases productivity by enabling agility, flexibility, and scalability through automation and services.
 
-This paper discusses a reference implementation for a cloud-native digital enterprise using two industry-leading, open-source technology stacks: [Kubernetes](http://kubernetes.io) and [WSO2’s API-led integration platform](http://wso2.com). 
+This paper discusses a reference implementation for a cloud native digital enterprise using two industry-leading, open-source technology stacks: [Kubernetes](http://kubernetes.io) and [WSO2’s API-led integration platform](http://wso2.com). 
 
-## Reference Implementation: A Cloud-Native Digital Enterprise 
+## Reference Implementation: A Cloud Native Digital Enterprise 
 
 <p align="center">
 <img src="/media/ra-reference-implementation-digital-enterprise.png">
 <br> 
-<i>Figure 1 - Cloud-Native Digital Enterprise</i>
+<i>Figure 1 - Cloud Native Digital Enterprise</i>
 </p>
 
-In this reference implementation, Kubernetes provides the cloud-native platform capabilities, and WSO2’s API-led integration solution offers the required integration and API management capabilities for a digital enterprise.
+In this reference implementation, Kubernetes provides the cloud native platform capabilities, and WSO2’s API-led integration solution offers the required integration and API management capabilities for a digital enterprise.
 
 Kubernetes can install on top of any private, public, or hybrid cloud infrastructure. WSO2’s API-led integration platform (WSO2 API Manager and WSO2 Enterprise Integrator) can be installed on top of Kubernetes with native support through the WSO2 Kubernetes API Operator. This native integration provides the necessary automation, scalability, and operations as well as giving API-led integration capabilities.
 
 ## Kubernetes
 
-Kubernetes, an open-source cloud-native orchestration platform or a framework, provides a complete set of cloud-native abstractions and a toolkit to build a scalable, flexible solution that aligns with business growth. It is a mature open-source project that is governed by the Cloud Native Computing Foundation (CNCF). Kubernetes’ rich cloud-native abstractions help define the scalable architecture. Its toolkit helps to orchestrate containerized applications into a multi-host, multi-cloud distributed platform by providing the necessary infrastructure and automation. 
+Kubernetes, an open-source cloud native orchestration platform or a framework, provides a complete set of cloud native abstractions and a toolkit to build a scalable, flexible solution that aligns with business growth. It is a mature open-source project that is governed by the Cloud Native Computing Foundation (CNCF). Kubernetes’ rich cloud native abstractions help define the scalable architecture. Its toolkit helps to orchestrate containerized applications into a multi-host, multi-cloud distributed platform by providing the necessary infrastructure and automation. 
 
 The Kubernetes architecture consists of a control-plane and a set of worker nodes. Typically, control-plane components deploy in master (control-plane) nodes, and work-loads deploy on worker nodes. The control-plane is responsible for storing information regarding nodes, monitoring the nodes, container workload scheduling, etc. If you are new to Kubernetes, I would recommend reading the [Kubernetes Architecture](#kubernetes-architecture) appendix section.
 
-Kubernetes’ rich cloud-native abstractions give the flexibility to create a wide variety of cloud-native platforms. *PODs, Services, Deployments, ConfigMaps, Labels,* and the *Horizontal POD Autoscaler* are some of the key cloud-native abstractions. The [Kubernetes cloud-native abstractions](#kubernetes-cloud-native-abstractions) section discusses details of the Kubernetes abstractions used in the API-led integration platform to build a cloud-native digital enterprise.
+Kubernetes’ rich cloud native abstractions give the flexibility to create a wide variety of cloud native platforms. *PODs, Services, Deployments, ConfigMaps, Labels,* and the *Horizontal POD Autoscaler* are some of the key cloud native abstractions. The [Kubernetes cloud-native abstractions](#kubernetes-cloud-native-abstractions) section discusses details of the Kubernetes abstractions used in the API-led integration platform to build a cloud native digital enterprise.
 
 ### Custom resources and custom controllers
 
@@ -102,7 +102,7 @@ Anomalies can be identified by analyzing the access patterns to the APIs. Artifi
 
 ### Composition, integration, and mediation
 
-WSO2 Enterprise Integrator is capable of playing multiple roles in your enterprise architecture. It can be used as an Enterprise Service Bus (ESB), a streaming data processor, and a microservices integrator. WSO2 Micro Integrator supports both centralized (ESB style) and decentralized (microservices, cloud-native) architectural styles. WSO2 Streaming Integrator allows you to implement streaming ETL (extract, transform, and load), change data capture (CDC), and process large files and real-time APIs. 
+WSO2 Enterprise Integrator is capable of playing multiple roles in your enterprise architecture. It can be used as an Enterprise Service Bus (ESB), a streaming data processor, and a microservices integrator. WSO2 Micro Integrator supports both centralized (ESB style) and decentralized (microservices, cloud native) architectural styles. WSO2 Streaming Integrator allows you to implement streaming ETL (extract, transform, and load), change data capture (CDC), and process large files and real-time APIs. 
 
 WSO2 Micro Integrator provides a unique low code approach to microservices integration. Its rich, full connectors help integrate with a wide range of legacy systems. The offering’s easy-to-use code integration approach speeds creating composite integration microservices, while enabling users to reap the benefits of MSA.
 
@@ -132,7 +132,7 @@ You can automate gateway deployment by using a Kubernetes platform that deploys 
 
 ### Automation through the Kubernetes operator pattern
 
-WSO2 Kubernetes API Operator provides a fully automated experience for cloud-native API management. It introduces a set of custom resources to deploy and manage API-led integration artifacts into Kubernetes easily.
+WSO2 Kubernetes API Operator provides a fully automated experience for cloud native API management. It introduces a set of custom resources to deploy and manage API-led integration artifacts into Kubernetes easily.
 
 <p align="center">
 <img src="/media/ra-wso2-k8s-api-operator.png">
@@ -146,7 +146,7 @@ WSO2 Kubernetes API Operator can create and deploy WSO2 API Micro Gateway and WS
 
 Unlike monolith architecture, auditing and tracing are challenging problems in decentralized architectures such as MSA. Performance issues, errors, and exceptions are unfortunate events that may occur in a production environment. To identify  such an event, observing the production environment is essential. 
 
-Often, microservices do not act alone and they interconnect to each other through the API calls. WSO2 API Gateway can work with cloud-native observability tools, such as Prometheus, Jaeger, and Fluentd, to analyze these captured metrics, statistics, and data to produce meaningful visualizations to understand system behavior. 
+Often, microservices do not act alone and they interconnect to each other through the API calls. WSO2 API Gateway can work with cloud native observability tools, such as Prometheus, Jaeger, and Fluentd, to analyze these captured metrics, statistics, and data to produce meaningful visualizations to understand system behavior. 
 
 #### Prometheus
 Prometheus is an open-source system monitoring and alerting toolkit that is governed by the CNCF. Prometheus can set up to work natively with a Kubernetes cluster. 
@@ -169,7 +169,7 @@ Fluentd is an open-source data collector for unified logging layers. The CNCF go
 
 ## GitOps
 
-GitOps is a way of implementing continuous deployment for cloud-native applications. It combines the functionalities of Git and continuous deployment tools and provides a developer-centric experience when operating infrastructure.
+GitOps is a way of implementing continuous deployment for cloud native applications. It combines the functionalities of Git and continuous deployment tools and provides a developer-centric experience when operating infrastructure.
 
 In a digital enterprise, publishing an API is not just a simple process. It involves creating APIs and then deploying them in a lower API management environment to go through different testing rounds (developer testing, stress testing, QA testing, etc.). Once these tests are successful, they move to the production environment.
 
@@ -191,7 +191,7 @@ After completing environment testing, you can then promote to upper environments
 
 By becoming digital enterprises and digitalizing value chains, companies in any sector can integrate and expose their business capabilities as APIs. These APIs should be secured, managed, observed, and monetized. An API-led integration platform is essential for digital enterprises, whether they start with greenfield or brownfield projects. 
 
-Kubernetes, an open-source cloud-native orchestration platform, provides a complete set of cloud-native abstractions and a toolkit to build a scalable, flexible solution that aligns with business growth. 
+Kubernetes, an open-source cloud native orchestration platform, provides a complete set of cloud native abstractions and a toolkit to build a scalable, flexible solution that aligns with business growth. 
 
 WSO2’s API-led integration platform is an open-source, market-leading enterprise solution that supports full API lifecycle management and integration.
 
@@ -225,9 +225,9 @@ Worker nodes should be able to communicate with control-plane components and pro
 
 **Kube-Proxy**: is running in each worker node and ensures all communication among the container workloads run in multiple nodes.
 
-### Kubernetes cloud-native abstractions
+### Kubernetes cloud native abstractions
 
-Kubernetes’ rich cloud-native abstractions give the flexibility to create a wide variety of cloud-native platforms. This section will only discuss the abstractions (or building blocks) used in the API-led integration platform to build the cloud-native digital enterprise.  
+Kubernetes’ rich cloud native abstractions give the flexibility to create a wide variety of cloud native platforms. This section will only discuss the abstractions (or building blocks) used in the API-led integration platform to build the cloud native digital enterprise.  
 
 #### POD
 
