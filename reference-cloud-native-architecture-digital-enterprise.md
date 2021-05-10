@@ -262,7 +262,7 @@ API design is a very important phase in the software development life cycle (SDL
 Security is paramount when exposing business capabilities via APIs. This  not only involves authentication and authorization but also covers policies to protect attacks, sensitive data leaking, revoke compromise APIs, blocking subscriptions due to non-payment, threat protection, bot detection, token-fraud detection, etc. APIs can be secured by using OAuth2.0, OIDC, Basic Auth, API Key, and Mutual TLS. The control and management planes can be used to define these security policies.
 
 #### Manage and Scale API Traffic
-API management enables users  to control traffic flows to backend business services. API quotas and spike arrest helps to protect backend systems from being properly throttled and managed. The control and management planes should be able to define these policies and enforce them in the data plan via API gateways.
+API management enables users  to control traffic flows to backend business services. API quotas and spike arrest help to protect backend systems by being properly throttled and managed. The control and management planes should be able to define these policies and enforce them in the data plan via API gateways.
 
 ### Observability
 Unlike monolith architecture, auditing and tracing are hard problems in decentralized architectures such as MSA. Having the necessary interceptors to collect metrics, stats, and data is critical. The control and management planes should have capable analytics tools and engines to analyze these collected metrics, stats, and data to generate business intelligence reports. These reports can be utilized to monetize business capabilities by combining them with the defined business plans.
