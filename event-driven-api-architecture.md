@@ -1,6 +1,5 @@
-<h1 align="center"> Event-driven APIs in Microservice Architectures
- </center></h1>
-<!-- <h2 align="center"> A Reference Document </center></h2> --> 
+<h1 align="center"> Event-driven APIs in Microservice Architectures </h1>
+<!-- <h2 align="center"> A Reference Document </h2> -->
 <p align="center">
 <i>
 Version Q4-2020<br/>

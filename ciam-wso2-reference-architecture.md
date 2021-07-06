@@ -1,7 +1,5 @@
-<h1 align="center"> Customer Identity 
-and Access Management
- </center></h1>
-<h2 align="center"> A WSO2 Reference Architecture</center></h2>
+<h1 align="center"> Customer Identity and Access Management </h1>
+<h2 align="center"> A WSO2 Reference Architecture </h2>
 <p align="center">
 <i>
 Version Q2-2019<br/>

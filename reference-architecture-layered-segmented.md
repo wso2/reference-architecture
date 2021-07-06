@@ -1,5 +1,5 @@
-<h3 align="center"> API-Centric Centralized Reference Architectures</center></h3>
-<h1 align="center"> Layered and Segmented Architecture</center></h1>
+<h3 align="center"> API-Centric Centralized Reference Architectures </h3>
+<h1 align="center"> Layered and Segmented Architecture </h1>
 
 <p align="center">
 <i>

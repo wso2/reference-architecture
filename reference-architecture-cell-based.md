@@ -1,4 +1,4 @@
-<h1 align="center"> Cell-Based Architecture </center></h1>
+<h1 align="center"> Cell-Based Architecture </h1>
 <p align="center">
 <i>
 Version: Summer-2021<br/>

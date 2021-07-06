@@ -1,4 +1,4 @@
-<h1 align="center"> Reference Architecture for a Cloud Native Digital Enterprise </center></h1>
+<h1 align="center"> Reference Architecture for a Cloud Native Digital Enterprise </h1>
 <p align="center">
 <i>
 Version Winter-2020<br/>
