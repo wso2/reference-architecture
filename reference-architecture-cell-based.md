@@ -325,6 +325,20 @@ Authors have published a [**Reference Methodology**](https://github.com/wso2/ref
 > *Note from the author:
 I have been involved in implementing more than 1000 projects using Cell-based, layered and segmented architecture in many parts of the world. If you are looking for guidance for picking the correct architecture for your project, I'm happy to guide you using a [**strategic consultancy engagement**](https://wso2.com/strategic-consulting/).*
 
+## Publications 
+
+[1] Kristopher Sandoval - What is Cell-Based Architecture - https://nordicapis.com/what-is-cell-based-architecture/ 
+
+[2] Asanka Abeysinghe - Cell-Based Architecture: A New Decentralized Approach for Cloud Native Patterns - https://thenewstack.io/cell-based-architecture-a-new-decentralized-approach-for-cloud-native-patterns/
+
+[3] Asanka Abeysinghe - The Cellular Enterprise - https://www.forbes.com/sites/forbestechcouncil/2020/06/29/the-cellular-enterprise/
+
+[4] Tyson Midboe - Cell-Based Architecture and Federated Microservices - https://trmidboe.medium.com/cell-based-architecture-and-federated-microservices-4fc0cf3df5a6
+
+[5] Bennett M. Reddin (& AA) - Cellular Enterprises: The Software Architect’s View - https://ihrim.org/2021/03/cellular-enterprises-the-software-architects-view-by-asanka-abeysinghe-and-bennett-m-reddin/
+
+[6] Alberto Sanz - Crashing our Regional Deployments (and surviving!) - https://medium.com/adidoescode/crashing-our-regional-deployments-and-surviving-fcd32181d10a
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
@@ -338,19 +352,6 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 [5] Domain Driven Design (DDD) - https://en.wikipedia.org/wiki/Domain-driven_design
 
 [6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
-
-## Publications 
-
-[1] Kristopher Sandoval - What is Cell-Based Architecture - https://nordicapis.com/what-is-cell-based-architecture/ 
-
-[2] Asanka Abeysinghe - Cell-Based Architecture: A New Decentralized Approach for Cloud Native Patterns - https://thenewstack.io/cell-based-architecture-a-new-decentralized-approach-for-cloud-native-patterns/
-
-[3] Asanka Abeysinghe - The Cellular Enterprise - https://www.forbes.com/sites/forbestechcouncil/2020/06/29/the-cellular-enterprise/
-
-[4] Tyson Midboe - Cell-Based Architecture and Federated Microservices - https://trmidboe.medium.com/cell-based-architecture-and-federated-microservices-4fc0cf3df5a6
-
-[5] Bennett M. Reddin (& AA) - Cellular Enterprises: The Software Architect’s View
- - https://ihrim.org/2021/03/cellular-enterprises-the-software-architects-view-by-asanka-abeysinghe-and-bennett-m-reddin/
 
 ## Appendix A: Agile Enterprise
 
