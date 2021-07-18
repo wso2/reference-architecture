@@ -1,4 +1,5 @@
 <h1 align="center"> Cell-Based Architecture </center></h1>
+<h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </center></h3>
 <p align="center">
 <i>
 Version: Summer-2021<br/>
