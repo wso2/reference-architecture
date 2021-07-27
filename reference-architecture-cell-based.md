@@ -342,6 +342,9 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [7] Raphaël Moutard - Pool Architecture for SaaS - https://hackernoon.com/pool-architecture-for-saas-qil3ur3
 
+[8] Jennifer Riggins - A Model for Managing Microservices in Cellular Self-Organized Teams - https://thenewstack.io/a-model-for-managing-microservices-in-cellular-self-organized-teams/
+
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
