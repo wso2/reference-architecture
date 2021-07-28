@@ -33,17 +33,17 @@ This architecture is based on experience working across hundreds of projects on 
 
 The rest of the this paper is structured as follows:
 
-+ **Section 1**: Introduces the overall abstractions used.
++ [**Section 1**](#section-1-abstractions): Introduces the overall abstractions used.
 
-+ **Section 2**: Introduces to the units of an enterprise architecture.
++ [**Section 2**](#section-2-cell---the-units-of-an-enterprise-architecture): Introduces to the units of an enterprise architecture.
 
-+ **Section 3**: Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
++ [**Section 3**](#section-3-structured-agility): Discusses structured agility and looks at how the reference architecture augments an iterative architecture.
 
-+ **Section 4**: Defines the new reference architecture. This includes a mapping to a real-world example.
++ [**Section 4**](#section-4-building-an-agile-enterprise-with-the-cell-based-architecture): Defines the new reference architecture. This includes a mapping to a real-world example.
 
-+ **Section 5**: Define the rules that can apply in the design, implementation and deployment of the cells.
++ [**Section 5**](#section-5-cell---recommendations-and-best-practices): Define the rules that can apply in the design, implementation and deployment of the cells.
 
-+ **Appendix-A**: Examines the overall picture by describing the agile business from the business architecture point of view.
++ [**Appendix-A**](#appendix-a-agile-enterprise): Examines the overall picture by describing the agile business from the business architecture point of view.
 
 ## Section 1: Abstractions
 
