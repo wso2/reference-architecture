@@ -19,13 +19,13 @@ Version: Fall-2021<br/>
 
 ## Introduction
 
-Enterprise architecture has one main aim-to bring structure and organization to evolving systems, thus enabling better maintainability, flexibility, and agility. Enterprise architects have the unending task of trying to bring order to chaos. Over the past five years, a rapid shift has taken place in the agility of software development and in particular DevOps. As a result, continuous integration and continuous deployment (CI/CD) approaches have dramatically accelerated the time needed for new deployments of software projects from months to weeks to days to hours. In many ways, enterprise architectures have struggled to adjust. This reference architecture aims to enable an agile enterprise by increasing the agility at the project level and take it to the enterprise level.
+Enterprise architecture has one main aim-to bring structure and organization to evolving systems, thus enabling better maintainability, flexibility, and agility. Enterprise architects have the unending task of trying to bring order to chaos. Over the past five years, a rapid shift has taken place in the agility of software development and in particular DevOps. As a result, continuous integration and continuous deployment (CI/CD) approaches have dramatically accelerated the speed of new deployments of software projects from months to weeks to days to hours. In many ways, enterprise architectures have struggled to adjust. This reference architecture aims to enable an agile enterprise by increasing the agility at the project level and take it to the enterprise level.
 
 This architecture is based on experience working across hundreds of projects on building digital systems. It also offers a forward-looking view aimed at addressing emerging challenges. The aim of this architecture is to enhance agility at the enterprise level. We define agility as the ability of an organization to respond effectively and in good time to changes in the business environment, in customer requirements, or in enterprise strategy. Agility is not just about one-time changes. It's about ongoing, repeated adaptation to meet the challenges of the enterprise. In creating agility, we assert that four properties are key:
 
 + **Scalability**, the ability to deal with changing workloads by utilizing available resources and effectively maintaining a service level. Modern cloud infrastructure allows components, such as containers, to be scaled effectively, provided they are designed in the correct manner
 
-+ **Modularity**, is the idea that components of the architecture are versioned, replicable, and have well-defined interfaces. It is about exposing the right interfaces into a versioned system as well as hiding the details of the internal workings.
++ **Modularity**, is the idea that components of the architecture are versioned, replicable, and have well-defined interfaces. It is about exposing the right interfaces into a versioned system as well as hiding the details of the internal workings. Business mirroring with domain-driven design (DDD) is the foundation for defining modularity at the macro level. 
 
 + **Composability**, is about creating a recursive and uniform architecture where new components and capabilities add to the overall platform in a seamless way. For example, adding business logic in a web page makes it hard for other systems to build on top of that logic, whereas adding the same logic to an API allows web applications, mobile apps, and other server-based systems to access that logic.
 
@@ -58,11 +58,11 @@ The rest of the this paper is structured as follows:
 | Icon | Category | Component |
 |---------|---------|---------|
 |![Component](/media/ra-data-service.png )|Legacy and data services|Databases, Existing systems, Registries and repositories, User stores, Business processes|
-|![Component](/media/ra-microservice.png )|Microservices and serverless components|Core business logic, Aggregation and service composition, Transformation|
+|![Component](/media/ra-microservice.png )|Microservices and serverless components|Custom business logic, Aggregation and service composition, Transformation|
 |![Component](/media/ra-gateway.png)|Gateways and brokers|Exposed APIs, events, and streams, Policy enforcement points, Message brokers, Identity brokers and identity gateways, Sidecars and bridges|
 |![SaaS EPR](/media/ra-saas-epr.png)|External endpoint|Access using APIs, events,  and streams, Cloud systems and SaaS|
-|![Frontend Clients](/media/ra-front-end-clients.png)|Frontend clients|Mobile apps, Reactive apps, API consumers|
-|![Gov and Utils](/media/ra-gov-utils.png)|Governance and utilities|Registry, Observability, Automation tools|
+|![Frontend Clients](/media/ra-front-end-clients.png)|Frontend clients|Mobile apps, Web apps, Portlets, Reactive apps, API consumers|
+|![Gov and Utils](/media/ra-gov-utils.png)|Governance and utilities|Registry, Observability, Automation tools, Lifecycle management|
 
 ## Section 2: Cell - The Units of an Enterprise Architecture
 
