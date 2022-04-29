@@ -236,7 +236,7 @@ The nature of the systems residing in each layer mandate the type of APIs expose
 
 ### Segmented Architecture and APIs 
 
-The usage of APIs in the segmented architecture is similar to the layered architecture. However, it increases dependency because a business unit or a team owns each segment. The only way (or recommended way) is to use APIs to communicate between the segments. Similar to the layered architecture, APIs will glue the segments as well as components inside each segment. In general, edge APIs get exposed between segments, but there are no restrictions to prove the capabilities as domain and utility APIs. 
+The usage of APIs in the segmented architecture is similar to the layered architecture. However, it increases dependency because a business unit or a team owns each segment. The only way (or recommended way) is to use APIs to communicate between the segments. Similar to the layered architecture, APIs will glue the segments as well as components inside each segment. In general, edge APIs get exposed between segments, but there are no restrictions to provide the capabilities as domain and utility APIs. 
 
 ![Segmented API](/media/ra-ls-segmented-api-25-2.png)
 
