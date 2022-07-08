@@ -2,7 +2,7 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </h3>
 <p align="center">
 <i>
-Version: Fall-2021<br/>
+Version: Summer-2022<br/>
 </i>
 </p>
 
@@ -12,7 +12,7 @@ Version: Fall-2021<br/>
 
 **_Original Authors_**
 
-+ Asanka Abeysinghe | Chief Technology Evangelist- [WSO2, Inc](https://wso2.com/) | [@asankama](https://twitter.com/asankama) (Summer-2018 - Fall-2021)
++ Asanka Abeysinghe | Chief Technology Evangelist- [WSO2, Inc](https://wso2.com/) | [@asankama](https://twitter.com/asankama) (Summer-2018 - Summer-2022)
 + Paul Fremantle | former CTO and Co-Founder - [WSO2, Inc](https://wso2.com/) | [@pzfreo](https://twitter.com/pzfreo) (Summer-2018 - Spring-2020)
 
 > *This document describes a reference architecture for modern agile digital  enterprises. This reference architecture offers a logical architecture based on a disaggregated cloud-based model that can be instantiated to create an effective and agile approach for digital enterprises, deployed in private, public or hybrid cloud environments. In this paper we present the architecture, the approach to applying this architecture, and existing approaches that fit into this architecture. The architecture defined in this paper can be mapped to current architectures as well as used to define new architectures. It is designed to help move from the “as-is” towards the “to-be”.*
@@ -345,6 +345,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 [8] Jennifer Riggins - A Model for Managing Microservices in Cellular Self-Organized Teams - https://thenewstack.io/a-model-for-managing-microservices-in-cellular-self-organized-teams/
 
 [9] Higginbotham, J. (2021). [Principles of Web API Design](https://www.amazon.com/Principles-Web-Design-James-Higginbotham/dp/0137355637): Delivering Value with APIs and Microservices (Addison-Wesley Signature Series (Vernon)) (1st ed.). Addison-Wesley Professional. (Page 203)
+
+[10] Cell Based Deployment Architecture - MOSIP Docs 1.1.5. (n.d.). Mosip.Io. https://docs.mosip.io/1.1.5/build-and-deploy/cell-based-deployment-architecture
 
 ## References
 
