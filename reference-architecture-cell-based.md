@@ -344,6 +344,7 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [8] Jennifer Riggins - A Model for Managing Microservices in Cellular Self-Organized Teams - https://thenewstack.io/a-model-for-managing-microservices-in-cellular-self-organized-teams/
 
+[9] Higginbotham, J. (2021). [Principles of Web API Design](https://www.amazon.com/Principles-Web-Design-James-Higginbotham/dp/0137355637): Delivering Value with APIs and Microservices (Addison-Wesley Signature Series (Vernon)) (1st ed.). Addison-Wesley Professional. (Page 203)
 
 ## References
 
