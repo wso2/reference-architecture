@@ -356,7 +356,7 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [4] The exploding endpoint problem - https://thenewstack.io/the-exploding-endpoint-problem-why-everything-must-become-an-api/
 
-[5] Domain Driven Design (DDD) - https://en.wikipedia.org/wiki/Domain-driven_design
+[5] Domain Driven Design (DDD) - Vernon, V. (2013). [Implementing Domain-Driven Design (1st ed.)](https://read.amazon.com/kp/embed?asin=B00BCLEBN8&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_4VVXTETC8YNJSKV5S74N). Addison-Wesley Professional.
 
 [6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
 
