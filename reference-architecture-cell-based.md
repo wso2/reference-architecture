@@ -8,7 +8,7 @@ Version: Summer-2022<br/>
 
 **_Current Author_**
 
-+ Asanka Abeysinghe | Chief Technology Evangelist- [WSO2, Inc](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
++ [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | Chief Technology Evangelist- [WSO2, Inc](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
 **_Original Authors_**
 
