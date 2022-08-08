@@ -112,7 +112,7 @@ This diagram brings the data plane, control plane and the management plane conce
 |---------|---------|---------|
 |**DP**|Data Plane|Forwards traffic between hops, takes data packets|
 |**CP**|Control Plane|Signaling of the network, makes decisions about the traffic flow, runtime governance|
-|**MP**|Management Plane|Configuration, observeabiltty, monitoring, design-time governance|
+|**MP**|Management Plane|Configuration, observability, monitoring, design-time governance|
 
 ![cell communication](/media/ra-cell-communication-v2.2.png)
 
