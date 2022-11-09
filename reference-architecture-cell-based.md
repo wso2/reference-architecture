@@ -271,7 +271,7 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 
 2. The number of component-component connections within a cell should be higher than the number that crosses the cell boundary. Hence one approach would be to cluster components based on the connections.
 
-3. Other approaches such as Domain-driven Design (DDD)[5] may help, but fundamentally the cell model is there to provide team boundaries.
+3. Other approaches such as Domain-driven Design (DDD)[5] may help, but fundamentally the cell model is there to provide team boundaries. A cell could represent a domain or a sub-domain, and the decision has to be based on the domain's granularity and the complexity of the target system.
 
 4. Hence the size of a cell should be based on the size, responsibility, and output of a team - and the size and output of a team based on team concepts (like the two-pizza rule).
 
