@@ -348,6 +348,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [10] Cell Based Deployment Architecture - MOSIP Docs 1.1.5. (n.d.). Mosip.Io. https://docs.mosip.io/1.1.5/build-and-deploy/cell-based-deployment-architecture
 
+[11] Abeysinghe, A. (2022, October 21). Driving Digital Experiences via Cloud Native Applications. The New Stack. https://thenewstack.io/driving-digital-experiences-via-cloud-native-applications/
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
