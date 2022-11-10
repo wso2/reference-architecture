@@ -350,6 +350,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [11] Abeysinghe, A. (2022, October 21). Driving Digital Experiences via Cloud Native Applications. The New Stack. https://thenewstack.io/driving-digital-experiences-via-cloud-native-applications/
 
+[12] Laforgia, F. (2022, November 10). Data Mesh In A Cell Part 1 - Introduction. https://www.linkedin.com/pulse/data-mesh-cell-part-1-introduction-francois-laforgia/
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
