@@ -370,6 +370,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [7] Waldron, R. (2021, November 18). The Composable Enterprise: A Flexible Approach To Digital Transformation. Forbes. https://www.forbes.com/sites/forbestechcouncil/2021/11/18/the-composable-enterprise-a-flexible-approach-to-digital-transformation/
 
+___
+
 ## Appendix A: Agile Enterprise
 
 >*“It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change. -Charles Darwin*
