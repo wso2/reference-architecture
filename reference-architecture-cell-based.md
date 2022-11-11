@@ -321,6 +321,8 @@ Microservice architecture is an excellent approach to building decentralized sys
 Identifying the boundaries and the size of the cells depends on the business domain, organizational structure, skill set, and processes adhered to by the organization. Scaling the cells and providing high availability is part of the infrastructure that deploys the cells.  
 Reference implementations using market-leading technologies and solutions for various vertical markets successfully will be discussed as separate white papers in the future. 
 
+Cell-based architecture results in a highly [**composable enterprise**](https://www.forbes.com/sites/forbestechcouncil/2021/11/18/the-composable-enterprise-a-flexible-approach-to-digital-transformation/), allowing organizations to deliver digital experiences using cloud native applications rapidly.
+
 Authors have published a [**Reference Methodology**](https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md) as a guideline to implement application systems and agile enterprises using cell-based architecture.
 
 > *Note from the author:
@@ -365,6 +367,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 [5] Domain Driven Design (DDD) - Vernon, V. (2013). [Implementing Domain-Driven Design (1st ed.)](https://read.amazon.com/kp/embed?asin=B00BCLEBN8&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_4VVXTETC8YNJSKV5S74N). Addison-Wesley Professional.
 
 [6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
+
+[7] Waldron, R. (2021, November 18). The Composable Enterprise: A Flexible Approach To Digital Transformation. Forbes. https://www.forbes.com/sites/forbestechcouncil/2021/11/18/the-composable-enterprise-a-flexible-approach-to-digital-transformation/
 
 ## Appendix A: Agile Enterprise
 
