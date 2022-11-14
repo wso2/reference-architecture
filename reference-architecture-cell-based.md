@@ -104,6 +104,8 @@ The cells consume the functionality of other cells using the three API types (re
 A common characteristic of the usage among the three different types of endpoints is subscriptions. An application or a system is required to have an active subscription to send or receive messages/events from the applicable API type. The difference is how the messages/events are delivered and the underlying protocols used.
 External cells represent endpoints exposed by the partners and the service provider ecosystem of the organization. External cells can be a software-as-a-service (SaaS) application, an integration or an API gateway encapsulating a set of functionality provided by the external counterpart.
 
+Cell-based architecture prefers a unique gateway (cluster for scalability and high availability) per cell. However, using a shared gateway using a federated or centralized deployment pattern is acceptable, considering the limitations and recommendations of different API management technologies and organization policies. In addition, there can be situations to use multiple gateways per cell depending on the scope of the APIs (internal/external) and the type of APIs exposed by the cell.
+
 #### Inter and Intra Cell Communication
 
 This diagram brings the data plane, control plane and the management plane concept into the cell-based architecture.
