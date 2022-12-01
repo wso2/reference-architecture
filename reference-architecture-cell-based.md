@@ -356,6 +356,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [12] Laforgia, F. (2022, November 10). Data Mesh In A Cell Part 1 - Introduction. https://www.linkedin.com/pulse/data-mesh-cell-part-1-introduction-francois-laforgia/
 
+[13] Sanz, A. (2022, July 7). Crashing our Regional Deployments (and surviving!) - adidoescode. Medium. https://medium.com/adidoescode/crashing-our-regional-deployments-and-surviving-fcd32181d10a
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
