@@ -124,7 +124,7 @@ Communication planes inside a cell are called the **local mesh** and the communi
 
 ##### Cell Commuication in Telecom Terms
 
-![cell communication in Telcom](/media/ra-cell-com-tc-v1.png)
+![cell communication in Telcom](/media/ra-cell-com-tc-v1-75.png)
 
 #### Governance of Cell-Based Architecture
 
