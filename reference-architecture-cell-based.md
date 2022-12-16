@@ -2,7 +2,7 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </h3>
 <p align="center">
 <i>
-Version: Summer-2022<br/>
+Version: Winter-2022<br/>
 </i>
 </p>
 
@@ -125,6 +125,14 @@ Communication planes inside a cell are called the **local mesh** and the communi
 #### Cell Commuication in Telecom Terms
 
 ![cell communication in Telcom](/media/ra-cell-com-tc-v1-50.png)
+
+**Northbound**: External APIs exposed from the cell will be consumed by web, mobile, and IoT channels. 
+
+**Southbound**: External calls from the cell to third-party APIs reside outside the enterprise.
+
+**Westbound**: Internal APIs exposed from the cell consumed by a component in another cell.
+
+**Eastbound**: Internal call from the cell to another cell. 
 
 #### Governance of Cell-Based Architecture
 
