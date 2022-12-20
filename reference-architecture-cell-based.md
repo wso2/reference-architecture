@@ -124,7 +124,7 @@ Communication planes inside a cell are called the **local mesh** and the communi
 
 #### Cell Commuication in Telecom Terms
 
-![cell communication in Telcom](/media/ra-cell-com-tc-v1-50.png)
+![cell communication in Telcom](/media/ra-cell-com-tc-v1-25.png)
 
 **Northbound**: External APIs exposed from the cell will be consumed by web, mobile, and IoT channels.(Ingress calls to the cell from channels.)
 
