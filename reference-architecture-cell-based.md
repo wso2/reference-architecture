@@ -126,13 +126,13 @@ Communication planes inside a cell are called the **local mesh** and the communi
 
 ![cell communication in Telcom](/media/ra-cell-com-tc-v1-50.png)
 
-**Northbound**: External APIs exposed from the cell will be consumed by web, mobile, and IoT channels. 
+**Northbound**: External APIs exposed from the cell will be consumed by web, mobile, and IoT channels.(Ingress calls to the cell from channels.)
 
-**Southbound**: External calls from the cell to third-party APIs reside outside the enterprise.
+**Southbound**: External calls from the cell to third-party APIs reside outside the enterprise. (Egress calls from the cell to external endpoints.)
 
-**Westbound**: Internal APIs exposed from the cell consumed by a component in another cell.
+**Westbound**: Internal APIs exposed from the cell consumed by a component in another cell. (Ingress calls to the cell from another cell.)
 
-**Eastbound**: Internal call from the cell to another cell. 
+**Eastbound**: Internal call from the cell to another cell. (Egress call from the cell to another cell.)
 
 #### Governance of Cell-Based Architecture
 
