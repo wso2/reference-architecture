@@ -119,7 +119,7 @@ In addition to the all application dependencies that come with the container ima
 #### Scalability, Load Balancing and Service Discovery
 Microservices communicate with each other to complete a given business task. When the number of services increase, we need to have a proper discovery service and should be able to communicate with a unique name (service-name) such as a domain name service (DNS). These service names should not be bound to a specific environment (dev, pod, etc.) and they should be resolved to correct the IP address of the services that are running in the given environment.
 
-Compared to hypervisor-based virtual machine instances, a container runtime’s overhead is minimal. Owing to the combination of container properties and MSA best practises, these containers can be scaled out very fast. When scaling out, ingress traffic should be routed to each container with a proper load balancing mechanism. Every application should have a proper load balancer bound to a service name.
+Compared to hypervisor-based virtual machine instances, a container runtime’s overhead is minimal. Owing to the combination of container properties and MSA best practices, these containers can be scaled out very fast. When scaling out, ingress traffic should be routed to each container with a proper load balancing mechanism. Every application should have a proper load balancer bound to a service name.
 
 <p align="center">
 <img src="https://github.com/lakwarus/reference-architecture/raw/master/media/ra-service-discovery-load-balancing.png">

@@ -122,7 +122,7 @@ Components in a cell are required to communicate with each other in a seamless w
 
 Communication planes inside a cell are called the **local mesh** and the communication planes outside the cells are called the **global mesh**. 
 
-#### Cell Commuication in Telecom Terms
+#### Cell Communication in Telecom Terms
 
 ![cell communication in Telcom](/media/ra-cell-com-tc-v1-20.1.png)
 
