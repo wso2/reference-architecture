@@ -364,11 +364,13 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [10] Cell Based Deployment Architecture - MOSIP Docs 1.1.5. (n.d.). Mosip.Io. https://docs.mosip.io/1.1.5/build-and-deploy/cell-based-deployment-architecture
 
-[11] Abeysinghe, A. (2022, October 21). Driving Digital Experiences via Cloud Native Applications. The New Stack. https://thenewstack.io/driving-digital-experiences-via-cloud-native-applications/
+[11] F. (2023, February 13). Cell-based Architecture: a valid choice for Cloud-native applications development. Bip xTech Site. https://www.bipxtech.io/en/cell-based-architecture-en/
 
-[12] Laforgia, F. (2022, November 10). Data Mesh In A Cell Part 1 - Introduction. https://www.linkedin.com/pulse/data-mesh-cell-part-1-introduction-francois-laforgia/
+[12] Abeysinghe, A. (2022, October 21). Driving Digital Experiences via Cloud Native Applications. The New Stack. https://thenewstack.io/driving-digital-experiences-via-cloud-native-applications/
 
-[13] Sanz, A. (2022, July 7). Crashing our Regional Deployments (and surviving!) - adidoescode. Medium. https://medium.com/adidoescode/crashing-our-regional-deployments-and-surviving-fcd32181d10a
+[13] Laforgia, F. (2022, November 10). Data Mesh In A Cell Part 1 - Introduction. https://www.linkedin.com/pulse/data-mesh-cell-part-1-introduction-francois-laforgia/
+
+[14] Sanz, A. (2022, July 7). Crashing our Regional Deployments (and surviving!) - adidoescode. Medium. https://medium.com/adidoescode/crashing-our-regional-deployments-and-surviving-fcd32181d10a
 
 ## References
 
