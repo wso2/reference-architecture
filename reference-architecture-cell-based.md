@@ -364,7 +364,7 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [10] Cell Based Deployment Architecture - MOSIP Docs 1.1.5. (n.d.). Mosip.Io. https://docs.mosip.io/1.1.5/build-and-deploy/cell-based-deployment-architecture
 
-[11] F. (2023, February 13). Cell-based Architecture: a valid choice for Cloud-native applications development. Bip xTech Site. https://www.bipxtech.io/en/cell-based-architecture-en/
+[11] Maddaloni, M. (2022, May 26). Cell-based Architecture: a valid choice for Cloud-native applications development. Bip xTech Site. https://www.bipxtech.io/en/cell-based-architecture-en/
 
 [12] Abeysinghe, A. (2022, October 21). Driving Digital Experiences via Cloud Native Applications. The New Stack. https://thenewstack.io/driving-digital-experiences-via-cloud-native-applications/
 
