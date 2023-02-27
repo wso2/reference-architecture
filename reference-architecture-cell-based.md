@@ -283,13 +283,15 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 
 1. The design of systems has always required an approach to the clustering of functionality, and it remains an open computer science problem - so don't expect a definitive answer!
 
-2. The number of component-component connections within a cell should be higher than the number that crosses the cell boundary. Hence one approach would be to cluster components based on the connections.
+2. The first principle when defining cells is to follow **Conway's law**, which states that *most companies design their organizational systems based on their communication structure*. By following this principle, you can ensure that your cells are designed in a way that is aligned with your organization's communication patterns and promotes effective collaboration and communication between teams.
 
-3. Other approaches such as Domain-driven Design (DDD)[5] may help, but fundamentally the cell model is there to provide team boundaries. A cell could represent a domain or a sub-domain, and the decision has to be based on the domain's granularity and the complexity of the target system.
+3. The number of component-component connections within a cell should be higher than the number that crosses the cell boundary. Hence one approach would be to cluster components based on the connections.
 
-4. Hence the size of a cell should be based on the size, responsibility, and output of a team - and the size and output of a team based on team concepts (like the two-pizza rule).
+4. Other approaches such as Domain-driven Design (DDD)[5] may help, but fundamentally the cell model is there to provide team boundaries. A cell could represent a domain or a sub-domain, and the decision has to be based on the domain's granularity and the complexity of the target system.
 
-5. Cell-based architecture aims to create business focused architectural constructs that can be reused at a higher level, so naturally organizing the teams and cells around business functions is essential.
+5. Hence the size of a cell should be based on the size, responsibility, and output of a team - and the size and output of a team based on team concepts (like the two-pizza rule).
+
+6. Cell-based architecture aims to create business focused architectural constructs that can be reused at a higher level, so naturally organizing the teams and cells around business functions is essential.
 
 **Note**:*A specification focused on cell granularity is in progress, which is shaping the cell boundaries by considering the bounded context and component interaction graph as a model of components and characteristics of their interactions.*
 
