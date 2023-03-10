@@ -25,7 +25,7 @@ This architecture is based on experience working across hundreds of projects on 
 
 + **Scalability**, the ability to deal with changing workloads by utilizing available resources and effectively maintaining a service level. Modern cloud infrastructure allows components, such as containers, to be scaled effectively, provided they are designed in the correct manner
 
-+ **Modularity**, is the idea that components of the architecture are versioned, replicable, and have well-defined interfaces. It is about exposing the right interfaces into a versioned system as well as hiding the details of the internal workings. Business mirroring with domain-driven design (DDD) is the foundation for defining modularity at the macro level. 
++ **Modularity**, is the idea that components of the architecture are versioned, replicable, and have well-defined interfaces. It is about exposing the right interfaces into a versioned system as well as hiding the details of the internal workings. Business mirroring with **domain-driven design** (DDD) is the foundation for defining modularity at the macro level. 
 
 + **Composability**, is about creating a recursive and uniform architecture where new components and capabilities add to the overall platform in a seamless way. For example, adding business logic in a web page makes it hard for other systems to build on top of that logic, whereas adding the same logic to an API allows web applications, mobile apps, and other server-based systems to access that logic.
 
@@ -287,7 +287,7 @@ The promotions cell exposes the functionality using a streaming endpoint and let
 
 3. The number of component-component connections within a cell should be higher than the number that crosses the cell boundary. Hence one approach would be to cluster components based on the connections.
 
-4. Other approaches such as Domain-driven Design (DDD)[5] may help, but fundamentally the cell model is there to provide team boundaries. A cell could represent a domain or a sub-domain, and the decision has to be based on the domain's granularity and the complexity of the target system.
+4. Other approaches such as **Domain-driven Design** (**DDD**)[5] may help, but fundamentally the cell model is there to provide team boundaries. A cell could represent a domain or a sub-domain, and the decision has to be based on the domain's granularity and the complexity of the target system.
 
 5. Hence the size of a cell should be based on the size, responsibility, and output of a team - and the size and output of a team based on team concepts (like the two-pizza rule).
 
