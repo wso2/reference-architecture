@@ -303,29 +303,29 @@ APIs can comprehend as the products of the 21st century. For many millennia, hum
 
 ![API products](/media/ra-api-product-10.png)
 
-#### Reference implementations 
+### Reference implementations 
 
-##### WSO2 Choreo
+#### WSO2 Choreo
 
 [WSO2 Choreo](https://wso2.com/choreo/) is a SaaS application development suite designed to accelerate the creation of digital experiences. Build, deploy, monitor, and manage your cloud native applications. Increase developer productivity and focus on innovation.
 WSO2 Choreo with Cell-based Architecture enables Choreo projects to become governable units from development to deployment with managed access via APIs, events, and data. Also, organize and manage enterprise teams into domains, sub-domains, and projects. Control visibility and access, and enable collaboration, self-service, and reuse, in order to maximize team productivity.
 
-##### Cellery
+#### Cellery
 
 [Cellery](https://cellery.io/) is a code-first approach (architecture as code) to building, integrating, running and managing composite applications on Kubernetes. Build, push/pull, test, deploy, update, scale and observe cells. Create secure APIs by default. Use your existing container images, written in any language.
 Cellery started off as a learning experiment. Our passion for services composition and the need for a reference implementation for Cell-based architecture gave birth to Cellery. Last year and half was a great learning experience for us. Through Cellery, we learnt to organize services and deploy on Kubernetes at scale. We also found out that this is a common problem that many technical communities are trying to solve and we are planning to contribute to such communities like Open Application Model ([OAM](https://oam.dev/)) in future. As for Cellery, we are no longer actively maintaining the codebase. If you are interested in forking Cellery and using it in your project, please feel free to do so.
 
 You can navigate to the code base at - [https://github.com/wso2/cellery](https://github.com/wso2/cellery).
 
-##### Okta
+#### Okta
 
 [An Insider Look: How Okta Builds and Runs Scalable Infrastructure](https://www.okta.com/resources/whitepaper/how-okta-builds-and-runs-scalable-infrastructure/) using Cell-based Architecture. 
 
-##### Microservice DSL (MDSL)
+#### Microservice DSL (MDSL)
 
 [A Domain-Specific Language (DSL) to specify (micro-)service contracts](https://microservice-api-patterns.github.io/MDSL-Specification/), their data representations and API endpoints.
 
-#### Parallels
+### Parallels
 
 [1] UBER - Domain-oriented Microservice Architecture (DOMA) - https://eng.uber.com/microservice-architecture/
 
