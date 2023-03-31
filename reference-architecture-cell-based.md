@@ -2,7 +2,7 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </h3>
 <p align="center">
 <i>
-Version: Winter-2022<br/>
+Version: Spring-2023<br/>
 </i>
 </p>
 
@@ -333,6 +333,9 @@ You can navigate to the code base at - [https://github.com/wso2/cellery](https:/
 
 [3] NEU - Law of Demeter (LoD) - https://en.wikipedia.org/wiki/Law_of_Demeter
 
+### Reactive Architecture
+Cell-based architecture is not only designed to be modular and scalable, but also to support the principles of [**reactive architecture**](https://www.reactivemanifesto.org/). Reactive systems are responsive, resilient, elastic, and message-driven. By adopting a cell-based architecture approach, services are designed to be autonomous and message-driven, which aligns with the reactive manifesto's focus on message-passing and event-driven architectures. The use of micro gateways at each cell boundary provides a natural boundary for implementing reactive patterns like circuit breakers and back-pressure control. In addition, the use of reactive libraries and frameworks such as ReactiveX can be easily integrated into each cell to further enhance its reactive capabilities.
+
 ## Conclusions
 
 Advancements in technology and changes to the business model are pushing enterprise architectures to be truly agile. Traditionally centralized enterprise architectures no longer deliver on the expectations of the business and consumers. Our approach creates a pragmatic reference architecture that addresses the requirement for agility using a technology-neutral approach. 
@@ -394,6 +397,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 [6] Reference Methodology for Agility - https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md
 
 [7] Waldron, R. (2021, November 18). The Composable Enterprise: A Flexible Approach To Digital Transformation. Forbes. https://www.forbes.com/sites/forbestechcouncil/2021/11/18/the-composable-enterprise-a-flexible-approach-to-digital-transformation/
+
+[8] The Reactive Manifesto. (n.d.). https://www.reactivemanifesto.org/
 
 ___
 
