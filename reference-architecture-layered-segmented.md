@@ -9,7 +9,7 @@ Version Summer-2020<br/>
 
 **_Original Author_**
 
-+ [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO | WSO2, Inc | [@asankama](https://twitter.com/asankama)
++ [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO | [WSO2, LLC](https://wso2.com) | [@asankama](https://twitter.com/asankama)
 
 > *Enterprises depend on API-driven strategies to bring about digital transformation. The benefits include increased productivity, simplification, seamless connectivity, and rich experiences through digital channels. Connecting humans, things, applications, systems, and data is a fundamental requirement to become a digitally-driven organization, city, or country. APIs are the digital connectors that act as the glue for various digital assets. As a result, the business and technical architecture moved to API-centric from service-orientation. The primary focus of this paper is to look at the architecture approaches taken by the industry and represent these patterns as generic reference architectures. We identified two centralized reference architectures, i.e., layered and segmented, and we will discuss them in detail.*
 
