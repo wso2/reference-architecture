@@ -382,6 +382,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [14] Sanz, A. (2022, July 7). Crashing our Regional Deployments (and surviving!) - adidoescode. Medium. https://medium.com/adidoescode/crashing-our-regional-deployments-and-surviving-fcd32181d10a
 
+[15] Pandey, P. (2023, June 3). Cell-Based architecture — Architecture pattern. https://www.linkedin.com/pulse/. https://www.linkedin.com/pulse/cell-based-architecture-pattern-pratik-pandey
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
