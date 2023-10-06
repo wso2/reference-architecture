@@ -1,0 +1,7 @@
+/usr/bin/java
+/Library/Ballerina/dependencies/jdk-11.0.8+10-jre/bin/java
+/Library/Ballerina/dependencies/jdk-11.0.15+10-jre/bin/java
+/System/Volumes/Data/Library/Ballerina/dependencies/jdk-11.0.8+10-jre/bin/java
+/System/Volumes/Data/Library/Ballerina/dependencies/jdk-11.0.15+10-jre/bin/java
+/System/Volumes/Data/Users/asanka/.vscode/extensions/redhat.java-1.15.0-darwin-x64/jre/17.0.6-macosx-x86_64/bin/java
+/Users/asanka/.vscode/extensions/redhat.java-1.15.0-darwin-x64/jre/17.0.6-macosx-x86_64/bin/java
