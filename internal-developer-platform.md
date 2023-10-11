@@ -24,6 +24,7 @@ In technology terms, a platform serves as a foundation or a framework that enabl
 
 ![platform](/media/platform-20.1.png)
 
+In the given diagram, the platform is represented as a foundational rectangle, serving as the base upon which all other activities and functions rest. Sitting atop the platform are interlinked squares labeled as 'Pods' or 'Domains.' These serve as compartments or subdivisions that group related functions and activities. Within each Pod or Domain, you'll find circles labeled as 'Components.' These components represent the individual workloads or tasks that the platform is designed to manage or execute. Just as in a train station, where different platforms serve specific train lines and each train has its specific compartments and cargo, this diagram illustrates how a technology platform organizes various workloads into logical groups (Pods/Domains), making it easier to manage, scale, and deploy them. The encapsulation within Pods or Domains provides an additional layer of organization, facilitating more efficient governance and operational management.
 
 ## RISE OF THE INTERNAL DEVELOPER PLATFORM
 
