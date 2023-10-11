@@ -77,10 +77,8 @@ The IDP is designed to provide a framework and set of tools to support software 
 |-----------------------------|------------------------------------------------------------|
 | Application Configuration Management | Manage application configuration in a dynamic, scalable, and reliable way.  |
 | Infrastructure Orchestration | Orchestrate your infrastructure in a dynamic and intelligent way depending on the context.                  |
-| Environment Management       | Enable developers to create new and fully provisioned     |
-|                             | environments whenever needed.                               |
-| Deployment Management        | Implement a delivery pipeline for Continuous Delivery or  |
-|                             | even Continuous Deployment (CD).                            |
+| Environment Management       | Enable developers to create new and fully provisioned environments whenever needed.                               |
+| Deployment Management        | Implement a delivery pipeline for Continuous Delivery or even Continuous Deployment (CD).                            |
 | Role-Based Access Control   | Manage who can do what in a scalable way.                  |
 
 *source [internaldeveleporplatform.org](https://internaldeveloperplatform.org/core-components/)
