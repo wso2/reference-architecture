@@ -49,7 +49,7 @@ Business abstractions encompass a set of concepts and practices that focus on mo
 Domain abstractions, a subset of business abstractions, play a crucial role in tailoring software solutions to specific industry or domain requirements. These abstractions are grouped according to teams and capabilities, as guided by Conway's Law. By aligning software design with the boundaries of the business domain, domain-driven design (DDD) allows teams to develop a deep understanding of the problem space and create focused, autonomous teams. This empowers teams to deliver tailored software solutions that address the unique needs and complexities of their industry or domain with speed, flexibility, and scalability.
 
 
-![platform in enteprise](/media/enteprise-abstractions-details.png)
+![platform in enteprise](/media/enterprise-abstractions-details-gc-50.png)
 
 
 ## RISE OF THE INTERNAL DEVELOPER PLATFORM
