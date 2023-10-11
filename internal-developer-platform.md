@@ -12,7 +12,7 @@ Version: 0.7 (Fall-2023)<br/>
 
 
 
-> *In the ever-evolving field of software development and delivery, the term "Internal Developer Platform" has often been confined to delivery and infrastructure automation. This narrow understanding overlooks crucial components, including application architecture, development, and production runtime. This article aims to correct this misinterpretation by offering a more comprehensive and nuanced definition. Through an in-depth analysis, this article will explore the multifaceted nature of internal developer platforms, breaking down the misconceptions and providing a well-rounded view that resonates with technical decision-makers and software application architects. By focusing on the real scope and potential of these platforms, we will shed light on what they truly encompass, extending beyond the conventional boundaries to reveal the complete landscape of modern software development practices.*
+> *In the ever-evolving field of software development and delivery, the term **"Internal Developer Platform"** (IDP) has often been confined to delivery and infrastructure automation. This narrow understanding overlooks crucial components, including application architecture, development, and production runtime. This article aims to correct this misinterpretation by offering a more comprehensive and nuanced definition. Through an in-depth analysis, this article will explore the multifaceted nature of internal developer platforms, breaking down the misconceptions and providing a well-rounded view that resonates with technical decision-makers and software application architects. By focusing on the real scope and potential of these platforms, we will shed light on what they truly encompass, extending beyond the conventional boundaries to reveal the complete landscape of modern software development practices.*
 
 ## What is a Platform?
 
@@ -51,8 +51,19 @@ Domain abstractions, a subset of business abstractions, play a crucial role in t
 
 ![platform in enteprise](/media/enterprise-abstractions-details-gc-50.png)
 
+In the diagram above, we provide a granular view of the "Quadruple Layers: Levels of Enterprise Abstractions" within a typical enterprise context. The visualization showcases how each abstraction layer — Deployment, Middleware, Business, and Domain — interacts and aligns with various technologies, users, and components integral to an enterprise. This detailed breakdown serves to elucidate the complexity and interconnectivity across the layers, giving you a comprehensive insight into how these abstractions collectively form the backbone of enterprise software architecture.
 
-## RISE OF THE INTERNAL DEVELOPER PLATFORM
+#### Digital channels for enteprise abstractions 
+With the establishment of the Quadruple Layers of Enterprise Abstractions, which now include Deployment, Middleware, Business, and Domain layers, organizations gain a comprehensive foundation for constructing robust and efficient applications across various digital channels. These channels encompass web, mobile, Internet of Things (IoT), and other emerging platforms.
+
+Websites and web applications provide a digital interface accessible through browsers, enabling users to interact and consume services. Mobile applications offer a personalized and on-the-go experience, leveraging the capabilities of smartphones and tablets. The Internet of Things (IoT) adds connectivity to everyday objects, facilitating seamless interactions and data exchange. Emerging technologies like virtual reality (VR), augmented reality (AR), and mixed reality (MR) introduce new realms of immersive experiences.
+
+By tapping into the power of these digital channels and the four underlying layers of enterprise abstractions, organizations can develop innovative, user-centric applications that meet a variety of needs and preferences. This adaptability enables them to remain competitive in a swiftly changing digital landscape.
+
+The emergence of platform engineering—focused on designing and building toolchains and workflows for software development teams' self-service—underscores the growing importance of creating flexible, modular, and composable tech solutions. While the upside is clear, enterprises must weigh the financial and resource implications of such undertakings. Building and maintaining these complex platforms require careful assessment of costs, challenges, and the presence of viable alternatives.
+
+
+## Rise of the internal developer platform (IDP)
 
 
 ## REFERENCES 
