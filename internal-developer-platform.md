@@ -75,10 +75,8 @@ The IDP is designed to provide a framework and set of tools to support software 
 
 | Core Component               | Short Description                                           |
 |-----------------------------|------------------------------------------------------------|
-| Application Configuration   | Manage application configuration in a dynamic, scalable,  |
-| Management                  | and reliable way.                                           |
-| Infrastructure Orchestration | Orchestrate your infrastructure in a dynamic and          |
-|                             | intelligent way depending on the context.                  |
+| Application Configuration Management | Manage application configuration in a dynamic, scalable, and reliable way.  |
+| Infrastructure Orchestration | Orchestrate your infrastructure in a dynamic and intelligent way depending on the context.                  |
 | Environment Management       | Enable developers to create new and fully provisioned     |
 |                             | environments whenever needed.                               |
 | Deployment Management        | Implement a delivery pipeline for Continuous Delivery or  |
