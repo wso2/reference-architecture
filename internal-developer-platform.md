@@ -64,6 +64,10 @@ The emergence of platform engineering—focused on designing and building toolch
 
 
 ## Rise of the internal developer platform (IDP)
+Enterprise abstractions, also known as the platform that CIOs are building, are collectively referred to as the internal developer platform (IDP). The IDP serves as a centralized foundation for the organization's software development and delivery processes, and it provides a comprehensive set of tools, services, and abstractions that enable development teams to work efficiently and effectively. Notably, the IDP encompasses all three enterprise abstraction layers: deployment, business, and domain, providing a holistic framework for building, deploying, and managing applications. 
+
+By leveraging the IDP, organizations can streamline their software development lifecycle, foster collaboration among teams, and accelerate the delivery of high-quality applications. The IDP empowers developers by offering self-service capabilities, automation, observability, and scalability so they can focus on innovation and deliver exceptional digital experiences. As CIOs recognize the need for these enterprise abstractions, the IDP emerges as a strategic investment that transforms the way organizations develop and deliver software solutions.
+
 
 
 ## REFERENCES 
