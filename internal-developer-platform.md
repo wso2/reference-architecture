@@ -71,7 +71,23 @@ By leveraging the IDP, organizations can streamline their software development l
 ## Traditional IDP definition
 
 The current definition of the IDP, as outlined by [internaldeveloperplatform.org](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/), can be summarized as follows:
-The IDP is designed to provide a framework and set of tools to support software development within an organization. It encompasses several core components and capabilities, including application configuration management, infrastructure orchestration, environment management, deployment management, and role-based access control. These components collectively contribute to streamlining the software development process, enhancing collaboration, and accelerating the delivery of high-quality applications. However, it's important to note that this definition primarily addresses a subset of deployment abstractions and may not encompass the broader landscape of essential business and domain abstractions.
+The IDP is designed to provide a framework and set of tools to support software development within an organization. It encompasses several core components and capabilities, including application configuration management, infrastructure orchestration, environment management, deployment management, and role-based access control. These components collectively contribute to streamlining the software development process, enhancing collaboration, and accelerating the delivery of high-quality applications. 
+
+| Core Component               | Short Description                                           |
+|-----------------------------|------------------------------------------------------------|
+| Application Configuration   | Manage application configuration in a dynamic, scalable,  |
+| Management                  | and reliable way.                                           |
+| Infrastructure Orchestration | Orchestrate your infrastructure in a dynamic and          |
+|                             | intelligent way depending on the context.                  |
+| Environment Management       | Enable developers to create new and fully provisioned     |
+|                             | environments whenever needed.                               |
+| Deployment Management        | Implement a delivery pipeline for Continuous Delivery or  |
+|                             | even Continuous Deployment (CD).                            |
+| Role-Based Access Control   | Manage who can do what in a scalable way.                  |
+
+*source [internaldeveleporplatform.org](https://internaldeveloperplatform.org/core-components/)
+
+However, it's important to note that this definition primarily addresses a subset of deployment abstractions and may not encompass the broader landscape of essential business and domain abstractions.
 
 
 ## The imperative to redefine the Internal Developer Platform
