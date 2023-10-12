@@ -16,7 +16,7 @@ Version: 0.7 (Fall-2023)<br/>
 
 ## What is a Platform?
 
-Think of a platform like a train station or an airport: a centralized location that facilitates the coming and going of various activities and transactions, enhancing the experience and productivity. In this context, Dave Gray's definition becomes particularly resonant: **"A platform is a supporting structure that increases the effectiveness of a community."**
+Think of a platform like a train station or an airport: a hub that facilitates the coming and going of various activities and transactions, enhancing the experience and productivity. In this context, Dave Gray's definition becomes particularly resonant: **"A platform is a supporting structure that increases the effectiveness of a community."**
 
 ![platform real world](/media/platform-real-world.png)
 
