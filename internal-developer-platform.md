@@ -30,6 +30,8 @@ In the above diagram, the platform is represented as a foundation, serving as th
 
 In today's digital age, customer experiences are the driving force behind organizational differentiation. These experiences are increasingly delivered through software, blurring the lines between traditional industry categories. Whether you're in retail, healthcare, hospitality, or any other sector, your organization is, in essence, also a software company.
 
+![application lcm](media/lcm-full.png)
+
 A modern technology platform should, therefore, be capable of designing, creating, and delivering these unique digital experiences. This goes far beyond merely offering a set of APIs or an environment where code can be executed. A comprehensive platform addresses the end-to-end life cycle of application development, starting from business architecture and extending to application architecture, application development, and testing.
 
 But the life cycle doesn't stop at deployment. A robust platform must also offer tools for running and operating these applications, ensuring they meet performance, security, and scalability requirements. Lastly, it must facilitate the gathering of feedback and insights, enabling continuous improvement and adaptation. This comprehensive approach ensures that the platform serves not merely as a set of disjointed tools but as a cohesive ecosystem enabling organizations to be agile, innovative, and customer-centric.
