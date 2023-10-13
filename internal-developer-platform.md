@@ -30,7 +30,7 @@ In the above diagram, the platform is represented as a foundation, serving as th
 
 In today's digital age, customer experiences are the driving force behind organizational differentiation. These experiences are increasingly delivered through software, blurring the lines between traditional industry categories. Whether you're in retail, healthcare, hospitality, or any other sector, your organization is, in essence, also a software company.
 
-![application lcm](media/lcm-full-20.1.png)
+![application lcm](media/lcm-full-15.1.png)
 
 A modern technology platform should, therefore, be capable of designing, creating, and delivering these unique digital experiences. This goes far beyond merely offering a set of APIs or an environment where code can be executed. A comprehensive platform addresses the end-to-end life cycle of application development, starting from business architecture and extending to application architecture, application development, and testing.
 
