@@ -18,7 +18,7 @@ Version: 0.7 (Fall-2023)<br/>
 
 Think of a platform like a train station or an airport: a hub that facilitates the coming and going of various activities and transactions, enhancing the experience and productivity. In this context, Dave Gray's definition becomes particularly resonant: **"A platform is a supporting structure that increases the effectiveness of a community."**
 
-![platform real world](/media/platform_new.png)
+![platform real world](/media/platform_new_30.png)
 
 In technology terms, a platform serves as a foundation or a framework that enables the development, deployment, and scaling of applications. It provides a set of tools, services, and capabilities that can be leveraged for various phases of software or product lifecycle. A well-architected platform abstracts complexities, offers reusable components, and enables interoperability between disparate systems. More than just a piece of technology, it's an ecosystem that influences both operational efficiencies and strategic capabilities. Understanding what a platform is at its core sets the stage for grasping the more specialized roles that specific types of platforms, like Internal Developer Platforms, play in technology ecosystems.
 
