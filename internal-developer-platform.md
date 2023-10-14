@@ -118,6 +118,9 @@ With the complete application lifecycle and the four layers of enterprise abstra
 
 Current definitions of an Internal IDP largely confine themselves to a portion of the application lifecycle, primarily focusing on the delivery aspect. While delivery is undeniably crucial, it represents just one stage in a much more expansive lifecycle. This narrow focus leaves out important phases such as initial business and application architecture, development, testing, and ongoing operations. As a result, the existing IDP definitions fall short of addressing the comprehensive needs that modern enterprises have across the complete application lifecycle.
 
+Additionally, it's crucial to point out that existing IDP definitions largely focus on the infrastructure layer, one of the four quadruple layers of enterprise abstractions we've previously detailed—infrastructure, middleware, business, and domain. Such a limited scope leaves out the complexity and essential functions of the other three layers. By doing so, it omits crucial elements like middleware services that facilitate communication and data management, as well as business and domain abstractions that align software capabilities with organizational objectives. Consequently, the conventional understanding of IDP provides a fragmented view, creating gaps that could lead to vulnerabilities and inefficiencies in a complex enterprise setting.
+
+Given these shortcomings in the prevailing IDP definitions, there's a pressing need for a redefined IDP that aligns more closely with the full spectrum of enterprise needs. This redefinition should cover not only all stages of the application lifecycle but also adequately address all four layers of enterprise abstractions—infrastructure, middleware, business, and domain. A comprehensive IDP would thus offer a more holistic, enterprise-grade solution capable of tackling the complexities and challenges of modern organizations.
 
 ## References 
 
