@@ -106,14 +106,17 @@ The IDP is designed to provide a framework and set of tools to support software 
 | Deployment Management        | Implement a delivery pipeline for Continuous Delivery or even Continuous Deployment (CD).                            |
 | Role-Based Access Control   | Manage who can do what in a scalable way.                  |
 
-*source [internaldeveleporplatform.org](https://internaldeveloperplatform.org/core-components/)
+*source [internaldeveleporplatform.org](https://internaldeveloperplatform.org/core-components/)*
 
 However, it's important to note that this definition primarily addresses a subset of deployment abstractions and may not encompass the broader landscape of essential business and domain abstractions.
 
 
 ## The imperative to redefine the Internal Developer Platform
-### Bridging Gaps and Overcoming Limitations
+With the complete application lifecycle and the four layers of enterprise abstractions already outlined, we're in a strong position to pinpoint the real-world demands on an enterprise platform. These foundational aspects serve as guideposts, directing us toward a more meaningful and relevant understanding of what a sophisticated, enterprise-grade platform should offer. They create a framework that can be used to evaluate, choose, or build a platform that stands up to the multifaceted challenges and requirements that modern enterprises face.
 
+![lcm covered by current def](/media/lcm-current-15.png)
+
+Current definitions of an Internal IDP largely confine themselves to a portion of the application lifecycle, primarily focusing on the delivery aspect. While delivery is undeniably crucial, it represents just one stage in a much more expansive lifecycle. This narrow focus leaves out important phases such as initial business and application architecture, development, testing, and ongoing operations. As a result, the existing IDP definitions fall short of addressing the comprehensive needs that modern enterprises have across the complete application lifecycle.
 
 
 ## References 
