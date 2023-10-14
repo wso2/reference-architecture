@@ -74,7 +74,7 @@ Business abstractions encompass a set of concepts and practices that focus on mo
 Domain abstractions, a subset of business abstractions, play a crucial role in tailoring software solutions to specific industry or domain requirements. These abstractions are grouped according to teams and capabilities, as guided by Conway's Law. By aligning software design with the boundaries of the business domain, domain-driven design (**DDD**) allows teams to develop a deep understanding of the problem space and create focused, autonomous teams. [**Cell-based Architecture**](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) can serve as an effective implementation strategy for these domain abstractions. This empowers teams to deliver tailored software solutions that address the unique needs and complexities of their industry or domain with speed, flexibility, and scalability.
 
 
-![platform in enteprise](/media/enterprise-abstractions-details-gc-50.png)
+![platform in enteprise](/media/ep-abstractions-20.png)
 
 In the diagram above, we provide a granular view of the "Quadruple Layers: Levels of Enterprise Abstractions" within a typical enterprise context. The visualization showcases how each abstraction layer — Deployment, Middleware, Business, and Domain — interacts and aligns with various technologies, users, and components integral to an enterprise. This detailed breakdown serves to elucidate the complexity and interconnectivity across the layers, giving you a comprehensive insight into how these abstractions collectively form the backbone of enterprise software architecture.
 
