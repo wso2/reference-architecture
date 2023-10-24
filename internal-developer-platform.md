@@ -52,8 +52,7 @@ In addition to covering the full stages of an application's lifecycle, the table
 
 | Digital infrastructure              | Architecture             |
 |-----------------------------|------------------------------------------------------------|
-| Containerization & Kubernetes, Serverless operation, Multi-environment, Multi-cloud, CI/CD, GitOps, Observability & alerting, Configuration management, Firewall/load balancing/geo routing/DNS, Multi-region deployment, API management, Developer self-service, Cost optimization, Insights - business and management  
-| API-first development, Reuse and API marketplace, Domain-driven development, Microservice architecture, Version management, Release management, Authentication & authorization, Large language models and AI  |
+| Containerization & Kubernetes, Serverless operation, Multi-environment, Multi-cloud, CI/CD, GitOps, Observability & alerting, Configuration management, Firewall/load balancing/geo routing/DNS, Multi-region deployment, API management, Developer self-service, Cost optimization, Insights - business and management | API-first development, Reuse and API marketplace, Domain-driven development, Microservice architecture, Version management, Release management, Authentication & authorization, Large language models and AI  |
 
 
 ### The enterprise abstraction for enhanced productivity and simpicity 
