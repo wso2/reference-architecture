@@ -48,6 +48,33 @@ But the life cycle doesn't stop at deployment. A robust platform must also offer
 
 By encompassing the full spectrum of application development, from ideation to operation, modern platforms empower organizations to deliver differentiated experiences effectively and efficiently. Therefore, when evaluating technology platforms, the ability to support this complete life cycle should be a prime consideration.
 
+In addition to covering the full stages of an application's lifecycle, the table below outlines key aspects that a modern technology platform should address. These are essential components that enable organizations to be agile, innovative, and customer-centric, shaping how they design, develop, deliver, and operate software.
+
+| Digital infrastructure              | Architecture             |
+|-----------------------------|------------------------------------------------------------|
+| Containerization & Kubernetes
+Serverless operation
+Multi-environment
+Multi-cloud
+CI/CD
+GitOps
+Observability & alerting
+Configuration management
+Firewall, load balancing, geo routing, DNS
+Multi-region deployment
+API management
+Developer self-service
+Cost optimization
+Insights - business and management  | API-first development
+Reuse and API marketplace
+Domain-driven development
+Microservice architecture
+Version management
+Release management
+Authentication & authorization
+Large language models and AI  |
+
+
 ### The enterprise abstraction for enhanced productivity and simpicity 
 
 As technologists, we are in the business of building experiences, and every line of code we write contributes to shaping those experiences. In this sense, the software industry is akin to the movie industry, where creativity thrives and innovation takes center stage. Just as filmmakers use storytelling techniques, cinematography, and special effects to captivate audiences, software developers rely on powerful abstractions to unleash their creative potential and deliver remarkable experiences. 
