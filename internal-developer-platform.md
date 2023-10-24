@@ -170,6 +170,8 @@ By adopting the new IDP paradigm, organizations position themselves to innovate 
 
 [7] Gray, Dave, and Thomas Vander Wal. 2014. The Connected Company. O’Reilly Media https://www.oreilly.com/library/view/the-connected-company/9781449336622/
 
+[8] Abeysinghe, A. 2023. “Why Building a Platform May Not Be Your Best Bet - Exploring Five Critical Reasons : @VMblog.” VMblog.Com. October 6, 2023. https://vmblog.com/archive/2023/10/06/why-building-a-platform-may-not-be-your-best-bet-exploring-five-critical-reasons.aspx.
+
 
 
 [def]: /media/platform-real-world.png
