@@ -61,16 +61,16 @@ To understand enterprise abstractions, it is useful to review "The Quadruple Lay
 
 ![the quadruple layers](/media/enteprise-abstractions.png)
 
-#### Deployment Abstractions
+#### Deployment abstractions
 Deployment abstractions encompass a wide range of practices and tools that facilitate efficient application hosting and deployment within an enterprise environment. These abstractions include continuous integration/continuous deployment (CI/CD), DevOps, GitOps, SecOps, observability, multi-cloud strategies, zero-trust security measures, scalability, and high availability. Collectively, these deployment abstractions form the foundation for efficient, secure, and scalable enterprise software deployments, empowering organizations to meet the demands of modern technology landscapes.
 
-#### Middleware Abstractions
+#### Middleware abstractions
 Middleware abstractions serve as the intermediary layer that facilitates communication and data management between deployment and business abstractions. They play a key role in system integration, enabling seamless data flow and connectivity between disparate parts of an enterprise system. Middleware abstractions include elements like message brokers, API gateways, and data transformation tools.
 
-#### Business Abstractions
+#### Business abstractions
 Business abstractions encompass a set of concepts and practices that focus on modeling and automating core business processes within an enterprise. These abstractions include services or microservices, functions, APIs, events, data, and more. They form the building blocks for designing and implementing agile, scalable, and modular enterprise solutions, allowing organizations to respond to changing market needs quickly and efficiently.
 
-#### Domain Abstractions
+#### Domain abstractions
 Domain abstractions, a subset of business abstractions, play a crucial role in tailoring software solutions to specific industry or domain requirements. These abstractions are grouped according to teams and capabilities, as guided by Conway's Law. By aligning software design with the boundaries of the business domain, domain-driven design (**DDD**) allows teams to develop a deep understanding of the problem space and create focused, autonomous teams. [**Cell-based Architecture**](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) can serve as an effective implementation strategy for these domain abstractions. This empowers teams to deliver tailored software solutions that address the unique needs and complexities of their industry or domain with speed, flexibility, and scalability.
 
 
@@ -109,7 +109,7 @@ The IDP is designed to provide a framework and set of tools to support software 
 *source [internaldeveleporplatform.org](https://internaldeveloperplatform.org/core-components/)*
 
 
-## The imperative to redefine the Internal Developer Platform
+## The imperative to redefine the internal developer platform
 With the complete application lifecycle and the four layers of enterprise abstractions already outlined, we're in a strong position to pinpoint the real-world demands on an enterprise platform. These foundational aspects serve as guideposts, directing us toward a more meaningful and relevant understanding of what a sophisticated, enterprise-grade platform should offer. They create a framework that can be used to evaluate, choose, or build a platform that stands up to the multifaceted challenges and requirements that modern enterprises face.
 
 ![lcm covered by current def](/media/lcm-current-15.png)
@@ -120,7 +120,7 @@ Additionally, it's crucial to point out that existing IDP definitions largely fo
 
 Given these shortcomings in the prevailing IDP definitions, there's a pressing need for a redefined IDP that aligns more closely with the full spectrum of enterprise needs. This redefinition should cover not only all stages of the application lifecycle but also adequately address all four layers of enterprise abstractions—deployment, middleware, business, and domain. A comprehensive IDP would thus offer a more holistic, enterprise-grade solution capable of tackling the complexities and challenges of modern organizations.
 
-## A new definition of Internal Developer Platform (IDP)
+## A new definition of internal developer platform (IDP)
 
 So, what is missing in the current definition of the IDP? To fully support the application development process, organizations need to consider the broader context of the business and application architecture, as well as the iterative feedback loops that facilitate continuous improvement and innovation.
 
