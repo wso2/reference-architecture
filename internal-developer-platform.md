@@ -53,11 +53,7 @@ In addition to covering the full stages of an application's lifecycle, the table
 | Digital infrastructure              | Architecture             |
 |-----------------------------|------------------------------------------------------------|
 | Containerization & Kubernetes
-Serverless operation
-Multi-environment
-Multi-cloud
-CI/CD
-GitOps
+Serverless operation, Multi-environment, Multi-cloud, CI/CD, GitOps
 Observability & alerting
 Configuration management
 Firewall, load balancing, geo routing, DNS
