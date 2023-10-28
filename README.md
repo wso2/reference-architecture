@@ -4,7 +4,7 @@
 
 A proven approach to helping every development organization become an integration agile organization. The Reference Architecture for Agility is a technology neutral logical architecture based on a disaggregated cloud-based model. It can be applied in incremental stages to create an integration agile foundation for any digital enterprises - deployable in private, public or hybrid cloud environments.
 
-We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue, or send a mail to asankaa@wso2.com.
+We welcome and appreciate any feedback, changes, or contributions. Please send a pull request, create a github issue.
 
 + ### [Cell-based Architecture (CBA)](reference-architecture-cell-based.md) - *Decentralized, Cloud native, Microservice compliant* 
   
