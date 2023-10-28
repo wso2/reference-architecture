@@ -1,4 +1,4 @@
-# Emerging Reference Architectural Patterns
+# Emerging Reference Architectural Patterns & Guides
 
 ![ra banner](/media/ra-banner.png)
 
