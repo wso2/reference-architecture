@@ -18,16 +18,18 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
   * __Layered Reference Architecture__: Functional capabilities grouped in layers by following a System of Systems view. It is a centralized system where data moves from layer to layer.
   
-+ ### [Cloud Native Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md) - *Reference Architecture for a Cloud Native Digital Enterprise*
+## Architectural Guides & Concept Papers 
 
-  In an era of digital transformation, **(digital) enterprises** are looking for fast innovation through effective collaboration to deliver more value to their customers with dramatically less effort. As a result, APIs have become the norm to expose integrated business functionalities to deliver enhanced digital experience.
-  
-  This paper focuses on how to use cloud-native technologies along with an **API-led integration platform** to create an effective architecture, i.e., a **reference architecture for a cloud native digital enterprise**, to increase productivity by having automation, production or operation, and services.
++ ### [Internal Developer Platform (IDP) - A Technical Reevaluation](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md)
+
+Explore a comprehensive redefinition of the Internal Developer Platform, covering its scope beyond CI/CD and infrastructure automation. This guide offers in-depth architectural insights aimed at technical decision-makers and software architects.
 
 ## Technology Specific Reference Architectural Patterns
 
 + ### [API-driven Microservice Architecture](api-driven-microservice-architecture.md)
-  
+
++ ### [Cloud Native Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md) 
+    
 + ### [CIAM - A WSO2 Reference Architecture](ciam-wso2-reference-architecture.md)
 
 + ### [Event-driven APIs in Microservice Architectures](event-driven-api-architecture.md)
