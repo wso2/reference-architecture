@@ -41,8 +41,9 @@ We need a new paradigm to remove the platform from our consciousness and allow u
 
 Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
 
-##What is Platformless?
->> Platformless = APIs + Cloud Native + DevOps
+## What is Platformless?
+
+> **Platformless = APIs + Cloud Native + DevOps**
 
 APIs are the fundamental building block of modern software. Cloud native is the modern approach for building distributed systems. DevOps and SRE are evolving into internal developer platforms to fully empower enterprise developers. 
 
