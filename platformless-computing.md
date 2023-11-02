@@ -64,6 +64,8 @@ Enterprise IT typically builds and operates this infrastructure using best of br
 
 ### Cloud native 
 
+TODO
+
 ### DevOps
 In the Platformless approach, DevOps emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but nurtures a profound culture of ownership and responsibility.
 
