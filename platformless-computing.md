@@ -13,7 +13,7 @@ Version: 0.9 (Fall-2023)<br/>
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
 
-# Introduction
+## Introduction
 
 Many of the major shifts in the enterprise application space have happened due to radical simplification:
 + From client-server to web: not needing to worry about delivery and deployment of specific clients (“client-less”)
@@ -40,3 +40,13 @@ However, the platform has become a challenge in itself. These platforms require 
 We need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself. Of course that doesn’t mean the platform vanishes completely - but by building the right boundary we can hide it and therefore remove the complexity it brings. We call this **“platformless”** computing. 
 
 Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
+
+##What is Platformless?
+>> Platformless = APIs + Cloud Native + DevOps
+
+APIs are the fundamental building block of modern software. Cloud native is the modern approach for building distributed systems. DevOps and SRE are evolving into internal developer platforms to fully empower enterprise developers. 
+
+This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Let us explore each of these in some detail.
+
+
+
