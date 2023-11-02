@@ -49,5 +49,11 @@ APIs are the fundamental building block of modern software. Cloud native is the 
 
 This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Let us explore each of these in some detail.
 
+> **Creating in a platformless world**
+> *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house CRM system with multiple external e-commerce platforms. Knowing the complexity and time this could take, she logs into the Platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers. Among the offerings, she identifies connectors for her CRM's APIs A and B. Additionally, connectors for the external e-commerce platforms, APIs D and E, catch her eye. Maria employs these connectors, and using a seamless integration process, she stitches together her desired workflow in hours. The Platformless architecture ensures every interaction adheres to a rigorous zero-trust security model. Building her prototype, she's able to test, refine, and share her work with stakeholders, all while using the Platformless runtime environment intrinsic monitoring, tracing, and debugging utilities. By leveraging the Platformless experience, Maria expedites a potentially weeks-long project into a matter of days, all without compromising on security or functionality. As Maria iterates, the app can go live with a full, scalable production runtime.*
+
+### APIs
+
+
 
 
