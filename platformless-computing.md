@@ -34,8 +34,6 @@ However, the platform has become a challenge in itself. These platforms require 
 
 <p align="center">
   <img src="/media/mindsharev3-15.png" alt="Tech. mindshare"/>
-  <i>Figure 1: Enterprise IT needs to increase focus on apps and less on the platform.
-  </i>
 </p>
 
 We need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself. Of course that doesn’t mean the platform vanishes completely - but by building the right boundary we can hide it and therefore remove the complexity it brings. We call this **“platformless”** computing. 
