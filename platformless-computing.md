@@ -62,5 +62,34 @@ This entails several critical capabilities:
 
 Enterprise IT typically builds and operates this infrastructure using best of breed technologies for each component, often at heavy cost and delays. At the same time, this layer of technology does not offer any competitive advantage for most businesses. Instead, platformless delivers this infrastructure as “part of the woodwork” and allows developers to build assuming these capabilities.
 
+### Cloud native 
 
+### DevOps
+In the Platformless approach, DevOps emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but nurtures a profound culture of ownership and responsibility.
 
+Next, we delve into version and release management. In the fluid world of contemporary software deployment, managing versions and guaranteeing seamless releases is paramount. Within the Platformless model, robust versioning tools are at play, documenting every change, keeping a meticulous track, and offering a safeguard by allowing rollbacks when necessary. Moreover, dedicated release management utilities ensure that software rollouts occur without a hitch, always keeping stakeholders in the loop.
+
+Diving into security, the zero-trust model stands as the Platformless structure's backbone. Each interaction, be it internal or from an external source, is perceived with a lens of skepticism. This demands rigorous authentication and authorization checks for every single access request, safeguarding the sanctity and privacy of both resources and data.
+
+Lastly, the essence of observability in the Platformless framework can't be understated. It goes beyond traditional monitoring, providing teams with an in-depth, detailed view of both applications and the underlying infrastructure. This capability allows for the early detection of inefficiencies, anomalies, and even preemptive identification of potential challenges. It’s a shift from merely gathering data to extracting actionable insights, ensuring the ecosystem is always tuned to its optimal state. 
+
+Together, these intertwined DevOps principles shape the Platformless model into an environment where agility complements security, efficiency aligns with independence, and the mantra of continuous improvement resonates throughout.
+
+## Platformless Facilitates Enterprise Software Engineering
+
+Enterprise software engineering is more complex than building independent products because enterprises are complex organisms with competing interests that must somehow be hidden when a customer engages with the business. Further, as businesses become digital businesses, they need to produce not one piece of software but a large complex collection of software products that work together. The aim is to digitize the business and support both human users (as web/mobile/desktop apps), and non-human users (as network APIs), as well as programs that work with no external involvement (as jobs or automations). A large enterprise will often have thousands or even tens of thousands of such digital assets that need to work together.
+
+The aim of platformless is to enable enterprises to build and deliver digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows and of course apps. It must support modularity, beautiful architecture, reuse and security. And of course it must have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring and intuitive management. 
+
+<p align="center">
+  <img src="/media/platformless-architecture-15.png" alt="Tech. mindshare"/>
+</p>
+<p align="center">
+  <i>
+   Figure 2: Modern distributed systems easily built and operating in a platformess environment
+  </i>
+</p>
+
+## Conclusion
+
+Software Delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless computing takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying and running enterprise applications. Most importantly, Platformless delivers even better applications to customers. 
