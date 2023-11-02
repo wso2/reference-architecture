@@ -28,10 +28,6 @@ Platforms allow massive agility in improving application function and performanc
 
 However, the platform has become a challenge in itself. These platforms require large, highly-skilled platform engineering teams, and the skills are hard to find. Each platform requires many complex choices and linkages between multiple systems - DevOps pipelines, deployment management, monitoring & management systems, network substrates, and of course the actual cluster management. 
 
-![focus shift](/media/mindsharev3-15.png)
-
-*Figure 1: Enterprise IT needs to increase focus on apps and less on the platform.*
-
 <p align="center">
   <img src="/media/mindsharev3-15.png" alt="Tech. mindshare"/>
 </p>
