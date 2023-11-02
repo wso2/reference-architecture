@@ -16,9 +16,9 @@ Version: 0.9 (Fall-2023)<br/>
 ## Introduction
 
 Many of the major shifts in the enterprise application space have happened due to radical simplification:
-+ From client-server to web: not needing to worry about delivery and deployment of specific clients (“client-less”)
-+ From datacenter to cloud: not needing to worry about hardware (“data-centre-less”)
-+ From app server to serverless: not needing to care about which application server and having to manage clusters
++ **From client-server to web**: not needing to worry about delivery and deployment of specific clients (“client-less”)
++ **From datacenter to cloud**: not needing to worry about hardware (“data-centre-less”)
++ **From app server to serverless**: not needing to care about which application server and having to manage clusters
 
 When we talk about “-less” to indicate a shift, e.g. in serverless, it doesn’t really mean that there is no server. It simply means that there is such a clear boundary between the user and the provider that the user no longer needs to know about the system behind the service. For example, serverless backends still need clustering, failover, deployment, system upgrades, etc. However, the user of serverless doesn’t see any of that - they simply write and deploy code.
 
