@@ -45,7 +45,7 @@ Platformless has the potential to be as big a shift as the web or cloud. Web rei
 
 **Platformless = APIs + Cloud Native + DevOps**
 
-APIs are the fundamental building block of modern software. Cloud native is the modern approach for building distributed systems. DevOps and SRE are evolving into internal developer platforms to fully empower enterprise developers. 
+APIs are the fundamental building block of modern software. Cloud native is the modern approach for building distributed systems. DevOps and SRE are evolving into [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) to fully empower enterprise developers. 
 
 This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Let us explore each of these in some detail.
 
