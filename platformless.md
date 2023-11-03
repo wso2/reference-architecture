@@ -43,7 +43,7 @@ Platformless has the potential to be as big a shift as the web or cloud. Web rei
 
 ## What is Platformless?
 
-**Platformless = API-First Architecture + Cloud Native Middleware + Platform Engineering**
+**Platformless = API-First + Cloud Native Middleware + Platform Engineering**
 
 APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and SRE to fully empower enterprise developers. 
 
@@ -52,7 +52,7 @@ This combination supports the full lifecycle of enterprise software engineering 
 > **Creating in a platformless world:**
 > *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house CRM system with multiple external e-commerce platforms. Knowing the complexity and time this could take, she logs into the Platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers. Among the offerings, she identifies connectors for her CRM's APIs A and B. Additionally, connectors for the external e-commerce platforms, APIs D and E, catch her eye. Maria employs these connectors, and using a seamless integration process, she stitches together her desired workflow in hours. The Platformless architecture ensures every interaction adheres to a rigorous zero-trust security model. Building her prototype, she's able to test, refine, and share her work with stakeholders, all while using the Platformless runtime environment intrinsic monitoring, tracing, and debugging utilities. By leveraging the Platformless experience, Maria expedites a potentially weeks-long project into a matter of days, all without compromising on security or functionality. As Maria iterates, the app can go live with a full, scalable production runtime.*
 
-### API-First Architecture
+### API-First
 
 Adopting an **"API-first"** approach has become the gold standard for enterprise architecture to deliver the benefits of the API economy approach to enterprise computing. 
 
