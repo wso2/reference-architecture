@@ -91,7 +91,7 @@ Enterprise software engineering is more complex than building independent produc
 The aim of platformless is to enable enterprises to build and deliver digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows and of course apps. It must support modularity, beautiful architecture, reuse and security. And of course it must have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring and intuitive management. 
 
 <p align="center">
-  <img src="/media/platformless-architecture-15.png" alt="Tech. mindshare"/>
+  <img src="/media/platformless-architecturev2-15.png" alt="Tech. mindshare"/>
 </p>
 <p align="center">
   <i>
