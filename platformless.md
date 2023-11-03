@@ -43,7 +43,7 @@ Platformless has the potential to be as big a shift as the web or cloud. Web rei
 
 ## What is Platformless?
 
-**Platformless = API-First Architecture + Cloud Native Middleware + Platform Engineering**
+**Platformless = API-First + Cloud Native Middleware + Platform Engineering**
 
 APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and SRE to fully empower enterprise developers. 
 
@@ -52,11 +52,12 @@ This combination supports the full lifecycle of enterprise software engineering 
 > **Creating in a platformless world:**
 > *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house CRM system with multiple external e-commerce platforms. Knowing the complexity and time this could take, she logs into the Platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers. Among the offerings, she identifies connectors for her CRM's APIs A and B. Additionally, connectors for the external e-commerce platforms, APIs D and E, catch her eye. Maria employs these connectors, and using a seamless integration process, she stitches together her desired workflow in hours. The Platformless architecture ensures every interaction adheres to a rigorous zero-trust security model. Building her prototype, she's able to test, refine, and share her work with stakeholders, all while using the Platformless runtime environment intrinsic monitoring, tracing, and debugging utilities. By leveraging the Platformless experience, Maria expedites a potentially weeks-long project into a matter of days, all without compromising on security or functionality. As Maria iterates, the app can go live with a full, scalable production runtime.*
 
-### API-First Architecture
+### API-First
 
 Adopting an **"API-first"** approach has become the gold standard for enterprise architecture to deliver the benefits of the API economy approach to enterprise computing. 
 
 This entails several critical capabilities:
+
 1. API design and development time governance to help organizations prevent repeated redevelopment of the same functionality and also to create reusable functionality. 
 2. Reuse of APIs, events and data products of the organization via marketplaces.
 3. Runtime governance of APIs and events to ensure safe and secure usage, accountability and compensation.
@@ -65,22 +66,22 @@ Enterprise IT typically builds and operates this infrastructure using best of br
 
 ### Cloud Native Middleware
 
-Cloud native widely accepted is the approach for building distributed systems that execute in modern containerized, multi-cloud distributed environments. Building and deploying cloud native systems requires several design and architecture approaches and runtime systems including domain driven design, cell-based architecture, microservices architecture, service meshes and integrated authentication & authorization facilitating a zero trust environment.
+Cloud native is widely accepted as the approach for building distributed systems that execute in modern containerized, multi-cloud distributed environments. Building and deploying cloud native systems requires several design and architecture approaches and runtime systems including domain driven design, cell-based architecture, microservices architecture, service meshes, integrated authentication & authorization, and operating in a zero trust environment.
 
-[Domain Driven Design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) and multi-level modular [Cell-based Architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) help align business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. With the microservices architecture, applications are split into optimal granularity, manageable services that operate independently, ensuring scalability and agility. 
+[Domain Driven Design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) and multi-level modularity [Cell-based Architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) help align business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. With microservices architecture, applications are split into optimal granularity, manageable services that operate independently, ensuring scalability and agility.
 
-Complementing this at runtime is the service mesh, which provides enhanced service-to-service communication, addressing challenges in interservice communication in microservices deployments and improving the resiliency of distributed systems. Security, vital in any setting, is managed through authentication and authorization, ensuring proper access controls. Further the operating environment for all the systems must be a zero-trust environment.
+Complementing this at runtime is the service mesh, which provides enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments and improving the resiliency of distributed systems. Security, vital in any setting, is managed through authentication and authorization, ensuring proper access controls. Further the operating environment for all the systems must be a zero-trust environment.
 
 Cloud-native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for Platformless, where seamless integration, security, and scalability converge.
 
 ### Platform Engineering
-In the Platformless approach, Platform Engineering emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but nurtures a profound culture of ownership and responsibility.
+In the Platformless approach, Platform Engineering emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but also nurtures a profound culture of ownership and responsibility.
 
-Next, we delve into version and release management. In the fluid world of contemporary software deployment, managing versions and guaranteeing seamless releases is paramount. Within the Platformless model, robust versioning tools are at play, documenting every change, keeping a meticulous track, and offering a safeguard by allowing rollbacks when necessary. Moreover, dedicated release management utilities ensure that software rollouts occur without a hitch, always keeping stakeholders in the loop.
+Next, we delve into version and release management. In the fluid world of modern software deployment, managing versions and guaranteeing seamless releases is paramount. Within the Platformless model, robust versioning tools are at play, documenting every change, keeping meticulous track, and offering safeguards by allowing rollbacks when necessary. Moreover, dedicated release management utilities ensure that software rollouts occur without a hitch, always keeping stakeholders in the loop.
 
-Diving into security, the zero-trust model stands as the Platformless structure's backbone. Each interaction, be it internal or from an external source, is perceived with a lens of skepticism. This demands rigorous authentication and authorization checks for every single access request, safeguarding the sanctity and privacy of both resources and data.
+The zero-trust model stands as the Platformless structure's security backbone. Each interaction, be it internal or from an external source, is perceived with a lens of skepticism. This demands rigorous authentication and authorization checks for every single access request, safeguarding the sanctity and privacy of both resources and data.
 
-Lastly, the essence of observability in the Platformless framework can't be understated. It goes beyond traditional monitoring, providing teams with an in-depth, detailed view of both applications and the underlying infrastructure. This capability allows for the early detection of inefficiencies, anomalies, and even preemptive identification of potential challenges. It’s a shift from merely gathering data to extracting actionable insights, ensuring the ecosystem is always tuned to its optimal state. 
+Lastly, the essential nature of observability in Platformless can't be overstated. It goes beyond traditional monitoring, providing teams with an in-depth, detailed view of both applications and the underlying infrastructure. This capability allows for early detection of inefficiencies, anomalies, and even preemptive identification of potential challenges. It’s a shift from merely gathering data to extracting actionable insights, ensuring the ecosystem is always tuned to its optimal state.
 
 Together, these intertwined Platform Engineering principles shape the Platformless model into an environment where agility complements security, efficiency aligns with independence, and the mantra of continuous improvement resonates throughout.
 
