@@ -43,9 +43,9 @@ Platformless has the potential to be as big a shift as the web or cloud. Web rei
 
 ## What is Platformless?
 
-**Platformless = API-First + Cloud Native Middleware + Platform Engineering**
+**Platformless = API-First + Cloud Native Middleware + Platform Engineering + Developer Experience**
 
-APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and SRE to fully empower enterprise developers. 
+APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and SRE to fully empower enterprise developers. Within a Platformless environment, an exceptional developer experience(DX) not only boosts developer productivity but also optimizes mean time to detect (MTTD) and mean time to repair (MTTR), ensuring rapid issue identification and swift resolution, thereby streamlining operations and enhancing system reliability.
 
 This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Let us explore each of these in some detail.
 
@@ -84,6 +84,10 @@ The zero-trust model stands as the Platformless structure's security backbone. E
 Lastly, the essential nature of observability in Platformless can't be overstated. It goes beyond traditional monitoring, providing teams with an in-depth, detailed view of both applications and the underlying infrastructure. This capability allows for early detection of inefficiencies, anomalies, and even preemptive identification of potential challenges. It’s a shift from merely gathering data to extracting actionable insights, ensuring the ecosystem is always tuned to its optimal state.
 
 Together, these intertwined Platform Engineering principles shape the Platformless model into an environment where agility complements security, efficiency aligns with independence, and the mantra of continuous improvement resonates throughout.
+
+### Developer Experience
+
+In the Platformless paradigm, developer experience (DX) takes center stage. At its core, DX revolves around offering developers a seamless and intuitive environment, tailoring their interactions to ensure efficiency and productivity. An integral part of this is the provision of versatile tools such as integrated development environments (IDEs), command-line interfaces (CLIs), and straightforward API access. These tools not only simplify the creation of cloud-native components but also streamline debugging, testing, and deployment processes. The essence of Platformless is to eliminate cumbersome setups and hurdles, ensuring that developers have an unparalleled experience from the initial stages of crafting applications to their final deployment. This commitment to amazing DX ensures that every touchpoint within the Platformless environment resonates with developers' needs, optimizing their journey and fostering innovation.
 
 ## Platformless Facilitates Enterprise Software Engineering
 
