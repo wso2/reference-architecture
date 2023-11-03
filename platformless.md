@@ -43,7 +43,7 @@ Platformless has the potential to be as big a shift as the web or cloud. Web rei
 
 ## What is Platformless?
 
-**Platformless = APIs + Cloud Native + DevOps**
+**Platformless = API-First Architecture + Cloud Native Middleware + Platform Engineering**
 
 APIs are the fundamental building block of modern software. Cloud native is the modern approach for building distributed systems. DevOps and SRE are evolving into [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) to fully empower enterprise developers. 
 
