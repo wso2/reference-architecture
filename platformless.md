@@ -29,11 +29,11 @@ Platforms allow massive agility in improving application function and performanc
 However, the platform has become a challenge in itself. These platforms require large, highly-skilled platform engineering teams, and the skills are hard to find. Each platform requires many complex choices and linkages between multiple systems - DevOps pipelines, deployment management, monitoring & management systems, network substrates, and of course the actual cluster management. 
 
 <p align="center">
-  <img src="/media/mindsharev5-15.png" alt="Tech. mindshare"/>
+  <img src="/media/mindsharev6-15.png" alt="Tech. mindshare"/>
 </p>
 <p align="center">
   <i>
-    Figure 1: Enterprise IT needs to increase focus on apps and less on the platform.
+    Figure 1: Enterprise IT needs to increase focus on applications and less on the platform.
   </i>
 </p>
 
@@ -59,10 +59,10 @@ Adopting an **"API-first"** approach has become the gold standard for enterprise
 This entails several critical capabilities:
 
 1. API design and development time governance to help organizations prevent repeated redevelopment of the same functionality and also to create reusable functionality. 
-2. Reuse of APIs, events and data products of the organization via marketplaces.
-3. Runtime governance of APIs and events to ensure safe and secure usage, accountability and compensation.
+2. Reuse of APIs, events, and data products of the organization via marketplaces.
+3. Runtime governance of APIs and events to ensure safe and secure usage, accountability, and compensation.
 
-Enterprise IT typically builds and operates this infrastructure using best of breed technologies for each component, often at heavy cost and delays. At the same time, this layer of technology does not offer any competitive advantage for most businesses. Instead, platformless delivers this infrastructure as “part of the woodwork” and allows developers to build assuming these capabilities.
+Enterprise IT typically builds and operates this infrastructure using best-of-breed technologies for each component, often at heavy cost and delays. At the same time, this layer of technology does not offer any competitive advantage for most businesses. Instead, platformless delivers this infrastructure as “part of the woodwork” and allows developers to build assuming these capabilities.
 
 ### Cloud Native Middleware
 
@@ -72,7 +72,7 @@ Cloud native is widely accepted as the approach for building distributed systems
 
 Complementing this at runtime is the service mesh, which provides enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments and improving the resiliency of distributed systems. Security, vital in any setting, is managed through authentication and authorization, ensuring proper access controls. Further the operating environment for all the systems must be a zero-trust environment.
 
-Cloud-native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for Platformless, where seamless integration, security, and scalability converge.
+Cloud native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for Platformless, where seamless integration, security, and scalability converge.
 
 ### Platform Engineering
 In the Platformless approach, Platform Engineering emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but also nurtures a profound culture of ownership and responsibility.
@@ -89,20 +89,20 @@ Together, these intertwined Platform Engineering principles shape the Platformle
 
 Enterprise software engineering is more complex than building independent products because enterprises are complex organisms with competing interests that must somehow be hidden when a customer engages with the business. Further, as businesses become digital businesses, they need to produce not one piece of software but a large complex collection of software products that work together. The aim is to digitize the business and support both human users (as web/mobile/desktop apps), and non-human users (as network APIs), as well as programs that work with no external involvement (as jobs or automations). A large enterprise will often have thousands or even tens of thousands of such digital assets that need to work together.
 
-The aim of platformless is to enable enterprises to build and deliver digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows and of course apps. It must support modularity, beautiful architecture, reuse and security. And of course it must have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring and intuitive management. 
+The aim of Platformless is to enable enterprises to build and deliver digital experiences without the platform becoming the challenge. To succeed, Platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
 
 <p align="center">
-  <img src="/media/platformless-architecturev2-15.png" alt="Tech. mindshare"/>
+  <img src="/media/platformless-architecturev2-15.png" alt="platformless architecture"/>
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operating in a platformess environment
+   Figure 2: Modern distributed systems easily built and operating in a Platformess environment
   </i>
 </p>
 
 ## Conclusion
 
-Software Delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless computing takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying and running enterprise applications. Most importantly, Platformless delivers even better applications to customers. 
+Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless Computing takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, Platformless delivers even better applications to customers. 
 
 ## References
 
