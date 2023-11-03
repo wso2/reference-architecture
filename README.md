@@ -20,6 +20,10 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
 ## Architectural Guides & Concept Papers 
 
++ ### [Platformless - Improving Enterprise Software Engineering with Platformless Computing](https://github.com/wso2/reference-architecture/blob/master/platformless.md)
+
+This paper introduces the 'Platformless' concept, emphasizing its intersections with APIs, cloud native mddleware practices, and platform engineering in the context of modern enterprise software engineering.
+
 + ### [Internal Developer Platform (IDP) - A Technical Reevaluation](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md)
 
 Explore a comprehensive redefinition of the Internal Developer Platform, covering its scope beyond CI/CD and infrastructure automation. This guide offers in-depth architectural insights aimed at technical decision-makers and software architects.
