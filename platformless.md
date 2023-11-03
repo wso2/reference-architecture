@@ -52,7 +52,8 @@ This combination supports the full lifecycle of enterprise software engineering 
 > **Creating in a platformless world:**
 > *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house CRM system with multiple external e-commerce platforms. Knowing the complexity and time this could take, she logs into the Platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers. Among the offerings, she identifies connectors for her CRM's APIs A and B. Additionally, connectors for the external e-commerce platforms, APIs D and E, catch her eye. Maria employs these connectors, and using a seamless integration process, she stitches together her desired workflow in hours. The Platformless architecture ensures every interaction adheres to a rigorous zero-trust security model. Building her prototype, she's able to test, refine, and share her work with stakeholders, all while using the Platformless runtime environment intrinsic monitoring, tracing, and debugging utilities. By leveraging the Platformless experience, Maria expedites a potentially weeks-long project into a matter of days, all without compromising on security or functionality. As Maria iterates, the app can go live with a full, scalable production runtime.*
 
-### APIs
+### API-First Architecture
+
 Adopting an **"API-first"** approach has become the gold standard for enterprise architecture to deliver the benefits of the API economy approach to enterprise computing. 
 
 This entails several critical capabilities:
@@ -62,11 +63,11 @@ This entails several critical capabilities:
 
 Enterprise IT typically builds and operates this infrastructure using best of breed technologies for each component, often at heavy cost and delays. At the same time, this layer of technology does not offer any competitive advantage for most businesses. Instead, platformless delivers this infrastructure as “part of the woodwork” and allows developers to build assuming these capabilities.
 
-### Cloud native middleware
+### Cloud Native Middleware
 
 Cloud-native practices stand as a pillar of the Platformless Environment. At its heart lies the [Domain Driven Design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) and multi-level modular [Cell-based Architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md), aligning business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. With the microservices architecture, applications are split into optimal granularity, manageable services that operate independently, ensuring scalability and agility. Complementing this is the service mesh, which provides enhanced service-to-service communication, addressing challenges in interservice communication in microservices deployments. Security, vital in any setting, is managed through authentication (Authn) and authorization (Authz), ensuring proper access controls. Furthermore, with cloud-native architecture and middleware, there's a focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the stage for the Platformless Environment, where seamless integration, security, and scalability converge.
 
-### DevOps
+### Platform Engineering
 In the Platformless approach, DevOps emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but nurtures a profound culture of ownership and responsibility.
 
 Next, we delve into version and release management. In the fluid world of contemporary software deployment, managing versions and guaranteeing seamless releases is paramount. Within the Platformless model, robust versioning tools are at play, documenting every change, keeping a meticulous track, and offering a safeguard by allowing rollbacks when necessary. Moreover, dedicated release management utilities ensure that software rollouts occur without a hitch, always keeping stakeholders in the loop.
