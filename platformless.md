@@ -1,4 +1,4 @@
-<h1 align="center"> Platformless Computing </h1>
+<h1 align="center"> Platformless </h1>
 <h2 align="center"> Improving Enterprise Software Engineering with Platformless Computing </h2>
 <p align="center">
 <i>
