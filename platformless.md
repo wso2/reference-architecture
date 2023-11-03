@@ -74,7 +74,7 @@ Complementing this at runtime is the service mesh, which provides enhanced servi
 Cloud-native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for Platformless, where seamless integration, security, and scalability converge.
 
 ### Platform Engineering
-In the Platformless approach, DevOps emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but nurtures a profound culture of ownership and responsibility.
+In the Platformless approach, Platform Engineering emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but nurtures a profound culture of ownership and responsibility.
 
 Next, we delve into version and release management. In the fluid world of contemporary software deployment, managing versions and guaranteeing seamless releases is paramount. Within the Platformless model, robust versioning tools are at play, documenting every change, keeping a meticulous track, and offering a safeguard by allowing rollbacks when necessary. Moreover, dedicated release management utilities ensure that software rollouts occur without a hitch, always keeping stakeholders in the loop.
 
@@ -82,7 +82,7 @@ Diving into security, the zero-trust model stands as the Platformless structure'
 
 Lastly, the essence of observability in the Platformless framework can't be understated. It goes beyond traditional monitoring, providing teams with an in-depth, detailed view of both applications and the underlying infrastructure. This capability allows for the early detection of inefficiencies, anomalies, and even preemptive identification of potential challenges. It’s a shift from merely gathering data to extracting actionable insights, ensuring the ecosystem is always tuned to its optimal state. 
 
-Together, these intertwined DevOps principles shape the Platformless model into an environment where agility complements security, efficiency aligns with independence, and the mantra of continuous improvement resonates throughout.
+Together, these intertwined Platform Engineering principles shape the Platformless model into an environment where agility complements security, efficiency aligns with independence, and the mantra of continuous improvement resonates throughout.
 
 ## Platformless Facilitates Enterprise Software Engineering
 
