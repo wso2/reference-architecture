@@ -73,25 +73,27 @@ Now, let’s explore the three foundational elements of platformless — API-fir
 
 ### API-First
 
-Adopting an **"API-first"** approach has become the gold standard for enable an enterprise architecture to deliver the benefits of the API economy approach to enterprise computing. 
+Adopting an **"API-first"** approach has become the gold standard for an enterprise architecture to reap the benefits of the API economy approach to enterprise computing.
 
-This entails three critical capabilities:
+APIs provide a way to abstract away the details of some capability and simply to focus on using that capability over the network. Web and mobile applications have driven the growth of APIs as they necessarily interact through them. Further, any enterprise focused SaaS service will offer APIs to enable their customer systems to directly integrate.
 
-1. API design and development time governance help organizations prevent repeated redevelopment of the same functionality and instead create reusable functionality. 
-2. The avilability of APIs, events, and data products of the organization via marketplaces facilitates reuse.
-3. Runtime governance of APIs and events to ensure safe and secure usage, accountability, and compensation.
+Yet the use of APIs as the *lingua franca* within the enterprise is still developing. API-First is about ensuring that all functionality within the enterprise are made available for reuse as APIs, events and data products that can be discovered and consumed easily, while still respecting the organizational and operational structure of the enterprise.
 
-Enterprise IT typically builds and operates this infrastructure using best-of-breed technologies for each component, often at heavy cost and delays. At the same time, this layer of technology does not offer any competitive advantage for most businesses. Instead, platformless delivers this infrastructure as “part of the woodwork” and allows developers to build assuming these capabilities are in place.
+Critical capabilities to build an API-First approach to enterprise architecture include the following:
+
+1. Use of API design tools to design and govern APIs to ensure consistentcy across the enterprise.
+2. Use of API gateways at runtime to monitor and control both internal and externally visible APIs.
+3. API management as enabler for treating APIs as products and being able to manage all aspects of API products.
+
+Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the business service platform for all innovation.
 
 ### Cloud Native Middleware
 
-Cloud native is widely accepted as the approach for building distributed systems that execute in modern containerized, multi-cloud distributed environments. Building and deploying cloud native systems requires several design and architecture approaches and runtime systems. These include domain-driven design, cell-based architecture, microservices architecture, service meshes, integrated authentication and authorization, and operating in a zero trust environment.
+Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance. These include domain-driven design, cell-based architecture, microservices architecture, service meshes, integrated authentication and authorization, and zero-trust architecture.
 
-[Domain-driven design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) and multi-level modularity [cell-based architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) help align business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. With microservices architecture, applications are split into optimal granularity, with manageable services that operate independently, ensuring scalability and agility.
+[Domain-driven design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) helps coordinate business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. [Cell-based architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) is an approach for modularizing a group of related capabilities from (part of) a domain into a network cell and managing access to them through well defined gateways. With microservices architecture, applications are split into optimal granularity, with manageable services that operate independently, ensuring scalability and agility. Service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and securiy of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interaction.
 
-Complementing this at runtime is the service mesh, which provides enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments and improving the resiliency of distributed systems. Security, vital in any setting, is managed through authentication and authorization, ensuring proper access controls. Further the operating environment for all the systems must be a zero-trust environment.
-
-Cloud native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for platformless, where seamless integration, security, and scalability converge.
+Building, deploying, operating and evolving all this infrastructure is difficult to impossible for most enterprises and results in a massive focus shift. Platformless delivers these capabilities as part of the fabric allowing the enterprise to instead focus on applications, services, APIs, automations and other digital assets that deliver value to their ecosystem.
 
 ### Platform Engineering
 
