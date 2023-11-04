@@ -115,7 +115,7 @@ Platform Engineering and the resulting Internal Developer Platform is the lynchp
 
 > *“Every company is a software company. You have to start thinking and operating like a digital company. It’s no longer just about procuring one solution and deploying one. It’s not about one simple software solution. It’s really you yourself thinking of your own future as a digital company.”* – Satya Nadella, CEO Microsoft, 2015.
 
-The heart of software companies is "developers" in the broadest sense: product managers, product designers, software engineers, software testers, security teams, operations teams and so on. If an Internal Developer Platform is the lynchpin of a great enterprise software engineering environment, then Developer Experience (DX) is the fuel: Nothing runs without fuel.
+The heart of software companies is "developers" in the broadest sense: product managers, product designers, software engineers, software testers, security teams, operations teams and so on. If an internal developer platform is the lynchpin of a great enterprise software engineering environment, then developer experience (DX) is the fuel: Nothing runs without fuel.
 
 DX is a measure of how easy and enjoyable it is for developers to work in the enterprise. While "easy and enjoyable" may not seem important, given that awesome digital experiences come from the creativity of awesome developers, they are much more likely to be productive, engaged, and innovative in such an environment vs. a boring one. This will lead to better quality software, faster time to market, and happier customers.
 
