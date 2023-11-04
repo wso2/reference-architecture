@@ -60,13 +60,14 @@ This combination supports the full lifecycle of enterprise software engineering 
 
 > **Creating in a platformless world:**
 > + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
-> + *Knowing the complexity and time this could take, she logs into the platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers.* 
-> + *Among the offerings, she identifies connectors for her CRM's APIs A and B.
-Additionally, connectors for the external e-commerce platforms, APIs D and E, catch her eye.* 
-> + *Maria employs these connectors, and using a seamless integration process, she stitches together her desired workflow in hours. The platformless architecture ensures every interaction adheres to a rigorous zero-trust security model.* 
-> + *Building her prototype, she's able to test, refine, and share her work with stakeholders, all while using the platformless runtime environment intrinsic monitoring, tracing, and debugging utilities.* 
-> + *By leveraging the platformless experience, Maria expedites a potentially weeks-long project into a matter of days, all without compromising on security or functionality.* 
-> + *As Maria iterates, the app can go live with a full, scalable production runtime.*
+> + *She logs into the platformless dev environment. Navigating to its built-in marketplace, Maria is discovers APIs she needs for the CRM system and all the other external systems.*
+> + *She programs the integration using a language of her choice or a low code tool of her choice (from amongst the languages/tools her company has approved) and commits the code.*
+> + *She goes to the platformless dev environment and selects available connection configurations for development and deploys automatically built integration and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
+> + *When she is ready she promotes the integration to a staging environment and shares it with her colleagues for verification.*
+> + *She promotes the integration to the production environment inheriting production configurations that have been set up by her company for all the APIs she is consuming.*
+> + *She and her colleagues can manage the integration using the monitoring, tracing and observability tools provided by the platformless environment.*
+> + *After some time goes by she or someone else will modify the integration to meet new requirements. She creates a separate deployment the new branch of the code and follows the development process and eventually performs release management to upgrade the integration.*
+> + *Maria is now running an evolving enterprise integration in a scalable, zero-trust environment without ever losing focus from the original problem she solved: developing the integration.*
 
 Now, let’s explore the three foundational elements of platformless — API-first, cloud native middleware, platform engineering and developer experience (DX) — in more detail.
 
