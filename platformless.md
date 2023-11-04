@@ -97,15 +97,19 @@ Building, deploying, operating and evolving all this infrastructure is difficult
 
 ### Platform Engineering
 
-In the platformless approach, platform engineering emerges as the central pulse, streamlining and magnifying every process for peak efficiency. One of the foremost principles is self-service. By emphasizing developer autonomy, DevOps ensures that teams can deploy, manage, and access vital resources without any hindrance or reliance on centralized units. This approach not only hastens the developmental timeline but also nurtures a profound culture of ownership and responsibility.
+While designing and implementing good software while reusing existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises. 
 
-Next, is version and release management. In the fluid world of modern software deployment, the ability to manage versions and guaranteeing seamless releases is paramount. Within the platformless model, robust versioning tools are at play, documenting every change, keeping meticulous track, and offering safeguards by allowing rollbacks when necessary. Moreover, dedicated release management utilities ensure that software rollouts occur without a hitch, always keeping stakeholders in the loop.
+Approaches such as DevOps and SRE have been widely adopted to solve this problem. The practice of DevOps is a software development and delivery approach that bridges gaps between development and operations teams. SRE is about ensuring system readiness and availability at the desired level. 
 
-The zero-trust model stands as the platformless structure's security backbone. Each interaction, whether internal or from an external source, is perceived with a lens of skepticism. This demands rigorous authentication and authorization checks for every single access request, safeguarding the sanctity and privacy of both resources and data.
+Platform Engineering is the domain of building toolchains and processes to enable enterprise developers to easily build, deliver and operate software in an empowered, self-service manner. The resulting product is now referred to as an [Internal Developer Platform](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md). These products support all the roles involved in enterprise software delivery including developers, testers, DevOps/AppOps engineers and SREs.
 
-Lastly, the essential nature of observability in platformless can't be overstated. It goes beyond traditional monitoring, providing teams with an in-depth, detailed view of both applications and the underlying infrastructure. This capability allows for early detection of inefficiencies, anomalies, and even preemptive identification of potential challenges. It’s a shift from merely gathering data to extracting actionable insights, ensuring the ecosystem is always tuned to its optimal state.
+Capabilities of the Internal Developer Platform includes:
 
-Together, these intertwined platform engineering principles shape the platformless model into an environment where agility complements security, efficiency aligns with independence, and the mantra of continuous improvement resonates throughout.
+1. Complete self-service for all roles with fine-grained permission management and complete auditability of all actions.
+2. Release management capabilities to support rapid iteration and robust releases with strategies such as rolling updates, canary and blue-green.
+3. Observability capabilities for all the roles of the enterprise so their focus can remain at their  level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
+
+Platform Engineering and the resulting Internal Developer Platform is the lynchpin to facilitate Platformless and allows all parties envolved with enterprise software engineering to have full focus just on the parts they are reponsible for.
 
 ### Developer Experience
 
