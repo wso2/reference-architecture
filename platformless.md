@@ -46,7 +46,7 @@ It is clear that we need a new paradigm to remove the platform from our consciou
   </i>
 </p>
 
-We call this **“platformless”** computing. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
+We call this **“Platformless”**. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
 
 ## What is Platformless?
 
@@ -58,7 +58,7 @@ APIs are the fundamental building block of modern software. Cloud native middlew
 
 This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Consider the following example: 
 
-> **Creating in a platformless world:**
+> **Creating in a Platformless world:**
 > + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
 > + *She logs into the platformless dev environment. Navigating to its built-in marketplace, Maria is discovers APIs she needs for the CRM system and all the other external systems.*
 > + *She programs the integration using a language of her choice or a low code tool of her choice (from amongst the languages/tools her company has approved) and commits the code.*
@@ -85,7 +85,7 @@ Critical capabilities to build an API-First approach to enterprise architecture 
 2. Use of API gateways at runtime to monitor and control both internal and externally visible APIs.
 3. API management as enabler for treating APIs as products and being able to manage all aspects of API products.
 
-Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the business service platform for all innovation.
+Most enterprises today still have focused "API programs" to enable this approach. In a Platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the business service platform for all innovation.
 
 ### Cloud Native Middleware
 
@@ -136,7 +136,7 @@ The aim of Platformless is to enable enterprises to build and deliver many digit
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operating in a platformless environment
+   Figure 2: Modern distributed systems easily built and operating in a Platformless environment
   </i>
 </p>
 
