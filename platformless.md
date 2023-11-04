@@ -50,7 +50,7 @@ We call this **“platformless”** computing. That doesn’t mean the platform 
 
 ## What is Platformless?
 
-Platformless computing is founded on four technology disciplines, which we can think of as an equation. 
+Platformless is delivered by the seamless marriage of four technology domains: 
 
 **Platformless = API-First + Cloud Native Middleware + Platform Engineering + Developer Experience**
 
