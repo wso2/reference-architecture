@@ -60,7 +60,7 @@ This combination supports the full lifecycle of enterprise software engineering 
 
 > **Creating in a platformless world:**
 > + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
-> + *Knowing the complexity and time this could take, she logs into the Platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers.* 
+> + *Knowing the complexity and time this could take, she logs into the platformless dev environment. Navigating to its built-in marketplace, Maria is greeted with many pre-built connectors and tools tailored for tasks like hers.* 
 > + *Among the offerings, she identifies connectors for her CRM's APIs A and B.
 Additionally, connectors for the external e-commerce platforms, APIs D and E, catch her eye.* 
 > + *Maria employs these connectors, and using a seamless integration process, she stitches together her desired workflow in hours. The platformless architecture ensures every interaction adheres to a rigorous zero-trust security model.* 
@@ -90,7 +90,7 @@ Cloud native is widely accepted as the approach for building distributed systems
 
 Complementing this at runtime is the service mesh, which provides enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments and improving the resiliency of distributed systems. Security, vital in any setting, is managed through authentication and authorization, ensuring proper access controls. Further the operating environment for all the systems must be a zero-trust environment.
 
-Cloud native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for Platformless, where seamless integration, security, and scalability converge.
+Cloud native middleware brings focus on flexibility, resilience, and scalability, utilizing the cloud's full potential. All these elements collectively set the operating environment for platformless, where seamless integration, security, and scalability converge.
 
 ### Platform Engineering
 
@@ -106,7 +106,7 @@ Together, these intertwined platform engineering principles shape the platformle
 
 ### Developer Experience
 
-There is one more dimension to consider in platformless computing. In the platformless paradigm, developer experience (DX) takes center stage. At its core, DX revolves around offering developers a seamless and intuitive environment, tailoring their interactions to ensure efficiency and productivity. An integral part of this is the provision of versatile tools such as integrated development environments (IDEs), command-line interfaces (CLIs), and straightforward API access. These tools not only simplify the creation of cloud-native components but also streamline debugging, testing, and deployment processes. The essence of Platformless is to eliminate cumbersome setups and hurdles, ensuring that developers have an unparalleled experience from the initial stages of crafting applications to their final deployment. 
+There is one more dimension to consider in platformless computing. In the platformless paradigm, developer experience (DX) takes center stage. At its core, DX revolves around offering developers a seamless and intuitive environment, tailoring their interactions to ensure efficiency and productivity. An integral part of this is the provision of versatile tools such as integrated development environments (IDEs), command-line interfaces (CLIs), and straightforward API access. These tools not only simplify the creation of cloud-native components but also streamline debugging, testing, and deployment processes. The essence of platformless is to eliminate cumbersome setups and hurdles, ensuring that developers have an unparalleled experience from the initial stages of crafting applications to their final deployment. 
 
 In a platformless setting, DX provides developers with a pipeline-tuned sandbox for frictionless application development, access to shared resources via a marketplace, and autonomy through cell-based architecture, all while the self-service approach empowers them to provision essential development resources effortlessly.
 
@@ -125,13 +125,13 @@ The aim of platformless is to enable enterprises to build and deliver digital ex
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operating in a platformess environment
+   Figure 2: Modern distributed systems easily built and operating in a platformless environment
   </i>
 </p>
 
 ## Conclusion
 
-Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless computing takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, Platformless delivers even better applications to customers. 
+Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless computing takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, platformless delivers even better applications to customers. 
 
 ## References
 
