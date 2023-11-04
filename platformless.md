@@ -54,7 +54,7 @@ Platformless is delivered by the seamless marriage of four technology domains:
 
 **Platformless = API-First + Cloud Native Middleware + Platform Engineering + Developer Experience**
 
-APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and site reliability engineering (SRE) to fully empower enterprise developers. Exceptional developer experience (DX) to unshackle and empower developers to operate autonomously, yet securely, is the ultimate win of Platformless as that allows the focus to move to applications from platforms.
+APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and site reliability engineering (SRE) to fully empower enterprise developers. Exceptional developer experience (DX) to unshackle and empower developers to operate autonomously, yet securely, is the ultimate win of platformless as that allows the focus to move to applications from platforms.
 
 This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Consider the following example: 
 
@@ -85,7 +85,7 @@ Critical capabilities to build an API-First approach to enterprise architecture 
 2. Use of API gateways at runtime to monitor and control both internal and externally visible APIs.
 3. API management as enabler for treating APIs as products and being able to manage all aspects of API products.
 
-Most enterprises today still have focused "API programs" to enable this approach. In a Platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the business service platform for all innovation.
+Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the business service platform for all innovation.
 
 ### Cloud Native Middleware
 
@@ -109,7 +109,7 @@ Capabilities of the Internal Developer Platform includes:
 2. Release management capabilities to support rapid iteration and robust releases with strategies such as rolling updates, canary and blue-green.
 3. Observability capabilities for all the roles of the enterprise so their focus can remain at their  level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
 
-Platform Engineering and the resulting Internal Developer Platform is the lynchpin to facilitate Platformless and allows all parties envolved with enterprise software engineering to have full focus just on the parts they are reponsible for.
+Platform Engineering and the resulting Internal Developer Platform is the lynchpin to facilitate platformless and allows all parties envolved with enterprise software engineering to have full focus just on the parts they are reponsible for.
 
 ### Developer Experience
 
@@ -129,20 +129,20 @@ Enterprise software engineering is more complex than building independent produc
 
 Further, as organizations become digital businesses, they need to produce not one piece of software but a large complex collection of software products that work together. The aim is to digitize the business and support human users (as web/mobile/desktop apps), non-human users (as network APIs), and programs that work with no external involvement (as jobs or automations). A large enterprise will often have thousands of such digital assets that need to work together.
 
-The aim of Platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, Platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
+The aim of platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
 
 <p align="center">
   <img src="/media/platformless-architecturev2-15.png" alt="platformless architecture"/>
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operating in a Platformless environment
+   Figure 2: Modern distributed systems easily built and operating in a platformless environment
   </i>
 </p>
 
 ## Conclusion
 
-Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, Platformless helps deliver even better applications to customers. 
+Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, platformless helps deliver even better applications to customers. 
 
 ## References
 
