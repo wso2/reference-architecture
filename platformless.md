@@ -123,13 +123,13 @@ At its core, DX revolves around offering developers a seamless and intuitive env
 
 Happy developers focus on applications, not platforms.
 
-## Platformless Facilitates Enterprise Software Engineering
+## Platformless Facilitates Enterprise Software *Engineering*
 
-Now, let’s look specifically at how platformless computing can facilitate enterprise software engineering. 
+Enterprise software engineering is more complex than building independent products because enterprises are complex organisms with competing interests that must somehow be hidden when a customer engages with the business. Enterprises have large applications such as CRMs, ERP systems for various functions requiring any application to have a significant data integration responsibility, which is rarely the case in non-enterprise systems.
 
-Enterprise software engineering is more complex than building independent products because enterprises are complex organisms with competing interests that must somehow be hidden when a customer engages with the business. Further, as organizations become digital businesses, they need to produce not one piece of software but a large complex collection of software products that work together. The aim is to digitize the business and support human users (as web/mobile/desktop apps), non-human users (as network APIs), and programs that work with no external involvement (as jobs or automations). A large enterprise will often have thousands or even tens of thousands of such digital assets that need to work together.
+Further, as organizations become digital businesses, they need to produce not one piece of software but a large complex collection of software products that work together. The aim is to digitize the business and support human users (as web/mobile/desktop apps), non-human users (as network APIs), and programs that work with no external involvement (as jobs or automations). A large enterprise will often have thousands of such digital assets that need to work together.
 
-The aim of platformless is to enable enterprises to build and deliver digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
+The aim of Platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, Platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
 
 <p align="center">
   <img src="/media/platformless-architecturev2-15.png" alt="platformless architecture"/>
@@ -142,7 +142,7 @@ The aim of platformless is to enable enterprises to build and deliver digital ex
 
 ## Conclusion
 
-Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless computing takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, platformless delivers even better applications to customers. 
+Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, Platformless helps deliver even better applications to customers. 
 
 ## References
 
