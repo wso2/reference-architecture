@@ -38,7 +38,7 @@ However, platforms have introduced their own challenges. They require large, hig
 It is clear that we need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself. 
 
 <p align="center">
-  <img src="/media/mindsharev6-15.png" alt="Tech. mindshare"/>
+  <img src="media/mindsharev6-15.png" alt="Tech. mindshare"/>
 </p>
 <p align="center">
   <i>
@@ -132,7 +132,7 @@ Further, as organizations become digital businesses, they need to produce not on
 The aim of platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
 
 <p align="center">
-  <img src="/media/platformless-architecturev2-15.png" alt="platformless architecture"/>
+  <img src="media/platformless-architecturev2-15.png" alt="platformless architecture"/>
 </p>
 <p align="center">
   <i>
