@@ -85,7 +85,7 @@ Critical capabilities to build an API-First approach to enterprise architecture 
 2. Use of API gateways at runtime to monitor and control both internal and externally visible APIs.
 3. API management as enabler for treating APIs as products and being able to manage all aspects of API products.
 
-Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the business service platform for all innovation.
+Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the SDK for the business.
 
 ### Cloud Native Middleware
 
