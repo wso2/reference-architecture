@@ -21,7 +21,7 @@ Radical simplification is at the heart of many major shifts in the enterprise ap
 + **From datacenter to cloud**: not needing to worry about hardware (“data-centre-less”)
 + **From app server to serverless**: not needing to care about which application server and having to manage clusters
 
-Of course, when we talk about “-less” to indicate a shift, e.g. in serverless, it doesn’t really mean that there is no server. It simply means that there is such a clear boundary between the user and the provider that the user no longer needs to know about the system behind the service. For example, serverless backends still need clustering, failover, deployment, system upgrades, etc. However, the user of serverless doesn’t see any of that; they simply write and deploy code.
+Of course, when we talk about “-less” to indicate a shift, e.g., in serverless, it doesn’t really mean that there is no server. It simply means that there is such a clear boundary between the user and the provider that the user no longer needs to know about the system behind the service. For example, serverless backends still need clustering, failover, deployment, system upgrades, etc. However, the user of serverless doesn’t see any of that; they simply write and deploy code.
 
 Now the need for radical simplification in enterprise software engineering is driving the next major shift: from **platforms** to **“platformless.”**
 
@@ -33,7 +33,7 @@ Recently we have seen the rise of enterprise software delivery platforms. Often 
 
 Platforms allow massive agility in improving application function and performance — which are characteristics closely associated with business success.
 
-However, platforms have introduced their own challenges. They require large, highly-skilled platform engineering teams, and the skills are hard to find. Each platform requires many complex choices and link between multiple systems: DevOps pipelines, deployment management, monitoring and management systems, network substrates, and of course the actual cluster management.
+However, platforms have introduced their own challenges. They require large, highly-skilled platform engineering teams, and the skills are hard to find. Each platform requires many complex choices and links between multiple systems: DevOps pipelines, deployment management, monitoring and management systems, network substrates, and of course the actual cluster management.
 
 It is clear that we need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself. 
 
@@ -62,14 +62,14 @@ This combination supports the full lifecycle of enterprise software engineering 
 > + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
 > + *She logs into the platformless dev environment. Navigating to its built-in marketplace, Maria discovers the APIs she needs for the CRM system and all the other external systems.*
 > + *She programs the integration using a language of her choice or a low code tool of her choice (from amongst the languages/tools her company has approved) and commits the code.*
-> + *She goes to the platformless dev environment and selects available connection configurations for development and deploys automatically built integration and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
-> + *When she is ready she promotes the integration to a staging environment and shares it with her colleagues for verification.*
+> + *She goes to the platformless dev environment, selects available connection configurations for development, deploys automatically built integration, and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
+> + *When she is ready, she promotes the integration to a staging environment and shares it with her colleagues for verification.*
 > + *She promotes the integration to the production environment inheriting production configurations that have been set up by her company for all the APIs she is consuming.*
 > + *She and her colleagues can manage the integration using the monitoring, tracing and observability tools provided by the platformless environment.*
-> + *After some time goes by she or someone else will modify the integration to meet new requirements. She creates a separate deployment the new branch of the code and follows the development process and eventually performs release management to upgrade the integration.*
-> + *Maria is now running an evolving enterprise integration in a scalable, zero-trust environment without ever losing focus from the original problem she solved: developing the integration.*
+> + *After some time goes by she or someone else will modify the integration to meet new requirements. She creates a separate deployment of the new branch of the code and follows the development process and eventually performs release management to upgrade the integration.*
+> + *Maria is now running an evolving enterprise integration in a scalable, zero-trust environment without ever losing focus on the original problem she solved: developing the integration.*
 
-Now, let’s explore the three foundational elements of platformless — API-first, cloud native middleware, platform engineering and developer experience (DX) — in more detail.
+Now, let’s explore the three foundational elements of platformless — API-first, cloud native middleware, platform engineering, and developer experience (DX) — in more detail.
 
 ### API-First
 
@@ -77,13 +77,13 @@ Adopting an **"API-first"** approach has become the gold standard for an enterpr
 
 APIs provide a way to abstract away the details of some capability and simply to focus on using that capability over the network. Web and mobile applications have driven the growth of APIs as they necessarily interact through them. Further, any enterprise focused SaaS service will offer APIs to enable their customer systems to directly integrate.
 
-Yet the use of APIs as the *lingua franca* within the enterprise is still developing. API-First is about ensuring that all functionality within the enterprise are made available for reuse as APIs, events and data products that can be discovered and consumed easily, while still respecting the organizational and operational structure of the enterprise.
+Yet the use of APIs as the *lingua franca* within the enterprise is still developing. API-First is about ensuring that all functionalities within the enterprise are made available for reuse as APIs, events and data products that can be discovered and consumed easily, while still respecting the organizational and operational structure of the enterprise.
 
 Critical capabilities to build an API-First approach to enterprise architecture include the following:
 
-1. Use of API design tools to design and govern APIs to ensure consistentcy across the enterprise.
+1. Use of API design tools to design and govern APIs to ensure consistency across the enterprise.
 2. Use of API gateways at runtime to monitor and control both internal and externally visible APIs.
-3. API management as enabler for treating APIs as products and being able to manage all aspects of API products.
+3. API management as an enabler for treating APIs as products and being able to manage all aspects of API products.
 
 Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the SDK for the business.
 
@@ -91,7 +91,7 @@ Most enterprises today still have focused "API programs" to enable this approach
 
 Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance. These include domain-driven design, cell-based architecture, service meshes, integrated authentication and authorization, and zero-trust architecture. This middleware environment must enable enterprise architects to practice appropriate service architecture styles from microservices to monoliths to functions. It must also support non-network triggered jobs.
 
-[Domain-driven design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) helps coordinate business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. [Cell-based architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) is an approach for modularizing a group of related capabilities from (part of) a domain into a network cell and managing access to them through well defined gateways. Service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and securiy of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interaction.
+[Domain-driven design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) helps coordinate business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. [Cell-based architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) is an approach for modularizing a group of related capabilities from (part of) a domain into a network cell and managing access to them through well-defined gateways. Service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and security of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interaction.
 
 Building, deploying, operating and evolving all this infrastructure is difficult to impossible for most enterprises and results in a massive focus shift. Platformless delivers these capabilities as part of the fabric allowing the enterprise to instead focus on applications, services, APIs, automations and other digital assets that deliver value to their ecosystem.
 
@@ -103,13 +103,13 @@ Approaches such as DevOps and SRE have been widely adopted to solve this problem
 
 Platform Engineering is the domain of building toolchains and processes to enable enterprise developers to easily build, deliver and operate software in an empowered, self-service manner. The resulting product is now referred to as an [internal developer platform (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md). These products support all the roles involved in enterprise software delivery including developers, testers, DevOps/AppOps engineers and SREs.
 
-Capabilities of the Internal Developer Platform includes:
+Capabilities of the Internal Developer Platform include:
 
 1. Complete self-service for all roles with fine-grained permission management and complete auditability of all actions.
 2. Release management capabilities to support rapid iteration and robust releases with strategies such as rolling updates, canary and blue-green.
-3. Observability capabilities for all the roles of the enterprise so their focus can remain at their  level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
+3. Observability capabilities for all the roles of the enterprise so their focus can remain at their level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
 
-Platform Engineering and the resulting Internal Developer Platform is the lynchpin to facilitate platformless and allows all parties envolved with enterprise software engineering to have full focus just on the parts they are reponsible for.
+Platform Engineering and the resulting Internal Developer Platform are the lynchpin to facilitate platformless and allow all parties envolved with enterprise software engineering to have full focus just on the parts they are responsible for.
 
 ### Developer Experience
 
@@ -119,7 +119,7 @@ The heart of software companies is "developers" in the broadest sense: product m
 
 DX is a measure of how easy and enjoyable it is for developers to work in the enterprise. While "easy and enjoyable" may not seem important, given that awesome digital experiences come from the creativity of awesome developers, they are much more likely to be productive, engaged, and innovative in such an environment vs. a boring one. This will lead to better quality software, faster time to market, and happier customers.
 
-At its core, DX revolves around offering developers a seamless and intuitive environment for their complete work cycle. An integral part of this are tools such as integrated development environments (IDEs), command-line interfaces (CLIs), perfectly designed Web experiences, quality APIs, and super documentation. These tools not only simplify the creation of cloud-native components but also streamline debugging, testing, deployment, and operation processes.
+At its core, DX revolves around offering developers a seamless and intuitive environment for their complete work cycle. An integral part of this is tools such as integrated development environments (IDEs), command-line interfaces (CLIs), perfectly designed Web experiences, quality APIs, and super documentation. These tools not only simplify the creation of cloud-native components but also streamline debugging, testing, deployment, and operation processes.
 
 Happy developers focus on applications, not platforms.
 
@@ -136,7 +136,7 @@ The aim of platformless is to enable enterprises to build and deliver many digit
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operating in a platformless environment
+   Figure 2: Modern distributed systems easily built and operate in a platformless environment
   </i>
 </p>
 
