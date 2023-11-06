@@ -17,7 +17,7 @@ Version: 0.8 (Fall-2023)<br/>
 ## Introduction
 
 Radical simplification is at the heart of many major shifts in the enterprise application space:
-+ **From client-server to web**: not needing to worry about delivery and deployment of specific clients (“client-less”)
++ **From client-server to web and mobile**: not needing to worry about delivery and deployment of specific clients (“client-less”)
 + **From datacenter to cloud**: not needing to worry about hardware (“data-centre-less”)
 + **From app server to serverless**: not needing to care about which application server and having to manage clusters
 
