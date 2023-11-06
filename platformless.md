@@ -109,7 +109,11 @@ Capabilities of the Internal Developer Platform include:
 2. Release management capabilities to support rapid iteration and robust releases with strategies such as rolling updates, canary and blue-green.
 3. Observability capabilities for all the roles of the enterprise so their focus can remain at their level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
 
+<<<<<<< HEAD
 Platform Engineering and the resulting Internal Developer Platform are the lynchpin to facilitate platformless and allow all parties envolved with enterprise software engineering to have full focus just on the parts they are responsible for.
+=======
+Platform Engineering and the resulting Internal Developer Platform is the lynchpin to facilitate platformless and allows all parties involved with enterprise software engineering to have full focus just on the parts they are reponsible for.
+>>>>>>> 4da0a23 (fixing spelling errors)
 
 ### Developer Experience
 
