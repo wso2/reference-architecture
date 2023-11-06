@@ -60,7 +60,7 @@ This combination supports the full lifecycle of enterprise software engineering 
 
 > **Creating in a Platformless world:**
 > + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
-> + *She logs into the platformless dev environment. Navigating to its built-in marketplace, Maria is discovers APIs she needs for the CRM system and all the other external systems.*
+> + *She logs into the platformless dev environment. Navigating to its built-in marketplace, Maria discovers the APIs she needs for the CRM system and all the other external systems.*
 > + *She programs the integration using a language of her choice or a low code tool of her choice (from amongst the languages/tools her company has approved) and commits the code.*
 > + *She goes to the platformless dev environment and selects available connection configurations for development and deploys automatically built integration and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
 > + *When she is ready she promotes the integration to a staging environment and shares it with her colleagues for verification.*
