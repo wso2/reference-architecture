@@ -3,7 +3,7 @@
 <!-- <h2 align="center"> Radically Improving Enterprise Software Engineering with Platformless</h2>-->
 <p align="center">
 <i>
-Version: 0.8 (Fall-2023)<br/>
+Version: 0.8.5 (Fall-2023)<br/>
 </i>
 </p>
 
