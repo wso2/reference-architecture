@@ -3,7 +3,7 @@
 <!-- <h2 align="center"> Radically Improving Enterprise Software Engineering with Platformless</h2>-->
 <p align="center">
 <i>
-Version: 0.8 (Fall-2023)<br/>
+Version: 0.8.5 (Fall-2023)<br/>
 </i>
 </p>
 
@@ -17,6 +17,7 @@ Version: 0.8 (Fall-2023)<br/>
 ## Introduction
 
 Radical simplification is at the heart of many major shifts in the enterprise application space:
++ **From wired to wireless**: transitioning beyond the physical limitations of wires ("wireless")
 + **From client-server to web and mobile**: not needing to worry about delivery and deployment of specific clients (“client-less”)
 + **From datacenter to cloud**: not needing to worry about hardware (“data-centre-less”)
 + **From app server to serverless**: not needing to care about which application server and having to manage clusters
@@ -83,7 +84,8 @@ Critical capabilities to build an API-First approach to enterprise architecture 
 
 1. Use of API design tools to design and govern APIs to ensure consistency across the enterprise.
 2. Use of API gateways at runtime to monitor and control both internal and externally visible APIs.
-3. API management as an enabler for treating APIs as products and being able to manage all aspects of API products.
+3. API marketplace for effortless API discovery and consumption, simplifying the way APIs are used and reused across the enterprise.
+4. API management as an enabler for treating APIs as products and being able to manage all aspects of API products.
 
 Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the SDK for the business.
 
@@ -139,6 +141,18 @@ The aim of platformless is to enable enterprises to build and deliver many digit
    Figure 2: Modern distributed systems easily built and operate in a platformless environment
   </i>
 </p>
+
+## Advantages of Adopting Platformless
+
+**Accelerated market response**: platformless redefines the pace of development, sidestepping the usual delays linked to platform management. This shift allows for quicker product launches, significantly speeding up an organization's response to market demands and opportunities.
+
+**Attainable best practices**: adopting platformless means embracing a realistic and sustainable approach to best practices. It negates the need for continuous updates and exhaustive research, making the achievement of high industry standards more accessible and less burdensome.
+
+**Simplified complexity management**: the model of platformless stands out in its ability to minimize the complexities involved in building and maintaining platforms. This simplification allows teams to divert their focus and resources toward achieving strategic goals and honing core business functionalities.
+
+**Streamlined team operations**: platformless advocates for a lean operational model. By reducing the need for extensive platform maintenance, it ensures that teams can concentrate their efforts on core business objectives, enhancing productivity and aligning with organizational goals.
+
+**Reduced financial overhead**: one of the most significant benefits of platformless is its cost efficiency. By eliminating the substantial investments typically required for platform development and upkeep, platformless provides a more financially sustainable model, allowing for better allocation of people across the organization.
 
 ## Conclusion
 
