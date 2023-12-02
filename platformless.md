@@ -70,7 +70,7 @@ This combination supports the full lifecycle of enterprise software engineering 
 > + *After some time goes by she or someone else will modify the integration to meet new requirements. She creates a separate deployment of the new branch of the code and follows the development process and eventually performs release management to upgrade the integration.*
 > + *Maria is now running an evolving enterprise integration in a scalable, zero-trust environment without ever losing focus on the original problem she solved: developing the integration.*
 
-Now, let’s explore the three foundational elements of platformless — API-first, cloud native middleware, platform engineering, and developer experience (DX) — in more detail.
+Now, let’s explore the four foundational elements of platformless — API-first, cloud native middleware, platform engineering, and developer experience (DX) — in more detail.
 
 ### API-First
 
