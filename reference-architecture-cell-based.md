@@ -2,7 +2,7 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </h3>
 <p align="center">
 <i>
-Version: Fall-2023<br/>
+Version: Spring-2024<br/>
 </i>
 </p>
 
@@ -320,6 +320,9 @@ You can navigate to the code base at - [https://github.com/wso2/cellery](https:/
 #### Okta
 
 [An Insider Look: How Okta Builds and Runs Scalable Infrastructure](https://www.okta.com/resources/whitepaper/how-okta-builds-and-runs-scalable-infrastructure/) using Cell-based Architecture. 
+
+#### Bookings.com
+[Cloud Native Security: Cell-Based Architecture & K8s](https://www.youtube.com/watch?v=z8KLVZBHK-E) talk at CNCF. 
 
 #### Microservice DSL (MDSL)
 
