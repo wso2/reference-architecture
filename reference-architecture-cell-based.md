@@ -387,6 +387,8 @@ I have been involved in implementing more than 1000 projects using Cell-based, l
 
 [15] Pandey, P. (2023, June 3). Cell-Based architecture — Architecture pattern. https://www.linkedin.com/pulse/. https://www.linkedin.com/pulse/cell-based-architecture-pattern-pratik-pandey
 
+[16] Booking.com. 2024. “Cloud Native Security: Cell-Based Architecture & K8s - Rostyslav Myronenko & Shweta Vohra.” Edited by CNCF [Cloud Native Computing Foundation]. https://www.youtube.com/watch?v=z8KLVZBHK-E.
+
 ## References
 
 [1] WSO2,Inc - Engaging in a Digital World - https://wso2.com/wso2_resources/wso2-e-book-navigating-the-digital-transformation-landscape.pdf
