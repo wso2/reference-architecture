@@ -3,7 +3,7 @@
 <!-- <h2 align="center"> Radically Improving Enterprise Software Engineering with Platformless</h2>-->
 <p align="center">
 <i>
-Version: 0.8.5 (Fall-2023)<br/>
+Version: 1.0 (Summer-2024)<br/>
 </i>
 </p>
 
@@ -39,7 +39,7 @@ However, platforms have introduced their own challenges. They require large, hig
 It is clear that we need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself. 
 
 <p align="center">
-  <img src="media/mindsharev6-15.png" alt="Tech. mindshare"/>
+  <img src="media/mindsharev7-15.png" alt="Tech. mindshare"/>
 </p>
 <p align="center">
   <i>
