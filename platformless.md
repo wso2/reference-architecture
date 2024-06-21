@@ -53,7 +53,7 @@ We call this **“Platformless”**. That doesn’t mean the platform vanishes c
 
 Platformless is delivered by the seamless marriage of four technology domains: 
 
-**<p align="center">Platformless = API-First + Cloud Native Middleware + Platform Engineering + Developer Experience</p>**
+**<p align="center">Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )</p>**
 
 APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and site reliability engineering (SRE) to fully empower enterprise developers. Exceptional developer experience (DX) to unshackle and empower developers to operate autonomously, yet securely, is the ultimate win of platformless as that allows the focus to move to applications from platforms.
 
