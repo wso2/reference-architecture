@@ -26,7 +26,7 @@ Of course, when we talk about “-less” to indicate a shift, e.g., in serverle
 
 Now the need for radical simplification in enterprise software engineering is driving the next major shift: from **platforms** to **“platformless.”**
 
-In this article, we examine the challenges that organizations face with enterprise software delivery platforms, provide a definition of platformless, and discuss how a platformless approach facilitates enterprise software engineering.
+In this manifesto, we examine the challenges that organizations face with enterprise software delivery platforms, provide a definition of platformless, and discuss how a platformless approach facilitates enterprise software engineering.
 
 ## The Problem with Platforms
 
