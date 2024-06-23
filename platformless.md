@@ -64,15 +64,12 @@ An exceptional developer experience (DX) that liberates and empowers developers 
 This combination supports the entire lifecycle of enterprise software engineering, delivery, and operations, delivering a platformless experience for the enterprise. Consider the following example:
 
 > **Creating in a Platformless world:**
-> + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
-> + *She logs into the platformless dev environment. Navigating to its built-in marketplace, Maria discovers the APIs she needs for the CRM system and all the other external systems.*
-> + *She programs the integration using a language of her choice or a low code tool of her choice (from amongst the languages/tools her company has approved) and commits the code.*
-> + *She goes to the platformless dev environment, selects available connection configurations for development, deploys automatically built integration, and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
-> + *When she is ready, she promotes the integration to a staging environment and shares it with her colleagues for verification.*
-> + *She promotes the integration to the production environment inheriting production configurations that have been set up by her company for all the APIs she is consuming.*
-> + *She and her colleagues can manage the integration using the monitoring, tracing and observability tools provided by the platformless environment.*
-> + *After some time goes by she or someone else will modify the integration to meet new requirements. She creates a separate deployment of the new branch of the code and follows the development process and eventually performs release management to upgrade the integration.*
-> + *Maria is now running an evolving enterprise integration in a scalable, zero-trust environment without ever losing focus on the original problem she solved: developing the integration.*
+> + *Maria, a seasoned lead developer at TechFirm Alpha, is entrusted with constructing end-user applications for internal and external users. Her role involves integrating the company's system of records (SOR), which encompasses an in-house customer relationship management (CRM) system, with numerous external e-commerce platforms. Maria is integral to the 'customer' domain, contributing her expertise to the two-pizza team.*
+> + *She logs into the platformless development environment and navigates to its built-in marketplace. Maria looks up the existing APIs and checks the functionality she needs for application development. She subscribes to the required APIs but finds that not all the capabilities are available, so she decides to implement a few new APIs.*
+> + *She programs a service using a language of her choice (from amongst the languages her company has approved) and commits the code. Returning to the platformless development environment, she selects the available connection configurations for development, deploys the automatically built integration, and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
+> + *She creates an API out of the service and defines it as an internal API. When ready, she promotes the API to a staging environment and shares it with her colleagues for verification. After validation, she promotes the API to the production environment, inheriting production configurations set up by her company for all the APIs she is consuming.*
+> + *She and her colleagues can manage the API using the monitoring, tracing, and observability tools provided by the platformless environment. Over time, she or another team member modifies the API to meet new requirements. She creates a separate deployment of the new branch of the code, follows the development process, and eventually performs release management to upgrade the integration.*
+> + *Maria is now running an evolving API in a scalable, zero-trust environment without ever losing focus on the original problem she solved: developing the integration.*
 
 Now, let’s explore the four foundational elements of platformless — API-first, cloud native middleware, platform engineering, and developer experience (DX) — in more detail.
 
