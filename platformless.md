@@ -89,7 +89,7 @@ Capabilities of the Internal Developer Platform include:
 
 Platform Engineering and the resulting Internal Developer Platform are the lynchpin to facilitate platformless and allow all parties envolved with enterprise software engineering to have full focus just on the parts they are responsible for.
 
->Platformless is the result of platform engineering delivering through an IDP to the application teams responsible for delivering digital experiences. **Platformless defines how to do platform engineering right.**
+>Platformless is the result of platform engineering provided through an IDP to the application teams responsible for delivering digital experiences. **Platformless defines how to do platform engineering right.**
 
 ### API-First
 
