@@ -73,6 +73,24 @@ This combination supports the entire lifecycle of enterprise software engineerin
 
 Now, let us explore in more detail the foundational element of platformless—platform engineering—and the three pillars: API-first, cloud native middleware, and developer experience (DX).
 
+### Platform Engineering
+
+While designing and implementing good software while reusing existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises. 
+
+Approaches such as DevOps and SRE have been widely adopted to solve this problem. The practice of DevOps is a software development and delivery approach that bridges gaps between development and operations teams. SRE is about ensuring system readiness and availability at the desired level. 
+
+Platform Engineering is the domain of building toolchains and processes to enable enterprise developers to easily build, deliver and operate software in an empowered, self-service manner. The resulting product is now referred to as an [internal developer platform (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md). These products support all the roles involved in enterprise software delivery including developers, testers, DevOps/AppOps engineers and SREs.
+
+Capabilities of the Internal Developer Platform include:
+
+1. Complete self-service for all roles with fine-grained permission management and complete auditability of all actions.
+2. Release management capabilities to support rapid iteration and robust releases with strategies such as rolling updates, canary and blue-green.
+3. Observability capabilities for all the roles of the enterprise so their focus can remain at their level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
+
+Platform Engineering and the resulting Internal Developer Platform are the lynchpin to facilitate platformless and allow all parties envolved with enterprise software engineering to have full focus just on the parts they are responsible for.
+
+>Platformless is the result of platform engineering delivering through an IDP to the application teams responsible for delivering digital experiences. **Platformless defines how to do platform engineering right.**
+
 ### API-First
 
 Adopting an **"API-first"** approach has become the gold standard for an enterprise architecture to reap the benefits of the API economy approach to enterprise computing.
@@ -97,22 +115,6 @@ Cloud native is widely accepted as the approach for building modern distributed 
 [Domain-driven design (DDD)](https://martinfowler.com/bliki/DomainDrivenDesign.html) helps coordinate business requirements with software solutions. Domains in this context are comprehensive, offering APIs, events, and data to ensure cohesive yet loosely coupled systems. [Cell-based architecture (CBA)](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) is an approach for modularizing a group of related capabilities from (part of) a domain into a network cell and managing access to them through well-defined gateways. Service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and security of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interaction.
 
 Building, deploying, operating and evolving all this infrastructure is difficult to impossible for most enterprises and results in a massive focus shift. Platformless delivers these capabilities as part of the fabric allowing the enterprise to instead focus on applications, services, APIs, automations and other digital assets that deliver value to their ecosystem.
-
-### Platform Engineering
-
-While designing and implementing good software while reusing existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises. 
-
-Approaches such as DevOps and SRE have been widely adopted to solve this problem. The practice of DevOps is a software development and delivery approach that bridges gaps between development and operations teams. SRE is about ensuring system readiness and availability at the desired level. 
-
-Platform Engineering is the domain of building toolchains and processes to enable enterprise developers to easily build, deliver and operate software in an empowered, self-service manner. The resulting product is now referred to as an [internal developer platform (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md). These products support all the roles involved in enterprise software delivery including developers, testers, DevOps/AppOps engineers and SREs.
-
-Capabilities of the Internal Developer Platform include:
-
-1. Complete self-service for all roles with fine-grained permission management and complete auditability of all actions.
-2. Release management capabilities to support rapid iteration and robust releases with strategies such as rolling updates, canary and blue-green.
-3. Observability capabilities for all the roles of the enterprise so their focus can remain at their level: on innovation metrics like DORA metrics for CIOs, business analytics for product managers, runtime logs/metrics/traces for DevOps teams.
-
-Platform Engineering and the resulting Internal Developer Platform are the lynchpin to facilitate platformless and allow all parties envolved with enterprise software engineering to have full focus just on the parts they are responsible for.
 
 ### Developer Experience
 
