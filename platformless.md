@@ -55,9 +55,13 @@ Platformless is delivered by the seamless marriage of four technology domains:
 
 **<p align="center">Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )</p>**
 
-APIs are the fundamental building block of modern software. Cloud native middleware is the runtime infrastructure needed for building and running cloud native distributed systems. Platform engineering builds [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) combining DevOps and site reliability engineering (SRE) to fully empower enterprise developers. Exceptional developer experience (DX) to unshackle and empower developers to operate autonomously, yet securely, is the ultimate win of platformless as that allows the focus to move to applications from platforms.
+Platform engineering is the foundation for a platformless experience. It constructs [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md), merging DevOps and site reliability engineering (SRE) to fully empower enterprise developers.
 
-This combination supports the full lifecycle of enterprise software engineering and delivers a platformless experience for the enterprise. Consider the following example: 
+APIs are the fundamental building blocks of modern software. Cloud native middleware serves as the runtime infrastructure essential for building and running cloud native distributed systems. It provides the necessary components to build applications efficiently.
+
+An exceptional developer experience (DX) that liberates and empowers developers to operate autonomously and securely is the ultimate benefit of a platformless approach. This shift allows the focus to move from platforms to applications.
+
+This combination supports the entire lifecycle of enterprise software engineering, delivery, and operations, delivering a platformless experience for the enterprise. Consider the following example:
 
 > **Creating in a Platformless world:**
 > + *Maria, a lead developer at TechFirm Alpha, is tasked with integrating the company's in-house customer relationship management (CRM) system with multiple external e-commerce platforms.* 
