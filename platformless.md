@@ -1,4 +1,5 @@
 <h1 align="center">Platformless</h1>
+<h2 align="center">the manifesto for achieving a platformless experience through modern platform engineering</h2>
 <!-- <h1 align="center"> Facilitating Enterprise Software Engineering with Platformless</h1> -->
 <!-- <h2 align="center"> Radically Improving Enterprise Software Engineering with Platformless</h2>-->
 <p align="center">
