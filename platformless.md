@@ -71,7 +71,7 @@ This combination supports the entire lifecycle of enterprise software engineerin
 > + *She and her colleagues can manage the API using the monitoring, tracing, and observability tools provided by the platformless environment. Over time, she or another team member modifies the API to meet new requirements. She creates a separate deployment of the new branch of the code, follows the development process, and eventually performs release management to upgrade the integration.*
 > + *Maria is now running an evolving API in a scalable, zero-trust environment without ever losing focus on the original problem she solved: developing the integration.*
 
-Now, let us explore in more detail the foundational element of platform engineering and the three pillars of platformless: API-first, cloud native middleware, and developer experience (DX).
+Now, let us explore in more detail the foundational element of platformless—platform engineering—and the three pillars: API-first, cloud native middleware, and developer experience (DX).
 
 ### API-First
 
