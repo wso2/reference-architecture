@@ -150,6 +150,10 @@ The aim of platformless is to enable enterprises to build and deliver many digit
 
 ## Advantages of Adopting Platformless
 
+**Reduced cognitive load for developers**: Platformless redefines the development process by minimizing the [cognitive load](https://github.com/zakirullin/cognitive-load) on developers. By sidestepping the usual complexities linked to platform management and simplifying the acquisition of necessary resources for application development, it allows developers to focus on their core tasks, enhancing their overall efficiency and effectiveness.
+
+**Increased developer productivity**: By eliminating the need for extensive platform maintenance and management, platformless significantly boosts developer productivity. Developers can concentrate on creating and innovating, leading to quicker product launches and a more agile response to market demands and opportunities.
+
 **Accelerated market response**: platformless redefines the pace of development, sidestepping the usual delays linked to platform management. This shift allows for quicker product launches, significantly speeding up an organization's response to market demands and opportunities.
 
 **Attainable best practices**: adopting platformless means embracing a realistic and sustainable approach to best practices. It negates the need for continuous updates and exhaustive research, making the achievement of high industry standards more accessible and less burdensome.
@@ -158,7 +162,7 @@ The aim of platformless is to enable enterprises to build and deliver many digit
 
 **Streamlined team operations**: platformless advocates for a lean operational model. By reducing the need for extensive platform maintenance, it ensures that teams can concentrate their efforts on core business objectives, enhancing productivity and aligning with organizational goals.
 
-**Reduced financial overhead**: one of the most significant benefits of platformless is its cost efficiency. By eliminating the substantial investments typically required for platform development and upkeep, platformless provides a more financially sustainable model, allowing for better allocation of people across the organization.
+**Enhanced focus on value creation**: Platformless enables a shift in focus from platform management to the development of applications and digital experiences built on top of the platform. This approach creates a business service platform (also known as a composable enterprise), where modular business services are seamlessly integrated. By aligning with the organization's value streams, platformless fosters innovation and efficiency, empowering teams to concentrate on high-value activities that drive business outcomes.
 
 ## Conclusion
 
