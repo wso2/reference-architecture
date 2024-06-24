@@ -140,7 +140,7 @@ Further, as organizations become digital businesses, they need to produce not on
 The aim of platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
 
 <p align="center">
-  <img src="media/platformless-architecturev2-15.png" alt="platformless architecture"/>
+  <img src="media/platformless-architecturev3-15.png" alt="platformless architecture"/>
 </p>
 <p align="center">
   <i>
