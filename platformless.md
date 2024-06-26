@@ -176,3 +176,4 @@ Software delivery platforms and runtime platforms have had an amazing impact on 
 4. Fowler, Martin. n.d. “Bliki: DomainDrivenDesign.” Martinfowler.com. https://martinfowler.com/bliki/DomainDrivenDesign.html.
 5. Stephen O'Grady. 2020. "The Developer Experience Gap." Redmonk.com. https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/.
 6. Zakirullin. 2024. “GitHub - Zakirullin/Cognitive-load: 🧠 Cognitive Load Is What Matters.” GitHub. June 2024. https://github.com/zakirullin/cognitive-load.
+7. “Platform Strategy: Innovation Through Harmonization (Architect Elevator Book Series): Hohpe, Gregor, Danieli, Michele, Landreau, Jean-Francois: 9798320272047: Amazon.com: Books,” n.d. https://a.co/d/00WTyayH.
