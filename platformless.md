@@ -1,5 +1,5 @@
-<h1 align="center">Platformless</h1>
-<h2 align="center">the manifesto for achieving a platformless experience through modern platform engineering</h2>
+<h1 align="center">Platformless Manifesto</h1>
+<h2 align="center">Delivering the right experience from platform engineering</h2>
 <!-- <h1 align="center"> Facilitating Enterprise Software Engineering with Platformless</h1> -->
 <!-- <h2 align="center"> Radically Improving Enterprise Software Engineering with Platformless</h2>-->
 <p align="center">
@@ -14,10 +14,33 @@ Version: 1.0 (Summer-2024)<br/>
 + [Paul Fremantle, Ph.D.](https://www.linkedin.com/in/paulfremantle/) | Co-Founder, Founder CTO & Advisor - [WSO2](https://wso2.com/) | [@pzfreo](https://x.com/pzfreo)
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
+## `<Meta stuff> `
+
+### What is the problem we want to solve with this document
+
+* Explain the need for platforms to go away from focus
+* Say that that's what platform engineering should produce: a platform that goes away from focus
+  * Target user for PE is developers, not platform engineers
+* Talk a bit about what such a platform would look like
+  * Software design, architecture & reuse
+    * Design:
+      * Modularity mgmt via DDD and service abstractions
+    * Architecture: Services (from micro to monoliths), APIs as the unit of composition
+    * Reuse: Marketplaces
+  * Software delivery & operations, including run-time aspects of supporting the design and architecture
+    * Runtime architecture: multi-env, CBA, zero trust, ...
+  * Delivering passionate developer experience
+
+### Who is the target audience to benefit from reading this?
+
+* Platform engineering teams who are building platform (to get their target right)
+* Digital experience owners (LOB head to head of engineering) to understand what is possible with modern software engineering and therefore what they should demand from platform teams
+* Governance owners to salivate with what they could have: live views of architecture, full control of external service usage, full visibility on isolated domains, ..
 
 ## Introduction
 
 Radical simplification is at the heart of many major shifts in the enterprise application space:
+
 + **From wired to wireless**: transitioning beyond the physical limitations of wires ("wireless")
 + **From client-server to web and mobile**: not needing to worry about delivery and deployment of specific clients (“client-less”)
 + **From datacenter to cloud**: not needing to worry about hardware (“data-centre-less”)
@@ -31,13 +54,13 @@ In this manifesto, we examine the challenges that organizations face with enterp
 
 ## The Problem with Platforms
 
-Recently we have seen the rise of enterprise software delivery platforms. Often these build on Kubernetes or other cluster management systems, together with DevOps pipelines and monitoring and management systems among many other aspects. These platforms are incredibly powerful and allow organizations to deploy applications at scale and speed. More importantly, they enable updates to be deployed, rolled out incrementally, and rolled back if necessary. 
+Recently we have seen the rise of enterprise software delivery platforms. Often these build on Kubernetes or other cluster management systems, together with DevOps pipelines and monitoring and management systems among many other aspects. These platforms are incredibly powerful and allow organizations to deploy applications at scale and speed. More importantly, they enable updates to be deployed, rolled out incrementally, and rolled back if necessary.
 
 Platforms allow massive agility in improving application function and performance — which are characteristics closely associated with business success.
 
 However, platforms have introduced their own challenges. They require large, highly-skilled platform engineering teams, and the skills are hard to find. Each platform requires many complex choices and links between multiple systems: DevOps pipelines, deployment management, monitoring and management systems, network substrates, and of course the actual cluster management.
 
-It is clear that we need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself. 
+It is clear that we need a new paradigm to remove the platform from our consciousness and allow us to code, build, and deploy enterprise applications with fast deployment, continuous integration and rollout, and world-class monitoring and management - but with no need to see and manage the platform itself.
 
 <p align="center">
   <img src="media/mindsharev7-15.png" alt="Tech. mindshare"/>
@@ -52,9 +75,9 @@ We call this **“Platformless”**. That doesn’t mean the platform vanishes c
 
 ## What is Platformless?
 
-Platformless is delivered by the seamless marriage of four technology domains: 
+Platformless is delivered by the seamless marriage of four technology domains:
 
-**<p align="center">Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )</p>**
+**`<p align="center">`Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )`</p>`**
 
 Platform engineering is the foundation for a platformless experience. It constructs [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md), merging DevOps and site reliability engineering (SRE) to fully empower enterprise developers.
 
@@ -65,6 +88,7 @@ An exceptional developer experience (DX) that liberates and empowers developers 
 This combination supports the entire lifecycle of enterprise software engineering, delivery, and operations, delivering a platformless experience for the enterprise. Consider the following example:
 
 > **Creating in a Platformless world:**
+>
 > + *Maria, a seasoned lead developer at TechFirm Alpha, is entrusted with constructing end-user applications for internal and external users. Her role involves integrating the company's system of records (SOR), which encompasses an in-house customer relationship management (CRM) system, with numerous external e-commerce platforms. Maria is integral to the 'customer' domain, contributing her expertise to the two-pizza team.*
 > + *She logs into the internal developer platform's development environment and navigates to its built-in marketplace. Maria looks up the existing APIs and checks the functionality she needs for application development. She subscribes to the required APIs but finds that not all the capabilities are available, so she decides to implement a few new APIs.*
 > + *She uses her favorite IDE, programs a service using a language of her choice (from amongst the languages her company has approved) and commits the code. Returning to the platformless development environment, she selects the available connection configurations for development, deploys the automatically built integration, and runs tests. The platformless architecture automatically ensures zero-trust deployment.*
@@ -76,9 +100,9 @@ Now, let us explore in more detail the foundational element of platformless—pl
 
 ### Platform Engineering
 
-While designing and implementing good software while reusing existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises. 
+While designing and implementing good software while reusing existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises.
 
-Approaches such as DevOps and SRE have been widely adopted to solve this problem. The practice of DevOps is a software development and delivery approach that bridges gaps between development and operations teams. SRE is about ensuring system readiness and availability at the desired level. 
+Approaches such as DevOps and SRE have been widely adopted to solve this problem. The practice of DevOps is a software development and delivery approach that bridges gaps between development and operations teams. SRE is about ensuring system readiness and availability at the desired level.
 
 Platform Engineering is the domain of building toolchains and processes to enable enterprise developers to easily build, deliver and operate software in an empowered, self-service manner. The resulting product is now referred to as an [internal developer platform (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md). These products support all the roles involved in enterprise software delivery including developers, testers, DevOps/AppOps engineers and SREs.
 
@@ -90,7 +114,7 @@ Capabilities of the Internal Developer Platform include:
 
 Platform Engineering and the resulting Internal Developer Platform are the lynchpin to facilitate platformless and allow all parties envolved with enterprise software engineering to have full focus just on the parts they are responsible for.
 
->Platformless is the result of platform engineering provided through an IDP to the application teams responsible for delivering digital experiences. **Platformless defines how to do platform engineering right.**
+> Platformless is the result of platform engineering provided through an IDP to the application teams responsible for delivering digital experiences. **Platformless defines how to do platform engineering right.**
 
 ### API-First
 
@@ -137,7 +161,7 @@ Enterprise software engineering is more complex than building independent produc
 
 Further, as organizations become digital businesses, they need to produce not one piece of software but a large complex collection of software products that work together. The aim is to digitize the business and support human users (as web/mobile/desktop apps), non-human users (as network APIs), and programs that work with no external involvement (as jobs or automations). A large enterprise will often have thousands of such digital assets that need to work together.
 
-The aim of platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management. 
+The aim of platformless is to enable enterprises to build and deliver many digital experiences without the platform becoming the challenge. To succeed, platformless must enable building systems that span business domains, APIs, events, automations, workflows, and of course apps. It must support modularity, beautiful architecture, reuse, and security. It must also have world-class delivery: fast deployment, continuous integration and rollout, incisive monitoring, and intuitive management.
 
 <p align="center">
   <img src="media/platformless-architecturev3-15.png" alt="platformless architecture"/>
@@ -166,13 +190,13 @@ The aim of platformless is to enable enterprises to build and deliver many digit
 
 ## Conclusion
 
-Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, platformless helps deliver even better applications to customers. 
+Software delivery platforms and runtime platforms have had an amazing impact on the speed of delivery and scalability of enterprise applications and systems. But these were the forerunners for a simpler, more effective model. Platformless takes away the complexity of these systems while retaining and improving the experience for everyone involved in building, deploying, and running enterprise applications. Most importantly, platformless helps deliver even better applications to customers.
 
 ## References
 
 1. Abeysinghe, A., & Fremantle, P. (2018, June). Cell-based architecture: A decentralized reference architecture for cloud-native applications. https://github.com/wso2/. https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md
 2. Compuware, Mike Burba. 2003. “Delivering the Holy Grail of Software Development.” Computerworld. October 22, 2003. https://www.computerworld.com/article/2572523/delivering-the-holy-grail-of-software-development.html.
-3. Abeysinghe. A. 2023a. “Internal Developer Platform:  A Technical Reevaluation.” WSO2. October 2023. https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md. 
+3. Abeysinghe. A. 2023a. “Internal Developer Platform:  A Technical Reevaluation.” WSO2. October 2023. https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md.
 4. Fowler, Martin. n.d. “Bliki: DomainDrivenDesign.” Martinfowler.com. https://martinfowler.com/bliki/DomainDrivenDesign.html.
 5. Stephen O'Grady. 2020. "The Developer Experience Gap." Redmonk.com. https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/.
 6. Zakirullin. 2024. “GitHub - Zakirullin/Cognitive-load: 🧠 Cognitive Load Is What Matters.” GitHub. June 2024. https://github.com/zakirullin/cognitive-load.
