@@ -455,3 +455,7 @@ Automation is key when implementing innovative ideas and taking them to market r
 **Real-time**: Users associated with an agile business (customers, partners, and employees) along with the systems connected rely on real-time information exchange, primarily due to the digital needs and experiences built around real-time data. 
 
 **Artificial Intelligence (AI)**: AI is a crosscutting concern in the agile business runtime. AI boosts the adaptability and decision-making capabilities of the business by using technologies, such as logical AI, pattern recognition, and heuristics. Capabilities provided by AI can be utilized in development environments to increase the productivity of development teams, as well as increase the end-user experience by linking AI with digital products. The cell-based architecture provides a framework to provide data for AI systems by capturing usage data from the observations. Additionally, the decentralized architecture makes it possible to plug in advanced AI features, such as automatic programming and genetic programming. Finally, AI has become an accessible technology for any enterprise as a result of the open source offerings introduced to the industry.
+
+---
+*License: This work is licensed under a **[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)**.*
+
