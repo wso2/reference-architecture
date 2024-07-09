@@ -354,7 +354,7 @@ Cell-based architecture results in a highly [**composable enterprise**](https://
 Authors have published a [**Reference Methodology**](https://github.com/wso2/reference-methodology/blob/master/reference-methodology.md) as a guideline to implement application systems and agile enterprises using cell-based architecture.
 
 > *Note from the author:
-I have been involved in implementing more than 1000 projects using Cell-based, layered and segmented architecture in many parts of the world. If you are looking for guidance for picking the correct architecture for your project, I'm happy to guide you using a [**strategic consultancy engagement**](https://wso2.com/strategic-consulting/).*
+With experience in [numerous projects](https://wso2.com/customers/) utilizing cell-based, layered, and segmented architectures globally, I am available to provide [**strategic consultancy**](https://wso2.com/strategic-consulting/)to help you choose the appropriate architecture for your project.
 
 ## Publications 
 
