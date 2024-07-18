@@ -54,7 +54,7 @@ In this manifesto, we examine the challenges that organizations face with enterp
 
 ## The Problem with Platforms
 
-Recently we have seen the rise of enterprise software delivery platforms. Often these build on Kubernetes or other cluster management systems, together with DevOps pipelines and monitoring and management systems among many other aspects. These platforms are incredibly powerful and allow organizations to deploy applications at scale and speed. More importantly, they enable updates to be deployed, rolled out incrementally, and rolled back if necessary.
+Recently we have seen the rise of enterprise software delivery platforms. Often these are built on Kubernetes or other cluster management systems, together with DevOps pipelines and monitoring and management systems among many other aspects. These platforms are incredibly powerful and allow organizations to deploy applications at scale and speed. More importantly, they enable updates to be deployed, rolled out incrementally, and rolled back if necessary.
 
 Platforms allow massive agility in improving application function and performance — which are characteristics closely associated with business success.
 
@@ -100,7 +100,7 @@ Now, let us explore in more detail the foundational element of platformless—pl
 
 ### Platform Engineering
 
-While designing and implementing good software while reusing existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises.
+While designing and implementing good software that reuses existing capabilities is hard enough, the process of getting that code out to customers to use in a repeatable, retractable, reliable approach has long been a challenge for enterprises.
 
 Approaches such as DevOps and SRE have been widely adopted to solve this problem. The practice of DevOps is a software development and delivery approach that bridges gaps between development and operations teams. SRE is about ensuring system readiness and availability at the desired level.
 
@@ -137,11 +137,11 @@ Most enterprises today still have focused "API programs" to enable this approach
 
 ### Cloud Native Middleware
 
-Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance.These include service mesh, API gateway, message brokering, distributed tracing, configuration management, logging, monitoring and observability, event streaming, caching, service discovery, serverless, container orchestration, data storage, integrated authentication and authorization, and zero-trust architecture. This middleware environment must enable enterprise architects to practice appropriate service architecture styles from microservices to monoliths to functions. It must also support non-network triggered jobs.
+Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance. These include service mesh, API gateway, message brokering, distributed tracing, configuration management, logging, monitoring and observability, event streaming, caching, service discovery, serverless, container orchestration, data storage, integrated authentication and authorization, and zero-trust architecture. This middleware environment must enable enterprise architects to practice appropriate service architecture styles from microservices to monoliths to functions. It must also support non-network triggered jobs.
 
-As an example, service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and security of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interaction.
+As an example, service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and security of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interactions.
 
-Building, deploying, operating and evolving all this infrastructure is difficult to impossible for most enterprises and results in a massive focus shift. Platformless delivers these capabilities as part of the fabric allowing the enterprise to instead focus on applications, services, APIs, data, automations and other digital assets that deliver value to their ecosystem.
+Building, deploying, operating and evolving all this infrastructure is difficult or impossible for most enterprises and results in a massive focus shift. Platformless delivers these capabilities as part of the fabric allowing the enterprise to instead focus on applications, services, APIs, data, automations and other digital assets that deliver value to their ecosystem.
 
 ### Developer Experience
 
