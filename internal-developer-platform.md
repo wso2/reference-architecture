@@ -2,7 +2,7 @@
 <h3 align="center"> A Technical Reevaluation </h3>
 <p align="center">
 <i>
-Version: 0.7 (Fall-2023)<br/>
+Version: 1.0 (Summer-2024)<br/>
 </i>
 </p>
 
