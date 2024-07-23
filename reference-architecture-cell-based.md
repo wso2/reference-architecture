@@ -322,8 +322,12 @@ You can navigate to the code base at - [https://github.com/wso2/cellery](https:/
 
 [An Insider Look: How Okta Builds and Runs Scalable Infrastructure](https://www.okta.com/resources/whitepaper/how-okta-builds-and-runs-scalable-infrastructure/) using Cell-based Architecture. 
 
-#### Bookings.com
+#### Booking.com
 [Cloud Native Security: Cell-Based Architecture & K8s](https://www.youtube.com/watch?v=z8KLVZBHK-E) talk at CNCF. 
+
+#### DoorDash
+[DoorDash Uses Service Mesh and Cell-Based Architecture to Significantly Reduce Data Transfer Costs](https://www.infoq.com/news/2024/01/doordash-service-mesh/)
+
 
 #### Microservice DSL (MDSL)
 
@@ -388,7 +392,9 @@ With experience in [numerous projects](https://wso2.com/customers/) utilizing ce
 
 [15] Pandey, P. (2023, June 3). Cell-Based architecture — Architecture pattern. https://www.linkedin.com/pulse/. https://www.linkedin.com/pulse/cell-based-architecture-pattern-pratik-pandey
 
-[16] Booking.com. 2024. “Cloud Native Security: Cell-Based Architecture & K8s - Rostyslav Myronenko & Shweta Vohra.” Edited by CNCF [Cloud Native Computing Foundation]. https://www.youtube.com/watch?v=z8KLVZBHK-E.
+[16] Booking.com. 2024. “Cloud Native Security: Cell-Based Architecture & K8s - Rostyslav Myronenko & Shweta Vohra.” Edited by CNCF [Cloud Native Computing Foundation]. https://www.youtube.com/watch?v=z8KLVZBHK-E
+
+[17] Kumar, Shantanu. “Cell-Based Architecture: Comprehensive Guide.” dzone.com, April 19, 2024. https://dzone.com/articles/grokking-cell-based-architecture.
 
 ## References
 
