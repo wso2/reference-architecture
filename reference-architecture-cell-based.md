@@ -308,7 +308,7 @@ APIs can comprehend as the products of the 21st century. For many millennia, hum
 
 #### WSO2 Choreo
 
-[WSO2 Choreo](https://wso2.com/choreo/) is a SaaS application development suite designed to accelerate the creation of digital experiences. Build, deploy, monitor, and manage your cloud native applications. Increase developer productivity and focus on innovation.
+[WSO2 Choreo](https://wso2.com/choreo/) is an internal developer platform (IDP) as a service designed to accelerate the creation of digital experiences. Build, deploy, monitor, and manage your cloud native applications. Increase developer productivity and focus on innovation.
 WSO2 Choreo with Cell-based Architecture enables Choreo projects to become governable units from development to deployment with managed access via APIs, events, and data. Also, organize and manage enterprise teams into domains, sub-domains, and projects. Control visibility and access, and enable collaboration, self-service, and reuse, in order to maximize team productivity.
 
 #### Cellery
@@ -332,6 +332,9 @@ You can navigate to the code base at - [https://github.com/wso2/cellery](https:/
 #### Microservice DSL (MDSL)
 
 [A Domain-Specific Language (DSL) to specify (micro-)service contracts](https://microservice-api-patterns.github.io/MDSL-Specification/), their data representations and API endpoints.
+
+#### Miro template 
+[Miro template](https://miro.com/miroverse/cellbased-architecture/)
 
 ### Parallels
 
@@ -394,7 +397,9 @@ With experience in [numerous projects](https://wso2.com/customers/) utilizing ce
 
 [16] Booking.com. 2024. “Cloud Native Security: Cell-Based Architecture & K8s - Rostyslav Myronenko & Shweta Vohra.” Edited by CNCF [Cloud Native Computing Foundation]. https://www.youtube.com/watch?v=z8KLVZBHK-E
 
-[17] Kumar, Shantanu. “Cell-Based Architecture: Comprehensive Guide.” dzone.com, April 19, 2024. https://dzone.com/articles/grokking-cell-based-architecture.
+[17] Kumar, Shantanu. “Cell-Based Architecture: Comprehensive Guide.” dzone.com, April 19, 2024. https://dzone.com/articles/grokking-cell-based-architecture
+
+[18] Ståhl, Henrik. 2023. “Miro Xmas Calendar, Day 5: Cell-Based Architecture | Medium.” Medium, December 24, 2023. https://medium.com/@H_Stahl/day-5-cell-based-architecture-9ffab4dd68c3.
 
 ## References
 
