@@ -2,8 +2,8 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </h3>
 <p align="center">
 <i>
-Version: Spring-2024<br/>
-First Published On: Summer-2018<br/>  
+Version: Summer-2024<br/>
+<b>First Published On: Summer-2018<br/>  </b>
 </i>
 </p>
 
