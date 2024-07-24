@@ -36,65 +36,6 @@ In technology terms, a platform serves as a foundation or a framework that enabl
 
 In the above diagram, the platform is represented as a foundation, serving as the base upon which all other activities and functions rest. Sitting atop the platform are interlinked squares labeled as 'Pods' or 'Domains.' These serve as compartments or subdivisions that group related functions and activities. Within each Pod or Domain, you'll find circles labeled as 'Components.' These components represent the individual workloads or tasks that the platform is designed to manage or execute. Just as in a train station, where different platforms serve specific train lines and each train has its specific compartments and cargo, this diagram illustrates how a technology platform organizes various workloads into logical groups (Pods/Domains), making it easier to manage, scale, and deploy them. The encapsulation within Pods or Domains provides an additional layer of organization, facilitating more efficient governance and operational management.
 
-## Modern technology platform requirements 
-
-In today's digital age, customer experiences are the driving force behind organizational differentiation. These experiences are increasingly delivered through software, blurring the lines between traditional industry categories. Whether you're in retail, healthcare, hospitality, or any other sector, your organization is, in essence, also a software company.
-
-![application lcm](media/lcm-full-15.1.png)
-
-A modern technology platform should, therefore, be capable of designing, creating, and delivering these unique digital experiences. This goes far beyond merely offering a set of APIs or an environment where code can be executed. A comprehensive platform addresses the end-to-end life cycle of application development, starting from business architecture and extending to application architecture, application development, and testing.
-
-But the life cycle doesn't stop at deployment. A robust platform must also offer tools for running and operating these applications, ensuring they meet performance, security, and scalability requirements. Lastly, it must facilitate the gathering of feedback and insights, enabling continuous improvement and adaptation. This comprehensive approach ensures that the platform serves not merely as a set of disjointed tools but as a cohesive ecosystem enabling organizations to be agile, innovative, and customer-centric.
-
-By encompassing the full spectrum of application development, from ideation to operation, modern platforms empower organizations to deliver differentiated experiences effectively and efficiently. Therefore, when evaluating technology platforms, the ability to support this complete life cycle should be a prime consideration.
-
-In addition to covering the full stages of an application's lifecycle, the table below outlines key aspects that a modern technology platform should address. These are essential components that enable organizations to be agile, innovative, and customer-centric, shaping how they design, develop, deliver, and operate software.
-
-| Digital infrastructure              | Architecture             |
-|-----------------------------|------------------------------------------------------------|
-| Containerization & Kubernetes, Serverless operation, Multi-environment, Multi-cloud, CI/CD, GitOps, Observability & alerting, Configuration management, Firewall/load balancing/geo routing/DNS, Multi-region deployment, API management, Developer self-service, Cost optimization, Insights - business and management | API-first development, Reuse and API marketplace, Domain-driven development, Microservice architecture, Version management, Release management, Authentication & authorization, Large language models and AI  |
-
-
-### The enterprise abstraction for enhanced productivity and simpicity 
-
-As technologists, we are in the business of building experiences, and every line of code we write contributes to shaping those experiences. In this sense, the software industry is akin to the movie industry, where creativity thrives and innovation takes center stage. Just as filmmakers use storytelling techniques, cinematography, and special effects to captivate audiences, software developers rely on powerful abstractions to unleash their creative potential and deliver remarkable experiences. 
-
-In software development, abstractions offer simplicity and convenience. They enhance our creative efforts by providing intuitive interfaces, hiding the underlying complexities, and empowering us to work at higher levels of understanding and productivity. In this context, a platform serves as a critical abstraction layer that enterprises can leverage to achieve these benefits.
-
-### Quadruple layers of enterprise abstractions
-Hand in hand with software abstractions we must also embrace the power of enterprise abstractions to unlock the full potential of our creative endeavors in the software industry. These abstractions are specifically designed to tackle the unique challenges and complexities of the enterprise landscape, enabling us to develop scalable, secure, and efficient solutions that drive business success. By leveraging these enterprise abstractions, we can build robust architectures, streamline business processes, and transform the way organizations operate in the digital age.
-
-To understand enterprise abstractions, it is useful to review "The Quadruple Layers: Levels of Enterprise Abstractions," which has emerged as a guiding principle. This powerful framework contains four key layers in which each layer represents a distinct level of abstraction — deployment, middleware, business, and domain — that contributes to the overall efficiency and effectiveness of enterprise systems.
-
-![the quadruple layers](/media/enteprise-abstractions.png)
-
-#### Deployment abstractions
-Deployment abstractions encompass a wide range of practices and tools that facilitate efficient application hosting and deployment within an enterprise environment. These abstractions include continuous integration/continuous deployment (CI/CD), DevOps, GitOps, SecOps, observability, multi-cloud strategies, zero-trust security measures, scalability, and high availability. Collectively, these deployment abstractions form the foundation for efficient, secure, and scalable enterprise software deployments, empowering organizations to meet the demands of modern technology landscapes.
-
-#### Middleware abstractions
-Middleware abstractions serve as the intermediary layer that facilitates communication and data management between deployment and business abstractions. They play a key role in system integration, enabling seamless data flow and connectivity between disparate parts of an enterprise system. Middleware abstractions include elements like message brokers, API gateways, and data transformation tools.
-
-#### Business abstractions
-Business abstractions encompass a set of concepts and practices that focus on modeling and automating core business processes within an enterprise. These abstractions include services or microservices, functions, APIs, events, data, and more. They form the building blocks for designing and implementing agile, scalable, and modular enterprise solutions, allowing organizations to respond to changing market needs quickly and efficiently.
-
-#### Domain abstractions
-Domain abstractions, a subset of business abstractions, play a crucial role in tailoring software solutions to specific industry or domain requirements. These abstractions are grouped according to teams and capabilities, as guided by Conway's Law. By aligning software design with the boundaries of the business domain, domain-driven design (**DDD**) allows teams to develop a deep understanding of the problem space and create focused, autonomous teams. [**Cell-based Architecture**](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) can serve as an effective implementation strategy for these domain abstractions. This empowers teams to deliver tailored software solutions that address the unique needs and complexities of their industry or domain with speed, flexibility, and scalability.
-
-
-![platform in enteprise](/media/ep-abstractions-20.png)
-
-In the diagram above, we provide a granular view of the "Quadruple Layers: Levels of Enterprise Abstractions" within a typical enterprise context. The visualization showcases how each abstraction layer — Deployment, Middleware, Business, and Domain — interacts and aligns with various technologies, users, and components integral to an enterprise. This detailed breakdown serves to elucidate the complexity and interconnectivity across the layers, giving you a comprehensive insight into how these abstractions collectively form the backbone of enterprise software architecture.
-
-#### Digital channels for enteprise abstractions 
-With the establishment of the Quadruple Layers of Enterprise Abstractions, which now include Deployment, Middleware, Business, and Domain layers, organizations gain a comprehensive foundation for constructing robust and efficient applications across various digital channels. These channels encompass web, mobile, Internet of Things (IoT), and other emerging platforms.
-
-Websites and web applications provide a digital interface accessible through browsers, enabling users to interact and consume services. Mobile applications offer a personalized and on-the-go experience, leveraging the capabilities of smartphones and tablets. The Internet of Things (IoT) adds connectivity to everyday objects, facilitating seamless interactions and data exchange. Emerging technologies like virtual reality (VR), augmented reality (AR), and mixed reality (MR) introduce new realms of immersive experiences.
-
-By tapping into the power of these digital channels and the four underlying layers of enterprise abstractions, organizations can develop innovative, user-centric applications that meet a variety of needs and preferences. This adaptability enables them to remain competitive in a swiftly changing digital landscape.
-
-The emergence of platform engineering—focused on designing and building toolchains and workflows for software development teams' self-service—underscores the growing importance of creating flexible, modular, and composable tech solutions. While the upside is clear, enterprises must weigh the financial and resource implications of such undertakings. Building and maintaining these complex platforms require careful assessment of costs, challenges, and the presence of viable alternatives.
-
-
 ## Rise of the internal developer platform (IDP)
 Enterprise abstractions, also known as the platform that CIOs are building, are collectively referred to as the internal developer platform (IDP). The IDP serves as a centralized foundation for the organization's software development and delivery processes, and it provides a comprehensive set of tools, services, and abstractions that enable development teams to work efficiently and effectively. Notably, the IDP encompasses all three enterprise abstraction layers: deployment, business, and domain, providing a holistic framework for building, deploying, and managing applications. 
 
@@ -179,6 +120,59 @@ By adopting the new IDP paradigm, organizations position themselves to innovate 
 
 [8] Abeysinghe, A. 2023. “Why Building a Platform May Not Be Your Best Bet - Exploring Five Critical Reasons : @VMblog.” VMblog.Com. October 6, 2023. https://vmblog.com/archive/2023/10/06/why-building-a-platform-may-not-be-your-best-bet-exploring-five-critical-reasons.aspx.
 
+
+## Appendix 
+
+### Modern technology platform requirements 
+
+In today's digital age, customer experiences are the driving force behind organizational differentiation. These experiences are increasingly delivered through software, blurring the lines between traditional industry categories. Whether you're in retail, healthcare, hospitality, or any other sector, your organization is, in essence, also a software company.
+
+![application lcm](media/lcm-full-15.1.png)
+
+A modern technology platform should, therefore, be capable of designing, creating, and delivering these unique digital experiences. This goes far beyond merely offering a set of APIs or an environment where code can be executed. A comprehensive platform addresses the end-to-end life cycle of application development, starting from business architecture and extending to application architecture, application development, and testing.
+
+But the life cycle doesn't stop at deployment. A robust platform must also offer tools for running and operating these applications, ensuring they meet performance, security, and scalability requirements. Lastly, it must facilitate the gathering of feedback and insights, enabling continuous improvement and adaptation. This comprehensive approach ensures that the platform serves not merely as a set of disjointed tools but as a cohesive ecosystem enabling organizations to be agile, innovative, and customer-centric.
+
+By encompassing the full spectrum of application development, from ideation to operation, modern platforms empower organizations to deliver differentiated experiences effectively and efficiently. Therefore, when evaluating technology platforms, the ability to support this complete life cycle should be a prime consideration.
+
+### The enterprise abstraction for enhanced productivity and simpicity 
+
+As technologists, we are in the business of building experiences, and every line of code we write contributes to shaping those experiences. In this sense, the software industry is akin to the movie industry, where creativity thrives and innovation takes center stage. Just as filmmakers use storytelling techniques, cinematography, and special effects to captivate audiences, software developers rely on powerful abstractions to unleash their creative potential and deliver remarkable experiences. 
+
+In software development, abstractions offer simplicity and convenience. They enhance our creative efforts by providing intuitive interfaces, hiding the underlying complexities, and empowering us to work at higher levels of understanding and productivity. In this context, a platform serves as a critical abstraction layer that enterprises can leverage to achieve these benefits.
+
+### Quadruple layers of enterprise abstractions
+Hand in hand with software abstractions we must also embrace the power of enterprise abstractions to unlock the full potential of our creative endeavors in the software industry. These abstractions are specifically designed to tackle the unique challenges and complexities of the enterprise landscape, enabling us to develop scalable, secure, and efficient solutions that drive business success. By leveraging these enterprise abstractions, we can build robust architectures, streamline business processes, and transform the way organizations operate in the digital age.
+
+To understand enterprise abstractions, it is useful to review "The Quadruple Layers: Levels of Enterprise Abstractions," which has emerged as a guiding principle. This powerful framework contains four key layers in which each layer represents a distinct level of abstraction — deployment, middleware, business, and domain — that contributes to the overall efficiency and effectiveness of enterprise systems.
+
+![the quadruple layers](/media/enteprise-abstractions.png)
+
+#### Deployment abstractions
+Deployment abstractions encompass a wide range of practices and tools that facilitate efficient application hosting and deployment within an enterprise environment. These abstractions include continuous integration/continuous deployment (CI/CD), DevOps, GitOps, SecOps, observability, multi-cloud strategies, zero-trust security measures, scalability, and high availability. Collectively, these deployment abstractions form the foundation for efficient, secure, and scalable enterprise software deployments, empowering organizations to meet the demands of modern technology landscapes.
+
+#### Middleware abstractions
+Middleware abstractions serve as the intermediary layer that facilitates communication and data management between deployment and business abstractions. They play a key role in system integration, enabling seamless data flow and connectivity between disparate parts of an enterprise system. Middleware abstractions include elements like message brokers, API gateways, and data transformation tools.
+
+#### Business abstractions
+Business abstractions encompass a set of concepts and practices that focus on modeling and automating core business processes within an enterprise. These abstractions include services or microservices, functions, APIs, events, data, and more. They form the building blocks for designing and implementing agile, scalable, and modular enterprise solutions, allowing organizations to respond to changing market needs quickly and efficiently.
+
+#### Domain abstractions
+Domain abstractions, a subset of business abstractions, play a crucial role in tailoring software solutions to specific industry or domain requirements. These abstractions are grouped according to teams and capabilities, as guided by Conway's Law. By aligning software design with the boundaries of the business domain, domain-driven design (**DDD**) allows teams to develop a deep understanding of the problem space and create focused, autonomous teams. [**Cell-based Architecture**](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) can serve as an effective implementation strategy for these domain abstractions. This empowers teams to deliver tailored software solutions that address the unique needs and complexities of their industry or domain with speed, flexibility, and scalability.
+
+
+![platform in enteprise](/media/ep-abstractions-20.png)
+
+In the diagram above, we provide a granular view of the "Quadruple Layers: Levels of Enterprise Abstractions" within a typical enterprise context. The visualization showcases how each abstraction layer — Deployment, Middleware, Business, and Domain — interacts and aligns with various technologies, users, and components integral to an enterprise. This detailed breakdown serves to elucidate the complexity and interconnectivity across the layers, giving you a comprehensive insight into how these abstractions collectively form the backbone of enterprise software architecture.
+
+#### Digital channels for enteprise abstractions 
+With the establishment of the Quadruple Layers of Enterprise Abstractions, which now include Deployment, Middleware, Business, and Domain layers, organizations gain a comprehensive foundation for constructing robust and efficient applications across various digital channels. These channels encompass web, mobile, Internet of Things (IoT), and other emerging platforms.
+
+Websites and web applications provide a digital interface accessible through browsers, enabling users to interact and consume services. Mobile applications offer a personalized and on-the-go experience, leveraging the capabilities of smartphones and tablets. The Internet of Things (IoT) adds connectivity to everyday objects, facilitating seamless interactions and data exchange. Emerging technologies like virtual reality (VR), augmented reality (AR), and mixed reality (MR) introduce new realms of immersive experiences.
+
+By tapping into the power of these digital channels and the four underlying layers of enterprise abstractions, organizations can develop innovative, user-centric applications that meet a variety of needs and preferences. This adaptability enables them to remain competitive in a swiftly changing digital landscape.
+
+The emergence of platform engineering—focused on designing and building toolchains and workflows for software development teams' self-service—underscores the growing importance of creating flexible, modular, and composable tech solutions. While the upside is clear, enterprises must weigh the financial and resource implications of such undertakings. Building and maintaining these complex platforms require careful assessment of costs, challenges, and the presence of viable alternatives.
 
 
 [def]: /media/platform-real-world.png
