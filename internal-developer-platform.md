@@ -24,7 +24,7 @@ Moreover, these platforms are constantly evolving. New services are introduced, 
 
 In essence, real-world platforms like these are supporting structures built to increase the effectiveness and productivity of a large and diverse community, mirroring Dave Gray's apt definition: 
 
-> **"A platform is a supporting structure that increases the effectiveness of a community."** 
+> **"A platform is a supporting structure that increases the effectiveness of a community." - Dave Gray** 
 
 Whether it's about guiding, informing, feeding, or entertaining, each element within these platforms is fine-tuned to contribute to a harmonious, effective ecosystem.
 
@@ -33,6 +33,9 @@ Whether it's about guiding, informing, feeding, or entertaining, each element wi
 In technology terms, a platform serves as a foundation or a framework that enables the development, deployment, and scaling of applications. It provides a set of tools, services, and capabilities that can be leveraged for various phases of software or product lifecycle. A well-architected platform abstracts complexities, offers reusable components, and enables interoperability between disparate systems. More than just a piece of technology, it's an ecosystem that influences both operational efficiencies and strategic capabilities. Understanding what a platform is at its core sets the stage for grasping the more specialized roles that specific types of platforms, like Internal Developer Platforms, play in technology ecosystems.
 
 ![platform](/media/platform-20.1.png)
+
+> **"Platforms generate value through the interaction between their participants." - Gregor Hohpe** 
+
 
 In the above diagram, the platform is represented as a foundation, serving as the base upon which all other activities and functions rest. Sitting atop the platform are interlinked squares labeled as 'Pods' or 'Domains.' These serve as compartments or subdivisions that group related functions and activities. Within each Pod or Domain, you'll find circles labeled as 'Components.' These components represent the individual workloads or tasks that the platform is designed to manage or execute. Just as in a train station, where different platforms serve specific train lines and each train has its specific compartments and cargo, this diagram illustrates how a technology platform organizes various workloads into logical groups (Pods/Domains), making it easier to manage, scale, and deploy them. The encapsulation within Pods or Domains provides an additional layer of organization, facilitating more efficient governance and operational management.
 
@@ -119,6 +122,8 @@ By adopting the new IDP paradigm, organizations position themselves to innovate 
 [7] Gray, Dave, and Thomas Vander Wal. 2014. The Connected Company. O’Reilly Media https://www.oreilly.com/library/view/the-connected-company/9781449336622/
 
 [8] Abeysinghe, A. 2023. “Why Building a Platform May Not Be Your Best Bet - Exploring Five Critical Reasons : @VMblog.” VMblog.Com. October 6, 2023. https://vmblog.com/archive/2023/10/06/why-building-a-platform-may-not-be-your-best-bet-exploring-five-critical-reasons.aspx.
+
+[9] “Platform Strategy: Innovation Through Harmonization (Architect Elevator Book Series): Hohpe, Gregor, Danieli, Michele, Landreau, Jean-Francois: 9798320272047: Amazon.com: Books,” n.d. https://a.co/d/00WTyayH.
 
 
 ## Appendix 
