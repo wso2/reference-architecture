@@ -80,7 +80,11 @@ So, what is missing in the current definition of the IDP? To fully support the a
 
 ![internal developer platform l0](/media/idp-l0-20-v2.png)
 
-By expanding the definition of the IDP to include the following ten areas in addition to the features covered by the existing definition, organizations can unlock the true potential of the IDP, enabling end-to-end collaboration, efficient development processes, and the delivery of exceptional software solutions.
+An application developer is the end user of an IDP. Therefore, as discussed above, the IDP should handle the entire lifecycle of an application, from creation to retirement. To achieve this, the IDP must facilitate both enterprise software engineering and software delivery and operations equally. Let's examine the functionalities each layer should deliver.
+
+|Enterprise Software Engineering  | Software Delivery and Operations   |
+|---------------------------------|------------------------------------|
+|API-first development, Domain driven design, Microservice architecture, Test driven development, Automated DevOps, Secure by default, Version management, Iterative architecture, AI augmented engineering | Developer self-service, Containerization & Kubernetes, CI/CD & GitOps, Resource optimization, Multi-cloud, multi-environment, Observability & alerting, Config & secret management, Resiliency, scalability & HA, Operational & business insights |
 
 Application architecture, development and testing tooling: The prevailing definition of an Internal Developer Platform (IDP) often falls short in encompassing key aspects like application architecture, development, and test tooling. These essential features, while overlooked in many conventional interpretations, are integral to a holistic understanding and implementation of a true IDP. A real IDP embraces these components, embedding them directly into developers' favorite IDEs, such as VSCode. This seamless integration not only fosters a cohesive development environment but also ensures that the entire software lifecycle, from initial design to testing and deployment, is streamlined and efficient. By recognizing and incorporating these crucial elements, and making them readily accessible within popular development environments, a real IDP transcends mere automation, shaping a platform that resonates with the complexity and demands of modern software development and delivery.
 
