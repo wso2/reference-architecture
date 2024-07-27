@@ -78,6 +78,8 @@ Given these shortcomings in the prevailing IDP definitions, there's a pressing n
 
 So, what is missing in the current definition of the IDP? To fully support the application development process, organizations need to consider the broader context of the business and application architecture, as well as the iterative feedback loops that facilitate continuous improvement and innovation.
 
+![internal developer platform l0](/media/idp-l0-20.png)
+
 By expanding the definition of the IDP to include the following ten areas in addition to the features covered by the existing definition, organizations can unlock the true potential of the IDP, enabling end-to-end collaboration, efficient development processes, and the delivery of exceptional software solutions.
 
 Application architecture, development and testing tooling: The prevailing definition of an Internal Developer Platform (IDP) often falls short in encompassing key aspects like application architecture, development, and test tooling. These essential features, while overlooked in many conventional interpretations, are integral to a holistic understanding and implementation of a true IDP. A real IDP embraces these components, embedding them directly into developers' favorite IDEs, such as VSCode. This seamless integration not only fosters a cohesive development environment but also ensures that the entire software lifecycle, from initial design to testing and deployment, is streamlined and efficient. By recognizing and incorporating these crucial elements, and making them readily accessible within popular development environments, a real IDP transcends mere automation, shaping a platform that resonates with the complexity and demands of modern software development and delivery.
