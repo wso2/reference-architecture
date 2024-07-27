@@ -8,7 +8,7 @@ Version: 1.0 (Summer-2024)<br/>
 
 **_Author_**
 
-+ [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2, LLC](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
++ [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
 
 
@@ -36,8 +36,11 @@ In technology terms, a platform serves as a foundation or a framework that enabl
 
 > **"Platforms generate value through the interaction between their participants." - Gregor Hohpe** 
 
+The above diagram illustrates the platform as the foundational base supporting all other activities and functions. Built on this platform are various components designed to achieve specific outcomes and deliver value, which are represented in the implementation layer.
 
-In the above diagram, the platform is represented as a foundation, serving as the base upon which all other activities and functions rest. Sitting atop the platform are interlinked squares labeled as 'Pods' or 'Domains.' These serve as compartments or subdivisions that group related functions and activities. Within each Pod or Domain, you'll find circles labeled as 'Components.' These components represent the individual workloads or tasks that the platform is designed to manage or execute. Just as in a train station, where different platforms serve specific train lines and each train has its specific compartments and cargo, this diagram illustrates how a technology platform organizes various workloads into logical groups (Pods/Domains), making it easier to manage, scale, and deploy them. The encapsulation within Pods or Domains provides an additional layer of organization, facilitating more efficient governance and operational management.
+These components represent the individual workloads or tasks that the platform is designed to manage or execute. Components are generally grouped into domains, also known as pods. Domains are identified based on a bounded context relevant to the purpose of the components.
+
+Just as in a train station, where different platforms serve specific train lines and each train has its specific compartments and cargo, this diagram illustrates how a technology platform organizes various workloads into logical groups (domains), making it easier to manage, scale, and deploy them. The encapsulation within domains provides an additional layer of organization, facilitating more efficient governance and operational management.
 
 ## Rise of the internal developer platform (IDP)
 Enterprise abstractions, also known as the platform that CIOs are building, are collectively referred to as the internal developer platform (IDP). The IDP serves as a centralized foundation for the organization's software development and delivery processes, and it provides a comprehensive set of tools, services, and abstractions that enable development teams to work efficiently and effectively. Notably, the IDP encompasses all three enterprise abstraction layers: deployment, business, and domain, providing a holistic framework for building, deploying, and managing applications. 
