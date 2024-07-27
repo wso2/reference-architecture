@@ -78,7 +78,7 @@ Given these shortcomings in the prevailing IDP definitions, there's a pressing n
 
 So, what is missing in the current definition of the IDP? To fully support the application development process, organizations need to consider the broader context of the business and application architecture, as well as the iterative feedback loops that facilitate continuous improvement and innovation.
 
-![internal developer platform l0](/media/idp-l0-20.png)
+![internal developer platform l0](/media/idp-l0-20-v2.png)
 
 By expanding the definition of the IDP to include the following ten areas in addition to the features covered by the existing definition, organizations can unlock the true potential of the IDP, enabling end-to-end collaboration, efficient development processes, and the delivery of exceptional software solutions.
 
