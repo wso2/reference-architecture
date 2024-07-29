@@ -96,7 +96,7 @@ To better understand the capabilities of each layer within an IDP, let's examine
 |-------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | **Enterprise Software Engineering**             |                                                                                                             |
 | API-first development                           | Focuses on designing and building APIs first, ensuring robust and scalable integrations.                     |
-| Domain driven design                            | Structures software around business domains, improving alignment with business objectives.                   |
+| Domain driven design                            | Structures software around business domains, improving alignment with business objectives.  Implementing this using a [cell-based architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) enhances modularity and scalability.                  |
 | Microservice architecture                       | Breaks down applications into smaller, independent services, enhancing flexibility and scalability.          |
 | Test driven development                         | Emphasizes writing tests before code, ensuring high code quality and reducing bugs.                          |
 | Automated DevOps                                | Integrates development and operations through automation, streamlining workflows and reducing manual efforts. |
