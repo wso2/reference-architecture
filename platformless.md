@@ -22,14 +22,7 @@ Version: 1.0 (Summer-2024)<br/>
 |Explain the need for platforms to go away from focus||
 |Say that that's what platform engineering should produce: a platform that goes away from focus||
 |Target user for PE is developers, not platform engineers||
-|Talk a bit about what such a platform would look like
-  * Software design, architecture & reuse
-    * Design:
-      * Modularity mgmt via DDD and service abstractions
-    * Architecture: Services (from micro to monoliths), APIs as the unit of composition
-    * Reuse: Marketplaces
-  * Software delivery & operations, including run-time aspects of supporting the design and architecture
-    * Runtime architecture: multi-env, CBA, zero trust, ...||
+|Talk a bit about what such a platform would look like:Software design, architecture & reuse, Design, Modularity mgmt via DDD and service abstractions, Architecture: Services (from micro to monoliths), APIs as the unit of composition, Reuse, Marketplaces, Software delivery & operations, including run-time aspects of supporting the design and architecture, Runtime architecture: multi-env, CBA, zero trust, ...||
 |Delivering passionate developer experience||
 
 ### Who is the target audience to benefit from reading this?
