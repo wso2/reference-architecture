@@ -134,7 +134,7 @@ To fully reap the benefits of an IDP, organizations should seek a platform that 
 
 Compliance with industry and regulatory standards is crucial for ensuring that the IDP meets security and governance requirements. Considering the complexity and rapid evolution of technology, organizations can benefit from purchasing an off-the-shelf IDP from a reputable vendor. This approach reduces the burden of building and maintaining an IDP internally and allows organizations to focus their developers on creating unique business abstractions.
 
-By adopting the new IDP paradigm, organizations position themselves to innovate with speed and agility, outpace the competition, and achieve their business goals. The IDP serves as a catalyst for delivering high-quality digital experiences, enabling organizations to simply embrace a **[platformless](https://github.com/wso2/reference-architecture/blob/master/platformless.md)** experience** and unleash their full potential in the digital landscape.
+By adopting the new IDP paradigm, organizations position themselves to innovate with speed and agility, outpace the competition, and achieve their business goals. The IDP serves as a catalyst for delivering high-quality digital experiences, enabling organizations to simply embrace a **[platformless](https://github.com/wso2/reference-architecture/blob/master/platformless.md)** experience and unleash their full potential in the digital landscape.
 
 ## References 
 
