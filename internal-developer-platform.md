@@ -115,7 +115,7 @@ To better understand the capabilities of each layer within an IDP, let's examine
 | Config & secret management                      | Securely manages configuration data and secrets, ensuring safe and consistent application behavior.          |
 | Resiliency, scalability & HA                    | Ensures applications are resilient, scalable, and highly available to meet demand and handle failures.       |
 | Operational & business insights                 | Provides insights into operations and business performance, driving informed decisions and optimizations.    |
-| From traditional IDP definition | application configuration management, infrastructure orchestration, environment management, deployment management, and role-based access control |
+| ***From [traditional IDP definition](#traditional-idp-definition)*** | ***application configuration management, infrastructure orchestration, environment management, deployment management, and role-based access control*** |
 
 
 ## Conclusion
