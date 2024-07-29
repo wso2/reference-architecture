@@ -22,7 +22,7 @@ Version: 1.0 (Summer-2024)<br/>
 |Explain the need for platforms to go away from focus|Covered in the '[Introduction](#introduction)' and '[The Problem with Platforms](#the-problem-with-platforms)' sections.|
 |Say that that's what platform engineering should produce: a platform that goes away from focus||
 |Target user for PE is developers, not platform engineers||
-|Talk a bit about what such a platform would look like:Software design, architecture & reuse, Design, Modularity mgmt via DDD and service abstractions, Architecture: Services (from micro to monoliths), APIs as the unit of composition, Reuse, Marketplaces, Software delivery & operations, including run-time aspects of supporting the design and architecture, Runtime architecture: multi-env, CBA, zero trust, ...||
+|Talk a bit about what such a platform would look like:Software design, architecture & reuse, Design, Modularity mgmt via DDD and service abstractions, Architecture: Services (from micro to monoliths), APIs as the unit of composition, Reuse, Marketplaces, Software delivery & operations, including run-time aspects of supporting the design and architecture, Runtime architecture: multi-env, CBA, zero trust, ...|I updated the [internal developer platform (IDP) paper](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) to address these topics in this section. (V1.0 Summer-2024)|
 |Delivering passionate developer experience||
 
 ### Who is the target audience to benefit from reading this?
