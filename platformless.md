@@ -71,7 +71,11 @@ We call this **“Platformless”**. That doesn’t mean the platform vanishes c
 
 Platformless is delivered by the seamless marriage of four technology domains:
 
-**`<p align="center">`Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )`</p>`**
+<p align="center">
+<b>
+  Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )
+  </b>
+</p>
 
 Platform engineering is the foundation for a platformless experience. It constructs [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md), merging DevOps and site reliability engineering (SRE) to fully empower enterprise developers.
 
