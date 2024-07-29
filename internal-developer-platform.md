@@ -90,6 +90,33 @@ An application developer is the end user of an IDP. Therefore, as discussed abov
 
 **Software Delivery and Operations**: The traditional definition of an internal developer platform (IDP) predominantly covers aspects of software delivery and operations. Most readily available IDPs, as well as those built by platform engineers, primarily focus on this layer. These platforms are designed to automate deployment processes, manage infrastructure, and monitor application performance. They ensure that applications are deployed reliably and efficiently, providing tools for continuous integration and continuous deployment (CI/CD), infrastructure as code (IaC), and robust monitoring and logging capabilities. By prioritizing these features, conventional IDPs excel in operational efficiency, allowing developers to focus on coding while the platform handles the complexities of deployment and maintenance. This focus on software delivery and operations is crucial for maintaining high availability, scalability, and resilience in modern software environments.
 
+To better understand the capabilities of each layer within an IDP, let's examine some of the key functionalities that are critical to enterprise software engineering and software delivery and operations. 
+
+| Capability                                      | Description                                                                                                 |
+|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Enterprise Software Engineering**             |                                                                                                             |
+| API-first development                           | Focuses on designing and building APIs first, ensuring robust and scalable integrations.                     |
+| Domain driven design                            | Structures software around business domains, improving alignment with business objectives.                   |
+| Microservice architecture                       | Breaks down applications into smaller, independent services, enhancing flexibility and scalability.          |
+| Test driven development                         | Emphasizes writing tests before code, ensuring high code quality and reducing bugs.                          |
+| Automated DevOps                                | Integrates development and operations through automation, streamlining workflows and reducing manual efforts. |
+| Secure by default                               | Incorporates security practices from the beginning, ensuring robust protection against threats.              |
+| Version management                              | Manages code versions and dependencies, facilitating collaboration and continuous improvement.               |
+| Iterative architecture                          | Promotes continuous refinement and evolution of software architecture, adapting to changing requirements.    |
+| AI augmented engineering                        | Utilizes AI to enhance software development processes, improving efficiency and decision-making.             |
+|                                                 |                                                                                                             |
+| **Software Delivery and Operations**            |                                                                                                             |
+| Developer self-service                          | Enables developers to provision and manage resources independently, increasing productivity.                 |
+| Containerization & Kubernetes                   | Uses containerization for consistency and Kubernetes for orchestration, ensuring efficient resource use.     |
+| CI/CD & GitOps                                  | Automates code integration and deployment processes, ensuring fast and reliable software delivery.           |
+| Resource optimization                           | Efficiently allocates resources to reduce costs and improve performance.                                     |
+| Multi-cloud, multi-environment                  | Supports deployment across multiple cloud providers and environments, enhancing flexibility and resilience.  |
+| Observability & alerting                        | Provides monitoring and alerting capabilities to maintain system health and performance.                     |
+| Config & secret management                      | Securely manages configuration data and secrets, ensuring safe and consistent application behavior.          |
+| Resiliency, scalability & HA                    | Ensures applications are resilient, scalable, and highly available to meet demand and handle failures.       |
+| Operational & business insights                 | Provides insights into operations and business performance, driving informed decisions and optimizations.    |
+
+
 | New Capability               | Short Description                                           |
 |-----------------------------|------------------------------------------------------------|
 | **Cloud native middleware:** | APIs, integration, services, and identities are crucial foundational technology components for cloud native application development, and are therefore essential features for an IDP. These components enable developers to create, connect, deploy, and secure modern applications for cloud environments, resulting in faster and more efficient software development processes. Incorporating these components into an IDP allows development teams to build the digital core and deploy cloud native applications with greater speed, scalability, and security. |
