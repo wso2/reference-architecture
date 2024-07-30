@@ -79,7 +79,7 @@ Platformless is delivered by the seamless marriage of four technology domains:
 
 <p align="center">
 <b>
-  Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )
+  Platformless = Platform Engineering + ( API-First + Cloud Native Middleware + Developer Experience )
   </b>
 </p>
 
