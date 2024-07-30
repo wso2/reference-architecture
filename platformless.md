@@ -15,7 +15,7 @@ Version: 1.0 (Summer-2024)<br/>
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
 _____________________
-## <Meta stuff>  :**REMOVE THIS SECTION BEFORE MERGING TO MASTER**
+## Meta stuff  :**REMOVE THIS SECTION BEFORE MERGING TO MASTER**
 
 ### What is the problem we want to solve with this document
 | Focus area | Comment |
