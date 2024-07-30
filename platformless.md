@@ -21,10 +21,10 @@ _____________________
 | Focus area | Comment |
 |----------|-----------|
 |Explain the need for platforms to go away from focus|Covered in the '[Introduction](#introduction)' and '[The Problem with Platforms](#the-problem-with-platforms)' sections.|
-|Say that that's what platform engineering should produce: a platform that goes away from focus||
-|Target user for PE is developers, not platform engineers||
+|Say that that's what platform engineering should produce: a platform that goes away from focus|updated|
+|Target user for PE is developers, not platform engineers|updated|
 |Talk a bit about what such a platform would look like:Software design, architecture & reuse, Design, Modularity mgmt via DDD and service abstractions, Architecture: Services (from micro to monoliths), APIs as the unit of composition, Reuse, Marketplaces, Software delivery & operations, including run-time aspects of supporting the design and architecture, Runtime architecture: multi-env, CBA, zero trust, ...|I updated the [internal developer platform (IDP) paper](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) to address these topics in this section. (V1.0 Summer-2024)|
-|Delivering passionate developer experience||
+|Delivering passionate developer experience|addressed in DX|
 
 ### Who is the target audience to benefit from reading this?
 
@@ -70,6 +70,7 @@ It is clear that we need a new paradigm to remove the platform from our consciou
 >We call this **“Platformless”**. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
 
 With the rise of [**platform engineering**](#platform-engineering), platform engineers are at the forefront of building sophisticated platforms within enterprises. Platform engineering should aim to create a developer-centric environment where the platform's complexities are abstracted away, making it nearly invisible in the development workflow. This involves automating infrastructure tasks, offering comprehensive self-service tools, and ensuring that necessary services are seamlessly integrated. The goal is to reduce the cognitive load of the developer, enabling them to focus on coding, building, and deploying applications without worrying about the underlying infrastructure. By streamlining these processes, developers can work more efficiently, pushing new features and fixes with greater speed and reliability. The platform should support and enhance the development experience, rather than becoming a focal point of attention.
+
 Platform engineers should focus on building a platform that provides a seamless and integrated environment for developers. An [**internal developer platform (IDP)**](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) is a comprehensive solution that integrates the capabilities of enterprise software engineering and software delivery and operations. It provides a cohesive environment for developers, encompassing tools and best practices for application architecture, development, testing, deployment, and operational management. By facilitating both the creation and delivery of software, an IDP ensures efficiency, consistency, and security throughout the software lifecycle. This platform not only supports the technical aspects of development but also fosters innovation and excellence by aligning with modern development practices and industry standards. 
 
 ## What is Platformless?
