@@ -185,6 +185,8 @@ The aim of platformless is to enable enterprises to build and deliver many digit
   </i>
 </p>
 
+> **'Your platforms should multiply the value created by your product teams** - Team Topologies
+
 ## Advantages of Adopting Platformless
 
 **Reduced cognitive load for developers**: Platformless redefines the development process by minimizing the [cognitive load](https://github.com/zakirullin/cognitive-load) on developers. By sidestepping the usual complexities linked to platform management and simplifying the acquisition of necessary resources for application development, it allows developers to focus on their core tasks, enhancing their overall efficiency and effectiveness.
@@ -214,3 +216,4 @@ Software delivery platforms and runtime platforms have had an amazing impact on 
 5. Stephen O'Grady. 2020. "The Developer Experience Gap." Redmonk.com. https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/.
 6. Zakirullin. 2024. “GitHub - Zakirullin/Cognitive-load: 🧠 Cognitive Load Is What Matters.” GitHub. June 2024. https://github.com/zakirullin/cognitive-load.
 7. “Platform Strategy: Innovation Through Harmonization (Architect Elevator Book Series): Hohpe, Gregor, Danieli, Michele, Landreau, Jean-Francois: 9798320272047: Amazon.com: Books,” n.d. https://a.co/d/00WTyayH.
+8. “Team Topologies: Organizing Business and Technology Teams for Fast Flow: Skelton CEO of Conflux and Co-author of Team Topologies, Matthew, Pais Coauthor of Team Topologies, Manuel, Malan Architecture Consultant a, Ruth: 9781942788812: Amazon.com: Books,” n.d. https://a.co/d/gQUGFWl.
