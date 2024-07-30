@@ -71,6 +71,15 @@ It is clear that we need a new paradigm to remove the platform from our consciou
 
 With the rise of [**platform engineering**](#platform-engineering), platform engineers are at the forefront of building sophisticated platforms within enterprises. Platform engineering should aim to create a developer-centric environment where the platform's complexities are abstracted away, making it nearly invisible in the development workflow. This involves automating infrastructure tasks, offering comprehensive self-service tools, and ensuring that necessary services are seamlessly integrated. The goal is to reduce the cognitive load of the developer, enabling them to focus on coding, building, and deploying applications without worrying about the underlying infrastructure. By streamlining these processes, developers can work more efficiently, pushing new features and fixes with greater speed and reliability. The platform should support and enhance the development experience, rather than becoming a focal point of attention.
 
+<p align="center">
+  <img src="media/idp-l0-15-v2.png" alt="IDP"/>
+</p>
+<p align="center">
+  <i>
+   Figure 2: internal developer platform (IDP)
+  </i>
+</p>
+
 Platform engineers should focus on building a platform that provides a seamless and integrated environment for developers. An [**internal developer platform (IDP)**](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) is a comprehensive solution that integrates the capabilities of enterprise software engineering and software delivery and operations. It provides a cohesive environment for developers, encompassing tools and best practices for application architecture, development, testing, deployment, and operational management. By facilitating both the creation and delivery of software, an IDP ensures efficiency, consistency, and security throughout the software lifecycle. This platform not only supports the technical aspects of development but also fosters innovation and excellence by aligning with modern development practices and industry standards. 
 
 ## What is Platformless?
@@ -172,7 +181,7 @@ The aim of platformless is to enable enterprises to build and deliver many digit
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operate in a platformless environment
+   Figure 3: Modern distributed systems easily built and operate in a platformless environment
   </i>
 </p>
 
