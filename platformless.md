@@ -14,7 +14,8 @@ Version: 1.0 (Summer-2024)<br/>
 + [Paul Fremantle, Ph.D.](https://www.linkedin.com/in/paulfremantle/) | Co-Founder, Founder CTO & Advisor - [WSO2](https://wso2.com/) | [@pzfreo](https://x.com/pzfreo)
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
-## `<Meta stuff> `
+_____________________
+## <Meta stuff>  :**REMOVE THIS SECTION BEFORE MERGING TO MASTER**
 
 ### What is the problem we want to solve with this document
 | Focus area | Comment |
@@ -30,6 +31,7 @@ Version: 1.0 (Summer-2024)<br/>
 * Platform engineering teams who are building platform (to get their target right)
 * Digital experience owners (LOB head to head of engineering) to understand what is possible with modern software engineering and therefore what they should demand from platform teams
 * Governance owners to salivate with what they could have: live views of architecture, full control of external service usage, full visibility on isolated domains, ..
+________________________________________
 
 ## Introduction
 
@@ -65,7 +67,7 @@ It is clear that we need a new paradigm to remove the platform from our consciou
   </i>
 </p>
 
-We call this **“Platformless”**. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
+>We call this **“Platformless”**. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
 
 ## What is Platformless?
 
