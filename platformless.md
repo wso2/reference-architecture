@@ -15,7 +15,7 @@ Version: 1.0 (Summer-2024)<br/>
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
 _____________________
-<REMOVE>
+
 ## Meta stuff  :**REMOVE THIS SECTION BEFORE MERGING TO MASTER**
 
 ### What is the problem we want to solve with this document
@@ -32,7 +32,7 @@ _____________________
 * Platform engineering teams who are building platform (to get their target right)
 * Digital experience owners (LOB head to head of engineering) to understand what is possible with modern software engineering and therefore what they should demand from platform teams
 * Governance owners to salivate with what they could have: live views of architecture, full control of external service usage, full visibility on isolated domains, ..
-</REMOVE>
+
 ________________________________________
 
 ## Introduction
@@ -102,7 +102,7 @@ An exceptional developer experience (DX) that liberates and empowers developers 
 
 This combination supports the entire lifecycle of enterprise software engineering, delivery, and operations, delivering a platformless experience for the enterprise. Consider the following example:
 
-> **Creating in a Platformless world:**
+> **A Developer’s Flow in a Platformless Experience**
 >
 > + *Maria, a seasoned lead developer at TechFirm Alpha, is entrusted with constructing end-user applications for internal and external users. Her role involves integrating the company's system of records (SOR), which encompasses an in-house customer relationship management (CRM) system, with numerous external e-commerce platforms. Maria is integral to the 'customer' domain, contributing her expertise to the two-pizza team.*
 > + *She logs into the internal developer platform's development environment and navigates to its built-in marketplace. Maria looks up the existing APIs and checks the functionality she needs for application development. She subscribes to the required APIs but finds that not all the capabilities are available, so she decides to implement a few new APIs.*
