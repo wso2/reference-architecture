@@ -15,6 +15,7 @@ Version: 1.0 (Summer-2024)<br/>
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
 _____________________
+<REMOVE>
 ## Meta stuff  :**REMOVE THIS SECTION BEFORE MERGING TO MASTER**
 
 ### What is the problem we want to solve with this document
@@ -31,6 +32,7 @@ _____________________
 * Platform engineering teams who are building platform (to get their target right)
 * Digital experience owners (LOB head to head of engineering) to understand what is possible with modern software engineering and therefore what they should demand from platform teams
 * Governance owners to salivate with what they could have: live views of architecture, full control of external service usage, full visibility on isolated domains, ..
+</REMOVE>
 ________________________________________
 
 ## Introduction
