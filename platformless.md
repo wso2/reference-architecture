@@ -168,7 +168,7 @@ At its core, DX revolves around offering developers a seamless and intuitive env
 
 Happy developers focus on applications, not platforms.
 
-## Platformless Facilitates Enterprise Software Engineering, Dilivery and Operations*
+## Platformless Facilitates Enterprise Software Engineering, Dilivery and Operations
 
 > **'Your platforms should multiply the value created by your product teams** - Team Topologies
 
