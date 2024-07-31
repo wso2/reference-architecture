@@ -308,8 +308,8 @@ APIs can comprehend as the products of the 21st century. For many millennia, hum
 
 #### WSO2 Choreo
 
-[WSO2 Choreo](https://wso2.com/choreo/) is an internal developer platform (IDP) as a service designed to accelerate the creation of digital experiences. Build, deploy, monitor, and manage your cloud native applications. Increase developer productivity and focus on innovation.
-WSO2 Choreo with Cell-based Architecture enables Choreo projects to become governable units from development to deployment with managed access via APIs, events, and data. Also, organize and manage enterprise teams into domains, sub-domains, and projects. Control visibility and access, and enable collaboration, self-service, and reuse, in order to maximize team productivity.
+[WSO2 Choreo](https://wso2.com/choreo/) is an [internal developer platform (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) as a service designed to accelerate the creation of digital experiences. Build, deploy, monitor, and manage your cloud native applications. Increase developer productivity and focus on innovation.
+WSO2 Choreo with Cell-based Architecture enables [Choreo projects](https://wso2.com/choreo/docs/choreo-concepts/project/) to become governable units from development to deployment with managed access via APIs, events, and data. Also, organize and manage enterprise teams into domains, sub-domains, and projects. Control visibility and access, and enable collaboration, self-service, and reuse, in order to maximize team productivity.
 
 #### Cellery
 
