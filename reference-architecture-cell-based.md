@@ -399,7 +399,9 @@ With experience in [numerous projects](https://wso2.com/customers/) utilizing ce
 
 [17] Kumar, Shantanu. “Cell-Based Architecture: Comprehensive Guide.” dzone.com, April 19, 2024. https://dzone.com/articles/grokking-cell-based-architecture
 
-[18] Ståhl, Henrik. 2023. “Miro Xmas Calendar, Day 5: Cell-Based Architecture | Medium.” Medium, December 24, 2023. https://medium.com/@H_Stahl/day-5-cell-based-architecture-9ffab4dd68c3.
+[18] Ståhl, Henrik. 2023. “Miro Xmas Calendar, Day 5: Cell-Based Architecture | Medium.” Medium, December 24, 2023. https://medium.com/@H_Stahl/day-5-cell-based-architecture-9ffab4dd68c3
+
+[19] InfoQ. “Cell-Based Architecture.” InfoQ, July 17, 2024. https://www.infoq.com/minibooks/cell-based-architecture-2024/.
 
 ## References
 
