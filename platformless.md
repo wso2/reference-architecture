@@ -131,6 +131,8 @@ Platform Engineering and the resulting Internal Developer Platform are the lynch
 
 ### API-First
 
+> *"API-first means that APIs are not an afterthought in the development process, but a key focus from the beginning, ensuring that they are well-designed and integral to the application"​* - Kin Lane
+
 Adopting an **"API-first"** approach has become the gold standard for an enterprise architecture to reap the benefits of the API economy approach to enterprise computing.
 
 APIs provide a way to abstract away the details of some capability and simply to focus on using that capability over the network. Web and mobile applications have driven the growth of APIs as they necessarily interact through them. Further, any enterprise focused SaaS service will offer APIs to enable their customer systems to directly integrate.
@@ -149,6 +151,8 @@ Critical capabilities to build an API-First approach to enterprise architecture 
 Most enterprises today still have focused "API programs" to enable this approach. In a platformless environment, all capabilities exposed over the network would "automatically" be APIs, be governed, be gatewayed and be managed. The enterprise focus moves to identifying the right designs for creating a set of APIs that becomes the SDK for the business.
 
 ### Cloud Native Middleware
+
+> *"Middleware is disappearing into code and infrastructure"*
 
 Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance.These include service mesh, API gateway, message brokering, distributed tracing, configuration management, logging, monitoring and observability, event streaming, caching, service discovery, serverless, container orchestration, data storage, integrated authentication and authorization, and zero-trust architecture. This middleware environment must enable enterprise architects to practice appropriate service architecture styles from microservices to monoliths to functions. It must also support non-network triggered jobs.
 
@@ -218,3 +222,4 @@ Software delivery platforms and runtime platforms have had an amazing impact on 
 7. “Platform Strategy: Innovation Through Harmonization (Architect Elevator Book Series): Hohpe, Gregor, Danieli, Michele, Landreau, Jean-Francois: 9798320272047: Amazon.com: Books,” n.d. https://a.co/d/00WTyayH.
 8. “Team Topologies: Organizing Business and Technology Teams for Fast Flow: Skelton CEO of Conflux and Co-author of Team Topologies, Matthew, Pais Coauthor of Team Topologies, Manuel, Malan Architecture Consultant a, Ruth: 9781942788812: Amazon.com: Books,” n.d. https://a.co/d/gQUGFWl.
 9. Abeysinghe, Asanka. “What’s Happening to Middleware in the Cloud-Native Era?” Forbes, October 4, 2022. https://www.forbes.com/sites/forbestechcouncil/2022/10/03/whats-happening-to-middleware-in-the-cloud-native-era/?sh=231084a6679d.
+10. Lane, Kin. “What Is API First?” API Evangelist (blog), March 9, 2020. https://apievangelist.com/2020/03/09/what-is-api-first/.
