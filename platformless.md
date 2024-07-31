@@ -168,7 +168,9 @@ At its core, DX revolves around offering developers a seamless and intuitive env
 
 Happy developers focus on applications, not platforms.
 
-## Platformless Facilitates Enterprise Software *Engineering*
+## Platformless Facilitates Enterprise Software Engineering, Dilivery and Operations*
+
+> **'Your platforms should multiply the value created by your product teams** - Team Topologies
 
 Enterprise software engineering is more complex than building independent products because enterprises are complex organisms with competing interests that must somehow be hidden when a customer engages with the business. Enterprises have large applications such as CRMs, ERP systems for various functions requiring any application to have a significant data integration responsibility, which is rarely the case in non-enterprise systems.
 
@@ -184,8 +186,6 @@ The aim of platformless is to enable enterprises to build and deliver many digit
    Figure 3: Modern distributed systems easily built and operate in a platformless environment
   </i>
 </p>
-
-> **'Your platforms should multiply the value created by your product teams** - Team Topologies
 
 ## Advantages of Adopting Platformless
 
