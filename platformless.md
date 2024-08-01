@@ -196,6 +196,22 @@ The aim of platformless is to enable enterprises to build and deliver many digit
   </i>
 </p>
 
+### Platformless Delivers Value; A Business Service Platform Creates Differentiators
+The Internal Developer Platform (IDP) is crucial for providing a platformless experience by automating and integrating essential software engineering, delivery, and operational tasks. Platform engineering teams create and maintain the IDP, ensuring it delivers a seamless and efficient environment for developers. This approach abstracts platform complexities, enabling developers to focus on innovation without being hindered by underlying infrastructure concerns.
+
+Chief architects leverage the robust infrastructure of the IDP to build comprehensive business service platforms. These platforms form the foundation for product owners to develop diverse digital experiences across various channels, driving significant outcomes and value for the organization. Notably, the differentiators for an enterprise stem from the business service platform and the digital experiences, not the underlying IDP. The business service platform, in particular, enables the creation of a composable or modular enterprise, enhancing flexibility and adaptability to evolving business needs.
+
+<p align="center">
+  <img src="media/idp-value-15.png" alt="idp and business service platform"/>
+</p>
+<p align="center">
+  <i>
+   Figure 4: The IDP forms the foundational layer supporting business service platforms and digital experiences
+  </i>
+</p>
+
+> *"Platformless enables the focus on creating business service platforms and digital experiences, multiplying value for stakeholders."*
+
 ## Advantages of Adopting Platformless
 
 **Reduced cognitive load for developers**: Platformless redefines the development process by minimizing the [cognitive load](https://github.com/zakirullin/cognitive-load) on developers. By sidestepping the usual complexities linked to platform management and simplifying the acquisition of necessary resources for application development, it allows developers to focus on their core tasks, enhancing their overall efficiency and effectiveness.
