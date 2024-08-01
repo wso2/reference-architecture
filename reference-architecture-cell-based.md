@@ -1,5 +1,5 @@
 <h1 align="center"> Cell-Based Architecture </h1>
-<h3 align="center"> A Decentralized Reference Architecture for Cloud-native Applications </h3>
+<h3 align="center"> A Decentralized Reference Architecture for Cloud Native Applications </h3>
 <p align="center">
 <i>
 Version: Summer-2024<br/>
@@ -161,7 +161,7 @@ However, some organizations may choose to operate a single continuous domain acr
 
 The lifecycle of a cell is similar to a typical application lifecycle. Each cell can have its own lifecycle stages based on the functionality, business criticality, and how the team owning the cell has organized the release pipeline. As described in the above diagram, Cell-1 is pipelined with four lifecycle stages (development, testing, staging, and production) while Cell-2 contains three lifecycle stages (development, testing, and production). A cell can have multiple active versions at a given time due to the interdependencies cells create with other cells in an enterprise. Each version of the cell contains a separate lifecycle and a release pipeline. As the above diagram explains, Cell-2 has two versions: v3.00 and v2.70; while v3.00 has three stages and v2.70 has two stages.
 
-By utilizing modern container-based, cloud-native infrastructures, pre-production stages can spin up when required. As described in the diagram, v2.70 of Cell-2 does not have a “dev” phase (because it assumes that development is completed), but it can spin one up if needed to rollout a required a bug fix or a feature enhancement.
+By utilizing modern container-based, cloud native infrastructures, pre-production stages can spin up when required. As described in the diagram, v2.70 of Cell-2 does not have a “dev” phase (because it assumes that development is completed), but it can spin one up if needed to rollout a required a bug fix or a feature enhancement.
 
 ## Section 3: Structured Agility
 
