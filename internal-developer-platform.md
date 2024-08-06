@@ -1,5 +1,5 @@
 <h1 align="center"> Internal Developer Platform </h1>
-<h3 align="center"> A Technical Reevaluation </h3>
+<h3 align="center"> A Technical Evaluation </h3>
 <p align="center">
 <i>
 Version: 1.0 (Summer-2024)<br/>
