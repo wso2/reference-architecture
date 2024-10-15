@@ -2,7 +2,7 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud Native Applications </h3>
 <p align="center">
 <i>
-Version: Summer-2024<br/>
+Version: Fall-2024<br/>
 <b>First Published On: Summer-2018<br/>  </b>
 </i>
 </p>
@@ -402,6 +402,8 @@ With experience in [numerous projects](https://wso2.com/customers/) utilizing ce
 [18] Ståhl, Henrik. 2023. “Miro Xmas Calendar, Day 5: Cell-Based Architecture | Medium.” Medium, December 24, 2023. https://medium.com/@H_Stahl/day-5-cell-based-architecture-9ffab4dd68c3
 
 [19] InfoQ. “Cell-Based Architecture.” InfoQ, July 17, 2024. https://www.infoq.com/minibooks/cell-based-architecture-2024/.
+
+[20] Pisani, Erica, and Rafal Gancarz. 2024. “How Cell-Based Architecture Enhances Modern Distributed Systems.” InfoQ, October 14, 2024. https://www.infoq.com/articles/cell-based-architecture-distributed-systems/.
 
 ## References
 
