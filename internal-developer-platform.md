@@ -32,7 +32,7 @@ Whether it's about guiding, informing, feeding, or entertaining, each element wi
 
 In technology terms, a platform serves as a foundation or a framework that enables the development, deployment, and scaling of applications. It provides a set of tools, services, and capabilities that can be leveraged for various phases of software or product lifecycle. A well-architected platform abstracts complexities, offers reusable components, and enables interoperability between disparate systems. More than just a piece of technology, it's an ecosystem that influences both operational efficiencies and strategic capabilities. Understanding what a platform is at its core sets the stage for grasping the more specialized roles that specific types of platforms, like Internal Developer Platforms, play in technology ecosystems.
 
-![platform](/media/platform-20.2.png)
+![platform](/media/platform-20.3.png)
 
 > **"Platforms generate value through the interaction between their participants." - Gregor Hohpe** 
 
