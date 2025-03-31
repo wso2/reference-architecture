@@ -2,7 +2,7 @@
 <h3 align="center"> A Decentralized Reference Architecture for Cloud Native Applications </h3>
 <p align="center">
 <i>
-Version: Winter-2024<br/>
+Version: Spring-2025<br/>
 <b>First Published On: Summer-2018<br/>  </b>
 </i>
 </p>
@@ -404,6 +404,8 @@ With experience in [numerous projects](https://wso2.com/customers/) utilizing ce
 [19] InfoQ. “Cell-Based Architecture.” InfoQ, July 17, 2024. https://www.infoq.com/minibooks/cell-based-architecture-2024/.
 
 [20] Pisani, Erica, and Rafal Gancarz. 2024. “How Cell-Based Architecture Enhances Modern Distributed Systems.” InfoQ, October 14, 2024. https://www.infoq.com/articles/cell-based-architecture-distributed-systems/.
+
+[21] CNCF [Cloud Native Computing Foundation]. “Mastering Cell-Based Architecture: Practical Solutions and Best Practices - S. Vohra, A. Abeysinghe,” November 15, 2024. https://www.youtube.com/watch?v=Mn1b438uR8s.
 
 ## References
 
