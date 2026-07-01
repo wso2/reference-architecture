@@ -10,7 +10,7 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
   Functional capabilities grouped in an architecture unit based on scope and ownership. It is decentralized where data moves within and across cells and governance are transparently applied through a control plane embedded within cells.
 
-+ ### [Layered and Segmented Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-layered-segmented.md) -  *API-centric centralized architectures*
++ ### [Layered and Segmented Architecture](reference-architecture-layered-segmented.md) -  *API-centric centralized architectures*
 
   The focus of the enterprises moved to API-driven with the digital transformation became the strategy. As a result, the business and the technical architecture moved from service-orientation to API-centric. The primary focus of this specification is to look at the architecture approaches taken by the industry and represent those patterns as generic reference architectures. We identified two reference architectures, layered and segmented which we will be discussing in detail in this paper.
 
@@ -20,11 +20,11 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
 ## Architectural Guides & Concept Papers 
 
-+ ### [Platformless - Improving Enterprise Software Engineering with Platformless Computing](https://github.com/wso2/reference-architecture/blob/master/platformless.md)
++ ### [Platformless - Improving Enterprise Software Engineering with Platformless Computing](platformless.md)
 
-This paper introduces the 'Platformless' concept, emphasizing its intersections with APIs, cloud native mddleware practices, and platform engineering in the context of modern enterprise software engineering.
+This paper introduces the 'Platformless' concept, emphasizing its intersections with APIs, cloud native middleware practices, and platform engineering in the context of modern enterprise software engineering.
 
-+ ### [Internal Developer Platform (IDP) - A Technical Definition](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md)
++ ### [Internal Developer Platform (IDP) - A Technical Definition](internal-developer-platform.md)
 
 Explore a comprehensive definition of the Internal Developer Platform (IDP), covering its scope beyond CI/CD and infrastructure automation. This guide offers in-depth architectural insights aimed at technical decision-makers, application architects, platform architects and platform engineers.
 
@@ -32,7 +32,7 @@ Explore a comprehensive definition of the Internal Developer Platform (IDP), cov
 
 + ### [API-driven Microservice Architecture](api-driven-microservice-architecture.md)
 
-+ ### [Cloud Native Architecture](https://github.com/wso2/reference-architecture/blob/master/reference-cloud-native-architecture-digital-enterprise.md) 
++ ### [Cloud Native Architecture](reference-cloud-native-architecture-digital-enterprise.md) 
     
 + ### [CIAM - A WSO2 Reference Architecture](ciam-wso2-reference-architecture.md)
 
