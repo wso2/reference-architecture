@@ -80,7 +80,7 @@ So, what is missing in the current definition of the IDP? To fully support the a
 
 ![internal developer platform l0](/media/idp-l0-20-v2.png)
 
-An application developer is the end user of an IDP. Therefore, as discussed above, the IDP should handle the entire lifecycle of an application, from creation to retirement. To achieve this, the IDP must facilitate both enterprise software engineering and software delivery and operations equally. Let's examine the functionalities each layer should deliver.
+Application developers and platform engineers are the end users of an IDP. Therefore, as discussed above, the IDP should handle the entire lifecycle of an application, from creation to retirement. To achieve this, the IDP must facilitate both enterprise software engineering and software delivery and operations equally. Let's examine the functionalities each layer should deliver.
 
 |Enterprise Software Engineering  | Software Delivery and Operations   |
 |---------------------------------|------------------------------------|
@@ -107,10 +107,9 @@ To better understand the capabilities of each layer within an IDP, let's examine
 |                                                 |                                                                                                             |
 |          |    **Software Delivery and Operations**                  |
 | Developer self-service                          | Enables developers to provision and manage resources independently, increasing productivity. Full self-service is a must-have requirement for an enterprise-grade IDP, providing development teams with complete control over the application lifecycle. This promotes agility, innovation, and collaboration, reducing costs and increasing productivity.                |
-| Containerization & Kubernetes                   | Uses containerization for consistency and Kubernetes for orchestration, ensuring efficient resource use.     |
+| Cloud-agnostic execution (Run anywhere)                   | The platform can run consistently across public clouds and on-premises, relying only on Kubernetes and core infrastructure services such as networking and storage. This approach avoids vendor lock-in and ensures true portability.     |
 | CI/CD & GitOps                                  | Automates code integration and deployment processes, ensuring fast and reliable software delivery.           |
 | Resource optimization                           | Efficiently allocates resources to reduce costs and improve performance.                                     |
-| Multi-cloud, multi-environment                  | Supports deployment across multiple cloud providers and environments, enhancing flexibility and resilience.  |
 | Observability & alerting                        | Provides monitoring and alerting capabilities to maintain system health and performance. Observability and business analytics are critical features for an IDP, providing developers with insights into the behavior and impact of their applications, while also enabling businesses to make data-driven decisions. By incorporating these features, development teams can make more informed decisions and improve the quality and value of their software, while businesses can gain valuable insights into user engagement, revenue, and customer satisfaction.                    |
 | Config & secret management                      | Securely manages configuration data and secrets, ensuring safe and consistent application behavior.          |
 | Resiliency, scalability & HA                    | Ensures applications are resilient, scalable, and highly available to meet demand and handle failures.       |
