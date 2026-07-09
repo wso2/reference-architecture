@@ -11,3 +11,5 @@ Version: Summer-2026<br/>
 
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2, LLC](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
+> *This paper presents an architectural thesis for governing agentic systems in the enterprise. The core shift is from model trust and output review to a system of control that governs boundaries, delegation, runtime behavior, evidence, and economic exposure.
+The paper is intentionally vendor-neutral. It defines the governance problem and the required architecture based on enterprise needs, not on any product, platform, or implementation boundary.*
