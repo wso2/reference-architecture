@@ -6,6 +6,9 @@
 <i>
 Version: 1.0 (Summer-2024)<br/>
 </i>
+<b>
+First Published On: Winter-2023<br/>
+</b>
 </p>
 
 **_Authors_**
@@ -14,28 +17,26 @@ Version: 1.0 (Summer-2024)<br/>
 + [Paul Fremantle, Ph.D.](https://www.linkedin.com/in/paulfremantle/) | Co-Founder, Founder CTO & Advisor - [WSO2](https://wso2.com/) | [@pzfreo](https://x.com/pzfreo)
 + [Asanka Abeysinghe](https://www.linkedin.com/in/asankaabeysinghe/) | CTO - [WSO2](https://wso2.com/) | [@asankama](https://twitter.com/asankama)
 
-## `<Meta stuff> `
+_____________________
+
+## Meta stuff  :**REMOVE THIS SECTION BEFORE MERGING TO MASTER**
 
 ### What is the problem we want to solve with this document
-
-* Explain the need for platforms to go away from focus
-* Say that that's what platform engineering should produce: a platform that goes away from focus
-  * Target user for PE is developers, not platform engineers
-* Talk a bit about what such a platform would look like
-  * Software design, architecture & reuse
-    * Design:
-      * Modularity mgmt via DDD and service abstractions
-    * Architecture: Services (from micro to monoliths), APIs as the unit of composition
-    * Reuse: Marketplaces
-  * Software delivery & operations, including run-time aspects of supporting the design and architecture
-    * Runtime architecture: multi-env, CBA, zero trust, ...
-  * Delivering passionate developer experience
+| Focus area | Comment |
+|----------|-----------|
+|Explain the need for platforms to go away from focus|Covered in the '[Introduction](#introduction)' and '[The Problem with Platforms](#the-problem-with-platforms)' sections.|
+|Say that that's what platform engineering should produce: a platform that goes away from focus|updated|
+|Target user for PE is developers, not platform engineers|updated|
+|Talk a bit about what such a platform would look like:Software design, architecture & reuse, Design, Modularity mgmt via DDD and service abstractions, Architecture: Services (from micro to monoliths), APIs as the unit of composition, Reuse, Marketplaces, Software delivery & operations, including run-time aspects of supporting the design and architecture, Runtime architecture: multi-env, CBA, zero trust, ...|I updated the [internal developer platform (IDP) paper](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) to address these topics in this section. (V1.0 Summer-2024)|
+|Delivering passionate developer experience|addressed in DX|
 
 ### Who is the target audience to benefit from reading this?
 
 * Platform engineering teams who are building platform (to get their target right)
 * Digital experience owners (LOB head to head of engineering) to understand what is possible with modern software engineering and therefore what they should demand from platform teams
 * Governance owners to salivate with what they could have: live views of architecture, full control of external service usage, full visibility on isolated domains, ..
+
+________________________________________
 
 ## Introduction
 
@@ -71,13 +72,30 @@ It is clear that we need a new paradigm to remove the platform from our consciou
   </i>
 </p>
 
-We call this **“Platformless”**. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
+>We call this **“Platformless”**. That doesn’t mean the platform vanishes completely. Rather, by building the right boundary we can hide it from our consciousness and therefore remove the complexity it brings. Platformless has the potential to be as big a shift as the web or cloud. Web reinvented the concept of a client. Cloud reinvented the concept of server hardware. Platformless reinvents the concept of server-side development and deployment.
+
+With the rise of [**platform engineering**](#platform-engineering), platform engineers are at the forefront of building sophisticated platforms within enterprises. Platform engineering should aim to create a developer-centric environment where the platform's complexities are abstracted away, making it nearly invisible in the development workflow. This involves automating infrastructure tasks, offering comprehensive self-service tools, and ensuring that necessary services are seamlessly integrated. The goal is to reduce the cognitive load of the developer, enabling them to focus on coding, building, and deploying applications without worrying about the underlying infrastructure. By streamlining these processes, developers can work more efficiently, pushing new features and fixes with greater speed and reliability. The platform should support and enhance the development experience, rather than becoming a focal point of attention.
+
+<p align="center">
+  <img src="media/idp-l0-15-v2.png" alt="IDP"/>
+</p>
+<p align="center">
+  <i>
+   Figure 2: internal developer platform (IDP)
+  </i>
+</p>
+
+Platform engineers should focus on building a platform that provides a seamless and integrated environment for developers. An [**internal developer platform (IDP)**](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md) is a comprehensive solution that integrates the capabilities of enterprise software engineering and software delivery and operations. It provides a cohesive environment for developers, encompassing tools and best practices for application architecture, development, testing, deployment, and operational management. By facilitating both the creation and delivery of software, an IDP ensures efficiency, consistency, and security throughout the software lifecycle. This platform not only supports the technical aspects of development but also fosters innovation and excellence by aligning with modern development practices and industry standards. 
 
 ## What is Platformless?
 
 Platformless is delivered by the seamless marriage of four technology domains:
 
-**`<p align="center">`Platformless = Platform Engineering ( API-First + Cloud Native Middleware + Developer Experience )`</p>`**
+<p align="center">
+<b>
+  Platformless = Platform Engineering + ( API-First + Cloud Native Middleware + Developer Experience )
+  </b>
+</p>
 
 Platform engineering is the foundation for a platformless experience. It constructs [internal developer platforms (IDP)](https://github.com/wso2/reference-architecture/blob/master/internal-developer-platform.md), merging DevOps and site reliability engineering (SRE) to fully empower enterprise developers.
 
@@ -87,7 +105,7 @@ An exceptional developer experience (DX) that liberates and empowers developers 
 
 This combination supports the entire lifecycle of enterprise software engineering, delivery, and operations, delivering a platformless experience for the enterprise. Consider the following example:
 
-> **Creating in a Platformless world:**
+> **A Developer’s Flow in a Platformless Experience**
 >
 > + *Maria, a seasoned lead developer at TechFirm Alpha, is entrusted with constructing end-user applications for internal and external users. Her role involves integrating the company's system of records (SOR), which encompasses an in-house customer relationship management (CRM) system, with numerous external e-commerce platforms. Maria is integral to the 'customer' domain, contributing her expertise to the two-pizza team.*
 > + *She logs into the internal developer platform's development environment and navigates to its built-in marketplace. Maria looks up the existing APIs and checks the functionality she needs for application development. She subscribes to the required APIs but finds that not all the capabilities are available, so she decides to implement a few new APIs.*
@@ -118,6 +136,8 @@ Platform Engineering and the resulting Internal Developer Platform are the lynch
 
 ### API-First
 
+> *"API-first means that APIs are not an afterthought in the development process, but a key focus from the beginning, ensuring that they are well-designed and integral to the application"​* - Kin Lane
+
 Adopting an **"API-first"** approach has become the gold standard for an enterprise architecture to reap the benefits of the API economy approach to enterprise computing.
 
 APIs provide a way to abstract away the details of some capability and simply to focus on using that capability over the network. Web and mobile applications have driven the growth of APIs as they necessarily interact through them. Further, any enterprise focused SaaS service will offer APIs to enable their customer systems to directly integrate.
@@ -138,6 +158,9 @@ Most enterprises today still have focused "API programs" to enable this approach
 ### Cloud Native Middleware
 
 Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance. These include service mesh, API gateway, message brokering, distributed tracing, configuration management, logging, monitoring and observability, event streaming, caching, service discovery, serverless, container orchestration, data storage, integrated authentication and authorization, and zero-trust architecture. This middleware environment must enable enterprise architects to practice appropriate service architecture styles from microservices to monoliths to functions. It must also support non-network triggered jobs.
+> *"Middleware is disappearing into code and infrastructure"*
+
+Cloud native is widely accepted as the approach for building modern distributed systems that execute in containerized, scalable, secure, resilient, multi-cloud distributed environments. Yet building, deploying and operating cloud native systems requires significant investment in middleware technology to manage modularity, isolation and governance.These include service mesh, API gateway, message brokering, distributed tracing, configuration management, logging, monitoring and observability, event streaming, caching, service discovery, serverless, container orchestration, data storage, integrated authentication and authorization, and zero-trust architecture. This middleware environment must enable enterprise architects to practice appropriate service architecture styles from microservices to monoliths to functions. It must also support non-network triggered jobs.
 
 As an example, service meshes provide enhanced service-to-service communication, addressing challenges in interservice communication in microservice deployments to improve the resiliency of distributed systems. All access to any resource must be authenticated and authorized based on policies to ensure the safety and security of enterprise systems. Zero-trust architecture ensures that no component implicitly assumes trust and always verifies any and all interactions.
 
@@ -155,7 +178,9 @@ At its core, DX revolves around offering developers a seamless and intuitive env
 
 Happy developers focus on applications, not platforms.
 
-## Platformless Facilitates Enterprise Software *Engineering*
+## Platformless Facilitates Enterprise Software Engineering, Dilivery and Operations
+
+> **'Your platforms should multiply the value created by your product teams** - Team Topologies
 
 Enterprise software engineering is more complex than building independent products because enterprises are complex organisms with competing interests that must somehow be hidden when a customer engages with the business. Enterprises have large applications such as CRMs, ERP systems for various functions requiring any application to have a significant data integration responsibility, which is rarely the case in non-enterprise systems.
 
@@ -168,9 +193,25 @@ The aim of platformless is to enable enterprises to build and deliver many digit
 </p>
 <p align="center">
   <i>
-   Figure 2: Modern distributed systems easily built and operate in a platformless environment
+   Figure 3: Modern distributed systems easily built and operate in a platformless environment
   </i>
 </p>
+
+### Platformless Delivers Value; A Business Service Platform Creates Differentiators
+The Internal Developer Platform (IDP) is crucial for providing a platformless experience by automating and integrating essential software engineering, delivery, and operational tasks. Platform engineering teams create and maintain the IDP, ensuring it delivers a seamless and efficient environment for developers. This approach abstracts platform complexities, enabling developers to focus on innovation without being hindered by underlying infrastructure concerns.
+
+Chief architects leverage the robust infrastructure of the IDP to build comprehensive business service platforms. These platforms form the foundation for product owners to develop diverse digital experiences across various channels, driving significant outcomes and value for the organization. Notably, the differentiators for an enterprise stem from the business service platform and the digital experiences, not the underlying IDP. The business service platform, in particular, enables the creation of a composable or modular enterprise, enhancing flexibility and adaptability to evolving business needs.
+
+<p align="center">
+  <img src="media/idp-value-15.png" alt="idp and business service platform"/>
+</p>
+<p align="center">
+  <i>
+   Figure 4: The IDP forms the foundational layer supporting business service platforms and digital experiences
+  </i>
+</p>
+
+> *"Platformless enables the focus on creating business service platforms and digital experiences, multiplying value for stakeholders."*
 
 ## Advantages of Adopting Platformless
 
@@ -201,3 +242,6 @@ Software delivery platforms and runtime platforms have had an amazing impact on 
 5. Stephen O'Grady. 2020. "The Developer Experience Gap." Redmonk.com. https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/.
 6. Zakirullin. 2024. “GitHub - Zakirullin/Cognitive-load: 🧠 Cognitive Load Is What Matters.” GitHub. June 2024. https://github.com/zakirullin/cognitive-load.
 7. “Platform Strategy: Innovation Through Harmonization (Architect Elevator Book Series): Hohpe, Gregor, Danieli, Michele, Landreau, Jean-Francois: 9798320272047: Amazon.com: Books,” n.d. https://a.co/d/00WTyayH.
+8. “Team Topologies: Organizing Business and Technology Teams for Fast Flow: Skelton CEO of Conflux and Co-author of Team Topologies, Matthew, Pais Coauthor of Team Topologies, Manuel, Malan Architecture Consultant a, Ruth: 9781942788812: Amazon.com: Books,” n.d. https://a.co/d/gQUGFWl.
+9. Abeysinghe, Asanka. “What’s Happening to Middleware in the Cloud-Native Era?” Forbes, October 4, 2022. https://www.forbes.com/sites/forbestechcouncil/2022/10/03/whats-happening-to-middleware-in-the-cloud-native-era/?sh=231084a6679d.
+10. Lane, Kin. “What Is API First?” API Evangelist (blog), March 9, 2020. https://apievangelist.com/2020/03/09/what-is-api-first/.
