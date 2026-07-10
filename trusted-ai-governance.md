@@ -85,4 +85,37 @@ Discovery must also cover shadow AI. Agentic behavior will not appear only in ap
 
 Discovery produces and maintains the inventory of agents, models, tools, and shadow AI, with MCP registries and API catalogs acting as important systems of record for what agents can discover, invoke, and expose. Identity makes that inventory addressable and governable.
 
+### Identity and delegation
+Identity and delegation are the keystone of trusted AI governance.
+
+An agent must be a first-class actor. It must have an identity separate from the human who requested the action, the application that hosts it, and the infrastructure where it runs. That identity must be usable for authorization, audit, policy evaluation, rate control, cost attribution, and incident response.
+
+Delegation is equally important. Agents rarely act only on their own behalf. They act for a user, a team, a business process, another agent, or an application. Governance must capture the delegation chain. The system must know who initiated the action, what authority was delegated, what scope was granted, how long it remains valid, and whether the agent stayed within that scope.
+
+This requirement is immature at the standards level. Existing identity and authorization standards provide useful building blocks, but the enterprise model for first-class agent identity and multi-step delegation is still developing. That immaturity should be stated plainly. Pretending the problem is solved creates false assurance.
+
+The enterprise question is: “Who is this agent, and on whose authority is it acting?”
+
+If that cannot be answered, every downstream control weakens. Authorization becomes approximate. Audit becomes incomplete. Cost attribution becomes unclear. Incident response becomes slower. Human accountability becomes blurred.
+Identity does not make an agent safe by itself. It makes the agent addressable. Addressability is the condition required for governance.
+
+### Boundary authorization
+Agentic governance must enforce authorization at the boundary where intent becomes action. That boundary has three faces.
+
+The first face is model traffic. Requests to and from models must be governed. This includes which models can be used, what data can be sent, what prompts are allowed, what responses require filtering, what rate limits apply, and what logging is required.
+
+The second face is tool and context access. Agents become operationally meaningful when they can retrieve data, call APIs, execute workflows, update systems, send messages, or trigger business processes. This is where the risk moves from language to action.
+
+The third face is agent-to-agent traffic. Agents will not operate only as isolated assistants. They will coordinate, delegate, negotiate, and hand off tasks. That traffic must be governed. The receiving agent must understand who is calling, what authority is being carried, what context is being shared, and what policy applies.
+
+[Cell-based architecture](https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md) makes these boundaries explicit: each governed cell preserves local autonomy while enforcing enterprise policy at ingress, egress, delegation, and evidence points.
+
+Boundary authorization is the primary surface for infrastructure-enforced governance. It operates outside the agent implementation at the shared boundaries where agents reach models, tools, APIs, context, data, and other agents. The enforcement point must apply authorization, redaction, scoping, rate control, transformation, approval routing, and termination before the action crosses the boundary.
+
+Boundary authorization must be parameter-aware. The risk is rarely in the tool name alone. The risk is in the specific action, the specific data, the specific recipient, the specific amount, the specific query, and the specific delegation being attempted. An agent may be authorized to call a payment API, but not to refund a specific amount. It may be authorized to use an email tool, but not to send regulated data to an external recipient. It may be authorized to query customer records, but not to retrieve fields outside the purpose of the task.
+
+Authorization must be dynamic. Static access grants are not enough. The same agent may be allowed to read a record but not update it. It may be allowed to summarize a contract but not send it externally. It may be allowed to retrieve customer history for support but not use that same data for marketing. It may be allowed to call a tool under human supervision but not autonomously.
+
+Boundary authorization is where policy becomes enforcement.
+
 
