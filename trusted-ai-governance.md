@@ -31,24 +31,37 @@ Inline governance is injected into the agent or application code path by enginee
 ## The inversion
 
 Traditional enterprise governance assumes that software behavior can be specified before deployment. A service exposes an API contract. A workflow follows a defined sequence. An integration transforms data according to a known mapping. A human approves the business process, engineers test the implementation, and the organization monitors whether the deployed system continues to meet its expected behavior.
+
 This is specification-based governance. It works because deterministic systems have stable contracts. The same input, under the same conditions, should produce the same output. Governance can therefore inspect the design, test the output, approve the release, and rely on the contract during runtime. Runtime governance still matters, but it usually confirms that the system is behaving according to what was already specified.
+
 Agentic systems do not fit that model. An agent is not only a component that produces an answer. It can reason over context, call tools, retrieve data, invoke APIs, delegate work, coordinate with other agents, and decide when to continue, stop, escalate, or retry. The output is not the only artifact of concern. The path matters. The authority used matters. The data accessed matters. The tool calls matter. The decision to act matters.
+
 This creates an inversion in governance. In deterministic systems, governance can begin with the output specification. In probabilistic agentic systems, the output cannot be fully specified in advance. The enterprise must instead govern the boundary where intent becomes action and the evidence created after action. The first question is not only, “Was the output correct?” It is also, “Was this agent allowed to do this, under this delegation, with this context, through this tool, at this time, for this purpose?”
+
 Pre-deployment review still has value. Models, prompts, tools, policies, and workflows should be evaluated before release. But pre-deployment verification cannot carry the full governance burden. There is no final output contract to verify once and trust forever. The runtime path is part of the governed surface.
+
 The enterprise governance model must therefore shift from output approval to controlled action. The system must decide what an agent may access, what it may invoke, what it may delegate, when it must stop, when a human must approve, how cost is bounded, and what evidence must be retained. Governance becomes architectural, not procedural.
 
 ## Defining trust
 
 Trust is often used as a soft term in AI discussions. For agentic systems, it must be treated as an architectural outcome. The enterprise does not trust the model in isolation. It trusts the system of control around the model.
+
 A model may be capable, but capability is not trust. A model may be accurate in a benchmark, but benchmark performance is not runtime assurance. A model may produce useful responses, but usefulness does not prove that the response was authorized, safe, attributable, or economically bounded. In an enterprise, trust must survive audit, incident review, regulatory scrutiny, and executive accountability.
+
 **Trusted AI governance is governance that produces behavior that is verifiable, attributable, and bounded, enough that a human or auditor can rely on the system deliberately.**
+
 Inspectable means the enterprise can inspect what happened. The system must capture the reasoning path where appropriate, the tool calls made, the data accessed, the policies applied, the authority used, the decisions taken, and the points where human oversight occurred. The record must be strong enough to support review after the fact.
+
 Attributable means the enterprise can assign responsibility to the right actor and authority chain. An agent should not act as an anonymous workload, a shared service account, or an invisible extension of a user session. It must have identity. Its delegated authority must be explicit. Its actions must be traceable to the human, application, process, or agent that authorized it.
+
 Bounded means the agent acts within defined limits. Those limits include access boundaries, tool boundaries, data boundaries, policy boundaries, cost boundaries, jurisdictional boundaries, and human approval boundaries. Boundaries do not remove all risk, but they make risk governable.
 Trust is therefore inherited. The agent inherits trust from identity, delegation, authorization, runtime controls, policy distribution, observability, evidence, oversight, and economic limits. Without that architecture, trust collapses into hope.
 Trusted AI governance has two enforcement models.
+
 The first is inline governance. Inline governance is implemented inside the agent or application code path. Engineers add policy checks, validation logic, safety rules, human approval steps, logging, and exception handling directly into the agent implementation. This model gives application teams fine-grained control because the enforcement logic has direct access to local intent, state, workflow context, and domain rules. It is useful, but it is not sufficient by itself. Inline governance depends on each implementation doing the right thing consistently. In a large enterprise, that creates uneven coverage, duplicated logic, and weak assurance across domains.
+
 The second is infrastructure-enforced governance. Infrastructure-enforced governance applies controls outside the agent code through the execution fabric around the agent. This includes gateways, proxies, policy enforcement points, identity infrastructure, API gateways, model gateways, service meshes, runtimes, and agent-to-agent communication boundaries. This model is critical because it gives the enterprise a common enforcement layer that does not depend on every agent implementation being correct, current, or complete.
+
 Infrastructure-enforced governance must be parameter-aware. It is not enough to know that an agent is calling a tool, API, model, database, workflow, or another agent. The governance layer must inspect and constrain the parameters of the action. Which customer record is being accessed? Which fields are being sent? What amount is being refunded? Which recipient is receiving the message? Which query is being executed? Which file is being attached? Which authority is being delegated? Parameter-level enforcement is where infrastructure turns broad permission into bounded action.
 Both models are required. Inline governance captures local business intent and domain-specific rules. Infrastructure-enforced governance provides consistent enterprise control at shared boundaries. Inline governance without infrastructure enforcement becomes fragmented. Infrastructure enforcement without inline context can become too coarse. Trusted AI governance needs both, connected through a control plane that authors policy and distributed enforcement points that apply it where agents act.
 
