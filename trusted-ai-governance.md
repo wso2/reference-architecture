@@ -143,5 +143,29 @@ A human approval is meaningful only when the human can understand what is being 
 
 Human oversight also creates accountability. The goal is not to keep humans in every loop. The goal is to place humans at the points where judgment, accountability, and organizational risk require deliberate control.
 
+### Policy authorship and distribution
+
+Policy authorship and distribution form the backbone of trusted AI governance.
+
+Agentic systems will operate across teams, domains, tools, geographies, models, and business processes. A centralized bottleneck cannot approve every action. At the same time, fully local governance creates inconsistency, weak auditability, and uneven regulatory coverage. The enterprise needs central policy and distributed enforcement.
+
+This requires a clear control plane and data plane separation.
+
+![figure 3: control plane data plane](/media/figure-3-cp-dp.png)
+
+The control plane is where policy is authored, versioned, reviewed, distributed, and monitored. It captures enterprise obligations, regulatory requirements, risk appetite, sovereign constraints, identity rules, delegation rules, data handling requirements, human oversight thresholds, evidence requirements, and economic limits. The control plane should include regulatory obligations such as the EU AI Act, NIST AI RMF, ISO 42001, sector-specific rules, internal risk policies, and sovereign requirements.
+
+The data plane is where policy is enforced. Enforcement happens at the distributed boundaries where agents interact with models, tools, data, systems, and other agents. The enforcement point should be close enough to the action to apply context, reduce latency, and preserve domain autonomy.
+
+Agents need federated governance. Policy is centrally authored and distributed. Enforcement is local, contextual, and domain-aware. Domains retain autonomy in implementation, but they operate inside enterprise policy. The control plane provides consistency. The data plane provides scale.
+
+Inline governance also belongs in this model. Domain teams will still need to implement local rules inside agent and application code. The control plane should not eliminate that. It should make local rules visible, consistent where required, and connected to enterprise policy. Infrastructure-enforced governance then applies common controls at shared boundaries. Together, these models give the enterprise both local intent and enterprise assurance.
+
+This is the load-bearing architectural claim. Without the control plane and data plane split, AI governance becomes either too centralized to scale or too fragmented to trust.
+
+
+
+
+
 
 
