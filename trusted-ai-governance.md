@@ -21,7 +21,7 @@ Enterprise AI governance is often framed as a problem of model trust. That frami
 ![figure 1: deterministic vs probabilistic system governance](/media/figure-1-deterministicvsprobabilistic.png)
 
 This changes the center of gravity for governance. The enterprise can no longer govern only by approving the output before deployment. Governance must move closer to the point where intent becomes action and must produce evidence after the action. Trusted AI governance is therefore not blind trust in a model. It is a system of control that makes agent behavior verifiable, attributable, and bounded. The agent inherits trust from the architecture around it.
-This paper defines a capability model for governing agentic systems. Discovery is the precondition, because an enterprise cannot govern an agent it has not found. Identity and delegation form the keystone, because agents must be first-class actors with traceable authority. Boundary authorization, runtime safety, human oversight, policy authorship and distribution, observability and evidence, and economic control complete the model.
+This paper defines an architectural thesis for governing agentic systems. Discovery is the precondition, because an enterprise cannot govern an agent it has not found. Identity and delegation form the keystone, because agents must be first-class actors with traceable authority. Boundary authorization, runtime safety, human oversight, policy authorship and distribution, observability and evidence, and economic control complete the model.
 The model also distinguishes two enforcement approaches. 
 1. Inline governance 
 2. Infrastructure-enforced governance
@@ -48,7 +48,7 @@ Trust is often used as a soft term in AI discussions. For agentic systems, it mu
 
 A model may be capable, but capability is not trust. A model may be accurate in a benchmark, but benchmark performance is not runtime assurance. A model may produce useful responses, but usefulness does not prove that the response was authorized, safe, attributable, or economically bounded. In an enterprise, trust must survive audit, incident review, regulatory scrutiny, and executive accountability.
 
-**Trusted AI governance is governance that produces behavior that is verifiable, attributable, and bounded, enough that a human or auditor can rely on the system deliberately.**
+**Trusted AI governance is governance that produces behavior that is inspectable, attributable, and bounded, enough that a human or auditor can rely on the system deliberately.**
 
 Inspectable means the enterprise can inspect what happened. The system must capture the reasoning path where appropriate, the tool calls made, the data accessed, the policies applied, the authority used, the decisions taken, and the points where human oversight occurred. The record must be strong enough to support review after the fact.
 
