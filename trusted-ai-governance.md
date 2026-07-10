@@ -273,6 +273,13 @@ The agent inherits trust from the architecture around it. That is the capability
 
 [3] Magic Quadrant for AI Governance Platforms. (2026). In https://gartner.com (No. G00841467). Gartner. Retrieved July 9, 2026, from https://www.gartner.com/interactive/mq/8006369?ref=solrAll&refval=571598562
 
+[4] EU Artificial Intelligence Act | Up-to-date developments and analyses of the EU AI Act. (n.d.). https://artificialintelligenceact.eu/
+
+[5] AI Risk Management Framework | NIST. (2026, June 10). NIST. https://www.nist.gov/itl/ai-risk-management-framework
+
+[6] AB 853: California AI Transparency Act. (2025, October 13). https://calmatters.digitaldemocracy.org/bills/ca_202520260ab853
+
+
 
 
 
