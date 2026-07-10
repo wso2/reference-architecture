@@ -118,4 +118,30 @@ Authorization must be dynamic. Static access grants are not enough. The same age
 
 Boundary authorization is where policy becomes enforcement.
 
+### Authorization is not safety.
+
+An agent may be authorized to access a tool and still use it incorrectly. It may follow a malicious instruction embedded in retrieved content. It may be manipulated through prompt injection. It may be jailbroken. It may leak data through a path that is technically permitted. It may take a permitted action that is wrong for the business context.
+
+Runtime safety addresses these risks. It must inspect the behavior of the agent while the agent is operating, not only the permissions assigned to it before execution.
+
+Runtime safety must cover prompt injection, jailbreaks, tool misuse, data exfiltration through legitimate paths, unsafe retries, excessive fan-out, conflicting instructions, and permitted-but-wrong actions. This requires controls that understand context, not only access rights.
+
+A simple example illustrates the difference. An agent may be authorized to send an email. That does not mean every email it drafts should be sent. It may include confidential data, misstate a commitment, respond to the wrong party, or execute a social engineering pattern. Authorization answers whether the agent may use the email tool. Safety asks whether this specific use is acceptable.
+
+Runtime safety can be implemented inline, infrastructure enforced, or both. Inline safety rules can use local workflow context and domain logic. Infrastructure-enforced safety can detect unsafe patterns at shared boundaries and apply consistent enterprise controls. Neither model replaces the other. Trusted AI governance requires both.
+
+### Human oversight
+
+Human oversight is not a failure fallback. It is a deliberate control point.
+In many systems, human intervention is treated as an exception path. The automation fails, confidence drops, or an error occurs, and the system escalates. Agentic governance needs a stronger model. Human oversight should be designed as a seam in the architecture where the agent halts and asks before acting.
+
+The enterprise has to define at what point a human must deliberately approve, reject, or redirect the agent. That depends on risk, authority, reversibility, cost, regulation, and business impact. Low-risk actions may proceed autonomously. Medium-risk actions may require review based on confidence, policy, or context. High-risk actions may always require approval. Some actions should not be delegated to agents at all.
+
+Human oversight should be specific. The system should not ask a human to approve a vague recommendation without evidence. It should present the proposed action, the authority being used, the context considered, the policy decision, the risk score where available, and the expected consequence. 
+
+A human approval is meaningful only when the human can understand what is being approved.
+
+Human oversight also creates accountability. The goal is not to keep humans in every loop. The goal is to place humans at the points where judgment, accountability, and organizational risk require deliberate control.
+
+
 
