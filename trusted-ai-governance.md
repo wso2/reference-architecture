@@ -163,6 +163,21 @@ Inline governance also belongs in this model. Domain teams will still need to im
 
 This is the load-bearing architectural claim. Without the control plane and data plane split, AI governance becomes either too centralized to scale or too fragmented to trust.
 
+### Observability and evidence
+
+Observability is the evidence leg of trusted AI governance.
+
+Traditional observability focuses on logs, metrics, and traces. Agentic observability must go further. It must capture what the agent was trying to do, what context it used, what authority it carried, what tools it called, what parameters were passed, what decisions it made, what policies were evaluated, what boundaries were enforced, whether it stayed in bounds, and where human oversight occurred.
+
+Evidence must be useful to engineers, auditors, risk teams, security teams, compliance teams, and business owners. Each group asks a different question. Engineers need to debug behavior. Security teams need to detect abuse. Auditors need an accountable record. Risk teams need patterns and exposure. Business owners need to know whether the agent acted within its intended purpose.
+
+Reasoning evidence must be handled carefully. Not every system will expose full chain-of-thought-style reasoning, and not every enterprise should retain sensitive reasoning artifacts. The governance requirement is not to store every internal token. It is to retain enough structured evidence to reconstruct the decision path, authority chain, tool usage, parameter values where appropriate, policy evaluation, and outcome.
+
+Risk quantification sits on top of evidence. The evidence captures what the agent did. Risk quantification scores the likelihood and impact of that behavior into a graded signal. That signal can then be used by the control plane, human oversight, incident response, and business review.
+
+Post-action audit is part of the governance loop. Evidence should not only support compliance review after the fact. It should feed back into boundary design, policy tuning, oversight thresholds, and runtime safety controls. Each audit should improve where the boundary is placed, what parameters are constrained, when a human is required, and what evidence must be captured next time.
+
+Without evidence, governance becomes assertion. With evidence, governance becomes inspectable.
 
 
 
