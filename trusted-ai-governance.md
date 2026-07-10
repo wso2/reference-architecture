@@ -269,7 +269,9 @@ The agent inherits trust from the architecture around it. That is the capability
 
 [1] Abeysinghe, A., & Fremantle, P. (2018, June). Cell-based architecture: A decentralized reference architecture for cloud-native applications. https://github.com/wso2/. https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md
 
-[2] Magic Quadrant for AI Governance Platforms. (2026). In https://gartner.com (No. G00841467). Gartner. Retrieved July 9, 2026, from https://www.gartner.com/interactive/mq/8006369?ref=solrAll&refval=571598562
+[2] Abeysinghe, A. (2024, August 13). What’s happening to middleware in the Cloud-Native era? Forbes. https://www.forbes.com/councils/forbestechcouncil/2022/10/03/whats-happening-to-middleware-in-the-cloud-native-era/
+
+[3] Magic Quadrant for AI Governance Platforms. (2026). In https://gartner.com (No. G00841467). Gartner. Retrieved July 9, 2026, from https://www.gartner.com/interactive/mq/8006369?ref=solrAll&refval=571598562
 
 
 
