@@ -130,6 +130,16 @@ A simple example illustrates the difference. An agent may be authorized to send 
 
 Runtime safety can be implemented inline, infrastructure enforced, or both. Inline safety rules can use local workflow context and domain logic. Infrastructure-enforced safety can detect unsafe patterns at shared boundaries and apply consistent enterprise controls. Neither model replaces the other. Trusted AI governance requires both.
 
+### Evaluation and simulation
+
+Runtime governance does not remove the need for pre-production evaluation. Probabilistic systems require evaluation-based controls before they are promoted, changed, or expanded. These controls usually run outside the production path as test suites, simulations, red-team exercises, regression checks, model evaluations, prompt evaluations, tool-use evaluations, and policy conformance tests.
+
+The enterprise question is: “What evidence proves this agentic system is safe enough to release or change?”
+
+This matters whenever a model is changed, weights are updated, prompts are revised, tools are added, policies are modified, or an agent is given new authority. The organization must be able to record what was evaluated, which scenarios were tested, what risks were found, what mitigations were applied, and who approved the change.
+
+Evaluation and simulation evidence complement runtime enforcement. Runtime controls govern what the agent does while it is acting. Evaluation controls govern whether the agentic system is ready to act under a defined set of conditions. Trusted AI governance requires both.
+
 ### Human oversight
 
 Human oversight is not a failure fallback. It is a deliberate control point.
