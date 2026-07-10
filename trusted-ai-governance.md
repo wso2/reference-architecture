@@ -65,3 +65,24 @@ The second is infrastructure-enforced governance. Infrastructure-enforced govern
 Infrastructure-enforced governance must be parameter-aware. It is not enough to know that an agent is calling a tool, API, model, database, workflow, or another agent. The governance layer must inspect and constrain the parameters of the action. Which customer record is being accessed? Which fields are being sent? What amount is being refunded? Which recipient is receiving the message? Which query is being executed? Which file is being attached? Which authority is being delegated? Parameter-level enforcement is where infrastructure turns broad permission into bounded action.
 Both models are required. Inline governance captures local business intent and domain-specific rules. Infrastructure-enforced governance provides consistent enterprise control at shared boundaries. Inline governance without infrastructure enforcement becomes fragmented. Infrastructure enforcement without inline context can become too coarse. Trusted AI governance needs both, connected through a control plane that authors policy and distributed enforcement points that apply it where agents act.
 
+## The requirements
+
+The capability model begins with discovery. Discovery is not one of the optional governance functions. It is the precondition for every other control.
+
+### Discovery
+
+An enterprise cannot govern an agent it has not found.
+
+Discovery creates the inventory of agents, models, tools, delegated authorities, agent-to-agent interactions, and shadow AI usage. It identifies where agents exist, who owns them, what models they use, what tools they can invoke, what data they can reach, and what business process they affect.
+
+![figure 2: capability model](/media/figure-2-capability-model.png)
+
+Discovery must sit in front of identity. Identity makes actors addressable, but discovery finds the actors in the first place. Without discovery, identity coverage will be incomplete. Undiscovered agents will continue to operate through user credentials, service accounts, embedded keys, local scripts, unapproved SaaS tools, or undocumented automation.
+
+The first enterprise question is simple: “What agentic systems are operating in the environment?” If the enterprise cannot answer that question, it cannot answer any of the harder questions that follow.
+
+Discovery must also cover shadow AI. Agentic behavior will not appear only in approved platforms. It will appear in notebooks, workflow tools, CI/CD scripts, customer support systems, productivity suites, integration logic, internal portals, and consultant-built prototypes. Governance must assume that the agent estate is broader than the official architecture.
+
+Discovery produces and maintains the inventory of agents, models, tools, and shadow AI, with MCP registries and API catalogs acting as important systems of record for what agents can discover, invoke, and expose. Identity makes that inventory addressable and governable.
+
+
