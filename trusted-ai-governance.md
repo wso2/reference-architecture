@@ -25,4 +25,5 @@ This paper defines a capability model for governing agentic systems. Discovery i
 The model also distinguishes two enforcement approaches. 
 1. Inline governance 
 2. Infrastructure-enforced governance
+
 Inline governance is injected into the agent or application code path by engineers. Infrastructure-enforced governance is applied outside the agent implementation by gateways, proxies, runtimes, service meshes, identity infrastructure, model gateways, API gateways, and other policy enforcement points. Both are needed. Inline governance captures local intent and domain logic. Infrastructure-enforced governance provides consistent control at shared boundaries and enables parameter-level enforcement. The integrated architecture depends on a clear control plane and data plane separation: policy is authored centrally, enforced at distributed boundaries, and proven through evidence.
