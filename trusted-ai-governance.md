@@ -179,7 +179,32 @@ Post-action audit is part of the governance loop. Evidence should not only suppo
 
 Without evidence, governance becomes assertion. With evidence, governance becomes inspectable.
 
+### Economic control
 
+Cost is a governance dimension, not an operations afterthought.
+
+Agents consume metered capacity non-deterministically. They loop. They retry. They fan out. They call models, tools, APIs, vector stores, search systems, workflow engines, and other agents. A single user request may trigger many downstream actions. A small design flaw can become a large bill. 
+
+A malicious prompt can become an economic attack.
+Economic control requires budgets, quotas, per-agent attribution, rate limits, throttling, and kill switches. The system must know which agent consumed capacity, under which authority, for which business purpose, and against which budget. It must be able to stop runaway behavior before it becomes operational or financial damage.
+
+Economic control begins as a runtime mechanism: budgets, quotas, rate limits, throttling, and kill switches that prevent runaway consumption. At enterprise scale, those controls must mature into economic governance. Each agent should have a budget owner, a cost attribution model, and a link to the business process or customer outcome it supports. Without that ownership layer, rate limits only contain the damage. They do not answer whether the consumption was justified.
+
+Economic control should not be treated as separate from safety and policy. A runaway loop is both an economic problem and a governance problem. Excessive fan-out can create cost, privacy, security, and reliability risk at the same time. The control architecture must treat consumption limits as part of the governed boundary.
+
+## The integrated control architecture
+
+The requirements are not independent controls. They form an integrated architecture.
+
+Discovery finds the actors and surfaces they act on. Identity makes them addressable. Delegation defines whose authority they carry. Boundaries enforce policy where intent becomes action. Runtime safety evaluates whether authorized behavior is safe in context. Human oversight creates deliberate control points. Policy authorship and distribution provide central consistency with distributed execution. Observability and evidence prove what happened. Economic control bounds consumption and prevents runaway behavior.
+
+The control plane and data plane separation is the core architectural pattern.
+
+The control plane owns policy. It defines obligations, risk thresholds, delegation rules, access patterns, oversight requirements, evidence requirements, and economic limits. It provides a common language for governance across legal, security, compliance, engineering, architecture, and business teams. It does not need to execute every decision directly. Its role is to define, distribute, coordinate, and inspect.
+
+The data plane enforces policy. It sits at the operational boundaries where agents interact with models, tools, data, APIs, workflows, and other agents. The data plane must be distributed because agents are distributed. Enforcement must happen near the action. That is where context exists. 
+
+That is where latency matters. That is where domain autonomy must be preserved.
 
 
 
