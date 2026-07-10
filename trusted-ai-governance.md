@@ -206,6 +206,68 @@ The data plane enforces policy. It sits at the operational boundaries where agen
 
 That is where latency matters. That is where domain autonomy must be preserved.
 
+![figure 4: inline and infra enforced](/media/figure-4-inline-and-infra.png)
+
+Inline governance and infrastructure-enforced governance fit into this architecture differently.
+
+Inline governance lives inside the agent or application implementation. It is closest to the domain workflow. It can understand business intent, local state, user experience, and task-specific logic. It is necessary for domain-specific behavior, but it cannot be the only governance model because it depends on every team implementing controls consistently.
+
+Infrastructure-enforced governance lives in the execution fabric around the agent. It is closest to the shared boundary. It can enforce common policy across model calls, tool calls, API calls, data access, and agent-to-agent communication. It provides the enterprise with a consistent enforcement surface, especially when it is parameter-aware.
+
+The control plane must coordinate both. It should publish common policy, track which controls are enforced inline, track which controls are enforced through infrastructure, and collect evidence from both. Otherwise, governance will split into uncoordinated application logic on one side and generic infrastructure control on the other.
+
+This architecture avoids two common failure modes.
+
+The first failure mode is centralized approval theater. Every AI action is routed through a central governance process that cannot scale. Teams work around it. Shadow AI grows. Policy becomes disconnected from runtime behavior.
+
+The second failure mode is local autonomy without enterprise control. Each team governs agents differently. Some enforce strong identity and evidence. Others rely on shared credentials and informal review. Regulatory obligations become inconsistent. Audit becomes fragmented. Risk accumulates in the seams.
+
+A trusted AI governance architecture must avoid both. It must provide central policy, distributed enforcement, domain autonomy, and enterprise evidence.
+
+The architecture also needs feedback. Evidence from the data plane should inform the control plane. Incidents should refine policy. Risk quantification should adjust oversight thresholds. Economic patterns should update budgets and quotas. Discovery should continuously update the inventory. 
+
+Governance is not a one-time design review. It is a runtime operating model.
+
+## Scope and intent
+
+This capability model is intentionally vendor neutral. It does not define governance by product category. It defines governance by enterprise need.
+
+The test is simple: the model should remain true even if no specific vendor existed. An enterprise still needs discovery. It still needs agent identity and delegation. It still needs boundary authorization. It still needs runtime safety. It still needs deliberate human oversight. It still needs central policy and distributed enforcement. It still needs evidence. It still needs economic control.
+
+This paper also avoids treating governance as a single platform problem. Agentic systems will span multiple models, infrastructure providers, application platforms, integration layers, identity systems, observability systems, and business applications. Governance must work across that reality. 
+
+A narrow product boundary cannot define the governance model.
+
+The intent is to define the capability architecture first. Implementation mapping should come later. A companion implementation paper can map these capabilities to concrete systems, standards, products, and deployment patterns. That mapping should not change the underlying model.
+
+That implementation mapping should also cover the engineering disciplines required to build and operate governed agents. Harness engineering focuses on the scaffolding around the model: prompts, tools, context, memory, evaluation, testing, and runtime controls. Agentic engineering extends that discipline to autonomous behavior: planning, delegation, tool use, human oversight, failure handling, and evidence generation. These are important implementation concerns, but they depend on the governance architecture defined here rather than replacing it.
+
+The model is also not a claim that all agentic systems require the same level of control. Governance must be proportional. A low-risk summarization agent does not need the same oversight as an agent that approves refunds, changes infrastructure, updates medical records, transfers funds, or negotiates with external parties. The architecture must support graded control based on risk, authority, reversibility, regulation, and business impact.
+
+The purpose of trusted AI governance is not to slow down engineering. It is to make agentic systems safe enough to scale. Without governance, adoption becomes fragile. With the right architecture, teams can move faster because the boundaries, evidence, and escalation points are clear.
+
+## Conclusion
+
+Agentic systems force a governance inversion.
+
+![figure 5: gov runtime model](/media/figure-5-gov-runtime-model.png)
+
+Deterministic systems can be governed largely through specification. Define the contract, verify the output, deploy the system, and monitor whether the contract holds. Agents do not provide that same assurance. Their outputs vary with input, context, tools, memory, delegation, and interaction. 
+
+Pre-deployment verification still matters, but it cannot be the center of governance.
+
+Trusted AI governance must govern where intent becomes action and must produce evidence after the action. The enterprise does not trust the model by itself. It trusts the architecture around the model.
+That architecture begins with discovery. It depends on first-class agent identity and explicit delegation. It enforces policy at the boundaries of model traffic, tool and context access, and agent-to-agent interaction. It separates authorization from runtime safety. It treats human oversight as a deliberate seam. It authors policy centrally and enforces it at distributed boundaries. It captures evidence strong enough for audit and review. It treats cost as a governed dimension of agent behavior.
+
+The model also requires clarity about enforcement. Inline governance is injected into the agent or application code path. Infrastructure-enforced governance is applied through the execution fabric around the agent. Inline governance gives domain teams local control. Infrastructure enforcement gives the enterprise consistent control at shared boundaries. Parameter-level enforcement makes that infrastructure control real.
+
+The load-bearing pattern is the control plane and data plane split. Central policy without distributed enforcement becomes a bottleneck. Distributed enforcement without central policy becomes fragmentation. Inline governance without infrastructure enforcement becomes inconsistent. Infrastructure enforcement without inline context becomes coarse. Trusted AI governance requires all of these to work as one architecture.
+
+The agent inherits trust from the architecture around it. That is the capability model enterprises need before agentic systems can operate at scale.
+
+
+
+
 
 
 
