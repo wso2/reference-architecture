@@ -50,6 +50,8 @@ A model may be capable, but capability is not trust. A model may be accurate in 
 
 **Trusted AI governance is governance that produces behavior that is inspectable, attributable, and bounded, enough that a human or auditor can rely on the system deliberately.**
 
+In this paper, governance is defined as the enterprise system of controls that ensures probabilistic agentic systems operate within organizational policy, acceptable risk, delegated authority, and regulatory obligations throughout their lifecycle. Governance therefore extends beyond organizational oversight into the architectural mechanisms that enforce those decisions before deployment, at runtime, and through post-action evidence.
+
 Inspectable means the enterprise can inspect what happened. The system must capture the reasoning path where appropriate, the tool calls made, the data accessed, the policies applied, the authority used, the decisions taken, and the points where human oversight occurred. The record must be strong enough to support review after the fact.
 
 Attributable means the enterprise can assign responsibility to the right actor and authority chain. An agent should not act as an anonymous workload, a shared service account, or an invisible extension of a user session. It must have identity. Its delegated authority must be explicit. Its actions must be traceable to the human, application, process, or agent that authorized it.
