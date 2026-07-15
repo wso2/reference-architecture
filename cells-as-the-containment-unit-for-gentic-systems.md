@@ -108,7 +108,7 @@ This structure makes the cell the containment unit for the AI agent. The agent c
 
 An agentic cell is a trust boundary. It defines which agents, users, tools, systems, and data sources are trusted for a given domain, and under which conditions that trust is valid. Trust is not assumed because a caller is internal. Trust is established at the boundary through identity, authorization, policy, and runtime context.
 
-Agentic workflows are more complex than traditional application calls. A user may authorize a client, the client may delegate to an agent, that agent may delegate a subtask to another agent, and the second agent may invoke a tool or external API. The downstream cell must understand the delegation chain well enough to decide whether the action is allowed. The implementation details are discussed later in the “**Security Boundaries: Identity, Delegation and Policy**” section.
+Agentic workflows are more complex than traditional application calls. A user may authorize a client, the client may delegate to an agent, that agent may delegate a subtask to another agent, and the second agent may invoke a tool or external API. The downstream cell must understand the delegation chain well enough to decide whether the action is allowed. The implementation details are discussed later in the “**Security boundaries: identity, delegation and policy**” section.
 
 For production use, every trust boundary should produce a reliable audit trail. The enterprise should be able to inspect agent activity by cell, user, agent, tool, data source, policy decision, model invocation, and cost. This makes the cell not only a runtime boundary, but also an accountability boundary.
 
