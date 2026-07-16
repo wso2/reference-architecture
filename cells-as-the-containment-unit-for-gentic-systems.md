@@ -182,7 +182,9 @@ The main conclusion is that agents should not dissolve enterprise boundaries. Th
 
 [2] Abeysinghe, A. & WSO2. (2026, July). reference-architecture/trusted-ai-governance.md at master · wso2/reference-architecture. GitHub. https://github.com/wso2/reference-architecture/blob/master/trusted-ai-governance.md
 
+[3] Domain-Driven Design: Tackling complexity in the heart of software: Evans, Eric: 9780321125217: Amazon.com: Books. (n.d.). https://a.co/d/0cgNqn6m
 
+[4] Implementing Domain-Driven design: Vernon, Vaughn: 9780321834577: Amazon.com: Books. (n.d.). https://a.co/d/0cYLCrbF
 
 
 
