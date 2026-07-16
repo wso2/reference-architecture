@@ -176,6 +176,12 @@ The HR recruitment reference implementation demonstrates how these ideas apply i
 
 The main conclusion is that agents should not dissolve enterprise boundaries. They should operate within boundaries that are explicit, enforceable, observable, and owned. APIs, events, MCP tools, A2A interactions, workflows, model calls, and agent-facing skills should remain connected to the same governed capabilities already present in the enterprise. Cell-Based Architecture provides a practical way to introduce agentic systems incrementally while preserving modularity, composability, least privilege, trust, auditability, and operational control.
 
+## References 
+
+[1] Abeysinghe, A., & Fremantle, P. (2018, June). Cell-based architecture: A decentralized reference architecture for cloud-native applications. https://github.com/wso2/. https://github.com/wso2/reference-architecture/blob/master/reference-architecture-cell-based.md
+
+[2] Abeysinghe, A. & WSO2. (2026, July). reference-architecture/trusted-ai-governance.md at master · wso2/reference-architecture. GitHub. https://github.com/wso2/reference-architecture/blob/master/trusted-ai-governance.md
+
 
 
 
