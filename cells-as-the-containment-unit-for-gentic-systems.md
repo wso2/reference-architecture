@@ -162,6 +162,193 @@ The cell is the right place to define and enforce these rules because it owns th
 
 Sandboxing is part of containment, not a replacement for it. The sandbox constrains execution. The cell constrains ownership, trust, data access, tool access, policy, observability, and accountability.
 
+## 5\. Security boundaries: identity, delegation and policy
+
+An agent's behavior cannot be enumerated in advance the way a service's code paths can: it selects from a growing tool surface and decides what to do at runtime. This raises two questions: where the security boundary sits around an actor that is mutable, and what that boundary must enforce.
+
+![Cell boundary and its crossings](/media/media_agentic_systems/cell-boundary-and-crossings.png)
+<p align="center"><em>Cell boundary and its crossings</em></p>
+
+The cell answers the first. The boundary is the cell edge: every crossing passes through a gateway, and nothing reaches or leaves the interior any other way. A cell may run a distinct gateway per direction, northbound, southbound, eastbound, and westbound, extending the reference architecture's north-south/east-west convention into four separately enforceable edges.
+
+### 5.1 The cell edge as a zero trust boundary
+
+Zero trust grants no request standing based on origin: every request is authenticated, authorized, and scoped to least privilege, on the assumption that some component is already compromised. Perimeter security does not fit an agent, because the most dangerous caller is not outside the perimeter but the agent inside it, acting on a plan an attacker may have influenced through a poisoned document or a crafted tool response.
+
+* **No implicit trust across the edge.** The cell interior is a distinct trust domain. A caller reaching the gateway inherits no standing inside the cell; the gateway re-establishes it as a cell-internal identity scoped to the request, the internal representation of whichever identity crossed at ingress, user or cell.  
+* **Verification on every crossing.** Identity is verified inbound and privilege is re-established outbound, on every crossing, including agent-to-agent calls with no human in the path.  
+* **Least privilege per hop.** The runtime holds no durable credential. The gateway issues short-lived, narrowly scoped credentials per hop, so privilege follows what is acting and what it is attempting, not who logged in.  
+* **Assume breach, bound blast radius.** A hijacked plan is bounded by the tools, data, and identity scope granted to that one cell; the gateway is the last enforceable line before anything leaves.
+
+### 5.2 The identities and why each matters
+
+The **user** is the human or upstream system that initiated the request. Issued by the enterprise identity provider, it arrives northbound as a user token or westbound inside a delegation from another cell, and is required at audit so every action traces to its originator.
+
+The **agent identity** is the runtime identity the agent holds independent of any user or container. It is a first-class managed identity, provisioned, rotated, and deprovisioned by the enterprise identity provider or a token service local to the cell on its own lifecycle rather than tied to a deployment. It is required at authorization: a tool decision turns on which agent is calling as much as on which user it acts for.
+
+The **on-behalf-of identity** is what the agent presents downstream, built from the identity of the caller to the cell (representing the user or the delegating cell) and the agent's own identity. It is a scoped, short-lived assertion carrying only what one action needs: who is acting, on whose authority, and the declared intent, the specific action being attempted rather than the general capability to attempt it. It is established at each egress crossing, at the gateway, whenever the agent acts on behalf of another party rather than purely under its own agent identity.
+
+An agent acting as the user is impersonation: it assumes the user's identity outright, exposing a fully privileged session to every tool and leaving nothing to distinguish the agent's actions from the user's own. An agent acting only as itself, with no reference to the user at all, breaks the audit link back to the user. Delegation is the alternative to both: the agent keeps its own identity and acts under it, but carries the user's authority forward explicitly, as the on-behalf-of identity, rather than assuming that authority as its own. Resolving all three at the gateway is what answers "who is acting, on whose authority, for what purpose" at every point it is asked.
+
+### 5.3 Transporting identity and the actor chain
+
+This applies whenever an agent acts on behalf of another party, the user or a delegating cell, rather than purely under its own agent identity. In these cases, two properties hold at every such crossing, independent of mechanism: identity is re-established for the next hop rather than passed through, what enters is reduced to the caller's identity and what leaves is scoped to an on-behalf-of identity for its destination, and the request carries an actor chain, so authorization and audit see every party behind it, not only the immediate caller.
+
+Re-establishing identity at each hop keeps the runtime free of long-lived, high-privilege credentials: it requests a specific call, and a narrow, short-lived credential is established for that call alone. OAuth 2.0 Token Exchange (RFC 8693\) is one way to realize it, typically via its `act` claim for the acting party and `may_act` to constrain delegation, but the requirement holds under any scheme.
+
+The actor chain makes delegation auditable by appending an actor at each hop rather than replacing the caller, so a downstream tool sees, for example, user U via triage agent A via action agent B.
+
+### 5.4 Securing the inter-cell transports
+
+What distinguishes the paths across a cell's edge is not the mechanics of enforcement, applied per edge below, but the security burden each carries.
+
+**User to agent (northbound).** The caller sits outside the cell's trust domain, so every request is potentially adversarial, whether a payload crafted to attack the runtime or content meant to steer the agent's plan. This is also where the user's identity is established, starting the actor chain.
+
+**Agent to external tool (southbound).** Third-party APIs, SaaS endpoints, and external MCP tool servers leave the enterprise trust boundary, carrying the highest exfiltration risk and the fullest egress policy.
+
+**Agent to internal tool (eastbound).** Internal tools stay within the enterprise trust boundary, so exfiltration to a third party is not the primary risk, but internal reach is not implicit trust: scope narrowing, authorization, and the actor chain still apply. When the tool is itself a cell, the call passes through that cell's own gateway.
+
+**Agent to LLM (southbound).** Model inference is southbound like any other tool call but carries the richest data stream, the prompt, retrieved context, and completion together. A model running as a local component inside the cell is the exception, since its inference never crosses the edge.
+
+**Agent to agent (eastbound and westbound).** A call is eastbound leaving the calling cell and westbound arriving at the receiving cell. The risk specific to this path is a request reaching an agent it was never authorized to reach, or one that outlives its purpose. The discipline is the same regardless of communication style: authorize the call against the incoming actor chain before the receiving agent is driven, and bound how long a delegation remains valid.
+
+### 5.5 Handling credentials at the boundary
+
+Every transport depends on a credential: a downstream key, an internal credential, a model provider's API key, a cell credential. The boundary handles all of them under one rule: the agent runtime never holds a raw downstream credential.
+
+The gateway is the credential custodian. Secrets for the cell's egress paths are held in a secret store inside the trust boundary and attached by the gateway at the moment of the outbound call; the runtime asks the gateway to make a call and receives only the result. A credential never enters the prompt, the model context, or the plan, closing the path by which prompt injection or a poisoned tool response could exfiltrate it.
+
+Holding long-lived downstream credentials at the gateway makes rotation a cell operation: a key is replaced in the secret store without touching agent code, and a leak is revoked at one point rather than chased across components. The cell-internal and on-behalf-of identities are the only credentials that flow through the runtime, and their narrow scope and short lifetime bound what their exposure would cost.
+
+Inbound credentials are validated, never trusted on presentation. A user token at the northbound edge and a calling cell's credential at the westbound edge are verified against their issuer before admission; the interior sees only the re-established cell-internal identity, never the original credential.
+
+### 5.6 Policy: the gateway as the enforcement layer
+
+A check inside the runtime is a check the runtime can bypass; a check at the gateway sees the actual call regardless of how the agent reached it. Prompt guardrails and runtime validators lower the probability of an unsafe action but do not survive a non-deterministic planner taking an unanticipated route. At scale, gateway enforcement is what holds.
+
+**Ingress policy** decides whether a request reaches the runtime at all: authentication and token validation reduce the caller to a cell-internal identity; admission control enforces per-caller rate limits, abuse detection, input validation, and payload-size caps; and for westbound calls, delegation authorization checks the incoming actor chain against the scopes it may reach.
+
+**Egress policy** governs what the agent sends out. Per-tool egress policy keeps the endpoint, scopes, rate limit, timeout, payload cap, and permitted data classes at the gateway rather than in agent code. Allowlist rules tie tool access to agent identity, so tool selection becomes a policy decision rather than a code path. Intent-based authorization checks the declared intent on the on-behalf-of identity against the specific call. For example, an HR agent may be allowed to read employee profile data, but the same invocation should be refused if the declared intent is to update payroll details without the required payroll authorization. This is narrower than an allowlist because it is evaluated per call, not only per role. Quotas treat the cell as the accounting unit for tool and model spend, enforced before the call leaves.
+
+**Egress filtering** sits on top of egress policy as the last line against prompt injection, tool poisoning, and confused-deputy attacks. On southbound and eastbound paths the gateway applies DLP, redacts outbound payloads, and blocks disallowed destinations. Model traffic is filtered the same way: guardrails on outbound prompts and inbound completions catch what inline runtime guardrails miss.
+
+### 5.7 What the gateway enforces on each boundary
+
+Applying ingress and egress policy per edge turns one undifferentiated perimeter into four distinct enforcement points.
+
+**Northbound ingress** (user-facing requests) carries the heaviest inbound checks: token validation to a cell-internal identity, per-user and per-client rate limits and abuse detection, input validation and payload caps, and the correlation identifier that starts the trace every downstream hop carries.
+
+**Westbound ingress** (calls from other internal cells) authorizes a delegation rather than a session: the gateway verifies the calling cell's identity, validates the delegation chain, checks the requested action against the scopes that chain may reach, and enforces per-caller quotas.
+
+**Southbound egress** (calls outside the enterprise boundary, including hosted LLM inference) carries the fullest egress policy and filtering: endpoint allowlist, per-tool scopes, rate limits, timeouts, payload caps, intent-based authorization against the declared intent on the call, credential attachment at the gateway, DLP, and blocked destinations. Model traffic adds prompt-injection and jailbreak detection inbound, sensitive-data filtering outbound, model routing with failover, and per-model metering against the cell's quota.
+
+**Eastbound egress** (calls to other internal cells) narrows the cell-internal identity to an on-behalf-of identity scoped to the destination, appends this cell to the actor chain, and applies per-destination quotas.
+
+The pattern across all four edges is the zero trust pattern the section opened with: identity resolved at ingress, scope narrowed at egress, no crossing trusted for its origin, every crossing logged.
+
+### 5.8 Audit and traceability
+
+An agent decides at runtime rather than running enumerable code paths, so the only reliable account of what it did is the record of what crossed its edge. Every crossing is logged with the full actor chain, intended target, scopes presented, request and response sizes, latency, and outcome; inter-cell calls are recorded at both ends, so a delegation can be reconstructed from either side.
+
+A correlation identifier started at northbound ingress travels every downstream hop, so a single user request can be followed across cells as one coherent trace. Logs collected anywhere but the gateway are partial by construction, which is why enforcement and audit sit at the same edge.
+
+## 6\. Reference patterns for agentic cells
+
+A single agent cell is rarely the whole system. Enterprises adopt agents by adding them to a digital ecosystem that already has services, data, and domain boundaries, so an agentic system takes shape as several cells that call each other, share tools, and read from common knowledge sources. That shape, the set of cells and the boundaries drawn between them, is what decides the blast radius, the ownership, and how far a single failure can spread. The patterns that follow are the arrangements that recur in practice. They are not an exclusive list, and a production system usually combines them, for example a supervisor cell that delegates to worker cells, which in turn consume a shared capability cell.
+
+### 6.1 Single-agent cell
+
+One agent, its runtime, its domain-scoped memory, and its tool adapters, inside one cell. This is the default and the unit to reach for first. The cell owns exactly one agent's behavior, so its version pins one model, one system prompt, and one tool binding set, and a bad version rolls back without touching anything else.
+
+It fits an agent with a well-defined job whose tools belong to that job: contract review, log triage, single-purpose retrieval. Because the cell is one trust boundary around one bounded capability set, the blast radius is the smallest available. When the right pattern is not obvious, this is the starting point. A second cell is justified by a distinct domain or a distinct trust level, per the bounded-context rule, not by agent count alone.
+
+### 6.2 Multi-agent cell
+
+Several agents that collaborate on one task inside a single cell, sharing memory and one trust domain. They communicate over the cell's internal transport rather than through the gateway, because they sit inside the same boundary. A planner, a critic, and an executor iterating on one task need each other's intermediate state at internal latency, and they operate at the same trust level on the same domain.
+
+The consequence is direct: the cell is one trust boundary, so it is one capability domain and one blast radius. The gateway allowlist is drawn at the cell edge, not between agents, so any tool one agent in the cell can reach must be treated as reachable by every agent in it. That is acceptable when the agents genuinely share a task and a trust level. Using a multi-agent cell to avoid separating agents that belong to different domains or different privilege levels is the agent-monolith anti-pattern described below.
+
+### 6.3 Supervisor and worker cells
+
+A supervisor cell decomposes a task and delegates subtasks to worker cells, each in its own cell with its own gateway, trust boundary, and capability scope. This is the pattern for decomposable work whose subtasks differ in privilege or domain. A supervisor planning a customer action delegates read-only retrieval to one worker and record writing to another, and each worker's gateway grants only the scope its job needs.
+
+What the composition buys is separation. Each worker is a distinct capability with its own bounded blast radius, versioned and rolled back on its own, so a change to how one subtask is handled does not ripple into the others. Privilege stays separated too: the supervisor never holds the union of its workers' scopes, so compromising the supervisor does not yield every downstream capability. Delegation is how the arrangement stays governed rather than what defines it, and its mechanics belong to the security section.
+
+### 6.4 Capability cells: tool and memory specializations
+
+The capability cell is a reusable capability owned by one cell and consumed by others through governed interfaces, in preference to a central tool hub. Two specializations recur in agent systems, and both are capability cells in that sense.
+
+A **tool cell** exposes a governed tool surface, one or more MCP servers or API adapters, that many agent cells call. It holds the downstream credential so no agent cell does, which makes rotation one operation and keeps the credential-custody rule true across every consumer. Use it when several agent cells need the same sensitive or expensive downstream system: a payments API, a system-of-record connector, a metered third-party service.
+
+A **memory cell** exposes a shared knowledge source, a vector store, a document index, or a feature store, so agent cells retrieve from one governed source rather than each holding a private copy. Read and write scopes are enforced separately at its gateway, which keeps a retrieval-only agent from writing to a store it should only read. Use it when knowledge must stay consistent and governed across agents, such as one product-documentation index behind both a retrieval agent and a support agent.
+
+Both carry the same trade-off: a shared dependency to plan capacity and availability for, and a versioned contract that must stay stable for every cell pinned to it. Neither is a new construct; both are the capability cells applied to a specific kind of shared resource.
+
+### 6.5 Composing the patterns
+
+These patterns stack. A realistic customer-support system pairs a supervisor cell with single-agent worker cells for triage and action, a memory cell for the knowledge base, and a tool cell for the system-of-record connector. Each boundary in that arrangement is a gateway crossing, each crossing carries and narrows the actor chain, and each cell versions independently. The composition is governed for the same reason each cell is: nothing reaches or leaves a cell except through its gateway. The worked example works this through in full.
+
+### 6.6 Anti-patterns
+
+The patterns above show where a cell boundary earns its place. The anti-patterns show what goes wrong when a boundary is drawn for convenience instead of for a real difference in domain, ownership, or trust. Most reduce to the same mistake: a boundary in the wrong place, either absent where containment was needed or imposed where it was not. Some of these have already appeared as the failures the earlier principles exist to prevent, such as bypassing the gateway, sharing a credential across cells, cyclic delegation, and the tool monolith. Two more arise only once cells are composed, and they sit at opposite extremes of where the boundaries fall.
+
+**The agent monolith.** Unrelated agents packed into one cell to avoid drawing boundaries. Because a cell is one trust domain and one blast radius, the monolith grants every agent the union of every agent's tool access, and a bad version of any one agent forces a rollback of all of them. This is the multi-agent cell used where separate cells were required. If two agents do not share a domain and a trust level, they belong in separate cells.
+
+**Over-fragmentation.** The opposite failure: splitting one agent's coherent job across many cells, so a single task fans out through gateway crossing after gateway crossing. Every crossing adds latency, a token exchange, and an audit record, and none of it buys containment when the pieces share a domain and a trust level anyway. A cell boundary should mark a real difference in ownership, domain, or privilege. Where no such difference exists, the work belongs in one cell.
+
+The rule behind both patterns and anti-patterns is the bounded-context rule: draw a cell boundary where a real domain or trust difference exists, and nowhere else. Where the boundaries match the domains, the containment properties from the rest of this paper hold. Where they are drawn for convenience, in either direction, the architecture pays for it without being any safer.
+
+# 7\. Reference implementation: applying CBA to agentic workloads
+
+This section instantiates the whole architecture in one working system. Nothing here is new machinery: every boundary, identity, and policy decision applies a principle already stated. The implementation is vendor-neutral, its components named by role. The cell gateway can be an API gateway, an AI gateway, an MCP gateway, or a combination at one edge; what matters is the contract enforced at the crossing, not the technology enforcing it.
+
+### 7.1 Scenario and scope
+
+The system is a recruitment pipeline in the HR landscape used throughout this paper. A candidate uploads a CV against an open requisition; the pipeline assesses it against the requisition and its rubric, prepares tailored questions, and evaluates the answers into a structured recommendation. The candidate advances to a panel interview only after the hiring manager approves that specific candidate; only then are interviews scheduled and the outcome sent.
+
+The pipeline runs under three authorities in sequence: the candidate's at intake, the workflow's own for assessment and evaluation, and the hiring manager's, minted at approval, for the advance and scheduling. It lands in a brownfield landscape: the applicant tracking system and the employee profile services are exposed to agents as governed tools and are not modified. Model selection, prompt design, and agent evaluation are out of scope; this section is about where the boundaries sit and what they enforce.
+
+### 7.2 Cell topology
+
+![Cell topology of the recruitment pipeline](/media/media_agentic_systems/recruitement-pipeline-cell-topology.png)
+<p align="center"><em>Cell topology of the recruitment pipeline</em></p>
+
+Six cells sit inside the enterprise boundary; the model providers and the calendar service sit outside it. Each gateway marker on a cell edge is an enforcement point. Of the six cells, three contain agents and three are tool cells that front a system or a capability and hold no agent at all.
+
+The **Recruitment Supervisor Cell** holds a single orchestrating agent. It receives the candidate's submission and the hiring manager's approval, drives the pipeline, holds state across the two waits, and delegates the domain work. It performs no assessment and no writes of its own beyond recording candidate-submitted content; its role is to route work to the cells that own it.
+
+The **Assessment Worker Cell** holds several agents that share one task: a CV validator, question-preparation agents, and an evaluation agent. Because they share one domain and one trust level, they share the cell's memory and internal transport, and the rubrics and question banks they reason against live inside the cell as a local knowledge base. Calls among these agents, and to that knowledge base and the cell's local tool, stay inside the cell and cross no gateway. What the ensemble ingests is untrusted candidate content, which is why it is contained tightly and why it has no path to the employee directory.
+
+The **Interview Coordinator Cell** holds one agent and local tools, and connect to a remote calendar via a gateway. It resolves the interview panel, books time on the calendar, and records the result. It holds the broadest reach in the system, but its most consequential actions are not standing capabilities; they are granted per candidate only after approval.
+
+**The ATS Cell** is a tool cell fronting the brownfield applicant tracking system through one gateway, an MCP server being one natural realization, and it owns the candidate domain with row-level authorization matching the subject in the actor chain to the record in the call. It also holds the pipeline's decisive gate: the write that marks a candidate ready for interview passes only under an actor chain rooted in the hiring manager's validated approval whose subject matches the candidate, and only with the coordination worker as the acting identity, so authority and capability must combine at the gate.
+
+The three tool cells expose a bounded surface and nothing more. The **ATS Cell** fronts the applicant tracking system and owns the candidate domain. The **Employee Profile Mgt. Cell** fronts the staff directory and is read-only in this pipeline. The **Notification Cell** owns the single channel for human-facing messages; its contract names a recipient by role or purpose, never by address, so a caller cannot redirect a message to a destination of its choosing.
+
+The requests that cross the system follow the phases of the use case. At intake, the candidate's submission enters the supervisor, which records the content in the ATS. The supervisor then delegates to the Assessment Worker Cell, which reads the CV and requisition from the ATS, prepares questions, writes its assessment artifacts back to the ATS, and asks the Notification Cell to deliver the questions to the candidate. The candidate's answers return through the supervisor, which delegates evaluation back to the same worker; the worker scores the answers and records the recommendation in the ATS. The supervisor asks the Notification Cell to carry the recommendation to the hiring manager for approval. On approval, the supervisor delegates to the Interview Coordinator Cell, which reads the panel from the Employee Profile Mgt. Cell, advances the candidate and writes interview records in the ATS, books time on the external calendar, and asks the Notification Cell to send the outcome. Every agent cell also reaches its model provider throughout, for the reasoning each step requires.
+
+Identity issuance and token exchange are provided by an identity plane, the enterprise identity provider and a token service, that every gateway depends on to validate inbound credentials and mint the scoped, short-lived credentials that flow between cells. It is omitted from the topology to keep the data flow legible, but no crossing described below completes without it.
+
+### 7.3 Audit reconstruction
+
+The walkthrough reads the pipeline forward; the audit trail reads it backward, and for an autonomous system the backward reading is the authoritative one. The correlation identifier started at intake threads every hop and survives both pauses, so a multi-day, multi-actor, pause-and-resume pipeline reconstructs as a single coherent trace.
+
+Each crossing was logged at the gateway with the full actor chain, the intended target, the scopes presented, and the outcome, and each inter-cell hop was recorded at both ends. The trace answers the accountability questions directly: which actions ran under the candidate's authority, which under the workflow's, and which under the hiring manager's, and what the assessment cost against each cell's quota. The separation of duties is visible as a property of the chains themselves: every advance and every interview write carries an actor chain rooted in a validated approval, subject-bound to the candidate it advanced, and exercised by the one allowlisted agent identity. For every candidate who moved forward, the trail is standing proof that the authority existed before the action did.
+
+### 7.4 What containment bought
+
+Under the assume-breach lens the security section opened with, take each failure as given and measure what it reaches. The measure, in every case, is the gate at the ATS cell's edge: a chain rooted in the workflow's identity fails its first condition, any acting identity other than the coordination worker fails its second, and the honest path passes both. Because the check lives at the gate rather than in agent code, and the honest path always carries the authority, a refused advance in the log is never routine traffic. It is an alarm.
+
+If untrusted content steers the assessment ensemble, the compromise is shared within the cell (the accepted consequence of the multi-agent pattern) and stops at the cell edge. The hijacked ensemble is bounded by its grants: subject-bound reads by reference, one artifact write, and a metered model budget. It cannot advance the candidate, failing both conditions of the gate; it cannot touch employee records, holding no Employee Profile scope; and it cannot reach other candidates, every read bound to the subject its delegation names. It can leak only filtered, metered model traffic and question delivery whose destination it cannot choose, and corrupt only its own artifacts, whose worst outcome is a bad recommendation still gated behind human approval.
+
+If the supervisor is compromised, it holds nothing at rest: no ATS scope, no candidate credentials, only state and references. Writes exist only as on-behalf-of assertions rooted in the candidate token being processed, so there is no cross-candidate write and no read scope through which a steered plan pulls content into its context. The advance is beyond it: a forged or replayed approval fails at northbound ingress, and even a valid approval's authority is useless at the gate under the supervisor's identity, since the acting party must be the coordination worker. The most it can do with a real approval is delegate the work it would have delegated anyway.
+
+If the coordination worker is compromised, it holds the broadest reach and the only identity the advance gate accepts, but not authority: its writes run under per-candidate delegations rooted in a validated approval, not standing scopes, so absent that delegation the advance and interview writes are refused at the same gate, and its calendar egress is allowlisted, filtered, and metered. Capability without authority is as bounded as authority without capability.
+
+If a credential leaks, the system-of-record and delivery credentials live in the tool cells' custody, so rotation is one operation at one cell rather than a search across agent runtimes. The credentials that do flow through agent runtimes, the cell-internal identities, on-behalf-of assertions, and single-use grants, are short-lived, narrowly scoped, and identity-bound, so their exposure is bounded by construction.
+
+None of these outcomes depends on the agents behaving well, or on telling an attack from normal operation, because the honest and adversarial paths run through the same gates. They depend only on where the boundaries sit and what the gateways enforce: the same seven cells, four edges, and rules from the rest of this paper, arranged so the properties hold even when an agent does exactly the wrong thing.
+
 ## 8\. Conclusion
 
 Agentic systems introduce autonomy into enterprise architecture. Agents can reason over context, choose tools, call APIs, access data, delegate work, invoke models, and trigger workflows at runtime. This makes them useful enterprise actors, but it also makes them difficult to govern through traditional integration and security controls alone. The core architectural challenge is not only how to give agents access to enterprise capabilities, but how to keep that access owned, scoped, observable, and accountable.
