@@ -20,6 +20,9 @@ We welcome and appreciate any feedback, changes, or contributions. Please send a
   
 ## Architectural Guides & Concept Papers 
 
++ ### [Trusted AI Governance] (trusted-ai-governance.md)
+This paper presents an architectural thesis for governing agentic systems in the enterprise. The core shift is from model trust and output review to a system of control that governs boundaries, delegation, runtime behavior, evidence, and economic exposure. The paper is intentionally vendor-neutral. It defines the governance problem and the required architecture based on enterprise needs, not on any product, platform, or implementation boundary.
+
 + ### [Platformless - Improving Enterprise Software Engineering with Platformless Computing](platformless.md)
 
 This paper introduces the 'Platformless' concept, emphasizing its intersections with APIs, cloud native middleware practices, and platform engineering in the context of modern enterprise software engineering.
