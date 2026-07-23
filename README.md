@@ -28,7 +28,9 @@ This paper introduces the 'Platformless' concept, emphasizing its intersections 
 
 Explore a comprehensive definition of the Internal Developer Platform (IDP), covering its scope beyond CI/CD and infrastructure automation. This guide offers in-depth architectural insights aimed at technical decision-makers, application architects, platform architects and platform engineers.
 
-## Technology Specific Reference Architectural Patterns
+## Technology-Specific Reference Architectural Patterns
+
++ ### [Cells as the Containment Unit for Agentic Systems](cells-as-the-containment-unit-for-gentic-systems.md)
 
 + ### [API-driven Microservice Architecture](api-driven-microservice-architecture.md)
 
