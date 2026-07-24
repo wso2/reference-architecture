@@ -33,7 +33,7 @@ Explore a comprehensive definition of the Internal Developer Platform (IDP), cov
 
 ## Technology-Specific Reference Architectural Patterns
 
-+ ### [Cells as the Containment Unit for Agentic Systems](cells-as-the-containment-unit-for-gentic-systems.md)
++ ### [Cells as the Containment Unit for Agentic Systems](cells-as-the-containment-unit-for-agentic-systems.md)
 
 + ### [API-driven Microservice Architecture](api-driven-microservice-architecture.md)
 
