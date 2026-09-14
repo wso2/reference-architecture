@@ -291,6 +291,8 @@ The agent inherits trust from the architecture around it. That is the capability
 
 [6] AB 853: California AI Transparency Act. (2025, October 13). https://calmatters.digitaldemocracy.org/bills/ca_202520260ab853
 
+[7] [Abeysinghe, A. (2026). Trusted AI Governance: An architectural thesis for governing agentic systems.](https://github.com/wso2/reference-architecture/blob/master/trusted-ai-governance.md) WSO2 reference-architecture.
+
 
 
 
